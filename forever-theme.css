@@ -1,0 +1,65 @@
+/* WoW Forever Atlas — original fan-inspired interface, v3. Does not copy Blizzard's protected logo or UI assets. */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+:root{color-scheme:dark;--gold:#f2d394;--muted-gold:#b99051;--teal:#66cfc3;--ink:#070d11;--pane:#10191b;--line:#70532b;--paper:#f4e5c7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif!important;color:var(--paper)!important;background-color:#090e12!important;background-image:radial-gradient(circle at 50% -18%,#395b64 0,transparent 37%),linear-gradient(#0b1319,#070b0d)!important}
+body:before{background:linear-gradient(180deg,rgba(5,9,13,.38),rgba(5,10,13,.56) 40%,rgba(4,7,10,.93)),url('login-gates.jpg') center 27%/cover no-repeat!important;opacity:.94}
+body:after{background:linear-gradient(90deg,rgba(2,4,6,.75),transparent 24%,transparent 76%,rgba(2,4,6,.75)),radial-gradient(ellipse at 50% 30%,transparent 19%,rgba(0,0,0,.61) 86%)!important}
+header{position:relative;z-index:2;border-bottom:1px solid #85633888;background:linear-gradient(180deg,#0b151dec,#101d24c2)!important;backdrop-filter:blur(12px);box-shadow:0 10px 30px #0005}
+header strong,.brand{font-family:Cinzel,Georgia,serif!important;font-weight:800!important;color:var(--gold)!important;letter-spacing:.14em!important;text-shadow:0 2px 2px #000,0 0 17px #b78b5266}
+header a{font-weight:700!important;letter-spacing:.03em;transition:color .2s}
+header a:hover{color:#fff2c7!important}
+main{position:relative;z-index:1}
+.eyebrow{color:#71d7cf!important;font:700 12px Inter,sans-serif!important;letter-spacing:.31em!important;text-shadow:0 0 15px #3ecabe77}
+h1,h2,h3{font-family:Cinzel,Georgia,serif!important}
+h1{color:#f5daa4!important;letter-spacing:.012em;text-shadow:0 3px 2px #000,0 5px 25px #000,0 0 38px #c7a05777!important}
+h2{color:#f4cf83!important;letter-spacing:.025em;text-shadow:0 2px 7px #000}
+p.lead{color:#e6ded0!important;font-size:16px!important;line-height:1.85!important;text-shadow:0 2px 5px #000}
+.choices{gap:24px!important}
+.choice,.panel,.search{position:relative;overflow:hidden;border:1px solid #987443!important;border-radius:4px!important;background:linear-gradient(145deg,#1a2527f5,#0c1419f5)!important;box-shadow:inset 0 0 0 2px #110d08,inset 0 0 0 3px #59462a,0 14px 34px #000b!important}
+.choice:before,.panel:before,.search:before{content:"";position:absolute;pointer-events:none;inset:8px;border:1px solid #a78d5945}
+.choice:after{content:"✦";position:absolute;right:20px;top:15px;font-size:19px;color:#a8844d66}
+.choice{padding:36px!important;transition:transform .2s,border-color .2s,box-shadow .2s}
+.choice:hover{transform:translateY(-3px);border-color:#e5ba73!important;box-shadow:inset 0 0 0 2px #110d08,inset 0 0 0 3px #84613a,0 18px 40px #000c!important}
+.choice .symbol{font-size:39px!important;filter:drop-shadow(0 3px 10px #0008)}
+.choice p{color:#c9d5d4!important;line-height:1.75!important}
+.btn,button.btn{position:relative;border-radius:3px!important;border:1px solid #edc788!important;background:linear-gradient(180deg,#926a34,#5c3817)!important;color:#fff0ce!important;font-family:Cinzel,Georgia,serif!important;font-weight:800!important;letter-spacing:.025em;text-transform:uppercase;text-shadow:0 2px 3px #000!important;box-shadow:inset 0 1px #f5d29177,0 3px 0 #281607,0 8px 17px #0008!important;transition:filter .18s,transform .18s}
+.btn:hover{filter:brightness(1.23);transform:translateY(-1px)}
+.btn:active{transform:translateY(2px)}
+.btn.secondary{background:linear-gradient(180deg,#356d70,#13383f)!important;border-color:#87cfcd!important}
+.search{margin-top:36px!important;padding:28px!important}
+.search h2{font-size:25px}
+input,select{accent-color:#b98b4d;background:#0a151b!important;border:1px solid #8a6942!important;color:#ffebc9!important;border-radius:3px!important;box-shadow:inset 0 2px 9px #0009}
+input:focus,select:focus,button:focus-visible,a:focus-visible{outline:2px solid #76d5ce!important;outline-offset:3px}
+label{color:#ead6a7!important}
+.result{background:linear-gradient(100deg,#142629,#0a1419)!important;border:1px solid #7b633b!important;box-shadow:inset 3px 0 #c9a05c}
+.result strong{color:#f8d794!important;font-family:Cinzel,serif}
+.result a{color:#8fe4d5!important;border-color:#5d9b94!important}
+.rank{font-family:Cinzel,serif;font-weight:800!important;color:#efc26f!important}
+.muted{color:#bec9c9!important}
+footer{border-top:1px solid #634e35;background:#081015bb;letter-spacing:.05em}
+@media(max-width:680px){h1{font-size:clamp(36px,12vw,60px)!important}.choice{padding:25px!important}.search{padding:20px!important}header strong{font-size:14px!important}main{padding-left:17px!important;padding-right:17px!important}}
+
+/* Atlas application */
+body:has(.mapwrap){background-image:radial-gradient(circle at 50% -15%,#1e3e47,#070b10 70%)!important}
+body:has(.mapwrap):before{content:"";position:fixed;z-index:-1;inset:0;background:linear-gradient(#071015e8,#071015f6),url('login-gates.jpg') center/cover no-repeat!important}
+body:has(.mapwrap) header{padding:18px clamp(18px,4vw,62px)!important}
+body:has(.mapwrap) header h1{font-size:clamp(19px,2.2vw,29px)!important;color:#f2d394!important;text-shadow:0 3px 6px #000!important}
+body:has(.mapwrap) main{max-width:1450px!important;padding:24px clamp(12px,3vw,48px) 55px!important}
+.controls{padding:17px 20px;border:1px solid #87693c;border-radius:4px;background:linear-gradient(120deg,#18282a,#0b171d);box-shadow:inset 0 0 0 3px #19140e,0 11px 22px #0006;gap:15px 23px!important}
+.controls label{font-weight:600!important;font-size:13px}
+.controls select,.controls input{padding:10px!important}
+.controls input[type=checkbox]{width:17px;height:17px;accent-color:#a77b3d}
+.controls input[type=range]{accent-color:#cb9f5d}
+.panel{padding:16px!important}
+.mapwrap{border:6px ridge #86704b;outline:1px solid #302112;box-shadow:0 0 0 4px #0c1518,0 13px 30px #000b!important;background:#0b131a}
+.mapwrap img{min-height:260px;object-fit:contain;background:radial-gradient(#253743,#0e151b)}
+.mapwrap canvas{pointer-events:none}
+.legend{padding:13px 17px;border:1px solid #5d4c2e;background:#0e1d22;border-radius:3px;gap:12px!important}
+.legend span{font:600 12px Inter,sans-serif;white-space:nowrap}
+.legend .dot{border:1px solid #e7e1b4aa;box-shadow:0 0 9px #000}
+#stats{font-family:Cinzel,Georgia,serif!important;font-weight:600;color:#e7c78f!important;letter-spacing:.03em}
+body:has(.mapwrap) .muted{line-height:1.65!important}
+@media(max-width:700px){.controls{padding:13px!important}.mapwrap{border-width:3px}.legend{gap:8px!important}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
