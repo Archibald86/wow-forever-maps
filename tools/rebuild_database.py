@@ -104,7 +104,11 @@ def rebuild(base_path, source_path, site_root, output):
         expected = {m['id']: [] for m in site['maps']}
         for row in rows:
             expected[row['map']].append([row['x_percent'], row['y_percent'], row['node_type']])
-        if expected != {m['id']: site['ore'].get(m['id'], []) for m in site['maps']}:
+        # Later site releases may add zones that v3 deliberately excluded.
+        # Validate only the original v3 imported zones when rebuilding v3.1.
+        original_coverage = csv.DictReader(io.StringIO(base.read('data/coverage_audit.csv').decode('utf-8-sig')))
+        original_ids = [item['map'] for item in original_coverage if item['zone_id']]
+        if any(expected[key] != site['ore'].get(key, []) for key in original_ids):
             raise ValueError('Rebuilt source table differs from the published site ore data')
         csv_buffer = io.StringIO(newline='')
         writer = csv.DictWriter(csv_buffer, fieldnames=['map','zone_id','x_percent','y_percent','node_type'])

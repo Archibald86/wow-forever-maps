@@ -30,6 +30,10 @@ jobs:
           test -s wow-forever-hero-mobile.webp
           test -s data.js
           test -s data.json
+          test -s app-core.js
+          test -s atlas.js
+          test -s home.js
+          test -s coverage.json
           test -s login-gates.jpg
           test -d maps
           python3 - <<'PY'
@@ -39,11 +43,12 @@ jobs:
           for m in d['maps']:
               p=pathlib.Path('maps')/(m['id']+'.jpg')
               assert p.is_file(), f'Missing map: {p}'
+              assert m['herb_count']==len(d['herbs'].get(m['id'],[])), f"Herb count mismatch {m['id']}"
               assert m['ore_count']==len(d['ore'].get(m['id'],[])), f"Ore count mismatch {m['id']}"
           for page in ['index.html','atlas.html']:
               s=pathlib.Path(page).read_text(encoding='utf-8')
               assert 'forever-theme.css' in s
-              assert 'data.js' in s
+              assert 'app-core.js?v=3.2' in s
           print('OK: validated',len(d['maps']),'map zones')
           PY
       - name: Test coordinate decoding
@@ -70,13 +75,15 @@ jobs:
           else:
               raise SystemExit('Local site did not start')
           PYREADY
+          node tests/core.cjs
           node tests/atlas-layout.cjs http://127.0.0.1:8765/
+          node tests/stage2.cjs http://127.0.0.1:8765/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Stage site
         run: |
           mkdir -p _site
-          cp index.html atlas.html forever-theme.css hero-v4.css data.js data.json login-gates.jpg wow-forever-hero-3344.jpg wow-forever-hero-mobile.webp _site/
+          cp index.html atlas.html forever-theme.css hero-v4.css data.js data.json coverage.json app-core.js atlas.js home.js login-gates.jpg wow-forever-hero-3344.jpg wow-forever-hero-mobile.webp _site/
           cp -R maps _site/
           touch _site/.nojekyll
       - name: Upload Pages artifact

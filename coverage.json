@@ -1,0 +1,779 @@
+{
+  "ashenvale_c60": {
+    "name": "Ясеневый лес",
+    "ui_map_id": 1440,
+    "ore": {
+      "status": "imported",
+      "records": 188,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 374,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 141,
+      "kind": "estimated_cells"
+    }
+  },
+  "azshara_c60": {
+    "name": "Азшара",
+    "ui_map_id": 1447,
+    "ore": {
+      "status": "imported",
+      "records": 99,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 359,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 165,
+      "kind": "estimated_cells"
+    }
+  },
+  "barrens_c60": {
+    "name": "Степи",
+    "ui_map_id": 1413,
+    "ore": {
+      "status": "imported",
+      "records": 329,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 660,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 67,
+      "kind": "estimated_cells"
+    }
+  },
+  "blastedlands_c60": {
+    "name": "Выжженные земли",
+    "ui_map_id": 1419,
+    "ore": {
+      "status": "imported",
+      "records": 71,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 68,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 72,
+      "kind": "estimated_cells"
+    }
+  },
+  "burningsteppes_c60": {
+    "name": "Пылающие степи",
+    "ui_map_id": 1428,
+    "ore": {
+      "status": "imported",
+      "records": 87,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 110,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 104,
+      "kind": "estimated_cells"
+    }
+  },
+  "darkshore_c60": {
+    "name": "Темные берега",
+    "ui_map_id": 1439,
+    "ore": {
+      "status": "imported",
+      "records": 157,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 251,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 70,
+      "kind": "estimated_cells"
+    }
+  },
+  "darkspearisland": {
+    "name": "Darkspearisland",
+    "ui_map_id": 2524,
+    "ore": {
+      "status": "no_source_records",
+      "records": 0,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "no_source_records",
+      "records": 0,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    }
+  },
+  "deadwindpass_c60": {
+    "name": "Deadwindpass",
+    "ui_map_id": 1430,
+    "ore": {
+      "status": "no_source_records",
+      "records": 0,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "no_source_records",
+      "records": 0,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    }
+  },
+  "desolace_c60": {
+    "name": "Пустоши",
+    "ui_map_id": 1443,
+    "ore": {
+      "status": "imported",
+      "records": 208,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 195,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 160,
+      "kind": "estimated_cells"
+    }
+  },
+  "dunmorogh_c60": {
+    "name": "Дун Морог",
+    "ui_map_id": 1426,
+    "ore": {
+      "status": "imported",
+      "records": 181,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 291,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 84,
+      "kind": "estimated_cells"
+    }
+  },
+  "durotar_c60": {
+    "name": "Дуротар",
+    "ui_map_id": 1411,
+    "ore": {
+      "status": "imported",
+      "records": 192,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 300,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 88,
+      "kind": "estimated_cells"
+    }
+  },
+  "duskwood_c60": {
+    "name": "Сумеречный лес",
+    "ui_map_id": 1431,
+    "ore": {
+      "status": "imported",
+      "records": 125,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 195,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 171,
+      "kind": "estimated_cells"
+    }
+  },
+  "dustwallowmarsh_c60": {
+    "name": "Пылевые топи",
+    "ui_map_id": 1445,
+    "ore": {
+      "status": "imported",
+      "records": 78,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 267,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 141,
+      "kind": "estimated_cells"
+    }
+  },
+  "easternplaguelands_c60": {
+    "name": "Восточные Чумные земли",
+    "ui_map_id": 1423,
+    "ore": {
+      "status": "imported",
+      "records": 79,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 331,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 217,
+      "kind": "estimated_cells"
+    }
+  },
+  "elwynn_c60": {
+    "name": "Элвиннский лес",
+    "ui_map_id": 1429,
+    "ore": {
+      "status": "imported",
+      "records": 153,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 280,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 129,
+      "kind": "estimated_cells"
+    }
+  },
+  "felwood_c60": {
+    "name": "Осквернённый лес",
+    "ui_map_id": 1448,
+    "ore": {
+      "status": "imported",
+      "records": 74,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 199,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 69,
+      "kind": "estimated_cells"
+    }
+  },
+  "feralas_c60": {
+    "name": "Фералас",
+    "ui_map_id": 1444,
+    "ore": {
+      "status": "imported",
+      "records": 94,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 380,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 136,
+      "kind": "estimated_cells"
+    }
+  },
+  "hillsbrad_c60": {
+    "name": "Предгорья Хилсбрада",
+    "ui_map_id": 1424,
+    "ore": {
+      "status": "imported",
+      "records": 141,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 224,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 181,
+      "kind": "estimated_cells"
+    }
+  },
+  "hinterlands_c60": {
+    "name": "Внутренние земли",
+    "ui_map_id": 1425,
+    "ore": {
+      "status": "imported",
+      "records": 112,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 250,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 136,
+      "kind": "estimated_cells"
+    }
+  },
+  "lochmodan_c60": {
+    "name": "Лок Модан",
+    "ui_map_id": 1432,
+    "ore": {
+      "status": "imported",
+      "records": 165,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 186,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 146,
+      "kind": "estimated_cells"
+    }
+  },
+  "moonglade_c60": {
+    "name": "Moonglade",
+    "ui_map_id": 1450,
+    "ore": {
+      "status": "no_source_records",
+      "records": 0,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "no_source_records",
+      "records": 0,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    }
+  },
+  "searinggorge_c60": {
+    "name": "Тлеющее ущелье",
+    "ui_map_id": 1427,
+    "ore": {
+      "status": "imported",
+      "records": 61,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 67,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 126,
+      "kind": "estimated_cells"
+    }
+  },
+  "silithus_c60": {
+    "name": "Силитус",
+    "ui_map_id": 1451,
+    "ore": {
+      "status": "imported",
+      "records": 131,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 102,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 205,
+      "kind": "estimated_cells"
+    }
+  },
+  "silverpine_c60": {
+    "name": "Серебряный бор",
+    "ui_map_id": 1421,
+    "ore": {
+      "status": "imported",
+      "records": 131,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 289,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 113,
+      "kind": "estimated_cells"
+    }
+  },
+  "stonetalonmountain_c60": {
+    "name": "Когтистые горы",
+    "ui_map_id": 1442,
+    "ore": {
+      "status": "imported",
+      "records": 133,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 257,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 109,
+      "kind": "estimated_cells"
+    }
+  },
+  "stranglethorn_c60": {
+    "name": "Тернистая долина",
+    "ui_map_id": 1434,
+    "ore": {
+      "status": "imported",
+      "records": 163,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 561,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 90,
+      "kind": "estimated_cells"
+    }
+  },
+  "swampofsorrows_c60": {
+    "name": "Болото Печали",
+    "ui_map_id": 1435,
+    "ore": {
+      "status": "imported",
+      "records": 48,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 269,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 215,
+      "kind": "estimated_cells"
+    }
+  },
+  "tanaris_c60": {
+    "name": "Танарис",
+    "ui_map_id": 1446,
+    "ore": {
+      "status": "imported",
+      "records": 128,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 157,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 94,
+      "kind": "estimated_cells"
+    }
+  },
+  "teldrassil_c60": {
+    "name": "Teldrassil",
+    "ui_map_id": 1438,
+    "ore": {
+      "status": "no_source_records",
+      "records": 0,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 392,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    }
+  },
+  "thousandneedles_c60": {
+    "name": "Тысяча Игл",
+    "ui_map_id": 1441,
+    "ore": {
+      "status": "imported",
+      "records": 203,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 103,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 111,
+      "kind": "estimated_cells"
+    }
+  },
+  "tirisfal_c60": {
+    "name": "Тирисфальские леса",
+    "ui_map_id": 1420,
+    "ore": {
+      "status": "imported",
+      "records": 171,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 333,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 104,
+      "kind": "estimated_cells"
+    }
+  },
+  "ungorocrater_c60": {
+    "name": "Кратер Ун’Горо",
+    "ui_map_id": 1449,
+    "ore": {
+      "status": "imported",
+      "records": 80,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 177,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 169,
+      "kind": "estimated_cells"
+    }
+  },
+  "westernplaguelands_c60": {
+    "name": "Западные Чумные земли",
+    "ui_map_id": 1422,
+    "ore": {
+      "status": "imported",
+      "records": 66,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 160,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 81,
+      "kind": "estimated_cells"
+    }
+  },
+  "westfall_c60": {
+    "name": "Западный Край",
+    "ui_map_id": 1436,
+    "ore": {
+      "status": "imported",
+      "records": 114,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 281,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 116,
+      "kind": "estimated_cells"
+    }
+  },
+  "wetlands_c60": {
+    "name": "Болотина",
+    "ui_map_id": 1437,
+    "ore": {
+      "status": "imported",
+      "records": 139,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 387,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 169,
+      "kind": "estimated_cells"
+    }
+  },
+  "winterspring_c60": {
+    "name": "Зимние Ключи",
+    "ui_map_id": 1452,
+    "ore": {
+      "status": "imported",
+      "records": 116,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 236,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "available",
+      "cells": 87,
+      "kind": "estimated_cells"
+    }
+  },
+  "zephrasisle": {
+    "name": "Zephrasisle",
+    "ui_map_id": 2521,
+    "ore": {
+      "status": "imported",
+      "records": 294,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 628,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    }
+  }
+}

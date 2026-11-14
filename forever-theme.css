@@ -69,3 +69,7 @@ body:has(.mapwrap) .muted{line-height:1.65!important}
 .controls label{max-width:100%;min-width:0;flex-wrap:wrap}
 .controls select{min-width:0;max-width:100%;flex:1}
 .controls input[type=range]{width:min(200px,30vw);min-width:0}
+
+#data-error{margin:16px 0;padding:14px!important}
+#data-error[hidden]{display:none!important}
+button:disabled,input:disabled,select:disabled{opacity:.6;cursor:wait}

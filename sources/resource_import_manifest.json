@@ -1,0 +1,305 @@
+{
+  "source_archive_sha256": "997fbc101c6c1bb43fd42c38562f4625f1f7e713385a955161c07f75350abe51",
+  "records": {
+    "ore": {
+      "ashenvale_c60": {
+        "count": 188,
+        "sha256": "19740c3608b7f8d815024d5ffd979cb7bf9bc3676bafc29a4bdbda6ab367283e"
+      },
+      "azshara_c60": {
+        "count": 99,
+        "sha256": "875c663254348e75631bddb6810b3dfcb5449948e7efaee6fb89e539c98def15"
+      },
+      "barrens_c60": {
+        "count": 329,
+        "sha256": "59df96031ae7199817ca5fdf36ef84f7239a7e35c19f00dda64dff1ce56a4f83"
+      },
+      "blastedlands_c60": {
+        "count": 71,
+        "sha256": "3b221d9fba9dad1a05fef76c1e136c61e0e26e51c8fd7d9f6a9388ad1c4db345"
+      },
+      "burningsteppes_c60": {
+        "count": 87,
+        "sha256": "6faba33f7f50b49d564921a6d03ba796694aa6e82215bdc14c4c297c1d697077"
+      },
+      "darkshore_c60": {
+        "count": 157,
+        "sha256": "e751175edd37a9c1dd17bc8569722aa7b05e9eb382383c35bfd7b3aa54fbe5e8"
+      },
+      "darkspearisland": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "deadwindpass_c60": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "desolace_c60": {
+        "count": 208,
+        "sha256": "8a9b430aa24bf8e1bfb154d90be6ddade04dc87202f204b43269803f90931440"
+      },
+      "dunmorogh_c60": {
+        "count": 181,
+        "sha256": "f7871c9d628f09e84eb7b0c3f08b51464528ba393d03b5ca0fd8814b8f2de083"
+      },
+      "durotar_c60": {
+        "count": 192,
+        "sha256": "6c3a81a6fde346e74987e3795b2efef8475af7d0635bb75de22adaf76c7c734c"
+      },
+      "duskwood_c60": {
+        "count": 125,
+        "sha256": "96c1199f9f9c4a9bee5f2d093deaaa054d798e4605e5eff0d99df42df2ec34f8"
+      },
+      "dustwallowmarsh_c60": {
+        "count": 78,
+        "sha256": "dadbf830dcd0f0bce6fef5979083d9ffdbb2cb9dd175311a383a063966ec6384"
+      },
+      "easternplaguelands_c60": {
+        "count": 79,
+        "sha256": "6529ef2cccdaeda535245836738e7f937071994278ef6f3b26d61e06bebf1a2e"
+      },
+      "elwynn_c60": {
+        "count": 153,
+        "sha256": "9112b199ce10d3321600a093f599e941829d01c692421005e30bff01d7931a5e"
+      },
+      "felwood_c60": {
+        "count": 74,
+        "sha256": "e3f5ad1fead7ba3f82026614a093e94412666d73318fd9243138c4a8e1be0a91"
+      },
+      "feralas_c60": {
+        "count": 94,
+        "sha256": "2ab86fb85d968ed5c468b0e16dc9d49a669d665918c54e76560a5a934d7ae147"
+      },
+      "hillsbrad_c60": {
+        "count": 141,
+        "sha256": "ccb158a312367c068fb995ab8472301344961cfb92e7d15231a8371e8e8747c8"
+      },
+      "hinterlands_c60": {
+        "count": 112,
+        "sha256": "67974afd883a350b4b5a55003e1b054cd382c98dab9d4d482f5c1e047bc84341"
+      },
+      "lochmodan_c60": {
+        "count": 165,
+        "sha256": "ae1e38b177276167661c7cd50da5615f226a3b1dc46b06c4678e61ffc55db77e"
+      },
+      "moonglade_c60": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "searinggorge_c60": {
+        "count": 61,
+        "sha256": "c25984b2df10da5168f10d95220427733ad527d16d7bfea09f1ea1fb31343e25"
+      },
+      "silithus_c60": {
+        "count": 131,
+        "sha256": "1076950645b1b1eb9f52e4bead29803990e8b43226250e0846ae0d32b86b5ffa"
+      },
+      "silverpine_c60": {
+        "count": 131,
+        "sha256": "a56a609eee28eb17eec777c46ec9d00dc8834f2478f5eb7c3e87070364e17d62"
+      },
+      "stonetalonmountain_c60": {
+        "count": 133,
+        "sha256": "b5239c1cab4c24c1fa26a5645b50fa253779990d1c2681e6c10ec34584544229"
+      },
+      "stranglethorn_c60": {
+        "count": 163,
+        "sha256": "132606497c48b6f9c0c6ca77aa38e1f6e4e2932204cfb2df96dc06dd2b40cdcb"
+      },
+      "swampofsorrows_c60": {
+        "count": 48,
+        "sha256": "9cbd3b0adc33a6fef24043419409e97c431346ad888c833f10c8fc5d7bb5bee0"
+      },
+      "tanaris_c60": {
+        "count": 128,
+        "sha256": "837035daf0dc10c1aaf34cce1366240b78479c52564d788bcec26d4c73faabfe"
+      },
+      "teldrassil_c60": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "thousandneedles_c60": {
+        "count": 203,
+        "sha256": "2b9f1e6992ee83fcfc6b304265bb5dcbcfc0837e2f9a5558c40f8e9181cd5e96"
+      },
+      "tirisfal_c60": {
+        "count": 171,
+        "sha256": "2e8215ef9022ae036af4c4f15d01508fb70feeb7bf39d259f4f2771c50c9f17a"
+      },
+      "ungorocrater_c60": {
+        "count": 80,
+        "sha256": "2446c6ebe6e3f41aaf8f8977d7ef01e1e2d2a79dd40bb591d64fdaa094a4b897"
+      },
+      "westernplaguelands_c60": {
+        "count": 66,
+        "sha256": "dae3fd68514628e12c63aa3ce28c99163278a8c1a1f3f005f2cab6662bfd883e"
+      },
+      "westfall_c60": {
+        "count": 114,
+        "sha256": "4d9d04615ae4663d7f37f1c007d260a2e0f518114fe0e73fe7b39faa366e8887"
+      },
+      "wetlands_c60": {
+        "count": 139,
+        "sha256": "14d3826f01780632e368b5b64bb658f84acbb94905ea7d832b6fa2b373a8aa74"
+      },
+      "winterspring_c60": {
+        "count": 116,
+        "sha256": "e27874aea55cfe401cd2cdbd8da0d33ec9810a1f93a7dfa851505abd1212e070"
+      },
+      "zephrasisle": {
+        "count": 294,
+        "sha256": "6de402fb526382424f312b8d39c67dafbbbad2fb7a86212e37f445c7299f37c6"
+      }
+    },
+    "herbs": {
+      "ashenvale_c60": {
+        "count": 374,
+        "sha256": "6559bd40862db7096e5bba8680ec3f5da35c7515aaca4c98026b4d7008ee562e"
+      },
+      "azshara_c60": {
+        "count": 359,
+        "sha256": "33fbd7771049936543718aa034c310157aef61a25e5bd3171ff05d9f38abd377"
+      },
+      "barrens_c60": {
+        "count": 660,
+        "sha256": "39bdde1eed488094cf8da590f53ade593bf646b381384404d92f58a04f79201b"
+      },
+      "blastedlands_c60": {
+        "count": 68,
+        "sha256": "55ecab55b0e42b9566943494c01585b9e4119566e64d08f5cf0611f17b5fa8d7"
+      },
+      "burningsteppes_c60": {
+        "count": 110,
+        "sha256": "a5e8b6561eb07886b7f4309045da90be8a1164c8e5f527111db0aa67650ef34e"
+      },
+      "darkshore_c60": {
+        "count": 251,
+        "sha256": "32b48c1c545a97c58e1f5661e5fa668c88b224a6bc23de1b1a92ddc6f799f977"
+      },
+      "darkspearisland": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "deadwindpass_c60": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "desolace_c60": {
+        "count": 195,
+        "sha256": "f9d733341636ecd72dfc35414fd8c7674365f9a536892321cbe7065ed04f98dd"
+      },
+      "dunmorogh_c60": {
+        "count": 291,
+        "sha256": "0e9b4fb74e744564a214d4cfa5bc09991dbe52936d541b7627a6b4a8d9f31549"
+      },
+      "durotar_c60": {
+        "count": 300,
+        "sha256": "2ce4f1e1513073d297af01f87cb0e7fb131b187f1ff2366992f25bef709b6336"
+      },
+      "duskwood_c60": {
+        "count": 195,
+        "sha256": "dbb2426d1011a3da606fbfa6f9bbc967bffb1b795f755fd68ab50fe7bf6c4cc5"
+      },
+      "dustwallowmarsh_c60": {
+        "count": 267,
+        "sha256": "16e06d6932276303d1f7467f3711dd6f5687edc353a067f78c4e3131ba56900b"
+      },
+      "easternplaguelands_c60": {
+        "count": 331,
+        "sha256": "59b8d8a65dc27860043d8fda8c940e9410a31dac687ddaa67cc562d3efdd8114"
+      },
+      "elwynn_c60": {
+        "count": 280,
+        "sha256": "4312f0a4015fb4f49bc2a51de005646dd09c3056112a5d8a3067ce0b41fd6e82"
+      },
+      "felwood_c60": {
+        "count": 199,
+        "sha256": "c5be2c720e13424f871fb4abdc7dad78355d5618e37792203551eb9daa17dbc4"
+      },
+      "feralas_c60": {
+        "count": 380,
+        "sha256": "ff679294ca45777be3b408197fc0221352968834d8e7ecc254e0334fed02ce25"
+      },
+      "hillsbrad_c60": {
+        "count": 224,
+        "sha256": "c43d10769f83e7b83986a6649f2bf511367ae4d52811d78c58359f81a7b5d2ab"
+      },
+      "hinterlands_c60": {
+        "count": 250,
+        "sha256": "dcf2cf28a87c3503e16d9ddc6731a484ce4733e3f38b52b04a983a9f1a31c973"
+      },
+      "lochmodan_c60": {
+        "count": 186,
+        "sha256": "8f29f7295c202fb3bbe8e7a24a9631f5649efdc7a3a478f428349281a9aa40ca"
+      },
+      "moonglade_c60": {
+        "count": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "searinggorge_c60": {
+        "count": 67,
+        "sha256": "7c83bcff817d237d3739ed3403351d5d6cae5bac978c4a6fedb41263a7071bfe"
+      },
+      "silithus_c60": {
+        "count": 102,
+        "sha256": "066b1f8bcbba420b2f90a01619cbcbe1f0883c86a806a4cfbc416a824c5bc848"
+      },
+      "silverpine_c60": {
+        "count": 289,
+        "sha256": "ec08c4e33d2064c16a5f0bcf9ed3acbca50449c9c3126c963718977d5f3899ce"
+      },
+      "stonetalonmountain_c60": {
+        "count": 257,
+        "sha256": "31b913f3e38aef2c4fe24ba741f32f4060933ee3a479083ef2b2641b1a083382"
+      },
+      "stranglethorn_c60": {
+        "count": 561,
+        "sha256": "f57f30c521ccbc28cb64701238251ca6c71f0f5f64ef1abe74c514f1db48098f"
+      },
+      "swampofsorrows_c60": {
+        "count": 269,
+        "sha256": "f27c4222bda3db9cc420cc038c933688c94a56ff2a9f903706ce06b3896e5ce8"
+      },
+      "tanaris_c60": {
+        "count": 157,
+        "sha256": "77ef37989f0c3976d3bfd04e39b4c2ba944a49883ab647a0d70dccbe668f502a"
+      },
+      "teldrassil_c60": {
+        "count": 392,
+        "sha256": "2510b3a1a15589e7a181b9e028d1b14f36baf3abf1a0bb69be644f193f7495f6"
+      },
+      "thousandneedles_c60": {
+        "count": 103,
+        "sha256": "126ed2a3767ddd5144fc26c06697d5b0cd7827742fa07cd54ff4ab9662a47326"
+      },
+      "tirisfal_c60": {
+        "count": 333,
+        "sha256": "0041de4ac593ec4201ef68c5b048c8af7a21dd6a302f2d25718922a7b79f197e"
+      },
+      "ungorocrater_c60": {
+        "count": 177,
+        "sha256": "09ddefc530fac5edd91a39319b283d3bd7276908358ac7d36eb67733911a05ac"
+      },
+      "westernplaguelands_c60": {
+        "count": 160,
+        "sha256": "3bf54ca2e8292e1b0f8998c83e135766432fd557ca1de3aaba0751c383e9c793"
+      },
+      "westfall_c60": {
+        "count": 281,
+        "sha256": "56bd36c47d9952d9b2b64bf3da1a3a9dff90c1cde4d2a3408ba2d0fb0e8f7d5d"
+      },
+      "wetlands_c60": {
+        "count": 387,
+        "sha256": "cb5ddfe5fc8ee53dd1b0e8c35b6ec84390011e629c208d996d0ce44be9455a7c"
+      },
+      "winterspring_c60": {
+        "count": 236,
+        "sha256": "2d9681d2d8dae698bf275018e3336eea1194ab4203eb80f1c7aa85aa47febfab"
+      },
+      "zephrasisle": {
+        "count": 628,
+        "sha256": "7a65d4267ef4bf119a3d7787fce826974ec073513cf7f0654f57db7e1d2656a6"
+      }
+    }
+  }
+}

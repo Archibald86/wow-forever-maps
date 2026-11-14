@@ -11,7 +11,7 @@ const { chromium } = require('playwright');
   page.on('response', response => { if (response.status() >= 400) failed.push(response.url()); });
   try {
     await page.goto(base + 'atlas.html?level=42&zone=swampofsorrows_c60&only=1');
-    await page.waitForFunction(() => terrain.complete && terrain.naturalWidth > 0);
+    await page.waitForFunction(() => terrain.complete && terrain.naturalWidth > 0 && !document.getElementById('zone').disabled);
     assert.equal(await page.locator('#only').isChecked(), true);
     assert.equal(await page.locator('#level').inputValue(), '42');
     const zones = await page.locator('#zone option').evaluateAll(items => items.map(x => x.value));
@@ -41,8 +41,8 @@ const { chromium } = require('playwright');
     }
     await page.selectOption('#zone', 'swampofsorrows_c60');
     await page.waitForFunction(() => terrain.complete && terrain.src.endsWith('/swampofsorrows_c60.jpg'));
-    for (let mask = 0; mask < 16; mask++) {
-      for (const [i,id] of ['mobs','density','ores','only'].entries()) {
+    for (let mask = 0; mask < 32; mask++) {
+      for (const [i,id] of ['mobs','density','ores','herbs','only'].entries()) {
         await page.locator('#'+id).setChecked(Boolean(mask & (1 << i)));
       }
       const visible = await page.evaluate(() => {
@@ -51,12 +51,12 @@ const { chromium } = require('playwright');
         for (let i=3;i<rgba.length;i+=4) if(rgba[i]) return true;
         return false;
       });
-      assert.equal(visible, Boolean(mask & 7), `Layer combination ${mask}`);
+      assert.equal(visible, Boolean(mask & 15), `Layer combination ${mask}`);
     }
     assert.deepEqual(errors, []);
     assert.deepEqual(failed, []);
     console.log(JSON.stringify({ result:'PASS', maps:zones.length, viewports:4,
-      geometryChecks:metrics.length, layerCombinations:16,
+      geometryChecks:metrics.length, layerCombinations:32,
       maxAlignmentError:Math.max(...metrics.flatMap(x=>x.offsets)) }));
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode=1; });
