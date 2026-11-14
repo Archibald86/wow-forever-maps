@@ -24,6 +24,14 @@
       "records": 1,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 3056,
+      "entities": 321,
+      "area_id": 331,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "azshara_c60": {
@@ -49,6 +57,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2791,
+      "entities": 186,
+      "area_id": 16,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -78,6 +94,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 5048,
+      "entities": 410,
+      "area_id": 17,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "blastedlands_c60": {
@@ -103,6 +127,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1300,
+      "entities": 100,
+      "area_id": 4,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -132,6 +164,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1425,
+      "entities": 116,
+      "area_id": 46,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "darkshore_c60": {
@@ -157,6 +197,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2284,
+      "entities": 169,
+      "area_id": 148,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -186,6 +234,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "no_source_records",
+      "records": 0,
+      "entities": 0,
+      "area_id": 16606,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "deadwindpass_c60": {
@@ -211,6 +267,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 166,
+      "entities": 32,
+      "area_id": 41,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -240,6 +304,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2291,
+      "entities": 240,
+      "area_id": 405,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "dunmorogh_c60": {
@@ -265,6 +337,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 4,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2815,
+      "entities": 255,
+      "area_id": 1,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -294,6 +374,14 @@
       "records": 4,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 3083,
+      "entities": 225,
+      "area_id": 14,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "duskwood_c60": {
@@ -319,6 +407,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 5010,
+      "entities": 186,
+      "area_id": 10,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -348,6 +444,14 @@
       "records": 1,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2572,
+      "entities": 219,
+      "area_id": 15,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "easternplaguelands_c60": {
@@ -373,6 +477,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2178,
+      "entities": 186,
+      "area_id": 139,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -402,6 +514,14 @@
       "records": 3,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 3864,
+      "entities": 267,
+      "area_id": 12,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "felwood_c60": {
@@ -427,6 +547,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1041,
+      "entities": 123,
+      "area_id": 361,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -456,6 +584,14 @@
       "records": 1,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2957,
+      "entities": 251,
+      "area_id": 357,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "hillsbrad_c60": {
@@ -481,6 +617,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2029,
+      "entities": 201,
+      "area_id": 267,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -510,6 +654,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2155,
+      "entities": 162,
+      "area_id": 47,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "lochmodan_c60": {
@@ -535,6 +687,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 2,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1834,
+      "entities": 164,
+      "area_id": 38,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -564,6 +724,14 @@
       "records": 1,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 788,
+      "entities": 72,
+      "area_id": 493,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "searinggorge_c60": {
@@ -589,6 +757,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2272,
+      "entities": 93,
+      "area_id": 51,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -618,6 +794,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2268,
+      "entities": 159,
+      "area_id": 1377,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "silverpine_c60": {
@@ -643,6 +827,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2963,
+      "entities": 165,
+      "area_id": 130,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -672,6 +864,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1418,
+      "entities": 149,
+      "area_id": 406,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "stranglethorn_c60": {
@@ -697,6 +897,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 2,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2658,
+      "entities": 323,
+      "area_id": 33,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -726,6 +934,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1894,
+      "entities": 114,
+      "area_id": 8,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "tanaris_c60": {
@@ -751,6 +967,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2555,
+      "entities": 178,
+      "area_id": 440,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -780,6 +1004,14 @@
       "records": 3,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2216,
+      "entities": 181,
+      "area_id": 141,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "thousandneedles_c60": {
@@ -805,6 +1037,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1540,
+      "entities": 161,
+      "area_id": 400,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -834,6 +1074,14 @@
       "records": 3,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 4676,
+      "entities": 293,
+      "area_id": 85,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "ungorocrater_c60": {
@@ -859,6 +1107,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1263,
+      "entities": 98,
+      "area_id": 490,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -888,6 +1144,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1374,
+      "entities": 145,
+      "area_id": 28,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "westfall_c60": {
@@ -913,6 +1177,14 @@
     "trainers": {
       "status": "no_guide_records",
       "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2484,
+      "entities": 161,
+      "area_id": 40,
       "coordinate_alignment": "unverified",
       "complete": false
     }
@@ -942,6 +1214,14 @@
       "records": 1,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 5765,
+      "entities": 231,
+      "area_id": 11,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "winterspring_c60": {
@@ -969,6 +1249,14 @@
       "records": 0,
       "coordinate_alignment": "unverified",
       "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1471,
+      "entities": 171,
+      "area_id": 618,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "zephrasisle": {
@@ -994,6 +1282,14 @@
     "trainers": {
       "status": "guide_list",
       "records": 4,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 9031,
+      "entities": 309,
+      "area_id": 16593,
       "coordinate_alignment": "unverified",
       "complete": false
     }

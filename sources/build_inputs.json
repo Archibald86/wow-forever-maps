@@ -21,6 +21,11 @@
         "GatherMate2/Locales/Vanilla/GatherMate2-Vanilla-ruRU.lua"
       ],
       "license": "gathermate/ADDON_LICENSE.txt"
+    },
+    "questie": {
+      "source": "https://github.com/Questie/QuestieDB",
+      "commit": "4dbb82440a27856f8dccf57094a5d792cdc7cc9b",
+      "provenance": "questie/provenance.json"
     }
   },
   "files": {
@@ -35,6 +40,12 @@
     "resource_catalog.json": "090e94c2031d35140ee0348a93d9f44b3042436a7d15e3e7edc022fa2c588a32",
     "trainers.json": "a496319baefc36a140487d31e043471f7b69c0627d339b28a43f10bc69640eae",
     "gathermate/ADDON_LICENSE.txt": "fe7ceffd7c1b08b31aeff6f44be5f08d392f57f52fe39df9b506cb4f83bc5ebe",
-    "gathermate/COPYING_GPL2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    "gathermate/COPYING_GPL2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+    "questie/gpl-3.0.md": "cc5470feed66192387f06ae93aed0bd4fefae5a5fd7c1e54a4acf4ea64f1028b",
+    "questie/LICENSE.md": "d9937e385c401d234ef416b91f00290f8ea8e517f39ed4359aed99115770d8c9",
+    "questie/PROVENANCE.md": "f0af04c5daf16d72952710d6f78d82524f3c9d2f2876a1d59b86cc4759a7f628",
+    "questie/tables.json.gz": "2393fcde574149c7a8b6d32905e54a03e6b179b3e8f76c932ea96bd249c8ef3d",
+    "questie/provenance.json": "8f2b109a18cfb486947183cf307346d2cc80f24e63626f64e5cef7ae5987b058",
+    "questie/NOTICE.md": "8ccbbf848937ac5a39e15944bedddfc681e7390b7b1ad6b4c34f5bf55ab85ef4"
   }
 }

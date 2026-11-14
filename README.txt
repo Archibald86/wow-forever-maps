@@ -8,3 +8,7 @@ WoW Forever Maps — версия 3.4, этап 4.
 Сборка: python tools/build_data.py
 Проверка: python tools/build_data.py --check
 Подробности и первичные источники: STAGE4_FIXES.md.
+
+QuestieDB integration (2026-11-15): see QUESTIEDB_INTEGRATION.md.
+Catalog: database.html. Optional NPC map layer; direct file atlas fallback retained.
+Sources/terms: sources/questie/NOTICE.md. Rebuild: python tools/build_data.py --check

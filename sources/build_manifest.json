@@ -12,12 +12,25 @@
     "resource_catalog.json": "090e94c2031d35140ee0348a93d9f44b3042436a7d15e3e7edc022fa2c588a32",
     "trainers.json": "a496319baefc36a140487d31e043471f7b69c0627d339b28a43f10bc69640eae",
     "gathermate/ADDON_LICENSE.txt": "fe7ceffd7c1b08b31aeff6f44be5f08d392f57f52fe39df9b506cb4f83bc5ebe",
-    "gathermate/COPYING_GPL2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    "gathermate/COPYING_GPL2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
+    "questie/gpl-3.0.md": "cc5470feed66192387f06ae93aed0bd4fefae5a5fd7c1e54a4acf4ea64f1028b",
+    "questie/LICENSE.md": "d9937e385c401d234ef416b91f00290f8ea8e517f39ed4359aed99115770d8c9",
+    "questie/PROVENANCE.md": "f0af04c5daf16d72952710d6f78d82524f3c9d2f2876a1d59b86cc4759a7f628",
+    "questie/tables.json.gz": "2393fcde574149c7a8b6d32905e54a03e6b179b3e8f76c932ea96bd249c8ef3d",
+    "questie/provenance.json": "8f2b109a18cfb486947183cf307346d2cc80f24e63626f64e5cef7ae5987b058",
+    "questie/NOTICE.md": "8ccbbf848937ac5a39e15944bedddfc681e7390b7b1ad6b4c34f5bf55ab85ef4"
   },
   "exports": {
-    "data.json": "15cec47d341abc26d22222e45f69f54296038b623d25ad264d1b23ae3615635b",
-    "data.js": "bf56d738c7846c51bce7e0faf673e305fdeaa05d520d55d69cb1c289f94a0429",
-    "coverage.json": "ef832c3775463271fa08fb77a732633de0f4461aa7cf01e2cf75de293c610b2c",
-    "sources/resource_import_manifest.json": "2d1c8e4c4e4e01b2ee710bf44eb4ddb9e5e4b658c9c81c1a982e141b9e1cf9da"
+    "data.json": "41506adb1ab3329702d6ad8ad70431db4fa31e28c2f584520572c7ef207bb9db",
+    "data.js": "cccd0fffa11eea84dee4a002bb6560a2cbbe0d5d79c1a4b6cadd9b3e2e9bb045",
+    "coverage.json": "8ff689e111c59796a0943e91a58957f1b7dac7bceb94a170d11367836442fee0",
+    "sources/resource_import_manifest.json": "2d1c8e4c4e4e01b2ee710bf44eb4ddb9e5e4b658c9c81c1a982e141b9e1cf9da",
+    "database/npcs.json": "7fe89f2739f2b169f3b809c76ef7ed3f08c94408c52e49a99c6850475b7328dc",
+    "database/quests.json": "ee69fe4251575beba079d395ef3b11d7be2917cb01fd78f8662fd491649d30f1",
+    "database/items.json": "605d59b0ae3aea3e857452fe6aebe853816d0a801c95daaf78788d8fccea35c4",
+    "database/objects.json": "fd8558de4947e47f3abd7f85328e32fe886367c4bffc91657679721dfdaaf0a4",
+    "database/manifest.json": "27d5157415452cebb96aefabeaf036fbd4c6d577858fc1acb5ac81450add4a9b",
+    "npc-atlas.json": "fde468dd41061cd5b9f74666bb6a38a213f9ead360ed5f93f979869c988e9e82",
+    "npc-atlas.js": "fa320c245bf1c07ac129c72f5192ccef59bd8eaca4095adc380fc801726470ef"
   }
 }

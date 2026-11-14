@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const api=require('../npcs.js'),data=JSON.parse(fs.readFileSync(path.join(__dirname,'../npc-atlas.json')));
+assert.equal(api.validate(data),data);
+const npc={id:6,name:'Кобольд',name_en:'Kobold',min_level:1,max_level:2,flags:128,quest_starts:[],quest_ends:[]};
+assert(api.matches(npc,{npcQuery:'6'}));assert(!api.matches({...npc,id:60},{npcQuery:'6'}));
+assert(api.matches(npc,{npcQuery:'кОбОлЬд'}));assert(api.matches(npc,{npcRole:'vendors'}));assert(!api.matches(npc,{npcRole:'trainers'}));assert(!api.matches(npc,{npcRole:'quests'}));
+assert(api.matches({...npc,quest_ends:[7]},{npcRole:'quests'}));
+assert(api.matches(npc,{only:true,level:3}));assert(!api.matches(npc,{only:true,level:5}));
+assert.throws(()=>api.validate({...data,schema_version:0}));
+console.log('PASS NPC validation, exact numeric ID, localized search, role and level filters');

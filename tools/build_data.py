@@ -14,6 +14,7 @@ import shutil
 import tempfile
 
 from import_resources import import_resources
+from import_questie import prepare as prepare_questie
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPORTS = ['data.json','data.js','coverage.json','sources/resource_import_manifest.json']
@@ -61,6 +62,10 @@ def build(root=ROOT):
         for key in ids:
             data['coverage'][key]['trainers'] = {'status':'guide_list' if data['trainers'][key] else 'no_guide_records',
                 'records':len(data['trainers'][key]),'coordinate_alignment':'unverified','complete':False}
+        questie_exports, questie_summary = prepare_questie(source,zones)
+        data['questie'] = {k:questie_summary[k] for k in ['source','commit','counts']}
+        for key in ids:
+            data['coverage'][key]['npcs'] = questie_summary['coverage'][key]
         (target/'coverage.json').write_text(json.dumps(data['coverage'],ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         for layer in ['ore','herbs']:
             for points in data[layer].values():
@@ -72,6 +77,7 @@ def build(root=ROOT):
         data_path.write_text(text+'\n',encoding='utf-8')
         (target/'data.js').write_text('window.WOW_DATA='+text+';\n',encoding='utf-8')
         result = {name:(target/name).read_bytes() for name in EXPORTS}
+        result.update(questie_exports)
     manifest = {'version':1, 'inputs':lock['files'], 'exports':{
         name:hashlib.sha256(content).hexdigest() for name,content in result.items()}}
     result['sources/build_manifest.json'] = (json.dumps(manifest,indent=2)+'\n').encode()

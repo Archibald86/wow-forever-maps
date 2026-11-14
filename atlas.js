@@ -3,13 +3,24 @@
   const $ = id => document.getElementById(id);
   const zone=$('zone'), img=$('terrain'), canvas=$('overlay'), ctx=canvas.getContext('2d');
   const lv=$('level'), lvnum=$('levelnum'), stats=$('stats'), error=$('data-error');
-  const controls=[...document.querySelectorAll('.controls input,.controls select,.resource-filters input,.resource-filters select')];
+  const controls=[...document.querySelectorAll('.controls input,.controls select,.resource-filters input,.resource-filters select,.npc-filters input,.npc-filters select')];
   if(!window.WowSettings||!window.WowResources) {
     controls.forEach(control=>control.disabled=true);error.hidden=false;stats.textContent='';
     $('share').disabled=true;$('reset-settings').disabled=true;
     $('retry').addEventListener('click',()=>location.reload());return;
   }
   let data, mapReady=false, selectedCell=null, maxDensity=50, visiblePoints=[], selectedPointKey=null;
+  let npcData=null,npcLoading=false,npcFailed=false;
+  async function loadNpcs() {
+    if(npcLoading||npcData||npcFailed||!$('npcs').checked)return;
+    npcLoading=true;$('npc-status').textContent='Загрузка координат NPC…';
+    try {
+      if(!window.WowNpcs)throw new Error('NPC module missing');
+      npcData=await WowNpcs.load();
+    }catch(_){npcFailed=true;}
+    finally{npcLoading=false;draw();}
+  }
+  $('npc-retry').addEventListener('click',()=>{npcFailed=false;loadNpcs();});
   const color=d=>WowSettings.color(d);
   const area=$('map-area');
   function random(seed) {
@@ -81,19 +92,35 @@
       ctx.fillRect(x-5,y-5,10,10);ctx.strokeRect(x-5,y-5,10,10);
       visiblePoints.push({key:'trainer:'+trainer.id,kind:'trainer',x:trainer.x,y:trainer.y,meta:trainer});
     }
+    let npcCount=0;
+    if($('npcs').checked&&npcData)for(const [xp,yp,npcId] of npcData.maps[id]||[]) {
+      const meta=npcData.npcs[npcId];
+      if(!WowNpcs.matches(meta,options))continue;
+      npcCount++;
+      const x=xp*W/100,y=yp*H/100;
+      ctx.beginPath();ctx.moveTo(x,y-5);ctx.lineTo(x+4.5,y+4);ctx.lineTo(x-4.5,y+4);ctx.closePath();
+      ctx.fillStyle=meta.quest_starts.length?'#ffe185':'#77dce8';ctx.fill();ctx.strokeStyle='#0b2732';ctx.lineWidth=1;ctx.stroke();
+      visiblePoints.push({key:`npc:${npcId}:${xp}:${yp}`,kind:'npc',x:xp,y:yp,meta});
+    }
+    if($('npcs').checked&&!npcData)loadNpcs();
+    $('npc-retry').hidden=!($('npcs').checked&&npcFailed);
+    $('npc-status').textContent=!$('npcs').checked?'Слой NPC выключен. Координаты QuestieDB доступны отдельно от оценочной плотности.':
+      npcData?`NPC: ${npcCount} из ${npcData.maps[id].length} записей координат подходят фильтрам. Это справочные позиции, не число живых NPC. Совмещение в игре не проверено.`:
+      npcFailed?'Не удалось загрузить NPC. Остальные слои доступны; повторите загрузку.':'Загрузка координат NPC…';
     drawSelection();
     const unknown=[...WowResources.filterPoints(data,'ore',id,{...options,skillFilter:false}),...WowResources.filterPoints(data,'herbs',id,{...options,skillFilter:false})].filter(point=>data.catalog[point[2]].min_skill===null).length;
     $('filter-status').textContent=`Ресурс: ${options.resource==='all'?'все':data.catalog[options.resource].name}. `+
       (options.skillFilter?`Навыки: горное дело ${options.miningSkill}, травничество ${options.herbalismSkill}. `:'Фильтр по навыку выключен. ')+
       (unknown?`Неизвестное требование у ${unknown} записей; ${options.skillFilter&&!options.unknownSkill?'скрыты':'показаны при включённом слое'}. `:'')+
       `Учителя: ${WowResources.trainersForZone(data,id,options).length} подходят фильтрам из ${data.trainers[id].length} в источнике. Справочная выборка неполная.`;
-    const mobLabel=rows.length?`${rows.length} ячеек мобов · ${matched} ячеек уровня ${Math.max(1,L-2)}–${L} (сумма индексов ${weight})`:'данные мобов не подключены';
+    const mobLabel=rows.length?`${rows.length} ячеек мобов · ${matched} ячеек уровня ${Math.max(1,L-2)}–${L} (сумма индексов ${weight})`:'оценки плотности мобов нет';
     stats.textContent=`${data.maps.find(m=>m.id===id).name} · ${mobLabel} · ${resourceLabel(ores,'руды',data.ore[id].length)} · ${resourceLabel(herbs,'трав',data.herbs[id].length)}`;
-    const parts=[rows.length?'Мобы: оценочные ячейки':'Мобы: данных нет'];
+    const parts=[rows.length?'Мобы: оценочные ячейки':'Мобы: оценки плотности нет'];
     for(const [key,label] of [['ore','Руда'],['herbs','Травы']]) {
       const info=data.coverage[id][key];
       parts.push(`${label}: ${info.records} ${info.status==='imported'?'исторических записей':'записей в источнике'}`);
     }
+    parts.push(`NPC QuestieDB: ${data.coverage[id].npcs.records} записей координат`);
     $('coverage').textContent=parts.join(' · ')+'. Совмещение координат ресурсов с картой в игре ещё не проверено.';
   }
   function setZone() {
@@ -107,7 +134,7 @@
   img.onload=()=>{mapReady=true;draw();};
   img.onerror=()=>{mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);stats.textContent='Не удалось загрузить карту выбранной локации. Выберите другую локацию или повторите загрузку.';};
   function currentState() {
-    return {zone:zone.value,level:WowApp.normalizeLevel(lv.value),mode:$('mode').value,faction:$('faction').value,...WowResources.readControls(),
+    return {zone:zone.value,level:WowApp.normalizeLevel(lv.value),mode:$('mode').value,npcRole:$('npcRole').value,npcQuery:$('npcQuery').value,faction:$('faction').value,...WowResources.readControls(),
       ...Object.fromEntries(WowSettings.FLAGS.map(key=>[key,$(key).checked]))};
   }
   function persist() {
@@ -128,7 +155,7 @@
     const x=column*canvas.width*.05,y=row*canvas.height*.05;
     ctx.strokeStyle='#fff6cc';ctx.lineWidth=2;ctx.strokeRect(x+1,y+1,canvas.width*.05-2,canvas.height*.05-2);
     const cell=data.mobs[zone.value].find(cell=>cell[0]===column*5&&cell[1]===row*5);
-    if(!cell){$('cell-info').textContent='В выбранной ячейке нет данных мобов.';return;}
+    if(!cell){$('cell-info').textContent='В выбранной ячейке нет оценки плотности мобов.';return;}
     const delta=cell[2]-Number(lv.value);
     $('cell-info').textContent=`Ячейка: уровень ${cell[2]} (${delta>0?'+':''}${delta} к персонажу), индекс плотности ${cell[3]}. Это оценка, не число живых мобов.`+
       ($('only').checked&&(delta < -2||delta>0)?' Ячейка скрыта фильтром −2…0.':'');
@@ -136,6 +163,7 @@
   const professions={ore:'Горное дело',herbs:'Травничество'};
   const factions={alliance:'Альянс',horde:'Орда',neutral:'Нейтральный'};
   function pointLabel(point) {
+    if(point.kind==='npc')return `${point.meta.name} · ID ${point.meta.id}`;
     return point.kind==='trainer'?`${point.meta.name} — учитель ${professions[point.meta.profession].toLowerCase()}`:point.meta.name;
   }
   function nearestPoint(clientX,clientY) {
@@ -159,9 +187,15 @@
     if(!points.length){const option=document.createElement('option');option.textContent='Нет включённых точек в этой ячейке';select.append(option);}
     let point=points.find(point=>point.key===selectedPointKey);
     if(!point&&points.length){point=points[0];selectedPointKey=point.key;}
-    if(!point){selectedPointKey=null;$('point-info').textContent=selectedCell?'В этой ячейке нет точек с выбранными фильтрами.':'Нажмите точку ресурса или учителя для подробностей.';$('point-source').hidden=true;return;}
+    if(!point){selectedPointKey=null;$('point-info').textContent=selectedCell?'В этой ячейке нет точек с выбранными фильтрами.':'Нажмите точку NPC, ресурса или учителя для подробностей.';$('point-source').hidden=true;return;}
     select.value=point.key;
     const meta=point.meta;
+    if(point.kind==='npc') {
+      const roles=[meta.flags&128?'торговец':null,meta.flags&16?'учитель':null,meta.quest_starts.length?'выдаёт квесты':null,meta.quest_ends.length?'принимает квесты':null].filter(Boolean);
+      $('point-info').textContent=`${pointLabel(point)}${meta.title?' — '+meta.title:''}\nУровни: ${meta.min_level??'?'}–${meta.max_level??'?'} · ${roles.join(', ')||'NPC'}\nКоординаты: ${point.x.toFixed(2)}, ${point.y.toFixed(2)}\nКвесты: начало ${meta.quest_starts.join(', ')||'нет записей'}; сдача ${meta.quest_ends.join(', ')||'нет записей'}.\nИсточник: QuestieDB Forever, снимок ${npcData.commit.slice(0,7)}. Статические данные; фазы и доступность для персонажа не проверены.`;
+      $('point-source').href=`database.html?kind=npcs&id=${meta.id}`;$('point-source').hidden=false;
+      ctx.beginPath();ctx.arc(point.x*canvas.width/100,point.y*canvas.height/100,8,0,Math.PI*2);ctx.strokeStyle='#fff6cc';ctx.lineWidth=2;ctx.stroke();return;
+    }
     const skill=point.kind==='trainer'?`${professions[meta.profession]} · ${factions[meta.faction]} · ${meta.ranks==='apprentice'?'только начальный ранг':'ранги по требованиям персонажа'}`:
       (meta.min_skill===null?'Требование навыка не подтверждено.':`Требуется ${professions[point.kind].toLowerCase()}: ${meta.min_skill} (по справочнику Forever).`);
     $('point-info').textContent=`${pointLabel(point)}\nКоординаты: ${point.x.toFixed(2)}, ${point.y.toFixed(2)}\n${skill}\n`+
@@ -178,7 +212,7 @@
     hoverFrame=requestAnimationFrame(()=>{
       const point=nearestPoint(event.clientX,event.clientY),tooltip=$('map-tooltip');tooltip.hidden=!point;
       if(!point)return;
-      tooltip.textContent=pointLabel(point)+(point.kind==='trainer'?'':point.meta.min_skill===null?' · навык неизвестен':` · навык ${point.meta.min_skill}`);
+      tooltip.textContent=pointLabel(point)+(['trainer','npc'].includes(point.kind)?'':point.meta.min_skill===null?' · навык неизвестен':` · навык ${point.meta.min_skill}`);
       tooltip.style.left=Math.max(8,Math.min(event.clientX+12,innerWidth-290))+'px';
       tooltip.style.top=Math.max(8,Math.min(event.clientY+12,innerHeight-85))+'px';
     });
@@ -187,18 +221,19 @@
   function applyState(state) {
     zone.value=state.zone;setLevel(state.level);$('mode').value=state.mode;
     for(const key of WowSettings.FLAGS)$(key).checked=state[key];
-    WowResources.applyControls(state);$('faction').value=state.faction;
+    WowResources.applyControls(state);$('faction').value=state.faction;$('npcRole').value=state.npcRole;$('npcQuery').value=state.npcQuery;
   }
   zone.addEventListener('change',()=>{persist();setZone();});
   let levelSave;
   lv.addEventListener('input',()=>{setLevel(lv.value);draw();clearTimeout(levelSave);levelSave=setTimeout(persist,150);});
   lv.addEventListener('change',()=>{clearTimeout(levelSave);persist();});
   lvnum.addEventListener('change',()=>{setLevel(lvnum.value);persist();draw();});
-  for(const id of ['mobs','density','ores','herbs','only','mode','trainers','focus','resource','miningSkill','herbalismSkill','skillFilter','unknownSkill','faction'])$(id).addEventListener('change',()=>{
+  for(const id of ['npcs','npcRole','npcQuery','mobs','density','ores','herbs','only','mode','trainers','focus','resource','miningSkill','herbalismSkill','skillFilter','unknownSkill','faction'])$(id).addEventListener('change',()=>{
     $('miningSkill').value=WowResources.normalizeSkill($('miningSkill').value);$('herbalismSkill').value=WowResources.normalizeSkill($('herbalismSkill').value);
     if(id==='resource'&&data.catalog[$('resource').value])$(data.catalog[$('resource').value].kind==='ore'?'ores':'herbs').checked=true;
     if(id==='focus'&&['ore','herbs'].includes($('focus').value))$($('focus').value==='ore'?'ores':'herbs').checked=true;
     persist();draw();});
+  $('npcQuery').addEventListener('input',()=>{persist();draw();});
   area.addEventListener('click',event=>{
     if(!data||!mapReady)return;
     const rect=canvas.getBoundingClientRect();
@@ -226,7 +261,7 @@
     item.dataset.delta=String(delta);dot.className='dot';dot.style.background=color(delta);
     item.append(dot,document.createTextNode(label));$('legend').append(item);
   }
-  for(const [symbol,label,colorValue] of [['●','Медь','#82d9ff'],['●','Другая руда','#ffc06b'],['◆','Травы','#6cdd8e'],['■','Учителя','#d1a6ff']]) {
+  for(const [symbol,label,colorValue] of [['▲','NPC QuestieDB','#77dce8'],['●','Медь','#82d9ff'],['●','Другая руда','#ffc06b'],['◆','Травы','#6cdd8e'],['■','Учителя','#d1a6ff']]) {
     const item=document.createElement('span'),symbolElement=document.createElement('b');
     symbolElement.textContent=symbol;symbolElement.style.color=colorValue;item.append(symbolElement,document.createTextNode(label));$('resource-legend').append(item);
   }
@@ -247,7 +282,7 @@
       zone.replaceChildren();
       for(const map of data.maps) {
         const option=document.createElement('option');option.value=map.id;
-        option.textContent=map.name+(map.has_mobs?'':' · нет данных мобов');zone.append(option);
+        option.textContent=map.name+(map.has_mobs?'':' · нет оценки плотности');zone.append(option);
       }
       WowResources.populateOptions(data,$('resource'));
       applyState(WowSettings.resolve(data,new URLSearchParams(location.search),WowSettings.readSaved(),WowApp.normalizeLevel));

@@ -18,3 +18,7 @@ CI также проверяет восстановление настроек, 
 
 Четыре цели подбора используют явные сортировки по плотности или числу подходящих записей.
 Новые источники и ограничения: STAGE4_FIXES.md.
+
+QuestieDB integration (2026-11-15): see QUESTIEDB_INTEGRATION.md.
+Catalog: database.html. Optional NPC map layer; direct file atlas fallback retained.
+Sources/terms: sources/questie/NOTICE.md. Rebuild: python tools/build_data.py --check
