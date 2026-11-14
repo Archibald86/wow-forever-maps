@@ -1,0 +1,60 @@
+name: Publish WoW Forever Maps to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Validate static site
+        shell: bash
+        run: |
+          test -s index.html
+          test -s atlas.html
+          test -s forever-theme.css
+          test -s data.js
+          test -s data.json
+          test -s login-gates.jpg
+          test -d maps
+          python3 - <<'PY'
+          import json, pathlib, re
+          d=json.loads(pathlib.Path('data.json').read_text(encoding='utf-8'))
+          assert d['maps'], 'Missing maps'
+          for m in d['maps']:
+              p=pathlib.Path('maps')/(m['id']+'.jpg')
+              assert p.is_file(), f'Missing map: {p}'
+              assert m['ore_count']==len(d['ore'].get(m['id'],[])), f"Ore count mismatch {m['id']}"
+          for page in ['index.html','atlas.html']:
+              s=pathlib.Path(page).read_text(encoding='utf-8')
+              assert 'forever-theme.css' in s
+              assert 'data.js' in s
+          print('OK: validated',len(d['maps']),'map zones')
+          PY
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Stage site
+        run: |
+          mkdir -p _site
+          cp index.html atlas.html forever-theme.css data.js data.json login-gates.jpg _site/
+          cp -R maps _site/
+          touch _site/.nojekyll
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
