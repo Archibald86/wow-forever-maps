@@ -126,6 +126,7 @@
   function setZone() {
     if(!data)return;
     selectedCell=null;selectedPointKey=null;visiblePoints=[];mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);
+    $('npc-status').textContent='Загрузка карты…';
     stats.textContent='Загрузка карты…';$('coverage').textContent='';$('map-tooltip').hidden=true;$('point-options').disabled=true;$('point-info').textContent='Загрузка карты…';$('point-source').hidden=true;
     img.alt='Карта: '+data.maps.find(map=>map.id===zone.value).name;
     img.src='maps/'+zone.value+'.jpg';
