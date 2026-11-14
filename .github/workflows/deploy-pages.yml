@@ -35,6 +35,14 @@ jobs:
           test -s home.js
           test -s settings.js
           test -s resources.js
+          test -s npcs.js
+          test -s npc-atlas.json
+          test -s npc-atlas.js
+          test -s database.html
+          test -s database.js
+          test -s database.css
+          test -s database/manifest.json
+          test -s sources/questie/NOTICE.md
           test -s coverage.json
           test -s login-gates.jpg
           test -d maps
@@ -50,7 +58,7 @@ jobs:
           for page in ['index.html','atlas.html']:
               s=pathlib.Path(page).read_text(encoding='utf-8')
               assert 'forever-theme.css' in s
-              assert 'app-core.js?v=3.4' in s
+              assert 'app-core.js?v=3.5' in s
           print('OK: validated',len(d['maps']),'map zones')
           PY
       - name: Verify reproducible data build
@@ -82,17 +90,22 @@ jobs:
           node tests/core.cjs
           node tests/settings.cjs
           node tests/resources.cjs
+          node tests/npcs.cjs
           node tests/atlas-layout.cjs http://127.0.0.1:8765/
           node tests/stage2.cjs http://127.0.0.1:8765/
           node tests/stage3.cjs http://127.0.0.1:8765/
           node tests/stage4.cjs http://127.0.0.1:8765/
+          node tests/questie.cjs http://127.0.0.1:8765/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Stage site
         run: |
           mkdir -p _site
           cp index.html atlas.html forever-theme.css hero-v4.css data.js data.json coverage.json app-core.js atlas.js home.js settings.js resources.js login-gates.jpg wow-forever-hero-3344.jpg wow-forever-hero-mobile.webp _site/
-          cp -R maps _site/
+          cp database.html database.js database.css npcs.js npc-atlas.json npc-atlas.js _site/
+          cp -R maps database _site/
+          mkdir -p _site/sources
+          cp -R sources/questie _site/sources/
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
