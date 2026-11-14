@@ -25,6 +25,9 @@ jobs:
           test -s index.html
           test -s atlas.html
           test -s forever-theme.css
+          test -s hero-v4.css
+          test -s wow-forever-hero-3344.jpg
+          test -s wow-forever-hero-mobile.webp
           test -s data.js
           test -s data.json
           test -s login-gates.jpg
@@ -48,7 +51,7 @@ jobs:
       - name: Stage site
         run: |
           mkdir -p _site
-          cp index.html atlas.html forever-theme.css data.js data.json login-gates.jpg _site/
+          cp index.html atlas.html forever-theme.css hero-v4.css data.js data.json login-gates.jpg wow-forever-hero-3344.jpg wow-forever-hero-mobile.webp _site/
           cp -R maps _site/
           touch _site/.nojekyll
       - name: Upload Pages artifact
