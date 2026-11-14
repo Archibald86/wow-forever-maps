@@ -18,6 +18,12 @@
       "status": "available",
       "cells": 141,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "azshara_c60": {
@@ -39,6 +45,12 @@
       "status": "available",
       "cells": 165,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "barrens_c60": {
@@ -60,6 +72,12 @@
       "status": "available",
       "cells": 67,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "blastedlands_c60": {
@@ -81,6 +99,12 @@
       "status": "available",
       "cells": 72,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "burningsteppes_c60": {
@@ -102,6 +126,12 @@
       "status": "available",
       "cells": 104,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "darkshore_c60": {
@@ -123,6 +153,12 @@
       "status": "available",
       "cells": 70,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "darkspearisland": {
@@ -144,6 +180,12 @@
       "status": "missing",
       "cells": 0,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "deadwindpass_c60": {
@@ -165,6 +207,12 @@
       "status": "missing",
       "cells": 0,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "desolace_c60": {
@@ -186,6 +234,12 @@
       "status": "available",
       "cells": 160,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "dunmorogh_c60": {
@@ -207,6 +261,12 @@
       "status": "available",
       "cells": 84,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 4,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "durotar_c60": {
@@ -228,6 +288,12 @@
       "status": "available",
       "cells": 88,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 4,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "duskwood_c60": {
@@ -249,6 +315,12 @@
       "status": "available",
       "cells": 171,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "dustwallowmarsh_c60": {
@@ -270,6 +342,12 @@
       "status": "available",
       "cells": 141,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "easternplaguelands_c60": {
@@ -291,6 +369,12 @@
       "status": "available",
       "cells": 217,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "elwynn_c60": {
@@ -312,6 +396,12 @@
       "status": "available",
       "cells": 129,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 3,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "felwood_c60": {
@@ -333,6 +423,12 @@
       "status": "available",
       "cells": 69,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "feralas_c60": {
@@ -354,6 +450,12 @@
       "status": "available",
       "cells": 136,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "hillsbrad_c60": {
@@ -375,6 +477,12 @@
       "status": "available",
       "cells": 181,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "hinterlands_c60": {
@@ -396,6 +504,12 @@
       "status": "available",
       "cells": 136,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "lochmodan_c60": {
@@ -417,6 +531,12 @@
       "status": "available",
       "cells": 146,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 2,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "moonglade_c60": {
@@ -438,6 +558,12 @@
       "status": "missing",
       "cells": 0,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "searinggorge_c60": {
@@ -459,6 +585,12 @@
       "status": "available",
       "cells": 126,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "silithus_c60": {
@@ -480,6 +612,12 @@
       "status": "available",
       "cells": 205,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "silverpine_c60": {
@@ -501,6 +639,12 @@
       "status": "available",
       "cells": 113,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "stonetalonmountain_c60": {
@@ -522,6 +666,12 @@
       "status": "available",
       "cells": 109,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "stranglethorn_c60": {
@@ -543,6 +693,12 @@
       "status": "available",
       "cells": 90,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 2,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "swampofsorrows_c60": {
@@ -564,6 +720,12 @@
       "status": "available",
       "cells": 215,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "tanaris_c60": {
@@ -585,6 +747,12 @@
       "status": "available",
       "cells": 94,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "teldrassil_c60": {
@@ -606,6 +774,12 @@
       "status": "missing",
       "cells": 0,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 3,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "thousandneedles_c60": {
@@ -627,6 +801,12 @@
       "status": "available",
       "cells": 111,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "tirisfal_c60": {
@@ -648,6 +828,12 @@
       "status": "available",
       "cells": 104,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 3,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "ungorocrater_c60": {
@@ -669,6 +855,12 @@
       "status": "available",
       "cells": 169,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "westernplaguelands_c60": {
@@ -690,6 +882,12 @@
       "status": "available",
       "cells": 81,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "westfall_c60": {
@@ -711,6 +909,12 @@
       "status": "available",
       "cells": 116,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "wetlands_c60": {
@@ -732,6 +936,12 @@
       "status": "available",
       "cells": 169,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 1,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "winterspring_c60": {
@@ -753,6 +963,12 @@
       "status": "available",
       "cells": 87,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   },
   "zephrasisle": {
@@ -774,6 +990,12 @@
       "status": "missing",
       "cells": 0,
       "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "guide_list",
+      "records": 4,
+      "coordinate_alignment": "unverified",
+      "complete": false
     }
   }
 }

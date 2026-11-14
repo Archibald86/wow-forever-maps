@@ -39,12 +39,12 @@ const { chromium } = require('playwright');
         metrics.push({ width, zone, ...geometry });
       }
     }
-    await page.selectOption('#zone', 'swampofsorrows_c60');
-    await page.waitForFunction(() => terrain.complete && terrain.src.endsWith('/swampofsorrows_c60.jpg'));
+    await page.selectOption('#zone', 'stranglethorn_c60');
+    await page.waitForFunction(() => terrain.complete && terrain.src.endsWith('/stranglethorn_c60.jpg'));
     for (const mode of ['cells','dots']) {
       await page.selectOption('#mode',mode);
-      for (let mask = 0; mask < 32; mask++) {
-      for (const [i,id] of ['mobs','density','ores','herbs','only'].entries()) {
+      for (let mask = 0; mask < 64; mask++) {
+      for (const [i,id] of ['mobs','density','ores','herbs','only','trainers'].entries()) {
         await page.locator('#'+id).setChecked(Boolean(mask & (1 << i)));
       }
       const visible = await page.evaluate(() => {
@@ -53,13 +53,13 @@ const { chromium } = require('playwright');
         for (let i=3;i<rgba.length;i+=4) if(rgba[i]) return true;
         return false;
       });
-      assert.equal(visible, Boolean(mask & 15), `Layer combination ${mode} ${mask}`);
+      assert.equal(visible, Boolean(mask & 47), `Layer combination ${mode} ${mask}`);
       }
     }
     assert.deepEqual(errors, []);
     assert.deepEqual(failed, []);
     console.log(JSON.stringify({ result:'PASS', maps:zones.length, viewports:4,
-      geometryChecks:metrics.length, layerCombinations:64, displayModes:2,
+      geometryChecks:metrics.length, layerCombinations:128, displayModes:2,
       maxAlignmentError:Math.max(...metrics.flatMap(x=>x.offsets)) }));
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode=1; });

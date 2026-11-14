@@ -4,7 +4,24 @@
   "origins": {
     "resources": "GatherMate2_Data(1).zip / forever/MiningData.lua and HerbalismData.lua",
     "mobs": "WoW_Forever_Master_Database_v3.zip / data/moblevels_cells.csv",
-    "mobs_confidence": "estimated_cells; original collection method unverified"
+    "mobs_confidence": "estimated_cells; original collection method unverified",
+    "skills_and_trainers": {
+      "mining": "https://www.wowhead.com/forever/guide/professions/mining/overview-leveling",
+      "herbalism": "https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling",
+      "updated": "2026-11-09",
+      "checked_on": "2026-11-14",
+      "skill_unknown_ids": [
+        219
+      ]
+    },
+    "resource_names": {
+      "archive_sha256": "dc4f779e35ca6f403b0634c977d9fc4a112d44da319c17700673a666cd939ce4",
+      "paths": [
+        "GatherMate2/Constants.lua",
+        "GatherMate2/Locales/Vanilla/GatherMate2-Vanilla-ruRU.lua"
+      ],
+      "license": "gathermate/ADDON_LICENSE.txt"
+    }
   },
   "files": {
     "gathermate/MiningData.lua": "4db82d6bf397cdc03d213f7f1315b4e4c1b39aa31b8697cf0cf630cb685f9377",
@@ -12,6 +29,12 @@
     "gathermate/README.md": "74e706c07d05f669d8a95c390e55e92ef02bad9ed0841c77a2c4d2a891823bda",
     "mob_cells.csv": "2fef712d30a928cb5a8f8dceca51d4130a4de5a600fe41b85e4f8ca3d0351193",
     "zones.json": "619bd63c716414d268913fcdc6f94f53c8fc78361e44acce3b2c75762038145d",
-    "zone_mapping.json": "481aa4f75b0a53d8875ca295c28d61f340dbc3fcdc592f94d3a34cfb039bcaa5"
+    "zone_mapping.json": "481aa4f75b0a53d8875ca295c28d61f340dbc3fcdc592f94d3a34cfb039bcaa5",
+    "gathermate/Constants.lua": "2c69cd11b1c0a7cdae3b2e00eb57fdbefb7e578d09635c5ebf23457089ee7d3c",
+    "gathermate/ruRU.lua": "0a556995326346207af61977b19b2d0302a6c94cd981e81c33d90064648fdb0a",
+    "resource_catalog.json": "090e94c2031d35140ee0348a93d9f44b3042436a7d15e3e7edc022fa2c588a32",
+    "trainers.json": "a496319baefc36a140487d31e043471f7b69c0627d339b28a43f10bc69640eae",
+    "gathermate/ADDON_LICENSE.txt": "fe7ceffd7c1b08b31aeff6f44be5f08d392f57f52fe39df9b506cb4f83bc5ebe",
+    "gathermate/COPYING_GPL2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
   }
 }

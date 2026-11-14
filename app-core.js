@@ -6,7 +6,7 @@
   }
 
   function validateData(data) {
-    if (!data || data.schema_version !== 2 || !Array.isArray(data.maps) || !data.maps.length) {
+    if (!data || data.schema_version !== 3 || !data.catalog || !data.trainers || !Array.isArray(data.maps) || !data.maps.length) {
       throw new Error('Unsupported atlas data');
     }
     const ids = new Set();
@@ -22,6 +22,7 @@
               row.some(value => typeof value !== 'number' || !Number.isFinite(value)) ||
               row[0] < 0 || row[0] > 100 || row[1] < 0 || row[1] > 100 ||
               !Number.isInteger(row[2]) || row[2] < 1 ||
+              (layer !== 'mobs' && data.catalog[row[2]]?.kind !== layer) ||
               (layer === 'mobs' && (!Number.isInteger(row[3]) || row[3] < 0))) {
             throw new Error('Invalid '+layer+' record');
           }
@@ -37,6 +38,23 @@
       if (map.ore_count !== data.ore[map.id].length || map.herb_count !== data.herbs[map.id].length) {
         throw new Error('Resource count mismatch');
       }
+      if(!Array.isArray(data.trainers[map.id]))throw new Error('Missing trainer coverage');
+      for(const trainer of data.trainers[map.id]) {
+        if(!trainer || typeof trainer.name!=='string' || !trainer.name ||
+          ![trainer.x,trainer.y].every(v=>typeof v==='number'&&Number.isFinite(v)&&v>=0&&v<=100) ||
+          !['ore','herbs'].includes(trainer.profession) || !['alliance','horde','neutral'].includes(trainer.faction) ||
+          typeof trainer.id!=='string'||trainer.zone!==map.id||!['all','apprentice'].includes(trainer.ranks)||
+          typeof trainer.source_updated!=='string'||typeof trainer.checked_on!=='string'||
+          typeof trainer.source_url!=='string'||!trainer.source_url.startsWith('https://'))throw new Error('Invalid trainer');
+      }
+    }
+    for(const info of Object.values(data.catalog)) {
+      if(!info||typeof info.name!=='string'||!info.name||!['ore','herbs'].includes(info.kind)||
+        !(info.min_skill===null||(Number.isInteger(info.min_skill)&&info.min_skill>=0&&info.min_skill<=400))||
+        !['guide_reference','unknown'].includes(info.skill_status)||
+        (info.min_skill===null)!==(info.skill_status==='unknown')||
+        typeof info.source_updated!=='string'||typeof info.checked_on!=='string'||
+        typeof info.source_url!=='string'||!info.source_url.startsWith('https://'))throw new Error('Invalid resource catalog');
     }
     return data;
   }
@@ -50,7 +68,7 @@
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 15000);
         try {
-          const response = await fetch('data.json?v=3.3', { signal:controller.signal, cache:'no-cache' });
+          const response = await fetch('data.json?v=3.4', { signal:controller.signal, cache:'no-cache' });
           if (!response.ok) throw new Error('Data request failed');
           const data = validateData(await response.json());
           window.WOW_DATA = data;
@@ -73,7 +91,7 @@
       }
       script.onload = () => finish();
       script.onerror = () => finish(new Error('Data request failed'));
-      script.src = 'data.js?v=3.3';
+      script.src = 'data.js?v=3.4';
       timer = setTimeout(() => finish(new Error('Data request timed out')), 15000);
       document.head.append(script);
     }).finally(() => { pending = undefined; });

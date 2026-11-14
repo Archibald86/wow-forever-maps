@@ -14,6 +14,8 @@ assert.deepEqual(resolve(new URL(url).search),saved);
 assert.equal(new URL(url).searchParams.get('extra'),'kept');
 assert.deepEqual(resolve('zone=../../bad&mode=invalid&mobs=wat',{zone:'bad',level:'bad',mode:'bad',mobs:'false'}),settings.DEFAULTS);
 assert.equal(resolve('mobs=false&density=true').mobs,false);
+assert.equal(resolve('resource=__proto__').resource,'all');
+assert.equal(resolve('resource=constructor').resource,'all');
 const broken={getItem(){throw new Error('blocked');},setItem(){throw new Error('blocked');}};
 assert.deepEqual(settings.readSaved(broken),{});assert.equal(settings.writeSaved(saved,broken),false);
 assert.deepEqual(settings.readSaved({getItem:()=>'{broken'}),{});

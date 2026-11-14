@@ -1,8 +1,10 @@
 /* Preference validation and level palette shared by rendering and the legend. */
 (() => {
   const KEY='wow-forever-settings-v1';
-  const DEFAULTS={zone:'swampofsorrows_c60',level:42,mobs:true,density:true,ores:true,herbs:false,only:false,mode:'cells'};
-  const FLAGS=['mobs','density','ores','herbs','only'];
+  const resources=typeof module!=='undefined'&&module.exports?require('./resources.js'):window.WowResources;
+  const DEFAULTS={zone:'swampofsorrows_c60',level:42,mobs:true,density:true,ores:true,herbs:false,only:false,mode:'cells',
+    trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
+  const FLAGS=['mobs','density','ores','herbs','only','trainers','skillFilter','unknownSkill'];
   const PALETTE={'-4':'#00c853','-3':'#58d96d','-2':'#a5e88d','-1':'#d9ef9a','0':'#fff5a5','1':'#ffeb00','2':'#ffbc00','3':'#ff8900','4':'#ff5600'};
   const LEGEND=[[-8,'≤−8'],[-6,'−7…−5'],[-4,'−4'],[-3,'−3'],[-2,'−2'],[-1,'−1'],[0,'0'],[1,'+1'],[2,'+2'],[3,'+3'],[4,'+4'],[5,'≥+5']];
   const color=delta=>delta<=-8?'#9ca3af':delta<=-5?'#28975b':delta>=5?'#e82127':PALETTE[delta];
@@ -30,6 +32,15 @@
     }
     if(['cells','dots'].includes(saved.mode))state.mode=saved.mode;
     if(['cells','dots'].includes(query.get('mode')))state.mode=query.get('mode');
+    for(const key of ['focus','faction']) {
+      const allowed=key==='focus'?resources.FOCUSES:['all','alliance','horde'];
+      if(allowed.includes(saved[key]))state[key]=saved[key];
+      if(allowed.includes(query.get(key)))state[key]=query.get(key);
+    }
+    for(const key of ['miningSkill','herbalismSkill'])state[key]=resources.normalizeSkill(query.has(key)?query.get(key):(saved[key]??300));
+    const validResource=value=>value==='all'||(/^[1-9][0-9]*$/.test(String(value))&&!!data.catalog&&Object.hasOwn(data.catalog,value));
+    if(validResource(saved.resource))state.resource=String(saved.resource);
+    if(validResource(query.get('resource')))state.resource=String(query.get('resource'));
     return state;
   }
   function toUrl(href,state) {

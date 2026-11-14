@@ -6,12 +6,18 @@
     "gathermate/README.md": "74e706c07d05f669d8a95c390e55e92ef02bad9ed0841c77a2c4d2a891823bda",
     "mob_cells.csv": "2fef712d30a928cb5a8f8dceca51d4130a4de5a600fe41b85e4f8ca3d0351193",
     "zones.json": "619bd63c716414d268913fcdc6f94f53c8fc78361e44acce3b2c75762038145d",
-    "zone_mapping.json": "481aa4f75b0a53d8875ca295c28d61f340dbc3fcdc592f94d3a34cfb039bcaa5"
+    "zone_mapping.json": "481aa4f75b0a53d8875ca295c28d61f340dbc3fcdc592f94d3a34cfb039bcaa5",
+    "gathermate/Constants.lua": "2c69cd11b1c0a7cdae3b2e00eb57fdbefb7e578d09635c5ebf23457089ee7d3c",
+    "gathermate/ruRU.lua": "0a556995326346207af61977b19b2d0302a6c94cd981e81c33d90064648fdb0a",
+    "resource_catalog.json": "090e94c2031d35140ee0348a93d9f44b3042436a7d15e3e7edc022fa2c588a32",
+    "trainers.json": "a496319baefc36a140487d31e043471f7b69c0627d339b28a43f10bc69640eae",
+    "gathermate/ADDON_LICENSE.txt": "fe7ceffd7c1b08b31aeff6f44be5f08d392f57f52fe39df9b506cb4f83bc5ebe",
+    "gathermate/COPYING_GPL2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
   },
   "exports": {
-    "data.json": "92f5555d636a428fd8f9e7dc39f8a342dfa15c6b71d81f07536217a62c26959e",
-    "data.js": "e3863b51a0709607f1e97cc2128669d884feeb971cd8bea2868f16f746516d95",
-    "coverage.json": "274fe1c5f0d6a8c374c78abd5a4b75dff9e858aa026f3a5019a088ca4499c7ec",
+    "data.json": "15cec47d341abc26d22222e45f69f54296038b623d25ad264d1b23ae3615635b",
+    "data.js": "bf56d738c7846c51bce7e0faf673e305fdeaa05d520d55d69cb1c289f94a0429",
+    "coverage.json": "ef832c3775463271fa08fb77a732633de0f4461aa7cf01e2cf75de293c610b2c",
     "sources/resource_import_manifest.json": "2d1c8e4c4e4e01b2ee710bf44eb4ddb9e5e4b658c9c81c1a982e141b9e1cf9da"
   }
 }

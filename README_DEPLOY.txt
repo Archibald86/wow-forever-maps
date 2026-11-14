@@ -1,8 +1,8 @@
-WoW Forever Maps — версия 3.3, этап 3.
+WoW Forever Maps — версия 3.4, этап 4.
 
 Для публикации загрузите файлы сайта и папку maps на статический хостинг.
-Главная: index.html, app-core.js, settings.js, home.js, data.json, forever-theme.css, hero-v4.css и изображения фона.
-Атлас: atlas.html, app-core.js, settings.js, atlas.js, data.json, forever-theme.css, login-gates.jpg и maps/.
+Главная: index.html, app-core.js, resources.js, settings.js, home.js, data.json, forever-theme.css, hero-v4.css и изображения фона.
+Атлас: atlas.html, app-core.js, resources.js, settings.js, atlas.js, data.json, forever-theme.css, login-gates.jpg и maps/.
 data.js обеспечивает прямое открытие локальных файлов; он должен соответствовать data.json.
 coverage.json документирует покрытие локаций. GitHub Actions проверяет данные и интерфейс перед публикацией.
 
@@ -15,3 +15,6 @@ coverage.json документирует покрытие локаций. GitHub
 Перед публикацией: python tools/build_data.py --check
 Для пересборки: python tools/build_data.py
 CI также проверяет восстановление настроек, оба режима отображения и ошибки данных.
+
+Четыре цели подбора используют явные сортировки по плотности или числу подходящих записей.
+Новые источники и ограничения: STAGE4_FIXES.md.

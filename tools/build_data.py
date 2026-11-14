@@ -49,6 +49,28 @@ def build(root=ROOT):
         shutil.copyfile(source/'zone_mapping.json',target/'sources/zone_mapping.json')
         (target/'data.json').write_text(json.dumps({'maps':zones,'mobs':mobs}),encoding='utf-8')
         import_resources(source/'gathermate',target)
+        data_path = target/'data.json'
+        data = json.loads(data_path.read_text(encoding='utf-8'))
+        data['schema_version'] = 3
+        data['catalog'] = json.loads((source/'resource_catalog.json').read_text(encoding='utf-8'))
+        data['trainers'] = {key:[] for key in ids}
+        for trainer in json.loads((source/'trainers.json').read_text(encoding='utf-8')):
+            if trainer['zone'] not in data['trainers'] or not (0 <= trainer['x'] <= 100 and 0 <= trainer['y'] <= 100):
+                raise ValueError('Invalid trainer position')
+            data['trainers'][trainer['zone']].append(trainer)
+        for key in ids:
+            data['coverage'][key]['trainers'] = {'status':'guide_list' if data['trainers'][key] else 'no_guide_records',
+                'records':len(data['trainers'][key]),'coordinate_alignment':'unverified','complete':False}
+        (target/'coverage.json').write_text(json.dumps(data['coverage'],ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        for layer in ['ore','herbs']:
+            for points in data[layer].values():
+                for point in points:
+                    info = data['catalog'].get(str(point[2]))
+                    if not info or info['kind'] != layer:
+                        raise ValueError('Unmapped resource type')
+        text = json.dumps(data,ensure_ascii=False,separators=(',',':'))
+        data_path.write_text(text+'\n',encoding='utf-8')
+        (target/'data.js').write_text('window.WOW_DATA='+text+';\n',encoding='utf-8')
         result = {name:(target/name).read_bytes() for name in EXPORTS}
     manifest = {'version':1, 'inputs':lock['files'], 'exports':{
         name:hashlib.sha256(content).hexdigest() for name,content in result.items()}}

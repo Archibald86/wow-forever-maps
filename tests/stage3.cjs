@@ -39,7 +39,7 @@ const {chromium}=require('playwright');
     assert.deepEqual(await state(),{zone:'swampofsorrows_c60',level:'42',mode:'cells',mobs:true,density:true,ores:true,herbs:false,only:false});scenarios++;
     assert.equal(await page.locator('#legend [data-delta]').count(),12);
     const legend=await page.locator('#legend').innerText();assert.ok(legend.includes('≤−8')&&legend.includes('−7…−5')&&legend.includes('≥+5'));
-    assert.equal(await page.locator('#resource-legend span').count(),3);scenarios++;
+    assert.equal(await page.locator('#resource-legend span').count(),4);scenarios++;
     await page.uncheck('#density');await page.uncheck('#ores');
     const cells=await page.locator('#overlay').evaluate(c=>c.toDataURL());
     await page.selectOption('#mode','dots');
@@ -47,6 +47,7 @@ const {chromium}=require('playwright');
     await page.selectOption('#mode','cells');await page.check('#density');
     await page.setViewportSize({width:390,height:844});
     await page.waitForFunction(()=>document.getElementById('density-hint').textContent.includes('На узкой карте'));
+    await page.locator('#overlay').scrollIntoViewIfNeeded();
     const target=await page.evaluate(()=>{
       const [x,y,level,density]=WOW_DATA.mobs[document.getElementById('zone').value][0];
       const r=document.getElementById('overlay').getBoundingClientRect();
