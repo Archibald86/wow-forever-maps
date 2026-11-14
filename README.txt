@@ -14,3 +14,5 @@ Catalog: database.html. Optional NPC map layer; direct file atlas fallback retai
 Sources/terms: sources/questie/NOTICE.md. Rebuild: python tools/build_data.py --check
 
 Creature type filters: see CREATURE_TYPES.md. Classic reference types are preliminary; unknowns remain explicit.
+
+Selected NPC area counts, grouping, zoom and shared coordinates: see NPC_AREA.md. These are source position records, not live creature counts.

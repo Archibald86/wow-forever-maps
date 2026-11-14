@@ -4,8 +4,8 @@
   const resources=typeof module!=='undefined'&&module.exports?require('./resources.js'):window.WowResources;
   const creatureTypes=typeof module!=='undefined'&&module.exports?require('./creature-types.js'):window.WowCreatureTypes;
   const DEFAULTS={zone:'swampofsorrows_c60',level:42,mobs:true,density:true,ores:true,herbs:false,only:false,mode:'cells',
-    npcs:false,npcRole:'all',npcQuery:'',npcType:'all',trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
-  const FLAGS=['npcs','mobs','density','ores','herbs','only','trainers','skillFilter','unknownSkill'];
+    npcs:false,npcRole:'all',npcQuery:'',npcType:'all',areaRadius:5,mapZoom:1,npcGrouping:'auto',hideServices:false,trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
+  const FLAGS=['hideServices','npcs','mobs','density','ores','herbs','only','trainers','skillFilter','unknownSkill'];
   const PALETTE={'-4':'#00c853','-3':'#58d96d','-2':'#a5e88d','-1':'#d9ef9a','0':'#fff5a5','1':'#ffeb00','2':'#ffbc00','3':'#ff8900','4':'#ff5600'};
   const LEGEND=[[-8,'≤−8'],[-6,'−7…−5'],[-4,'−4'],[-3,'−3'],[-2,'−2'],[-1,'−1'],[0,'0'],[1,'+1'],[2,'+2'],[3,'+3'],[4,'+4'],[5,'≥+5']];
   const color=delta=>delta<=-8?'#9ca3af':delta<=-5?'#28975b':delta>=5?'#e82127':PALETTE[delta];
@@ -49,11 +49,24 @@
     }
     if(creatureTypes.validFilter(saved.npcType))state.npcType=saved.npcType;
     if(creatureTypes.validFilter(query.get('npcType')))state.npcType=query.get('npcType');
+    for(const [key,allowed] of [['areaRadius',[2,5,10,20]],['mapZoom',[1,1.5,2,3]]]) {
+      if(allowed.includes(Number(saved[key])))state[key]=Number(saved[key]);
+      if(query.has(key)&&allowed.includes(Number(query.get(key))))state[key]=Number(query.get(key));
+    }
+    if(['auto','points'].includes(saved.npcGrouping))state.npcGrouping=saved.npcGrouping;
+    if(['auto','points'].includes(query.get('npcGrouping')))state.npcGrouping=query.get('npcGrouping');
+    if(['areaX','areaY'].every(key=>query.has(key)&&query.get(key).trim()!==''&&Number.isFinite(Number(query.get(key)))&&Number(query.get(key))>=0&&Number(query.get(key))<=100)) {
+      state.areaX=Number(query.get('areaX'));state.areaY=Number(query.get('areaY'));
+    }
     return state;
   }
   function toUrl(href,state) {
     const url=new URL(href);
     for(const key of Object.keys(DEFAULTS))url.searchParams.set(key,FLAGS.includes(key)?(state[key]?'1':'0'):String(state[key]));
+    for(const key of ['areaX','areaY']) {
+      if(typeof state[key]==='number'&&Number.isFinite(state[key])&&state[key]>=0&&state[key]<=100)url.searchParams.set(key,String(state[key]));
+      else url.searchParams.delete(key);
+    }
     return url.href;
   }
   const api={KEY,DEFAULTS,FLAGS,LEGEND,color,readSaved,writeSaved,resolve,toUrl};

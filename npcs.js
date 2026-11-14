@@ -30,6 +30,7 @@
     return pending;
   }
   function matches(meta,options) {
+    if(options.hideServices&&(meta.flags&(16|128|4096|8192|65536|131072|1048576|2097152|4194304)))return false;
     if(!creatureTypes.matches(meta.creature,options.npcType))return false;
     const query=(options.npcQuery||'').trim().toLocaleLowerCase('ru');
     if(/^\d+$/.test(query)&&meta.id!==Number(query))return false;

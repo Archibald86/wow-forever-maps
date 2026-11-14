@@ -3,13 +3,14 @@
   const $ = id => document.getElementById(id);
   const zone=$('zone'), img=$('terrain'), canvas=$('overlay'), ctx=canvas.getContext('2d');
   const lv=$('level'), lvnum=$('levelnum'), stats=$('stats'), error=$('data-error');
-  const controls=[...document.querySelectorAll('.controls input,.controls select,.resource-filters input,.resource-filters select,.npc-filters input,.npc-filters select')];
+  const controls=[...document.querySelectorAll('.controls input,.controls select,.resource-filters input,.resource-filters select,.npc-filters input,.npc-filters select,.area-controls select,.area-panel select')];
   if(!window.WowSettings||!window.WowResources) {
     controls.forEach(control=>control.disabled=true);error.hidden=false;stats.textContent='';
     $('share').disabled=true;$('reset-settings').disabled=true;
     $('retry').addEventListener('click',()=>location.reload());return;
   }
   let data, mapReady=false, selectedCell=null, maxDensity=50, visiblePoints=[], selectedPointKey=null;
+  let selectedArea=null,visibleClusters=[],areaPanelKey=null;
   let npcData=null,npcLoading=false,npcFailed=false;
   async function loadNpcs() {
     if(npcLoading||npcData||npcFailed||!$('npcs').checked)return;
@@ -40,7 +41,7 @@
     if (!data || !mapReady) return;
     const id=zone.value,L=WowApp.normalizeLevel(lv.value),rows=data.mobs[id],options=currentState();
     const ores=WowResources.filterPoints(data,'ore',id,options),herbs=WowResources.filterPoints(data,'herbs',id,options);
-    visiblePoints=[];
+    visiblePoints=[];visibleClusters=[];
     const W=img.naturalWidth,H=img.naturalHeight;
     if(canvas.width!==W||canvas.height!==H){canvas.width=W;canvas.height=H;}
     ctx.clearRect(0,0,W,H);
@@ -92,21 +93,32 @@
       ctx.fillRect(x-5,y-5,10,10);ctx.strokeRect(x-5,y-5,10,10);
       visiblePoints.push({key:'trainer:'+trainer.id,kind:'trainer',x:trainer.x,y:trainer.y,meta:trainer});
     }
-    let npcCount=0;
-    if($('npcs').checked&&npcData)for(const [xp,yp,npcId] of npcData.maps[id]||[]) {
-      const meta=npcData.npcs[npcId];
-      if(!WowNpcs.matches(meta,options))continue;
-      npcCount++;
-      const x=xp*W/100,y=yp*H/100;
-      ctx.beginPath();ctx.moveTo(x,y-5);ctx.lineTo(x+4.5,y+4);ctx.lineTo(x-4.5,y+4);ctx.closePath();
-      ctx.fillStyle=meta.quest_starts.length?'#ffe185':'#77dce8';ctx.fill();ctx.strokeStyle='#0b2732';ctx.lineWidth=1;ctx.stroke();
-      visiblePoints.push({key:`npc:${npcId}:${xp}:${yp}`,kind:'npc',x:xp,y:yp,meta});
+    const npcPositions=$('npcs').checked&&npcData?WowNpcArea.unique(npcData.maps[id]||[]).filter(p=>WowNpcs.matches(npcData.npcs[p[2]],options)):[];
+    const npcCount=npcPositions.length;
+    for(const [xp,yp,npcId] of npcPositions)visiblePoints.push({key:`npc:${npcId}:${xp}:${yp}`,kind:'npc',x:xp,y:yp,meta:npcData.npcs[npcId]});
+    const grouped=$('npcGrouping').value==='auto'&&Number($('mapZoom').value)<2;
+    const bundles=grouped?WowNpcArea.clusters(npcPositions,canvas.clientWidth,canvas.clientHeight):npcPositions.map(p=>({x:p[0],y:p[1],count:1,points:[p]}));
+    for(const bundle of bundles) {
+      const x=bundle.x*W/100,y=bundle.y*H/100;
+      if(bundle.count>1) {
+        visibleClusters.push(bundle);
+        const scale=W/canvas.clientWidth,radius=(bundle.count>=100?17:14)*scale;
+        ctx.beginPath();ctx.arc(x,y,radius,0,Math.PI*2);ctx.fillStyle='#124b5d';ctx.fill();ctx.strokeStyle='#9ee4e8';ctx.lineWidth=1.5*scale;ctx.stroke();
+        ctx.font=`bold ${12*scale}px system-ui`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle='#fff5cb';ctx.fillText(String(bundle.count),x,y);
+      }else {
+        const meta=npcData.npcs[bundle.points[0][2]];
+        ctx.beginPath();ctx.moveTo(x,y-5);ctx.lineTo(x+4.5,y+4);ctx.lineTo(x-4.5,y+4);ctx.closePath();
+        ctx.fillStyle=meta.quest_starts.length?'#ffe185':'#77dce8';ctx.fill();ctx.strokeStyle='#0b2732';ctx.lineWidth=1;ctx.stroke();
+      }
     }
+    $('npc-cluster-status').textContent=$('npcs').checked&&npcData?
+      (visibleClusters.length?`${visibleClusters.length} групп и ${bundles.length-visibleClusters.length} отдельных позиций. Число в группе — записи координат. При масштабе 200% и выше показаны отдельные позиции.`:`Отдельных позиций NPC: ${npcCount}.`):'';
     if($('npcs').checked&&!npcData)loadNpcs();
     $('npc-retry').hidden=!($('npcs').checked&&npcFailed);
     $('npc-status').textContent=!$('npcs').checked?'Слой NPC выключен. Координаты QuestieDB доступны отдельно от оценочной плотности.':
       npcData?`NPC: ${npcCount} из ${npcData.maps[id].length} записей координат подходят фильтрам. Это справочные позиции, не число живых NPC. Совмещение в игре не проверено.`:
       npcFailed?'Не удалось загрузить NPC. Остальные слои доступны; повторите загрузку.':'Загрузка координат NPC…';
+    drawAreaCircle();renderAreaPanel();
     drawSelection();
     const unknown=[...WowResources.filterPoints(data,'ore',id,{...options,skillFilter:false}),...WowResources.filterPoints(data,'herbs',id,{...options,skillFilter:false})].filter(point=>data.catalog[point[2]].min_skill===null).length;
     $('filter-status').textContent=`Ресурс: ${options.resource==='all'?'все':data.catalog[options.resource].name}. `+
@@ -123,26 +135,83 @@
     parts.push(`NPC QuestieDB: ${data.coverage[id].npcs.records} записей координат`);
     $('coverage').textContent=parts.join(' · ')+'. Совмещение координат ресурсов с картой в игре ещё не проверено.';
   }
-  function setZone() {
+  function setZone(center=null) {
     if(!data)return;
-    selectedCell=null;selectedPointKey=null;visiblePoints=[];mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);
-    $('npc-status').textContent='Загрузка карты…';
+    selectedArea=center;areaPanelKey=null;selectedCell=center?[Math.min(19,Math.floor(center.x/5)),Math.min(19,Math.floor(center.y/5))]:null;selectedPointKey=null;visiblePoints=[];visibleClusters=[];mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);
+    $('npc-status').textContent='Загрузка карты…';renderAreaPanel();
     stats.textContent='Загрузка карты…';$('coverage').textContent='';$('map-tooltip').hidden=true;$('point-options').disabled=true;$('point-info').textContent='Загрузка карты…';$('point-source').hidden=true;
     img.alt='Карта: '+data.maps.find(map=>map.id===zone.value).name;
     img.src='maps/'+zone.value+'.jpg';
-    if(img.complete&&img.naturalWidth){mapReady=true;draw();}
+    if(img.complete&&img.naturalWidth){mapReady=true;applyZoom();draw();}
   }
-  img.onload=()=>{mapReady=true;draw();};
+  img.onload=()=>{mapReady=true;applyZoom();draw();};
   img.onerror=()=>{$('npc-status').textContent='Карта недоступна. Выберите другую локацию или повторите загрузку.';mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);stats.textContent='Не удалось загрузить карту выбранной локации. Выберите другую локацию или повторите загрузку.';};
+  function nearestCluster(clientX,clientY) {
+    const rect=canvas.getBoundingClientRect();let best=null,distance=18*18;
+    for(const cluster of visibleClusters) {
+      const dx=rect.left+cluster.x*rect.width/100-clientX,dy=rect.top+cluster.y*rect.height/100-clientY;
+      if(dx*dx+dy*dy<=distance){best=cluster;distance=dx*dx+dy*dy;}
+    }
+    return best;
+  }
+  function drawAreaCircle() {
+    if(!selectedArea)return;
+    const x=selectedArea.x*canvas.width/100,y=selectedArea.y*canvas.height/100,r=Number($('areaRadius').value)*canvas.width/100;
+    ctx.save();ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fillStyle='#fff0aa13';ctx.fill();ctx.lineWidth=3*canvas.width/canvas.clientWidth;ctx.strokeStyle='#ffad42';ctx.setLineDash([6,4]);ctx.stroke();ctx.setLineDash([]);
+    ctx.beginPath();ctx.moveTo(x-5,y);ctx.lineTo(x+5,y);ctx.moveTo(x,y-5);ctx.lineTo(x,y+5);ctx.stroke();ctx.restore();
+  }
+  function renderAreaPanel() {
+    $('area-enable-npcs').hidden=$('npcs').checked;$('area-enable-npcs').disabled=!data;
+    $('area-clear').disabled=!selectedArea;$('area-zoom').disabled=!selectedArea||!mapReady||Number($('mapZoom').value)>=3;
+    if(!data||!mapReady){areaPanelKey=null;$('area-rows').replaceChildren();$('area-table-wrap').hidden=true;$('area-source').textContent='';$('area-status').textContent=data?'Ожидание карты…':'Сначала загрузите данные атласа.';return;}
+    const options=currentState(),key=JSON.stringify([zone.value,selectedArea,options.areaRadius,options.npcs,options.npcType,options.npcRole,options.npcQuery,options.only,options.level,options.hideServices,Boolean(npcData),npcLoading,npcFailed,mapReady]);
+    if(key===areaPanelKey)return;areaPanelKey=key;
+    const body=$('area-rows');body.replaceChildren();$('area-table-wrap').hidden=true;$('area-source').textContent='';
+    if(!data||!mapReady){$('area-status').textContent=data?'Ожидание карты…':'Сначала загрузите данные атласа.';return;}
+    if(!selectedArea){$('area-status').textContent='Нажмите на карту, чтобы выбрать область. Стрелки выбирают центр ячейки, Escape снимает выделение.';return;}
+    const location=`Центр ${selectedArea.x.toFixed(2)}, ${selectedArea.y.toFixed(2)} · радиус ${options.areaRadius}% ширины карты. `;
+    if(!options.npcs){$('area-status').textContent=location+'Включите NPC для подсчёта записей.';return;}
+    if(!npcData){$('area-status').textContent=location+(npcFailed?'Данные NPC недоступны. Используйте повторную загрузку NPC.':'Загрузка записей NPC…');return;}
+    const points=npcData.maps[zone.value]||[];
+    $('area-source').textContent=`Источник координат: QuestieDB Forever, снимок ${npcData.commit.slice(0,7)}. Совмещение в игре не проверено. Типы: WoW Forever Friends / CMaNGOS Classic, предварительно. Данных о текущей враждебности нет.`;
+    if(!points.length){$('area-status').textContent=location+'В источнике нет координат NPC для этой карты. Это не означает отсутствие существ в игре.';return;}
+    const summary=WowNpcArea.summarize(points,npcData.npcs,selectedArea,options.areaRadius,img.naturalHeight/img.naturalWidth,options);
+    $('area-status').textContent=location+`Показано ${summary.count} из ${summary.total} записей координат в круге; разных NPC ID: ${summary.entities}.`+
+      (!summary.count?' Нет записей с выбранными областью и фильтрами.':'');
+    for(const row of summary.rows) {
+      const tr=document.createElement('tr'),name=document.createElement('td'),link=document.createElement('a'),id=document.createElement('small');
+      tr.dataset.npcId=String(row.npc.id);tr.dataset.positions=String(row.count);
+      link.textContent=row.npc.name;link.href=`database.html?kind=npcs&id=${row.npc.id}`;id.textContent=`ID ${row.npc.id}`;name.append(link,id);tr.append(name);
+      for(const text of [`${row.npc.min_level??'?'}–${row.npc.max_level??'?'}`,WowCreatureTypes.label(row.npc.creature),String(row.count)]) {const cell=document.createElement('td');cell.textContent=text;tr.append(cell);}
+      tr.children[2].title=WowCreatureTypes.description(row.npc.creature);body.append(tr);
+    }
+    $('area-table-wrap').hidden=!summary.rows.length;
+  }
+  function applyZoom(center=true) {
+    const zoom=Number($('mapZoom').value)||1,viewport=$('map-viewport');
+    area.style.width=zoom*100+'%';area.style.maxWidth=zoom===1?'1100px':'none';area.style.margin=zoom===1?'auto':'0';viewport.style.maxHeight=zoom>1?'75vh':'none';
+    if(zoom===1){viewport.scrollLeft=0;viewport.scrollTop=0;}
+    if(center&&mapReady)requestAnimationFrame(()=>{
+      const focus=selectedArea||{x:50,y:50};
+      const rect=img.getBoundingClientRect(),frame=viewport.getBoundingClientRect();
+      viewport.scrollTo({left:viewport.scrollLeft+rect.left-frame.left+focus.x*rect.width/100-viewport.clientWidth/2,
+        top:viewport.scrollTop+rect.top-frame.top+focus.y*rect.height/100-viewport.clientHeight/2});
+    });
+  }
+  $('mapZoom').addEventListener('change',()=>{applyZoom();persist();draw();});
+  $('area-enable-npcs').addEventListener('click',()=>{if(!data)return;$('npcs').checked=true;persist();draw();});
+  $('area-clear').addEventListener('click',()=>{selectedArea=null;selectedCell=null;selectedPointKey=null;persist();draw();});
+  $('area-zoom').addEventListener('click',()=>{const next=WowNpcArea.ZOOMS.find(value=>value>Number($('mapZoom').value));if(next){$('mapZoom').value=next;applyZoom();persist();draw();}});
   function currentState() {
-    return {zone:zone.value,level:WowApp.normalizeLevel(lv.value),mode:$('mode').value,npcType:$('npcType').value,npcRole:$('npcRole').value,npcQuery:$('npcQuery').value,faction:$('faction').value,...WowResources.readControls(),
+    return {zone:zone.value,level:WowApp.normalizeLevel(lv.value),mode:$('mode').value,areaRadius:Number($('areaRadius').value),mapZoom:Number($('mapZoom').value),npcGrouping:$('npcGrouping').value,areaX:selectedArea?.x??null,areaY:selectedArea?.y??null,npcType:$('npcType').value,npcRole:$('npcRole').value,npcQuery:$('npcQuery').value,faction:$('faction').value,...WowResources.readControls(),
       ...Object.fromEntries(WowSettings.FLAGS.map(key=>[key,$(key).checked]))};
   }
   function persist() {
     if(!data)return;
     const state=currentState();
     $('trainer-faction-field').hidden=!state.trainers;
-    const saved=WowSettings.writeSaved(state);
+    const {areaX,areaY,...savedState}=state;
+    const saved=WowSettings.writeSaved(savedState);
     $('preference-status').textContent=saved?'Настройки сохраняются автоматически.':'Хранилище браузера недоступно. Настройки сохранены в ссылке.';
     const link=WowSettings.toUrl(location.href,state);
     $('farm-link').href=WowSettings.toUrl(new URL('index.html',location.href).href,state);
@@ -211,9 +280,9 @@
     if(event.pointerType==='touch'||!mapReady)return;
     cancelAnimationFrame(hoverFrame);
     hoverFrame=requestAnimationFrame(()=>{
-      const point=nearestPoint(event.clientX,event.clientY),tooltip=$('map-tooltip');tooltip.hidden=!point;
-      if(!point)return;
-      tooltip.textContent=pointLabel(point)+(point.kind==='npc'?` · ${WowCreatureTypes.label(point.meta.creature)}${point.meta.creature.type?' (предварительно, Classic)':''}`:'')+(['trainer','npc'].includes(point.kind)?'':point.meta.min_skill===null?' · навык неизвестен':` · навык ${point.meta.min_skill}`);
+      const point=nearestPoint(event.clientX,event.clientY),cluster=nearestCluster(event.clientX,event.clientY),tooltip=$('map-tooltip');tooltip.hidden=!point&&!cluster;
+      if(!point&&!cluster)return;
+      tooltip.textContent=cluster?`Группа: ${cluster.count} записей координат. Нажмите для выбора области.`:pointLabel(point)+(point.kind==='npc'?` · ${WowCreatureTypes.label(point.meta.creature)}${point.meta.creature.type?' (предварительно, Classic)':''}`:'')+(['trainer','npc'].includes(point.kind)?'':point.meta.min_skill===null?' · навык неизвестен':` · навык ${point.meta.min_skill}`);
       tooltip.style.left=Math.max(8,Math.min(event.clientX+12,innerWidth-290))+'px';
       tooltip.style.top=Math.max(8,Math.min(event.clientY+12,innerHeight-85))+'px';
     });
@@ -222,14 +291,16 @@
   function applyState(state) {
     zone.value=state.zone;setLevel(state.level);$('mode').value=state.mode;
     for(const key of WowSettings.FLAGS)$(key).checked=state[key];
+    selectedArea=typeof state.areaX==='number'&&typeof state.areaY==='number'?{x:state.areaX,y:state.areaY}:null;
+    $('areaRadius').value=state.areaRadius;$('mapZoom').value=state.mapZoom;$('npcGrouping').value=state.npcGrouping;applyZoom(false);
     WowResources.applyControls(state);$('faction').value=state.faction;$('npcType').value=state.npcType;$('npcRole').value=state.npcRole;$('npcQuery').value=state.npcQuery;
   }
-  zone.addEventListener('change',()=>{persist();setZone();});
+  zone.addEventListener('change',()=>{selectedArea=null;persist();setZone();});
   let levelSave;
   lv.addEventListener('input',()=>{setLevel(lv.value);draw();clearTimeout(levelSave);levelSave=setTimeout(persist,150);});
   lv.addEventListener('change',()=>{clearTimeout(levelSave);persist();});
   lvnum.addEventListener('change',()=>{setLevel(lvnum.value);persist();draw();});
-  for(const id of ['npcs','npcType','npcRole','npcQuery','mobs','density','ores','herbs','only','mode','trainers','focus','resource','miningSkill','herbalismSkill','skillFilter','unknownSkill','faction'])$(id).addEventListener('change',()=>{
+  for(const id of ['hideServices','areaRadius','npcGrouping','npcs','npcType','npcRole','npcQuery','mobs','density','ores','herbs','only','mode','trainers','focus','resource','miningSkill','herbalismSkill','skillFilter','unknownSkill','faction'])$(id).addEventListener('change',()=>{
     $('miningSkill').value=WowResources.normalizeSkill($('miningSkill').value);$('herbalismSkill').value=WowResources.normalizeSkill($('herbalismSkill').value);
     if(id==='resource'&&data.catalog[$('resource').value])$(data.catalog[$('resource').value].kind==='ore'?'ores':'herbs').checked=true;
     if(id==='focus'&&['ore','herbs'].includes($('focus').value))$($('focus').value==='ore'?'ores':'herbs').checked=true;
@@ -242,20 +313,23 @@
     if(x<0||x>1||y<0||y>1)return;
     const point=nearestPoint(event.clientX,event.clientY);
     selectedPointKey=point?.key||null;
+    selectedArea={x:Number((x*100).toFixed(4)),y:Number((y*100).toFixed(4))};
     selectedCell=[Math.min(19,Math.floor(x*20)),Math.min(19,Math.floor(y*20))];
-    area.focus({preventScroll:true});draw();
+    area.focus({preventScroll:true});persist();draw();
   });
   area.addEventListener('keydown',event=>{
     if(!data||!mapReady||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Escape'].includes(event.key))return;
     event.preventDefault();
     selectedPointKey=null;
-    if(event.key==='Escape')selectedCell=null;
+    if(event.key==='Escape'){selectedCell=null;selectedArea=null;}
     else {
       const cell=selectedCell||[10,10];
       selectedCell=[Math.max(0,Math.min(19,cell[0]+(event.key==='ArrowRight'?1:event.key==='ArrowLeft'?-1:0))),
         Math.max(0,Math.min(19,cell[1]+(event.key==='ArrowDown'?1:event.key==='ArrowUp'?-1:0)))];
     }
-    draw();
+    if(selectedCell)selectedArea={x:selectedCell[0]*5+2.5,y:selectedCell[1]*5+2.5};
+    if(selectedArea&&Number($('mapZoom').value)>1)applyZoom();
+    persist();draw();
   });
   for(const [delta,label] of WowSettings.LEGEND) {
     const item=document.createElement('span'),dot=document.createElement('i');
@@ -278,7 +352,7 @@
     $('point-options').disabled=true;$('map-tooltip').hidden=true;
     error.hidden=true;stats.textContent='Загрузка данных…';
     try {
-      if(!window.WowApp||!window.WowSettings||!window.WowResources)throw new Error('Application unavailable');
+      if(!window.WowApp||!window.WowSettings||!window.WowResources||!window.WowNpcArea)throw new Error('Application unavailable');
       data=await WowApp.loadData();
       zone.replaceChildren();
       for(const map of data.maps) {
@@ -291,10 +365,10 @@
       if($('skillFilter').checked||$('resource').value!=='all')document.querySelector('.resource-filters').open=true;
       maxDensity=Math.max(1,...Object.values(data.mobs).flat().map(cell=>cell[3]));
       $('density-scale').textContent=`В режиме ячеек насыщенность показывает индекс плотности (от 1 до ${maxDensity}), а не число живых мобов.`;
-      controls.forEach(control=>control.disabled=false);$('share').disabled=false;$('reset-settings').disabled=false;persist();setZone();
+      controls.forEach(control=>control.disabled=false);$('share').disabled=false;$('reset-settings').disabled=false;persist();setZone(selectedArea);
     } catch (_) {
       data=undefined;mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);
-      error.hidden=false;stats.textContent='';$('coverage').textContent='';
+      error.hidden=false;stats.textContent='';$('coverage').textContent='';selectedArea=null;renderAreaPanel();
     } finally { $('retry').disabled=false; }
   }
   $('retry').addEventListener('click',start);
