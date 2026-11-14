@@ -2,8 +2,9 @@
 (() => {
   const KEY='wow-forever-settings-v1';
   const resources=typeof module!=='undefined'&&module.exports?require('./resources.js'):window.WowResources;
+  const creatureTypes=typeof module!=='undefined'&&module.exports?require('./creature-types.js'):window.WowCreatureTypes;
   const DEFAULTS={zone:'swampofsorrows_c60',level:42,mobs:true,density:true,ores:true,herbs:false,only:false,mode:'cells',
-    npcs:false,npcRole:'all',npcQuery:'',trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
+    npcs:false,npcRole:'all',npcQuery:'',npcType:'all',trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
   const FLAGS=['npcs','mobs','density','ores','herbs','only','trainers','skillFilter','unknownSkill'];
   const PALETTE={'-4':'#00c853','-3':'#58d96d','-2':'#a5e88d','-1':'#d9ef9a','0':'#fff5a5','1':'#ffeb00','2':'#ffbc00','3':'#ff8900','4':'#ff5600'};
   const LEGEND=[[-8,'≤−8'],[-6,'−7…−5'],[-4,'−4'],[-3,'−3'],[-2,'−2'],[-1,'−1'],[0,'0'],[1,'+1'],[2,'+2'],[3,'+3'],[4,'+4'],[5,'≥+5']];
@@ -46,6 +47,8 @@
       if(valid(saved[key]))state[key]=saved[key];
       if(valid(query.get(key)))state[key]=query.get(key);
     }
+    if(creatureTypes.validFilter(saved.npcType))state.npcType=saved.npcType;
+    if(creatureTypes.validFilter(query.get('npcType')))state.npcType=query.get('npcType');
     return state;
   }
   function toUrl(href,state) {

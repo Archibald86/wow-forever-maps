@@ -18,19 +18,24 @@
     "questie/PROVENANCE.md": "f0af04c5daf16d72952710d6f78d82524f3c9d2f2876a1d59b86cc4759a7f628",
     "questie/tables.json.gz": "2393fcde574149c7a8b6d32905e54a03e6b179b3e8f76c932ea96bd249c8ef3d",
     "questie/provenance.json": "8f2b109a18cfb486947183cf307346d2cc80f24e63626f64e5cef7ae5987b058",
-    "questie/NOTICE.md": "8ccbbf848937ac5a39e15944bedddfc681e7390b7b1ad6b4c34f5bf55ab85ef4"
+    "questie/NOTICE.md": "8ccbbf848937ac5a39e15944bedddfc681e7390b7b1ad6b4c34f5bf55ab85ef4",
+    "creature_types/LICENSE.md": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b",
+    "creature_types/NOTICE.md": "97daf38790a2b4853ba258afae3ea8b07a63cc9ad36033acef6af2e8bb307a44",
+    "creature_types/upstream_provenance.json": "fc4c069adb2be759e6bd1a733a337e37651d4f7535362250a478a5c61a4fe0bd",
+    "creature_types/provenance.json": "df0e97db38cb68ba84a4d5fea4183cd4d16a8cfc9442a1a89ba8ee2a1362b12e",
+    "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd"
   },
   "exports": {
-    "data.json": "41506adb1ab3329702d6ad8ad70431db4fa31e28c2f584520572c7ef207bb9db",
-    "data.js": "cccd0fffa11eea84dee4a002bb6560a2cbbe0d5d79c1a4b6cadd9b3e2e9bb045",
-    "coverage.json": "8ff689e111c59796a0943e91a58957f1b7dac7bceb94a170d11367836442fee0",
+    "data.json": "c5b65024e8c2bb9d7a0991e0bb3b89a18e0f6c750e6d6795329d3b34f790a3f0",
+    "data.js": "b3a47ae405a704d6882f4436a0d52470cfe0773d46ce417f4440774e920ce63e",
+    "coverage.json": "415df70d6ec8c0962419c4f5ccc97d4f7c7960c1d0d76469e71ebc0ceb6fc810",
     "sources/resource_import_manifest.json": "2d1c8e4c4e4e01b2ee710bf44eb4ddb9e5e4b658c9c81c1a982e141b9e1cf9da",
-    "database/npcs.json": "7fe89f2739f2b169f3b809c76ef7ed3f08c94408c52e49a99c6850475b7328dc",
+    "database/npcs.json": "98aec748ae9b9b51c75da081735a6fc879c6651d82bb80bda4d149a395bf2d5e",
     "database/quests.json": "ee69fe4251575beba079d395ef3b11d7be2917cb01fd78f8662fd491649d30f1",
     "database/items.json": "605d59b0ae3aea3e857452fe6aebe853816d0a801c95daaf78788d8fccea35c4",
     "database/objects.json": "fd8558de4947e47f3abd7f85328e32fe886367c4bffc91657679721dfdaaf0a4",
-    "database/manifest.json": "27d5157415452cebb96aefabeaf036fbd4c6d577858fc1acb5ac81450add4a9b",
-    "npc-atlas.json": "fde468dd41061cd5b9f74666bb6a38a213f9ead360ed5f93f979869c988e9e82",
-    "npc-atlas.js": "fa320c245bf1c07ac129c72f5192ccef59bd8eaca4095adc380fc801726470ef"
+    "database/manifest.json": "b00cfaa93036243183cf75e5b03093947e3f9b184c70c85ef56c86fed644dd05",
+    "npc-atlas.json": "85e5398751e466eab862ae3b755d3fad096570264c509790b9a924a105095dc3",
+    "npc-atlas.js": "e6a7a49b92fe654839fe267b3c10120404c09ae634afe3d26afc3e55a36dfdba"
   }
 }

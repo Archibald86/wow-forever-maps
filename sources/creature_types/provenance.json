@@ -1,0 +1,11 @@
+{
+  "source": "https://www.wowforeverfriends.org/library/data/npcs.json",
+  "documentation": "https://www.wowforeverfriends.org/library/sources/",
+  "upstream": "https://github.com/cmangos/classic-db",
+  "original_sha256": "5c5a4524a3ad6a25c20902291d244baf32bb5f6b33c65c35847c7f5e1dcfb5f1",
+  "game_flavor": "classic-reference",
+  "forever_verified": false,
+  "license": "GPL-3.0",
+  "attribution": "WoW Forever Friends; CMaNGOS Classic-DB contributors",
+  "retrieved_at": "2026-11-14T22:50:29.354436+00:00"
+}

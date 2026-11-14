@@ -1,7 +1,9 @@
 /* Optional Questie NPC layer. Loading errors never disable the existing atlas. */
 (() => {
+  const creatureTypes=typeof module!=='undefined'&&module.exports?require('./creature-types.js'):window.WowCreatureTypes;
   function validate(data) {
-    if(!data||data.schema_version!==1||!data.maps||!data.npcs||!/^\w{40}$/.test(data.commit))throw new Error('Invalid NPC data');
+    if(!data||data.schema_version!==2||!data.maps||!data.npcs||!/^\w{40}$/.test(data.commit)||!data.creature_types||data.creature_types.forever_verified!==false)throw new Error('Invalid NPC data');
+    for(const npc of Object.values(data.npcs))creatureTypes.validate(npc.creature);
     for(const points of Object.values(data.maps)) {
       if(!Array.isArray(points))throw new Error('Missing NPC positions');
       for(const p of points)if(!Array.isArray(p)||p.length!==3||!p.every(Number.isFinite)||p[0]<0||p[0]>100||p[1]<0||p[1]>100||!data.npcs[p[2]])throw new Error('Invalid NPC position');
@@ -16,11 +18,11 @@
       if(location.protocol==='file:')return new Promise((resolve,reject)=>{
         const s=document.createElement('script'),timer=setTimeout(()=>finish(new Error('Timeout')),20000);
         function finish(error){clearTimeout(timer);s.remove();if(error)reject(error);else try{resolve(validate(window.WOW_NPCS));}catch(e){reject(e);}}
-        s.src='npc-atlas.js?v=questie1';s.onload=()=>finish();s.onerror=()=>finish(new Error('Load failed'));document.head.append(s);
+        s.src='npc-atlas.js?v=types1';s.onload=()=>finish();s.onerror=()=>finish(new Error('Load failed'));document.head.append(s);
       });
       const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);
       try {
-        const response=await fetch('npc-atlas.json?v=questie1',{signal:controller.signal});
+        const response=await fetch('npc-atlas.json?v=types1',{signal:controller.signal});
         if(!response.ok)throw new Error('Load failed');
         window.WOW_NPCS=validate(await response.json());return window.WOW_NPCS;
       }finally{clearTimeout(timer);}
@@ -28,6 +30,7 @@
     return pending;
   }
   function matches(meta,options) {
+    if(!creatureTypes.matches(meta.creature,options.npcType))return false;
     const query=(options.npcQuery||'').trim().toLocaleLowerCase('ru');
     if(/^\d+$/.test(query)&&meta.id!==Number(query))return false;
     if(query&&!/^\d+$/.test(query)&&!`${meta.id} ${meta.name} ${meta.name_en} ${meta.title||''}`.toLocaleLowerCase('ru').includes(query))return false;

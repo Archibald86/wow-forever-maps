@@ -26,6 +26,13 @@
       "source": "https://github.com/Questie/QuestieDB",
       "commit": "4dbb82440a27856f8dccf57094a5d792cdc7cc9b",
       "provenance": "questie/provenance.json"
+    },
+    "creature_types": {
+      "source": "https://www.wowforeverfriends.org/library/data/npcs.json",
+      "documentation": "https://www.wowforeverfriends.org/library/sources/",
+      "game_flavor": "classic-reference",
+      "forever_verified": false,
+      "provenance": "creature_types/provenance.json"
     }
   },
   "files": {
@@ -46,6 +53,11 @@
     "questie/PROVENANCE.md": "f0af04c5daf16d72952710d6f78d82524f3c9d2f2876a1d59b86cc4759a7f628",
     "questie/tables.json.gz": "2393fcde574149c7a8b6d32905e54a03e6b179b3e8f76c932ea96bd249c8ef3d",
     "questie/provenance.json": "8f2b109a18cfb486947183cf307346d2cc80f24e63626f64e5cef7ae5987b058",
-    "questie/NOTICE.md": "8ccbbf848937ac5a39e15944bedddfc681e7390b7b1ad6b4c34f5bf55ab85ef4"
+    "questie/NOTICE.md": "8ccbbf848937ac5a39e15944bedddfc681e7390b7b1ad6b4c34f5bf55ab85ef4",
+    "creature_types/LICENSE.md": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b",
+    "creature_types/NOTICE.md": "97daf38790a2b4853ba258afae3ea8b07a63cc9ad36033acef6af2e8bb307a44",
+    "creature_types/upstream_provenance.json": "fc4c069adb2be759e6bd1a733a337e37651d4f7535362250a478a5c61a4fe0bd",
+    "creature_types/provenance.json": "df0e97db38cb68ba84a4d5fea4183cd4d16a8cfc9442a1a89ba8ee2a1362b12e",
+    "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd"
   }
 }

@@ -7,6 +7,7 @@ from that checkout, gzip its JSON with mtime=0, update provenance and input lock
 import gzip
 import json
 import re
+from import_creature_types import read_types, classification
 
 
 def encode(value):
@@ -20,11 +21,13 @@ def sequence(value):
 def prepare(source, zones):
     raw=json.loads(gzip.decompress((source/'questie/tables.json.gz').read_bytes()))
     provenance=json.loads((source/'questie/provenance.json').read_text())
+    creature_lookup,creature_provenance=read_types(source)
+    creature_counts={'matched_ids':0,'known':0,'unknown':0,'name_changes':0}
     source_maps=json.loads((source/'zone_mapping.json').read_text())['zones']
     areas={key:int(raw['uiMapToArea'][str(ui)]) for key,ui in source_maps.items()}
     if set(areas)!={z['id'] for z in zones}:
         raise ValueError('Incomplete Questie map mapping')
-    atlas={'schema_version':1,'source':provenance['source'],'commit':provenance['commit'],
+    atlas={'schema_version':2,'source':provenance['source'],'commit':provenance['commit'],
            'alignment':'unverified','maps':{key:[] for key in areas},'npcs':{}}
     outputs={}
     counts={}
@@ -40,6 +43,12 @@ def prepare(source, zones):
             fields={label:row[index] for index,label in provenance['fields'][kind].items()
                     if index in row and index!='1' and label not in ['minLevelHealth','maxLevelHealth']}
             record={'id':ident,'name':name,'name_en':english,'fields':fields}
+            if kind=='npcs':
+                record['creature']=classification(ident,english,creature_lookup)
+                creature_counts['matched_ids']+=record['creature']['source'] is not None
+                creature_counts['known']+=record['creature']['type'] is not None
+                creature_counts['unknown']+=record['creature']['type'] is None
+                creature_counts['name_changes']+=record['creature']['name_changed']
             if kind=='quests' and isinstance(localized,dict) and localized.get('2'):
                 record['objectives_text']=sequence(localized['2'])
             records.append(record)
@@ -52,7 +61,8 @@ def prepare(source, zones):
             meta={'id':ident,'name':name,'name_en':english,'min_level':row.get('4'),
                   'max_level':row.get('5'),'rank':row.get('6',0),'flags':row.get('15',0),
                   'quest_starts':sequence(row.get('10')),'quest_ends':sequence(row.get('11')),
-                  'title':(localized.get('2') if isinstance(localized,dict) else None) or row.get('14')}
+                  'title':(localized.get('2') if isinstance(localized,dict) else None) or row.get('14'),
+                  'creature':record['creature']}
             for zone,area in areas.items():
                 seen=set()
                 for point in sequence((row.get('7') or {}).get(str(area))):
@@ -72,10 +82,17 @@ def prepare(source, zones):
             'source':provenance['source'],'commit':provenance['commit'],'rows':records})
     coverage={key:{'status':'static_source' if points else 'no_source_records',
         'records':len(points),'entities':len({p[2] for p in points}),'area_id':areas[key],
-        'coordinate_alignment':'unverified','complete':False} for key,points in atlas['maps'].items()}
+        'coordinate_alignment':'unverified','complete':False,
+        'typed_entities':len({p[2] for p in points if atlas['npcs'][str(p[2])]['creature']['type'] is not None})}
+        for key,points in atlas['maps'].items()}
+    type_summary={**creature_provenance,**creature_counts,
+        'mapped_known':sum(npc['creature']['type'] is not None for npc in atlas['npcs'].values()),
+        'mapped_unknown':sum(npc['creature']['type'] is None for npc in atlas['npcs'].values())}
+    atlas['creature_types']=type_summary
     summary={'source':provenance['source'],'commit':provenance['commit'],'counts':counts,
         'locale':'ruRU with enUS fallback','coverage':coverage,'excluded_map_entities':excluded,
         'invalid_positions_skipped':invalid,'duplicate_positions_skipped':duplicates,
+        'creature_types':type_summary,
         'limitations':['Static source; no live spawn counts or drop rates.',
             'No character-specific dynamic corrections or derived passes.',
             'NPC health placeholders omitted; original fields remain in pinned source.',

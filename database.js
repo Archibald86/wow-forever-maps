@@ -1,7 +1,9 @@
 (() => {
  const $=id=>document.getElementById(id),types=['npcs','quests','items','objects'],labels={npcs:'NPC',quests:'квестов',items:'предметов',objects:'объектов'};
  const params=new URLSearchParams(location.search),cache=new Map();
- let manifest,atlas,rows=[],filtered=[],page=0,request=0;
+ let manifest,atlas,rows=[],filtered=[],page=0,request=0,loadedKind=null;
+ WowCreatureTypes.populate($('dbCreatureType'));
+ $('dbCreatureType').value=WowCreatureTypes.validFilter(params.get('npcType'))?params.get('npcType'):'all';
  $('kind').value=types.includes(params.get('kind'))?params.get('kind'):'npcs';
  $('query').value=(params.get('id')||params.get('q')||'').slice(0,120);
  const seq=value=>Object.values(value||{});
@@ -23,7 +25,7 @@
    const area=atlas.coverage[map.id].npcs.area_id;
    if(!Object.hasOwn(spawns,String(area)))continue;
    const url=new URL('atlas.html',location.href);url.searchParams.set('zone',map.id);
-   if(kind==='npcs'){url.searchParams.set('npcs','1');url.searchParams.set('npcQuery',String(row.id));url.searchParams.set('npcRole','all');url.searchParams.set('only','0');url.searchParams.set('mobs','0');url.searchParams.set('density','0');}
+   if(kind==='npcs'){url.searchParams.set('npcs','1');url.searchParams.set('npcQuery',String(row.id));url.searchParams.set('npcRole','all');url.searchParams.set('npcType','all');url.searchParams.set('only','0');url.searchParams.set('mobs','0');url.searchParams.set('density','0');}
    links.append(link(kind==='npcs'?`NPC на карте: ${map.name}`:`Карта зоны: ${map.name}`,url.href));
   }
   if(links.childNodes.length)card.append(links);
@@ -36,6 +38,7 @@
    card.append(element('h2',row.name),element('p',`ID ${row.id} · ${row.name_en}`,'muted'));
    if(kind==='npcs') {
     card.append(element('p',`Уровни: ${f.minLevel??'?'}–${f.maxLevel??'?'}${f.subName?' · '+f.subName:''}`));
+    card.append(element('p',WowCreatureTypes.description(row.creature),'creature-type'));
     relation(card,'Выдаёт квесты','quests',seq(f.questStarts));relation(card,'Принимает квесты','quests',seq(f.questEnds));mapLinks(card,row,kind);
    } else if(kind==='quests') {
     card.append(element('p',`Уровень квеста: ${f.questLevel??'?'} · Минимальный уровень: ${f.requiredLevel??'?'}`));
@@ -60,23 +63,28 @@
  }
  function search() {
   const q=$('query').value.trim().toLocaleLowerCase('ru');
-  filtered=rows.filter(row=>!q||(/^\d+$/.test(q)?row.id===Number(q):`${row.name} ${row.name_en}`.toLocaleLowerCase('ru').includes(q)));
+  if(loadedKind!==$('kind').value)return;
+  filtered=rows.filter(row=>($('kind').value!=='npcs'||WowCreatureTypes.matches(row.creature,$('dbCreatureType').value))&&(!q||(/^\d+$/.test(q)?row.id===Number(q):`${row.name} ${row.name_en}`.toLocaleLowerCase('ru').includes(q))));
   page=0;render();
-  const url=new URL(location.href);url.search='';url.searchParams.set('kind',$('kind').value);if(q)url.searchParams.set(/^\d+$/.test(q)?'id':'q',$('query').value.trim());history.replaceState(null,'',url.href);
+  const url=new URL(location.href);url.search='';url.searchParams.set('kind',$('kind').value);if(q)url.searchParams.set(/^\d+$/.test(q)?'id':'q',$('query').value.trim());if($('kind').value==='npcs')url.searchParams.set('npcType',$('dbCreatureType').value);history.replaceState(null,'',url.href);
  }
  async function load() {
   const token=++request,kind=$('kind').value;
+  $('db-type-field').hidden=kind!=='npcs';$('db-type-note').hidden=kind!=='npcs';$('dbCreatureType').disabled=true;
   $('db-error').hidden=true;$('db-results').replaceChildren();$('db-status').textContent='Загрузка раздела…';$('previous').disabled=true;$('next').disabled=true;
   try {
-   const [m,a,section]=await Promise.all([manifest||get('database/manifest.json'),atlas||get('data.json?v=3.5'),cache.get(kind)||get(`database/${kind}.json`)]);
+   const [m,a,section]=await Promise.all([manifest||get('database/manifest.json?v=types1'),atlas||get('data.json?v=types1'),cache.get(kind)||get(`database/${kind}.json?v=types1`)]);
    if(token!==request)return;
    if(section.schema_version!==1||section.kind!==kind||!Array.isArray(section.rows)||section.commit!==m.commit||section.rows.length!==m.counts[kind])throw new Error('Invalid database');
-   manifest=m;atlas=a;cache.set(kind,section);rows=section.rows;
+   if(kind==='npcs')for(const row of section.rows)WowCreatureTypes.validate(row.creature);
+   manifest=m;atlas=a;cache.set(kind,section);rows=section.rows;loadedKind=kind;$('dbCreatureType').disabled=false;
    $('db-source').textContent=`QuestieDB Forever · снимок ${m.commit.slice(0,7)} · ${Object.entries(m.counts).map(([k,n])=>n.toLocaleString('ru-RU')+' '+labels[k]).join(' · ')}`;
-   $('db-download').href=`database/${kind}.json`;search();
+   $('db-download').href=`database/${kind}.json`;
+   if(kind==='npcs')$('db-type-note').textContent=`Типы: ${m.creature_types.known.toLocaleString('ru-RU')} предварительных значений Classic, ${m.creature_types.unknown.toLocaleString('ru-RU')} неизвестных. В Forever не подтверждены. Семейство, ранг и роль NPC хранятся отдельно.`;search();
   }catch(_){if(token!==request)return;rows=[];$('db-error').hidden=false;$('db-status').textContent='Раздел недоступен. Повторите загрузку.';}
  }
- $('database-search').addEventListener('submit',e=>{e.preventDefault();if(cache.has($('kind').value))search();else load();});
+ $('database-search').addEventListener('submit',e=>{e.preventDefault();if(loadedKind===$('kind').value&&cache.has($('kind').value))search();else load();});
+ $('dbCreatureType').addEventListener('change',search);
  $('kind').addEventListener('change',load);$('db-retry').addEventListener('click',load);
  $('previous').addEventListener('click',()=>{page--;render();});$('next').addEventListener('click',()=>{page++;render();});load();
 })();

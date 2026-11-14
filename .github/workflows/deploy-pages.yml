@@ -36,6 +36,8 @@ jobs:
           test -s settings.js
           test -s resources.js
           test -s npcs.js
+          test -s creature-types.js
+          test -s sources/creature_types/NOTICE.md
           test -s npc-atlas.json
           test -s npc-atlas.js
           test -s database.html
@@ -91,21 +93,23 @@ jobs:
           node tests/settings.cjs
           node tests/resources.cjs
           node tests/npcs.cjs
+          node tests/creature-types.cjs
           node tests/atlas-layout.cjs http://127.0.0.1:8765/
           node tests/stage2.cjs http://127.0.0.1:8765/
           node tests/stage3.cjs http://127.0.0.1:8765/
           node tests/stage4.cjs http://127.0.0.1:8765/
           node tests/questie.cjs http://127.0.0.1:8765/
+          node tests/creature-types-browser.cjs http://127.0.0.1:8765/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Stage site
         run: |
           mkdir -p _site
           cp index.html atlas.html forever-theme.css hero-v4.css data.js data.json coverage.json app-core.js atlas.js home.js settings.js resources.js login-gates.jpg wow-forever-hero-3344.jpg wow-forever-hero-mobile.webp _site/
-          cp database.html database.js database.css npcs.js npc-atlas.json npc-atlas.js _site/
+          cp database.html database.js database.css creature-types.js npcs.js npc-atlas.json npc-atlas.js _site/
           cp -R maps database _site/
           mkdir -p _site/sources
-          cp -R sources/questie _site/sources/
+          cp -R sources/questie sources/creature_types _site/sources/
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
