@@ -4,6 +4,8 @@
   function recommend() {
     if(!data)return;
     const L=WowApp.normalizeLevel(level.value);level.value=L;
+    WowSettings.writeSaved({...WowSettings.readSaved(),level:L});
+    try {const url=new URL(location.href);url.searchParams.set('level',String(L));history.replaceState(null,'',url.href);}catch(_){}
     const picks=[];
     for(const map of data.maps) {
       const rows=data.mobs[map.id],ores=data.ore[map.id];
@@ -29,13 +31,14 @@
   $('start').onclick=()=>{search.classList.add('visible');search.scrollIntoView({behavior:'smooth',block:'start'});recommend();};
   $('find').onclick=recommend;
   level.addEventListener('keydown',event=>{if(event.key==='Enter')recommend();});
-  level.addEventListener('change',()=>{if(window.WowApp)level.value=WowApp.normalizeLevel(level.value);});
+  level.addEventListener('change',()=>{if(window.WowApp){level.value=WowApp.normalizeLevel(level.value);WowSettings.writeSaved({...WowSettings.readSaved(),level:Number(level.value)});try{const url=new URL(location.href);url.searchParams.set('level',level.value);history.replaceState(null,'',url.href);}catch(_){}}});
   async function start() {
     $('start').disabled=true;$('find').disabled=true;$('retry').disabled=true;
     $('data-error').hidden=true;
     try {
-      if(!window.WowApp)throw new Error('Application unavailable');
+      if(!window.WowApp||!window.WowSettings)throw new Error('Application unavailable');
       data=await WowApp.loadData();
+      const query=new URLSearchParams(location.search);level.value=WowApp.normalizeLevel(query.has('level')?query.get('level'):(WowSettings.readSaved().level??42));
       $('ore-total').textContent=Object.values(data.ore).reduce((sum,rows)=>sum+rows.length,0).toLocaleString('ru-RU');
       $('herb-total').textContent=Object.values(data.herbs).reduce((sum,rows)=>sum+rows.length,0).toLocaleString('ru-RU');
       $('start').disabled=false;$('find').disabled=false;

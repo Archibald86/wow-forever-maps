@@ -8,21 +8,37 @@ import hashlib
 import json
 from pathlib import Path
 import zipfile
+from contextlib import contextmanager
 
 from rebuild_database import parse_mining
+
+
+@contextmanager
+def resource_source(source_path):
+    if source_path.is_dir():
+        lock = json.loads((source_path.parent/'build_inputs.json').read_text(encoding='utf-8'))
+        files = {}
+        for filename in ['MiningData.lua','HerbalismData.lua']:
+            raw = (source_path/filename).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != lock['files']['gathermate/'+filename]:
+                raise ValueError('Source checksum mismatch: '+filename)
+            files['GatherMate2_Data/forever/'+filename] = raw
+        yield lock['resource_archive_sha256'], files
+    else:
+        with zipfile.ZipFile(source_path) as archive:
+            yield hashlib.sha256(source_path.read_bytes()).hexdigest(), archive
 
 
 def import_resources(source_path, root):
     data_path = root/'data.json'
     data = json.loads(data_path.read_text(encoding='utf-8'))
     mapping = json.loads((root/'sources/zone_mapping.json').read_text(encoding='utf-8'))
-    source_hash = hashlib.sha256(source_path.read_bytes()).hexdigest()
     coverage = {}
-    with zipfile.ZipFile(source_path) as archive:
+    with resource_source(source_path) as (source_hash, archive):
         sources = {}
         for layer, filename in [('ore','MiningData.lua'), ('herbs','HerbalismData.lua')]:
             name = 'GatherMate2_Data/forever/' + filename
-            raw = archive.read(name)
+            raw = archive[name] if isinstance(archive,dict) else archive.read(name)
             parsed = parse_mining(raw.decode('utf-8-sig'))
             sources[layer] = {'archive_sha256':source_hash, 'path':name,
                               'sha256':hashlib.sha256(raw).hexdigest(),

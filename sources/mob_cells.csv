@@ -1,0 +1,4067 @@
+﻿map,zone_en,cell_x,cell_y,mob_level,density_index,x_from_pct,y_from_pct
+ashenvale_c60,Ashenvale,4,7,19,4,15,30
+ashenvale_c60,Ashenvale,5,8,19,8,20,35
+ashenvale_c60,Ashenvale,7,8,23,2,30,35
+ashenvale_c60,Ashenvale,7,9,24,2,30,40
+ashenvale_c60,Ashenvale,8,8,20,1,35,35
+ashenvale_c60,Ashenvale,11,6,27,1,50,25
+ashenvale_c60,Ashenvale,12,6,27,2,55,25
+ashenvale_c60,Ashenvale,2,3,21,44,5,10
+ashenvale_c60,Ashenvale,2,4,21,35,5,15
+ashenvale_c60,Ashenvale,2,6,20,9,5,25
+ashenvale_c60,Ashenvale,2,7,20,7,5,30
+ashenvale_c60,Ashenvale,3,3,20,23,10,10
+ashenvale_c60,Ashenvale,3,4,20,24,10,15
+ashenvale_c60,Ashenvale,3,5,18,15,10,20
+ashenvale_c60,Ashenvale,3,6,20,33,10,25
+ashenvale_c60,Ashenvale,3,7,20,16,10,30
+ashenvale_c60,Ashenvale,4,4,19,37,15,15
+ashenvale_c60,Ashenvale,4,5,20,17,15,20
+ashenvale_c60,Ashenvale,4,6,19,20,15,25
+ashenvale_c60,Ashenvale,4,8,19,26,15,35
+ashenvale_c60,Ashenvale,4,9,20,8,15,40
+ashenvale_c60,Ashenvale,4,10,21,42,15,45
+ashenvale_c60,Ashenvale,4,11,21,23,15,50
+ashenvale_c60,Ashenvale,4,12,21,22,15,55
+ashenvale_c60,Ashenvale,5,6,19,12,20,25
+ashenvale_c60,Ashenvale,5,7,19,23,20,30
+ashenvale_c60,Ashenvale,5,9,20,21,20,40
+ashenvale_c60,Ashenvale,5,10,21,31,20,45
+ashenvale_c60,Ashenvale,5,12,21,30,20,55
+ashenvale_c60,Ashenvale,5,13,23,16,20,60
+ashenvale_c60,Ashenvale,6,4,19,42,25,15
+ashenvale_c60,Ashenvale,6,5,19,16,25,20
+ashenvale_c60,Ashenvale,6,6,20,23,25,25
+ashenvale_c60,Ashenvale,6,7,19,31,25,30
+ashenvale_c60,Ashenvale,6,8,19,9,25,35
+ashenvale_c60,Ashenvale,6,11,21,32,25,50
+ashenvale_c60,Ashenvale,6,12,21,6,25,55
+ashenvale_c60,Ashenvale,6,13,24,31,25,60
+ashenvale_c60,Ashenvale,7,4,19,8,30,15
+ashenvale_c60,Ashenvale,7,5,19,50,30,20
+ashenvale_c60,Ashenvale,7,6,19,50,30,25
+ashenvale_c60,Ashenvale,7,7,20,14,30,30
+ashenvale_c60,Ashenvale,7,10,21,12,30,45
+ashenvale_c60,Ashenvale,7,11,21,21,30,50
+ashenvale_c60,Ashenvale,7,12,21,14,30,55
+ashenvale_c60,Ashenvale,7,14,23,24,30,65
+ashenvale_c60,Ashenvale,7,15,23,19,30,70
+ashenvale_c60,Ashenvale,8,7,24,34,35,30
+ashenvale_c60,Ashenvale,8,13,22,17,35,60
+ashenvale_c60,Ashenvale,8,14,23,27,35,65
+ashenvale_c60,Ashenvale,8,15,23,18,35,70
+ashenvale_c60,Ashenvale,9,7,24,39,40,30
+ashenvale_c60,Ashenvale,9,9,22,25,40,40
+ashenvale_c60,Ashenvale,9,10,21,26,40,45
+ashenvale_c60,Ashenvale,9,12,23,10,40,55
+ashenvale_c60,Ashenvale,9,13,23,34,40,60
+ashenvale_c60,Ashenvale,9,14,23,22,40,65
+ashenvale_c60,Ashenvale,9,15,23,8,40,70
+ashenvale_c60,Ashenvale,10,8,29,8,45,35
+ashenvale_c60,Ashenvale,10,9,22,32,45,40
+ashenvale_c60,Ashenvale,10,10,22,49,45,45
+ashenvale_c60,Ashenvale,10,11,23,16,45,50
+ashenvale_c60,Ashenvale,10,12,22,16,45,55
+ashenvale_c60,Ashenvale,10,13,23,33,45,60
+ashenvale_c60,Ashenvale,10,14,24,43,45,65
+ashenvale_c60,Ashenvale,10,15,24,38,45,70
+ashenvale_c60,Ashenvale,11,7,29,21,50,30
+ashenvale_c60,Ashenvale,11,8,30,26,50,35
+ashenvale_c60,Ashenvale,11,9,22,8,50,40
+ashenvale_c60,Ashenvale,11,10,23,17,50,45
+ashenvale_c60,Ashenvale,11,11,23,25,50,50
+ashenvale_c60,Ashenvale,11,12,23,11,50,55
+ashenvale_c60,Ashenvale,11,13,24,36,50,60
+ashenvale_c60,Ashenvale,11,14,24,10,50,65
+ashenvale_c60,Ashenvale,11,15,24,30,50,70
+ashenvale_c60,Ashenvale,12,7,27,27,55,30
+ashenvale_c60,Ashenvale,12,8,27,39,55,35
+ashenvale_c60,Ashenvale,12,9,27,27,55,40
+ashenvale_c60,Ashenvale,12,11,25,12,55,50
+ashenvale_c60,Ashenvale,12,12,23,21,55,55
+ashenvale_c60,Ashenvale,12,13,24,19,55,60
+ashenvale_c60,Ashenvale,12,14,24,22,55,65
+ashenvale_c60,Ashenvale,12,15,25,30,55,70
+ashenvale_c60,Ashenvale,12,16,24,11,55,75
+ashenvale_c60,Ashenvale,13,8,27,30,60,35
+ashenvale_c60,Ashenvale,13,9,27,20,60,40
+ashenvale_c60,Ashenvale,13,10,27,17,60,45
+ashenvale_c60,Ashenvale,13,11,25,17,60,50
+ashenvale_c60,Ashenvale,13,12,26,16,60,55
+ashenvale_c60,Ashenvale,13,13,26,35,60,60
+ashenvale_c60,Ashenvale,13,14,26,24,60,65
+ashenvale_c60,Ashenvale,13,15,27,13,60,70
+ashenvale_c60,Ashenvale,13,16,21,21,60,75
+ashenvale_c60,Ashenvale,14,10,25,34,65,45
+ashenvale_c60,Ashenvale,14,11,26,25,65,50
+ashenvale_c60,Ashenvale,14,12,27,15,65,55
+ashenvale_c60,Ashenvale,14,13,26,32,65,60
+ashenvale_c60,Ashenvale,14,14,27,23,65,65
+ashenvale_c60,Ashenvale,14,15,21,9,65,70
+ashenvale_c60,Ashenvale,14,16,22,26,65,75
+ashenvale_c60,Ashenvale,14,17,26,22,65,80
+ashenvale_c60,Ashenvale,14,18,22,14,65,85
+ashenvale_c60,Ashenvale,15,10,26,19,70,45
+ashenvale_c60,Ashenvale,15,11,26,14,70,50
+ashenvale_c60,Ashenvale,15,12,27,20,70,55
+ashenvale_c60,Ashenvale,15,15,24,36,70,70
+ashenvale_c60,Ashenvale,15,16,21,15,70,75
+ashenvale_c60,Ashenvale,15,17,28,12,70,80
+ashenvale_c60,Ashenvale,16,9,30,17,75,40
+ashenvale_c60,Ashenvale,16,10,29,17,75,45
+ashenvale_c60,Ashenvale,16,11,27,13,75,50
+ashenvale_c60,Ashenvale,16,12,28,9,75,55
+ashenvale_c60,Ashenvale,16,13,26,17,75,60
+ashenvale_c60,Ashenvale,16,14,21,42,75,65
+ashenvale_c60,Ashenvale,16,15,29,22,75,70
+ashenvale_c60,Ashenvale,16,16,29,12,75,75
+ashenvale_c60,Ashenvale,16,17,30,32,75,80
+ashenvale_c60,Ashenvale,16,18,30,8,75,85
+ashenvale_c60,Ashenvale,17,10,30,21,80,45
+ashenvale_c60,Ashenvale,17,11,28,17,80,50
+ashenvale_c60,Ashenvale,17,12,27,8,80,55
+ashenvale_c60,Ashenvale,17,13,28,11,80,60
+ashenvale_c60,Ashenvale,17,14,30,49,80,65
+ashenvale_c60,Ashenvale,17,15,30,27,80,70
+ashenvale_c60,Ashenvale,17,16,30,40,80,75
+ashenvale_c60,Ashenvale,18,8,61,31,85,35
+ashenvale_c60,Ashenvale,18,9,61,7,85,40
+ashenvale_c60,Ashenvale,18,10,29,36,85,45
+ashenvale_c60,Ashenvale,18,11,28,17,85,50
+ashenvale_c60,Ashenvale,18,12,28,28,85,55
+ashenvale_c60,Ashenvale,18,13,28,35,85,60
+ashenvale_c60,Ashenvale,18,14,29,20,85,65
+ashenvale_c60,Ashenvale,18,16,30,35,85,75
+ashenvale_c60,Ashenvale,19,7,61,48,90,30
+ashenvale_c60,Ashenvale,19,8,61,50,90,35
+ashenvale_c60,Ashenvale,19,9,61,50,90,40
+ashenvale_c60,Ashenvale,19,10,29,18,90,45
+ashenvale_c60,Ashenvale,19,11,29,30,90,50
+ashenvale_c60,Ashenvale,19,12,29,16,90,55
+ashenvale_c60,Ashenvale,19,13,29,6,90,60
+ashenvale_c60,Ashenvale,20,8,61,24,95,35
+azshara_c60,Azshara,3,14,46,6,10,65
+azshara_c60,Azshara,3,15,47,11,10,70
+azshara_c60,Azshara,4,10,47,18,15,45
+azshara_c60,Azshara,4,11,53,20,15,50
+azshara_c60,Azshara,4,12,47,32,15,55
+azshara_c60,Azshara,4,13,47,20,15,60
+azshara_c60,Azshara,4,14,46,26,15,65
+azshara_c60,Azshara,4,15,46,27,15,70
+azshara_c60,Azshara,4,16,49,37,15,75
+azshara_c60,Azshara,5,10,46,32,20,45
+azshara_c60,Azshara,5,11,46,48,20,50
+azshara_c60,Azshara,5,12,46,42,20,55
+azshara_c60,Azshara,5,13,46,46,20,60
+azshara_c60,Azshara,5,14,46,14,20,65
+azshara_c60,Azshara,5,16,49,33,20,75
+azshara_c60,Azshara,5,17,49,7,20,80
+azshara_c60,Azshara,6,11,47,14,25,50
+azshara_c60,Azshara,6,12,47,36,25,55
+azshara_c60,Azshara,6,13,47,13,25,60
+azshara_c60,Azshara,6,16,49,45,25,75
+azshara_c60,Azshara,6,17,49,25,25,80
+azshara_c60,Azshara,7,9,48,39,30,40
+azshara_c60,Azshara,7,10,48,39,30,45
+azshara_c60,Azshara,7,11,48,28,30,50
+azshara_c60,Azshara,7,12,47,41,30,55
+azshara_c60,Azshara,7,16,49,40,30,75
+azshara_c60,Azshara,7,17,50,49,30,80
+azshara_c60,Azshara,8,7,51,14,35,30
+azshara_c60,Azshara,8,8,48,42,35,35
+azshara_c60,Azshara,8,9,48,21,35,40
+azshara_c60,Azshara,8,10,51,30,35,45
+azshara_c60,Azshara,8,11,51,18,35,50
+azshara_c60,Azshara,8,12,51,23,35,55
+azshara_c60,Azshara,8,13,49,13,35,60
+azshara_c60,Azshara,8,14,53,29,35,65
+azshara_c60,Azshara,8,15,51,21,35,70
+azshara_c60,Azshara,8,16,51,29,35,75
+azshara_c60,Azshara,8,17,50,17,35,80
+azshara_c60,Azshara,9,4,51,20,40,15
+azshara_c60,Azshara,9,5,52,15,40,20
+azshara_c60,Azshara,9,6,49,17,40,25
+azshara_c60,Azshara,9,7,49,24,40,30
+azshara_c60,Azshara,9,8,49,17,40,35
+azshara_c60,Azshara,9,9,51,18,40,40
+azshara_c60,Azshara,9,10,51,34,40,45
+azshara_c60,Azshara,9,11,51,43,40,50
+azshara_c60,Azshara,9,12,51,21,40,55
+azshara_c60,Azshara,9,13,51,33,40,60
+azshara_c60,Azshara,9,14,53,15,40,65
+azshara_c60,Azshara,9,15,53,38,40,70
+azshara_c60,Azshara,9,16,52,30,40,75
+azshara_c60,Azshara,9,17,53,24,40,80
+azshara_c60,Azshara,9,18,54,9,40,85
+azshara_c60,Azshara,10,4,51,21,45,15
+azshara_c60,Azshara,10,5,51,41,45,20
+azshara_c60,Azshara,10,6,52,22,45,25
+azshara_c60,Azshara,10,7,51,17,45,30
+azshara_c60,Azshara,10,9,51,50,45,40
+azshara_c60,Azshara,10,10,51,50,45,45
+azshara_c60,Azshara,10,11,51,50,45,50
+azshara_c60,Azshara,10,12,51,50,45,55
+azshara_c60,Azshara,10,13,51,50,45,60
+azshara_c60,Azshara,10,14,51,40,45,65
+azshara_c60,Azshara,10,15,53,19,45,70
+azshara_c60,Azshara,10,16,53,28,45,75
+azshara_c60,Azshara,10,17,53,29,45,80
+azshara_c60,Azshara,10,18,54,22,45,85
+azshara_c60,Azshara,10,19,55,22,45,90
+azshara_c60,Azshara,11,4,53,27,50,15
+azshara_c60,Azshara,11,5,51,8,50,20
+azshara_c60,Azshara,11,6,51,24,50,25
+azshara_c60,Azshara,11,7,51,29,50,30
+azshara_c60,Azshara,11,8,51,19,50,35
+azshara_c60,Azshara,11,9,54,33,50,40
+azshara_c60,Azshara,11,10,54,30,50,45
+azshara_c60,Azshara,11,12,55,11,50,55
+azshara_c60,Azshara,11,15,53,35,50,70
+azshara_c60,Azshara,11,16,53,24,50,75
+azshara_c60,Azshara,11,17,53,37,50,80
+azshara_c60,Azshara,11,18,54,23,50,85
+azshara_c60,Azshara,11,19,54,18,50,90
+azshara_c60,Azshara,11,20,55,24,50,95
+azshara_c60,Azshara,12,2,52,37,55,5
+azshara_c60,Azshara,12,4,53,23,55,15
+azshara_c60,Azshara,12,5,53,31,55,20
+azshara_c60,Azshara,12,6,53,36,55,25
+azshara_c60,Azshara,12,7,52,11,55,30
+azshara_c60,Azshara,12,9,54,25,55,40
+azshara_c60,Azshara,12,10,55,25,55,45
+azshara_c60,Azshara,12,11,55,14,55,50
+azshara_c60,Azshara,12,12,55,31,55,55
+azshara_c60,Azshara,12,13,54,27,55,60
+azshara_c60,Azshara,12,15,54,23,55,70
+azshara_c60,Azshara,12,16,53,39,55,75
+azshara_c60,Azshara,12,17,55,19,55,80
+azshara_c60,Azshara,12,18,53,15,55,85
+azshara_c60,Azshara,12,19,55,28,55,90
+azshara_c60,Azshara,12,20,55,18,55,95
+azshara_c60,Azshara,13,2,52,15,60,5
+azshara_c60,Azshara,13,3,53,8,60,10
+azshara_c60,Azshara,13,4,53,44,60,15
+azshara_c60,Azshara,13,5,53,21,60,20
+azshara_c60,Azshara,13,6,53,20,60,25
+azshara_c60,Azshara,13,8,55,23,60,35
+azshara_c60,Azshara,13,9,54,50,60,40
+azshara_c60,Azshara,13,12,54,45,60,55
+azshara_c60,Azshara,13,13,54,47,60,60
+azshara_c60,Azshara,13,15,55,38,60,70
+azshara_c60,Azshara,13,16,55,37,60,75
+azshara_c60,Azshara,13,17,53,35,60,80
+azshara_c60,Azshara,13,18,55,20,60,85
+azshara_c60,Azshara,13,19,55,19,60,90
+azshara_c60,Azshara,13,20,54,39,60,95
+azshara_c60,Azshara,14,3,53,25,65,10
+azshara_c60,Azshara,14,4,53,42,65,15
+azshara_c60,Azshara,14,5,53,39,65,20
+azshara_c60,Azshara,14,6,53,49,65,25
+azshara_c60,Azshara,14,7,53,15,65,30
+azshara_c60,Azshara,14,8,54,10,65,35
+azshara_c60,Azshara,14,15,55,26,65,70
+azshara_c60,Azshara,14,16,55,18,65,75
+azshara_c60,Azshara,14,17,54,20,65,80
+azshara_c60,Azshara,14,18,54,41,65,85
+azshara_c60,Azshara,14,19,54,17,65,90
+azshara_c60,Azshara,14,20,54,12,65,95
+azshara_c60,Azshara,15,2,52,50,70,5
+azshara_c60,Azshara,15,3,53,16,70,10
+azshara_c60,Azshara,15,4,55,21,70,15
+azshara_c60,Azshara,15,5,53,34,70,20
+azshara_c60,Azshara,15,6,53,44,70,25
+azshara_c60,Azshara,15,7,53,41,70,30
+azshara_c60,Azshara,15,8,54,19,70,35
+azshara_c60,Azshara,15,9,53,23,70,40
+azshara_c60,Azshara,15,15,54,31,70,70
+azshara_c60,Azshara,15,17,54,10,70,80
+azshara_c60,Azshara,15,18,55,25,70,85
+azshara_c60,Azshara,16,3,54,23,75,10
+azshara_c60,Azshara,16,4,55,39,75,15
+azshara_c60,Azshara,16,5,53,23,75,20
+azshara_c60,Azshara,16,6,53,44,75,25
+azshara_c60,Azshara,16,7,54,48,75,30
+azshara_c60,Azshara,16,8,54,36,75,35
+azshara_c60,Azshara,16,9,55,40,75,40
+azshara_c60,Azshara,16,10,55,11,75,45
+azshara_c60,Azshara,16,15,54,25,75,70
+azshara_c60,Azshara,16,16,54,30,75,75
+azshara_c60,Azshara,16,17,55,32,75,80
+azshara_c60,Azshara,16,18,54,26,75,85
+azshara_c60,Azshara,16,19,55,14,75,90
+azshara_c60,Azshara,17,2,52,50,80,5
+azshara_c60,Azshara,17,4,53,48,80,15
+azshara_c60,Azshara,17,5,53,21,80,20
+azshara_c60,Azshara,17,6,53,30,80,25
+azshara_c60,Azshara,17,7,54,17,80,30
+azshara_c60,Azshara,17,8,54,12,80,35
+azshara_c60,Azshara,17,9,52,44,80,40
+azshara_c60,Azshara,17,17,55,8,80,80
+azshara_c60,Azshara,17,18,55,10,80,85
+azshara_c60,Azshara,18,3,52,35,85,10
+azshara_c60,Azshara,18,4,52,34,85,15
+azshara_c60,Azshara,18,5,54,14,85,20
+azshara_c60,Azshara,18,6,53,26,85,25
+azshara_c60,Azshara,18,7,53,30,85,30
+azshara_c60,Azshara,18,8,53,6,85,35
+azshara_c60,Azshara,19,8,53,26,90,35
+barrens_c60,The Barrens,9,16,23,2,40,75
+barrens_c60,The Barrens,10,12,20,5,45,55
+barrens_c60,The Barrens,10,14,21,2,45,65
+barrens_c60,The Barrens,10,16,23,4,45,75
+barrens_c60,The Barrens,11,8,13,8,50,35
+barrens_c60,The Barrens,11,12,20,1,50,55
+barrens_c60,The Barrens,12,8,15,9,55,35
+barrens_c60,The Barrens,12,9,16,1,55,40
+barrens_c60,The Barrens,13,5,12,2,60,20
+barrens_c60,The Barrens,13,6,13,8,60,25
+barrens_c60,The Barrens,13,7,12,5,60,30
+barrens_c60,The Barrens,13,8,22,5,60,35
+barrens_c60,The Barrens,8,3,18,17,35,10
+barrens_c60,The Barrens,8,4,18,10,35,15
+barrens_c60,The Barrens,8,6,18,29,35,25
+barrens_c60,The Barrens,9,3,18,6,40,10
+barrens_c60,The Barrens,9,4,16,9,40,15
+barrens_c60,The Barrens,9,5,16,15,40,20
+barrens_c60,The Barrens,9,6,14,23,40,25
+barrens_c60,The Barrens,9,7,15,20,40,30
+barrens_c60,The Barrens,9,8,16,21,40,35
+barrens_c60,The Barrens,9,10,18,19,40,45
+barrens_c60,The Barrens,9,11,18,12,40,50
+barrens_c60,The Barrens,9,12,19,25,40,55
+barrens_c60,The Barrens,9,13,21,25,40,60
+barrens_c60,The Barrens,9,15,22,24,40,70
+barrens_c60,The Barrens,9,17,25,20,40,80
+barrens_c60,The Barrens,10,3,18,13,45,10
+barrens_c60,The Barrens,10,4,12,13,45,15
+barrens_c60,The Barrens,10,5,13,23,45,20
+barrens_c60,The Barrens,10,6,12,18,45,25
+barrens_c60,The Barrens,10,7,13,28,45,30
+barrens_c60,The Barrens,10,8,14,27,45,35
+barrens_c60,The Barrens,10,9,16,17,45,40
+barrens_c60,The Barrens,10,10,17,29,45,45
+barrens_c60,The Barrens,10,11,19,17,45,50
+barrens_c60,The Barrens,10,13,21,31,45,60
+barrens_c60,The Barrens,10,15,23,16,45,70
+barrens_c60,The Barrens,10,17,23,35,45,80
+barrens_c60,The Barrens,10,18,22,27,45,85
+barrens_c60,The Barrens,11,3,14,15,50,10
+barrens_c60,The Barrens,11,4,14,15,50,15
+barrens_c60,The Barrens,11,5,12,34,50,20
+barrens_c60,The Barrens,11,6,12,36,50,25
+barrens_c60,The Barrens,11,7,12,24,50,30
+barrens_c60,The Barrens,11,9,15,22,50,40
+barrens_c60,The Barrens,11,10,17,18,50,45
+barrens_c60,The Barrens,11,11,19,13,50,50
+barrens_c60,The Barrens,12,2,16,17,55,5
+barrens_c60,The Barrens,12,3,15,50,55,10
+barrens_c60,The Barrens,12,4,16,25,55,15
+barrens_c60,The Barrens,12,5,14,16,55,20
+barrens_c60,The Barrens,12,6,13,32,55,25
+barrens_c60,The Barrens,12,7,13,22,55,30
+barrens_c60,The Barrens,12,10,18,10,55,45
+barrens_c60,The Barrens,12,11,18,29,55,50
+barrens_c60,The Barrens,13,1,18,8,60,0
+barrens_c60,The Barrens,13,2,16,25,60,5
+barrens_c60,The Barrens,13,3,11,18,60,10
+barrens_c60,The Barrens,13,4,14,19,60,15
+barrens_c60,The Barrens,13,9,15,9,60,40
+barrens_c60,The Barrens,13,10,15,30,60,45
+barrens_c60,The Barrens,13,11,16,18,60,50
+barrens_c60,The Barrens,13,12,17,8,60,55
+barrens_c60,The Barrens,14,8,19,13,65,35
+barrens_c60,The Barrens,9,14,22,2,40,65
+barrens_c60,The Barrens,9,18,21,2,40,85
+blastedlands_c60,Blasted Lands,7,10,63,9,30,45
+blastedlands_c60,Blasted Lands,7,11,63,37,30,50
+blastedlands_c60,Blasted Lands,7,12,63,20,30,55
+blastedlands_c60,Blasted Lands,7,13,61,11,30,60
+blastedlands_c60,Blasted Lands,7,14,62,24,30,65
+blastedlands_c60,Blasted Lands,7,15,63,12,30,70
+blastedlands_c60,Blasted Lands,7,16,63,22,30,75
+blastedlands_c60,Blasted Lands,8,4,54,8,35,15
+blastedlands_c60,Blasted Lands,8,7,56,38,35,30
+blastedlands_c60,Blasted Lands,8,8,56,14,35,35
+blastedlands_c60,Blasted Lands,8,11,63,27,35,50
+blastedlands_c60,Blasted Lands,8,12,63,30,35,55
+blastedlands_c60,Blasted Lands,8,13,63,48,35,60
+blastedlands_c60,Blasted Lands,8,14,63,43,35,65
+blastedlands_c60,Blasted Lands,8,15,62,36,35,70
+blastedlands_c60,Blasted Lands,8,16,62,25,35,75
+blastedlands_c60,Blasted Lands,9,2,54,49,40,5
+blastedlands_c60,Blasted Lands,9,3,54,15,40,10
+blastedlands_c60,Blasted Lands,9,4,54,25,40,15
+blastedlands_c60,Blasted Lands,9,5,51,37,40,20
+blastedlands_c60,Blasted Lands,9,6,51,40,40,25
+blastedlands_c60,Blasted Lands,9,7,54,22,40,30
+blastedlands_c60,Blasted Lands,9,8,54,47,40,35
+blastedlands_c60,Blasted Lands,9,9,56,30,40,40
+blastedlands_c60,Blasted Lands,9,11,63,6,40,50
+blastedlands_c60,Blasted Lands,9,12,63,36,40,55
+blastedlands_c60,Blasted Lands,9,13,63,25,40,60
+blastedlands_c60,Blasted Lands,9,14,60,19,40,65
+blastedlands_c60,Blasted Lands,9,15,60,26,40,70
+blastedlands_c60,Blasted Lands,9,16,61,41,40,75
+blastedlands_c60,Blasted Lands,10,3,51,28,45,10
+blastedlands_c60,Blasted Lands,10,4,51,15,45,15
+blastedlands_c60,Blasted Lands,10,7,49,29,45,30
+blastedlands_c60,Blasted Lands,10,8,49,32,45,35
+blastedlands_c60,Blasted Lands,10,9,54,34,45,40
+blastedlands_c60,Blasted Lands,10,10,55,14,45,45
+blastedlands_c60,Blasted Lands,10,11,52,49,45,50
+blastedlands_c60,Blasted Lands,10,12,52,47,45,55
+blastedlands_c60,Blasted Lands,11,2,46,37,50,5
+blastedlands_c60,Blasted Lands,11,3,46,41,50,10
+blastedlands_c60,Blasted Lands,11,7,49,30,50,30
+blastedlands_c60,Blasted Lands,11,8,49,48,50,35
+blastedlands_c60,Blasted Lands,11,9,49,22,50,40
+blastedlands_c60,Blasted Lands,11,11,53,31,50,50
+blastedlands_c60,Blasted Lands,11,12,49,46,50,55
+blastedlands_c60,Blasted Lands,12,2,47,50,55,5
+blastedlands_c60,Blasted Lands,12,3,47,50,55,10
+blastedlands_c60,Blasted Lands,12,4,51,15,55,15
+blastedlands_c60,Blasted Lands,12,5,51,40,55,20
+blastedlands_c60,Blasted Lands,12,6,48,48,55,25
+blastedlands_c60,Blasted Lands,12,7,48,50,55,30
+blastedlands_c60,Blasted Lands,12,8,48,20,55,35
+blastedlands_c60,Blasted Lands,12,9,52,34,55,40
+blastedlands_c60,Blasted Lands,12,10,55,14,55,45
+blastedlands_c60,Blasted Lands,12,11,55,50,55,50
+blastedlands_c60,Blasted Lands,13,2,47,29,60,5
+blastedlands_c60,Blasted Lands,13,3,47,34,60,10
+blastedlands_c60,Blasted Lands,13,6,48,26,60,25
+blastedlands_c60,Blasted Lands,13,7,53,27,60,30
+blastedlands_c60,Blasted Lands,13,8,53,42,60,35
+blastedlands_c60,Blasted Lands,13,9,52,47,60,40
+blastedlands_c60,Blasted Lands,13,10,53,50,60,45
+blastedlands_c60,Blasted Lands,13,11,55,48,60,50
+blastedlands_c60,Blasted Lands,13,12,55,50,60,55
+blastedlands_c60,Blasted Lands,13,13,55,18,60,60
+blastedlands_c60,Blasted Lands,14,2,47,29,65,5
+blastedlands_c60,Blasted Lands,14,3,46,30,65,10
+blastedlands_c60,Blasted Lands,14,6,52,20,65,25
+blastedlands_c60,Blasted Lands,14,7,53,28,65,30
+blastedlands_c60,Blasted Lands,14,8,52,17,65,35
+blastedlands_c60,Blasted Lands,15,3,47,17,70,10
+blastedlands_c60,Blasted Lands,11,6,48,2,50,25
+burningsteppes_c60,Burning Steppes,2,12,51,44,5,55
+burningsteppes_c60,Burning Steppes,2,13,51,16,5,60
+burningsteppes_c60,Burning Steppes,3,12,51,20,10,55
+burningsteppes_c60,Burning Steppes,4,6,57,50,15,25
+burningsteppes_c60,Burning Steppes,4,7,57,35,15,30
+burningsteppes_c60,Burning Steppes,4,10,57,40,15,45
+burningsteppes_c60,Burning Steppes,4,11,57,31,15,50
+burningsteppes_c60,Burning Steppes,4,12,56,38,15,55
+burningsteppes_c60,Burning Steppes,5,9,57,33,20,40
+burningsteppes_c60,Burning Steppes,5,10,57,21,20,45
+burningsteppes_c60,Burning Steppes,5,12,56,50,20,55
+burningsteppes_c60,Burning Steppes,5,13,56,43,20,60
+burningsteppes_c60,Burning Steppes,5,14,56,45,20,65
+burningsteppes_c60,Burning Steppes,5,15,56,20,20,70
+burningsteppes_c60,Burning Steppes,6,9,56,8,25,40
+burningsteppes_c60,Burning Steppes,6,10,56,49,25,45
+burningsteppes_c60,Burning Steppes,6,11,57,6,25,50
+burningsteppes_c60,Burning Steppes,6,12,57,39,25,55
+burningsteppes_c60,Burning Steppes,6,13,56,42,25,60
+burningsteppes_c60,Burning Steppes,7,10,57,8,30,45
+burningsteppes_c60,Burning Steppes,7,11,57,14,30,50
+burningsteppes_c60,Burning Steppes,7,12,57,41,30,55
+burningsteppes_c60,Burning Steppes,7,13,58,43,30,60
+burningsteppes_c60,Burning Steppes,7,14,57,24,30,65
+burningsteppes_c60,Burning Steppes,7,15,57,31,30,70
+burningsteppes_c60,Burning Steppes,8,10,58,45,35,45
+burningsteppes_c60,Burning Steppes,8,11,54,26,35,50
+burningsteppes_c60,Burning Steppes,8,12,55,31,35,55
+burningsteppes_c60,Burning Steppes,8,13,55,35,35,60
+burningsteppes_c60,Burning Steppes,9,7,57,44,40,30
+burningsteppes_c60,Burning Steppes,9,8,57,49,40,35
+burningsteppes_c60,Burning Steppes,9,9,56,50,40,40
+burningsteppes_c60,Burning Steppes,9,10,54,32,40,45
+burningsteppes_c60,Burning Steppes,9,11,56,21,40,50
+burningsteppes_c60,Burning Steppes,9,12,56,35,40,55
+burningsteppes_c60,Burning Steppes,10,9,56,7,45,40
+burningsteppes_c60,Burning Steppes,10,10,56,49,45,45
+burningsteppes_c60,Burning Steppes,10,11,56,42,45,50
+burningsteppes_c60,Burning Steppes,10,12,55,21,45,55
+burningsteppes_c60,Burning Steppes,10,13,56,23,45,60
+burningsteppes_c60,Burning Steppes,11,5,54,8,50,20
+burningsteppes_c60,Burning Steppes,11,6,54,50,50,25
+burningsteppes_c60,Burning Steppes,11,7,55,35,50,30
+burningsteppes_c60,Burning Steppes,11,8,55,25,50,35
+burningsteppes_c60,Burning Steppes,11,10,56,48,50,45
+burningsteppes_c60,Burning Steppes,11,11,57,42,50,50
+burningsteppes_c60,Burning Steppes,11,12,57,15,50,55
+burningsteppes_c60,Burning Steppes,11,13,56,32,50,60
+burningsteppes_c60,Burning Steppes,12,7,54,26,55,30
+burningsteppes_c60,Burning Steppes,12,8,55,47,55,35
+burningsteppes_c60,Burning Steppes,12,9,54,16,55,40
+burningsteppes_c60,Burning Steppes,12,11,57,22,55,50
+burningsteppes_c60,Burning Steppes,12,12,53,18,55,55
+burningsteppes_c60,Burning Steppes,12,13,53,28,55,60
+burningsteppes_c60,Burning Steppes,13,6,54,7,60,25
+burningsteppes_c60,Burning Steppes,13,7,56,30,60,30
+burningsteppes_c60,Burning Steppes,13,8,55,39,60,35
+burningsteppes_c60,Burning Steppes,13,9,54,38,60,40
+burningsteppes_c60,Burning Steppes,13,11,54,19,60,50
+burningsteppes_c60,Burning Steppes,13,12,54,48,60,55
+burningsteppes_c60,Burning Steppes,13,13,54,50,60,60
+burningsteppes_c60,Burning Steppes,14,6,55,15,65,25
+burningsteppes_c60,Burning Steppes,14,7,54,20,65,30
+burningsteppes_c60,Burning Steppes,14,8,54,39,65,35
+burningsteppes_c60,Burning Steppes,14,9,54,25,65,40
+burningsteppes_c60,Burning Steppes,14,12,54,14,65,55
+burningsteppes_c60,Burning Steppes,14,13,54,28,65,60
+burningsteppes_c60,Burning Steppes,15,6,54,40,70,25
+burningsteppes_c60,Burning Steppes,15,7,55,37,70,30
+burningsteppes_c60,Burning Steppes,15,8,54,32,70,35
+burningsteppes_c60,Burning Steppes,15,9,54,10,70,40
+burningsteppes_c60,Burning Steppes,15,10,54,31,70,45
+burningsteppes_c60,Burning Steppes,15,12,52,7,70,55
+burningsteppes_c60,Burning Steppes,15,13,53,28,70,60
+burningsteppes_c60,Burning Steppes,16,6,54,27,75,25
+burningsteppes_c60,Burning Steppes,16,7,51,39,75,30
+burningsteppes_c60,Burning Steppes,16,8,52,41,75,35
+burningsteppes_c60,Burning Steppes,16,9,53,36,75,40
+burningsteppes_c60,Burning Steppes,16,10,51,32,75,45
+burningsteppes_c60,Burning Steppes,16,11,51,27,75,50
+burningsteppes_c60,Burning Steppes,16,12,51,32,75,55
+burningsteppes_c60,Burning Steppes,16,13,54,37,75,60
+burningsteppes_c60,Burning Steppes,17,6,54,47,80,25
+burningsteppes_c60,Burning Steppes,17,7,52,46,80,30
+burningsteppes_c60,Burning Steppes,17,8,52,37,80,35
+burningsteppes_c60,Burning Steppes,17,9,53,32,80,40
+burningsteppes_c60,Burning Steppes,17,10,53,50,80,45
+burningsteppes_c60,Burning Steppes,17,11,51,42,80,50
+burningsteppes_c60,Burning Steppes,17,12,52,8,80,55
+burningsteppes_c60,Burning Steppes,17,13,52,27,80,60
+burningsteppes_c60,Burning Steppes,18,6,53,23,85,25
+burningsteppes_c60,Burning Steppes,18,7,53,33,85,30
+burningsteppes_c60,Burning Steppes,18,8,54,30,85,35
+burningsteppes_c60,Burning Steppes,18,9,51,19,85,40
+burningsteppes_c60,Burning Steppes,18,10,51,28,85,45
+burningsteppes_c60,Burning Steppes,18,11,53,13,85,50
+burningsteppes_c60,Burning Steppes,18,12,53,50,85,55
+burningsteppes_c60,Burning Steppes,18,13,53,30,85,60
+burningsteppes_c60,Burning Steppes,19,7,53,12,90,30
+burningsteppes_c60,Burning Steppes,19,8,52,25,90,35
+burningsteppes_c60,Burning Steppes,19,9,53,27,90,40
+burningsteppes_c60,Burning Steppes,19,10,54,39,90,45
+burningsteppes_c60,Burning Steppes,19,11,54,44,90,50
+burningsteppes_c60,Burning Steppes,19,12,53,43,90,55
+darkshore_c60,Darkshore,8,7,10,21,35,30
+darkshore_c60,Darkshore,10,2,17,21,45,5
+darkshore_c60,Darkshore,12,2,20,21,55,5
+darkshore_c60,Darkshore,13,2,18,18,60,5
+darkshore_c60,Darkshore,9,3,15,23,40,10
+darkshore_c60,Darkshore,10,3,17,20,45,10
+darkshore_c60,Darkshore,11,3,20,23,50,10
+darkshore_c60,Darkshore,12,3,19,20,55,10
+darkshore_c60,Darkshore,13,3,20,20,60,10
+darkshore_c60,Darkshore,8,4,15,21,35,15
+darkshore_c60,Darkshore,9,4,14,23,40,15
+darkshore_c60,Darkshore,10,4,12,24,45,15
+darkshore_c60,Darkshore,11,4,20,20,50,15
+darkshore_c60,Darkshore,12,4,20,23,55,15
+darkshore_c60,Darkshore,13,4,20,19,60,15
+darkshore_c60,Darkshore,7,5,13,18,30,20
+darkshore_c60,Darkshore,8,5,13,22,35,20
+darkshore_c60,Darkshore,9,5,14,21,40,20
+darkshore_c60,Darkshore,10,5,15,23,45,20
+darkshore_c60,Darkshore,11,5,15,24,50,20
+darkshore_c60,Darkshore,12,5,17,20,55,20
+darkshore_c60,Darkshore,7,6,13,23,30,25
+darkshore_c60,Darkshore,8,6,13,24,35,25
+darkshore_c60,Darkshore,9,6,12,24,40,25
+darkshore_c60,Darkshore,10,6,15,24,45,25
+darkshore_c60,Darkshore,11,6,14,23,50,25
+darkshore_c60,Darkshore,12,6,17,18,55,25
+darkshore_c60,Darkshore,7,7,13,24,30,30
+darkshore_c60,Darkshore,9,7,13,18,40,30
+darkshore_c60,Darkshore,10,7,13,21,45,30
+darkshore_c60,Darkshore,7,8,13,21,30,35
+darkshore_c60,Darkshore,9,8,12,21,40,35
+darkshore_c60,Darkshore,10,8,12,20,45,35
+darkshore_c60,Darkshore,8,9,12,21,35,40
+darkshore_c60,Darkshore,9,9,13,23,40,40
+darkshore_c60,Darkshore,10,9,13,22,45,40
+darkshore_c60,Darkshore,8,10,10,20,35,45
+darkshore_c60,Darkshore,9,10,13,23,40,45
+darkshore_c60,Darkshore,10,10,11,18,45,45
+darkshore_c60,Darkshore,7,11,13,24,30,50
+darkshore_c60,Darkshore,8,11,12,23,35,50
+darkshore_c60,Darkshore,9,11,11,24,40,50
+darkshore_c60,Darkshore,7,12,15,24,30,55
+darkshore_c60,Darkshore,8,12,14,23,35,55
+darkshore_c60,Darkshore,9,12,13,21,40,55
+darkshore_c60,Darkshore,7,13,15,21,30,60
+darkshore_c60,Darkshore,8,13,14,24,35,60
+darkshore_c60,Darkshore,9,13,13,23,40,60
+darkshore_c60,Darkshore,7,14,15,22,30,65
+darkshore_c60,Darkshore,8,14,14,21,35,65
+darkshore_c60,Darkshore,9,14,15,19,40,65
+darkshore_c60,Darkshore,7,15,15,19,30,70
+darkshore_c60,Darkshore,8,15,15,21,35,70
+darkshore_c60,Darkshore,7,16,20,24,30,75
+darkshore_c60,Darkshore,8,16,15,24,35,75
+darkshore_c60,Darkshore,9,16,18,22,40,75
+darkshore_c60,Darkshore,7,17,18,20,30,80
+darkshore_c60,Darkshore,8,17,18,24,35,80
+darkshore_c60,Darkshore,9,17,18,24,40,80
+darkshore_c60,Darkshore,8,18,18,24,35,85
+darkshore_c60,Darkshore,9,18,18,22,40,85
+darkshore_c60,Darkshore,13,1,20,20,60,0
+darkshore_c60,Darkshore,7,10,13,3,30,45
+darkshore_c60,Darkshore,7,18,18,2,30,85
+darkshore_c60,Darkshore,9,19,18,2,40,90
+darkshore_c60,Darkshore,10,12,12,2,45,55
+darkshore_c60,Darkshore,11,7,16,14,50,30
+darkshore_c60,Darkshore,11,8,17,8,50,35
+darkshore_c60,Darkshore,12,7,16,4,55,30
+darkshore_c60,Darkshore,12,8,15,3,55,35
+desolace_c60,Desolace,9,4,33,2,40,15
+desolace_c60,Desolace,9,5,33,2,40,20
+desolace_c60,Desolace,10,2,32,2,45,5
+desolace_c60,Desolace,10,4,33,3,45,15
+desolace_c60,Desolace,10,5,33,3,45,20
+desolace_c60,Desolace,10,6,32,5,45,25
+desolace_c60,Desolace,11,2,31,6,50,5
+desolace_c60,Desolace,11,3,31,5,50,10
+desolace_c60,Desolace,11,5,33,5,50,20
+desolace_c60,Desolace,11,6,32,10,50,25
+desolace_c60,Desolace,11,7,32,7,50,30
+desolace_c60,Desolace,12,2,31,6,55,5
+desolace_c60,Desolace,12,3,32,7,55,10
+desolace_c60,Desolace,12,4,31,10,55,15
+desolace_c60,Desolace,12,5,31,11,55,20
+desolace_c60,Desolace,12,6,31,9,55,25
+desolace_c60,Desolace,12,7,31,3,55,30
+desolace_c60,Desolace,13,3,30,2,60,10
+desolace_c60,Desolace,13,4,30,2,60,15
+desolace_c60,Desolace,13,5,31,3,60,20
+desolace_c60,Desolace,13,6,31,4,60,25
+desolace_c60,Desolace,14,4,39,9,65,15
+desolace_c60,Desolace,14,5,31,8,65,20
+desolace_c60,Desolace,14,6,31,4,65,25
+desolace_c60,Desolace,14,7,31,4,65,30
+desolace_c60,Desolace,14,8,31,1,65,35
+desolace_c60,Desolace,15,2,32,1,70,5
+desolace_c60,Desolace,15,3,33,9,70,10
+desolace_c60,Desolace,15,4,32,11,70,15
+desolace_c60,Desolace,15,5,32,15,70,20
+desolace_c60,Desolace,15,6,31,13,70,25
+desolace_c60,Desolace,15,7,31,16,70,30
+desolace_c60,Desolace,15,8,32,2,70,35
+desolace_c60,Desolace,16,4,32,17,75,15
+desolace_c60,Desolace,16,5,32,12,75,20
+desolace_c60,Desolace,16,6,32,9,75,25
+desolace_c60,Desolace,16,7,32,10,75,30
+desolace_c60,Desolace,16,8,31,2,75,35
+desolace_c60,Desolace,17,4,32,2,80,15
+desolace_c60,Desolace,17,8,31,3,80,35
+desolace_c60,Desolace,4,15,35,17,15,70
+desolace_c60,Desolace,4,16,35,25,15,75
+desolace_c60,Desolace,4,17,34,16,15,80
+desolace_c60,Desolace,5,16,35,36,20,75
+desolace_c60,Desolace,5,17,35,43,20,80
+desolace_c60,Desolace,6,2,35,21,25,5
+desolace_c60,Desolace,6,3,37,21,25,10
+desolace_c60,Desolace,6,4,36,6,25,15
+desolace_c60,Desolace,6,11,42,24,25,50
+desolace_c60,Desolace,6,12,42,34,25,55
+desolace_c60,Desolace,6,13,42,49,25,60
+desolace_c60,Desolace,6,16,34,18,25,75
+desolace_c60,Desolace,6,17,39,24,25,80
+desolace_c60,Desolace,7,2,37,23,30,5
+desolace_c60,Desolace,7,3,37,16,30,10
+desolace_c60,Desolace,7,4,36,37,30,15
+desolace_c60,Desolace,7,5,35,44,30,20
+desolace_c60,Desolace,7,6,35,26,30,25
+desolace_c60,Desolace,7,7,35,25,30,30
+desolace_c60,Desolace,7,8,31,17,30,35
+desolace_c60,Desolace,7,11,39,34,30,50
+desolace_c60,Desolace,7,12,39,20,30,55
+desolace_c60,Desolace,7,13,42,22,30,60
+desolace_c60,Desolace,7,14,41,33,30,65
+desolace_c60,Desolace,7,16,38,21,30,75
+desolace_c60,Desolace,7,17,33,10,30,80
+desolace_c60,Desolace,8,5,33,47,35,20
+desolace_c60,Desolace,8,6,34,10,35,25
+desolace_c60,Desolace,8,7,34,21,35,30
+desolace_c60,Desolace,8,8,36,9,35,35
+desolace_c60,Desolace,8,9,37,7,35,40
+desolace_c60,Desolace,8,13,37,24,35,60
+desolace_c60,Desolace,8,15,35,13,35,70
+desolace_c60,Desolace,8,16,34,12,35,75
+desolace_c60,Desolace,8,17,34,25,35,80
+desolace_c60,Desolace,8,18,35,20,35,85
+desolace_c60,Desolace,8,19,36,18,35,90
+desolace_c60,Desolace,8,20,35,11,35,95
+desolace_c60,Desolace,9,6,34,25,40,25
+desolace_c60,Desolace,9,7,34,30,40,30
+desolace_c60,Desolace,9,8,34,15,40,35
+desolace_c60,Desolace,9,9,38,18,40,40
+desolace_c60,Desolace,9,10,37,32,40,45
+desolace_c60,Desolace,9,11,37,39,40,50
+desolace_c60,Desolace,9,12,37,36,40,55
+desolace_c60,Desolace,9,13,36,37,40,60
+desolace_c60,Desolace,9,14,34,22,40,65
+desolace_c60,Desolace,9,15,35,21,40,70
+desolace_c60,Desolace,9,18,38,24,40,85
+desolace_c60,Desolace,10,7,33,28,45,30
+desolace_c60,Desolace,10,8,33,19,45,35
+desolace_c60,Desolace,10,9,33,10,45,40
+desolace_c60,Desolace,10,10,36,31,45,45
+desolace_c60,Desolace,10,11,36,20,45,50
+desolace_c60,Desolace,10,12,36,46,45,55
+desolace_c60,Desolace,10,13,36,24,45,60
+desolace_c60,Desolace,10,14,33,10,45,65
+desolace_c60,Desolace,10,16,39,6,45,75
+desolace_c60,Desolace,10,17,40,11,45,80
+desolace_c60,Desolace,10,18,39,40,45,85
+desolace_c60,Desolace,10,19,39,23,45,90
+desolace_c60,Desolace,11,4,31,7,50,15
+desolace_c60,Desolace,11,8,33,21,50,35
+desolace_c60,Desolace,11,9,37,9,50,40
+desolace_c60,Desolace,11,10,37,29,50,45
+desolace_c60,Desolace,11,12,36,43,50,55
+desolace_c60,Desolace,11,13,37,47,50,60
+desolace_c60,Desolace,11,14,38,23,50,65
+desolace_c60,Desolace,11,15,38,44,50,70
+desolace_c60,Desolace,11,16,39,36,50,75
+desolace_c60,Desolace,11,17,40,29,50,80
+desolace_c60,Desolace,11,18,40,17,50,85
+desolace_c60,Desolace,11,19,39,14,50,90
+desolace_c60,Desolace,12,8,34,37,55,35
+desolace_c60,Desolace,12,9,34,26,55,40
+desolace_c60,Desolace,12,10,37,32,55,45
+desolace_c60,Desolace,12,11,37,17,55,50
+desolace_c60,Desolace,12,15,39,41,55,70
+desolace_c60,Desolace,12,16,39,27,55,75
+desolace_c60,Desolace,12,17,35,13,55,80
+desolace_c60,Desolace,12,18,39,19,55,85
+desolace_c60,Desolace,12,19,38,41,55,90
+desolace_c60,Desolace,13,7,31,33,60,30
+desolace_c60,Desolace,13,8,32,31,60,35
+desolace_c60,Desolace,13,9,32,12,60,40
+desolace_c60,Desolace,13,10,37,30,60,45
+desolace_c60,Desolace,13,11,38,28,60,50
+desolace_c60,Desolace,13,12,37,45,60,55
+desolace_c60,Desolace,13,13,37,25,60,60
+desolace_c60,Desolace,13,15,40,24,60,70
+desolace_c60,Desolace,13,16,40,25,60,75
+desolace_c60,Desolace,13,17,38,26,60,80
+desolace_c60,Desolace,13,18,38,26,60,85
+desolace_c60,Desolace,13,19,38,36,60,90
+desolace_c60,Desolace,14,9,31,20,65,40
+desolace_c60,Desolace,14,10,31,21,65,45
+desolace_c60,Desolace,14,11,34,45,65,50
+desolace_c60,Desolace,14,12,34,37,65,55
+desolace_c60,Desolace,14,13,34,30,65,60
+desolace_c60,Desolace,14,14,35,22,65,65
+desolace_c60,Desolace,14,15,34,38,65,70
+desolace_c60,Desolace,14,16,35,10,65,75
+desolace_c60,Desolace,14,17,34,23,65,80
+desolace_c60,Desolace,14,18,38,10,65,85
+desolace_c60,Desolace,15,9,33,21,70,40
+desolace_c60,Desolace,15,10,33,44,70,45
+desolace_c60,Desolace,15,11,33,19,70,50
+desolace_c60,Desolace,15,12,34,31,70,55
+desolace_c60,Desolace,15,13,34,27,70,60
+desolace_c60,Desolace,15,14,34,28,70,65
+desolace_c60,Desolace,15,15,36,23,70,70
+desolace_c60,Desolace,15,16,36,16,70,75
+desolace_c60,Desolace,16,3,33,29,75,10
+desolace_c60,Desolace,16,9,36,24,75,40
+desolace_c60,Desolace,16,11,36,21,75,50
+desolace_c60,Desolace,16,14,34,8,75,65
+desolace_c60,Desolace,16,15,34,28,75,70
+desolace_c60,Desolace,16,16,40,13,75,75
+desolace_c60,Desolace,17,16,40,7,80,75
+desolace_c60,Desolace,17,17,40,7,80,80
+dunmorogh_c60,Dun Morogh,6,15,2,14,25,70
+dunmorogh_c60,Dun Morogh,7,15,1,1,30,70
+dunmorogh_c60,Dun Morogh,9,6,8,14,40,25
+dunmorogh_c60,Dun Morogh,7,7,8,20,30,30
+dunmorogh_c60,Dun Morogh,8,7,8,20,35,30
+dunmorogh_c60,Dun Morogh,9,7,8,14,40,30
+dunmorogh_c60,Dun Morogh,5,8,9,14,20,35
+dunmorogh_c60,Dun Morogh,6,8,9,20,25,35
+dunmorogh_c60,Dun Morogh,7,8,8,20,30,35
+dunmorogh_c60,Dun Morogh,8,8,8,20,35,35
+dunmorogh_c60,Dun Morogh,9,8,9,14,40,35
+dunmorogh_c60,Dun Morogh,5,9,9,14,20,40
+dunmorogh_c60,Dun Morogh,6,9,9,20,25,40
+dunmorogh_c60,Dun Morogh,7,9,8,14,30,40
+dunmorogh_c60,Dun Morogh,8,9,8,20,35,40
+dunmorogh_c60,Dun Morogh,9,9,9,14,40,40
+dunmorogh_c60,Dun Morogh,10,9,8,14,45,40
+dunmorogh_c60,Dun Morogh,11,9,8,14,50,40
+dunmorogh_c60,Dun Morogh,12,9,8,14,55,40
+dunmorogh_c60,Dun Morogh,5,10,9,14,20,45
+dunmorogh_c60,Dun Morogh,6,10,8,20,25,45
+dunmorogh_c60,Dun Morogh,7,10,8,20,30,45
+dunmorogh_c60,Dun Morogh,8,10,8,14,35,45
+dunmorogh_c60,Dun Morogh,9,10,7,20,40,45
+dunmorogh_c60,Dun Morogh,10,10,7,14,45,45
+dunmorogh_c60,Dun Morogh,11,10,8,14,50,45
+dunmorogh_c60,Dun Morogh,12,10,7,14,55,45
+dunmorogh_c60,Dun Morogh,14,10,8,14,65,45
+dunmorogh_c60,Dun Morogh,15,10,8,14,70,45
+dunmorogh_c60,Dun Morogh,16,10,10,12,75,45
+dunmorogh_c60,Dun Morogh,5,11,10,18,20,50
+dunmorogh_c60,Dun Morogh,6,11,8,20,25,50
+dunmorogh_c60,Dun Morogh,7,11,6,14,30,50
+dunmorogh_c60,Dun Morogh,8,11,7,20,35,50
+dunmorogh_c60,Dun Morogh,9,11,7,20,40,50
+dunmorogh_c60,Dun Morogh,10,11,6,14,45,50
+dunmorogh_c60,Dun Morogh,11,11,6,14,50,50
+dunmorogh_c60,Dun Morogh,12,11,8,20,55,50
+dunmorogh_c60,Dun Morogh,13,11,7,14,60,50
+dunmorogh_c60,Dun Morogh,14,11,8,20,65,50
+dunmorogh_c60,Dun Morogh,15,11,10,18,70,50
+dunmorogh_c60,Dun Morogh,16,11,10,12,75,50
+dunmorogh_c60,Dun Morogh,17,11,10,12,80,50
+dunmorogh_c60,Dun Morogh,6,12,8,14,25,55
+dunmorogh_c60,Dun Morogh,7,12,6,20,30,55
+dunmorogh_c60,Dun Morogh,8,12,6,14,35,55
+dunmorogh_c60,Dun Morogh,9,12,6,20,40,55
+dunmorogh_c60,Dun Morogh,10,12,6,20,45,55
+dunmorogh_c60,Dun Morogh,11,12,8,14,50,55
+dunmorogh_c60,Dun Morogh,12,12,8,20,55,55
+dunmorogh_c60,Dun Morogh,13,12,8,20,60,55
+dunmorogh_c60,Dun Morogh,14,12,9,20,65,55
+dunmorogh_c60,Dun Morogh,15,12,10,12,70,55
+dunmorogh_c60,Dun Morogh,16,12,10,18,75,55
+dunmorogh_c60,Dun Morogh,8,13,6,20,35,60
+dunmorogh_c60,Dun Morogh,9,13,6,20,40,60
+dunmorogh_c60,Dun Morogh,10,13,6,14,45,60
+dunmorogh_c60,Dun Morogh,12,13,8,14,55,60
+dunmorogh_c60,Dun Morogh,13,13,8,14,60,60
+dunmorogh_c60,Dun Morogh,14,13,9,14,65,60
+dunmorogh_c60,Dun Morogh,15,13,8,14,70,60
+dunmorogh_c60,Dun Morogh,16,13,10,12,75,60
+dunmorogh_c60,Dun Morogh,5,14,3,16,20,65
+dunmorogh_c60,Dun Morogh,6,14,3,12,25,65
+dunmorogh_c60,Dun Morogh,7,14,1,10,30,65
+dunmorogh_c60,Dun Morogh,8,14,4,16,35,65
+dunmorogh_c60,Dun Morogh,9,14,6,20,40,65
+dunmorogh_c60,Dun Morogh,10,14,6,14,45,65
+dunmorogh_c60,Dun Morogh,4,15,2,10,15,70
+dunmorogh_c60,Dun Morogh,5,15,3,16,20,70
+dunmorogh_c60,Dun Morogh,5,16,4,16,20,75
+dunmorogh_c60,Dun Morogh,6,16,2,16,25,75
+dunmorogh_c60,Dun Morogh,7,16,2,10,30,75
+dunmorogh_c60,Dun Morogh,5,17,4,12,20,80
+dunmorogh_c60,Dun Morogh,6,17,4,12,25,80
+dunmorogh_c60,Dun Morogh,7,17,4,12,30,80
+dunmorogh_c60,Dun Morogh,17,7,10,12,80,30
+dunmorogh_c60,Dun Morogh,16,8,8,14,75,35
+dunmorogh_c60,Dun Morogh,17,8,10,12,80,35
+dunmorogh_c60,Dun Morogh,17,9,10,12,80,40
+dunmorogh_c60,Dun Morogh,18,10,10,12,85,45
+dunmorogh_c60,Dun Morogh,6,13,6,2,25,60
+dunmorogh_c60,Dun Morogh,13,10,11,2,60,45
+dunmorogh_c60,Dun Morogh,17,12,10,4,80,55
+durotar_c60,Durotar,11,1,11,24,50,0
+durotar_c60,Durotar,12,1,10,19,55,0
+durotar_c60,Durotar,10,2,9,21,45,5
+durotar_c60,Durotar,11,2,9,22,50,5
+durotar_c60,Durotar,12,2,10,23,55,5
+durotar_c60,Durotar,8,3,10,19,35,10
+durotar_c60,Durotar,9,3,10,22,40,10
+durotar_c60,Durotar,10,3,9,22,45,10
+durotar_c60,Durotar,11,3,8,21,50,10
+durotar_c60,Durotar,12,3,9,22,55,10
+durotar_c60,Durotar,8,4,10,19,35,15
+durotar_c60,Durotar,9,4,11,24,40,15
+durotar_c60,Durotar,11,4,11,24,50,15
+durotar_c60,Durotar,12,4,9,23,55,15
+durotar_c60,Durotar,8,5,9,23,35,20
+durotar_c60,Durotar,9,5,9,20,40,20
+durotar_c60,Durotar,10,5,8,21,45,20
+durotar_c60,Durotar,11,5,9,24,50,20
+durotar_c60,Durotar,12,5,8,22,55,20
+durotar_c60,Durotar,7,6,10,18,30,25
+durotar_c60,Durotar,8,6,8,21,35,25
+durotar_c60,Durotar,9,6,7,23,40,25
+durotar_c60,Durotar,10,6,8,24,45,25
+durotar_c60,Durotar,11,6,7,22,50,25
+durotar_c60,Durotar,8,7,9,21,35,30
+durotar_c60,Durotar,9,7,9,24,40,30
+durotar_c60,Durotar,10,7,7,23,45,30
+durotar_c60,Durotar,11,7,7,19,50,30
+durotar_c60,Durotar,12,7,7,18,55,30
+durotar_c60,Durotar,13,7,6,18,60,30
+durotar_c60,Durotar,8,8,9,22,35,35
+durotar_c60,Durotar,9,8,9,24,40,35
+durotar_c60,Durotar,10,8,7,24,45,35
+durotar_c60,Durotar,12,8,6,24,55,35
+durotar_c60,Durotar,13,8,7,22,60,35
+durotar_c60,Durotar,7,9,10,19,30,40
+durotar_c60,Durotar,8,9,9,23,35,40
+durotar_c60,Durotar,9,9,8,23,40,40
+durotar_c60,Durotar,10,9,8,21,45,40
+durotar_c60,Durotar,11,9,7,24,50,40
+durotar_c60,Durotar,12,9,6,23,55,40
+durotar_c60,Durotar,13,9,6,22,60,40
+durotar_c60,Durotar,7,10,10,18,30,45
+durotar_c60,Durotar,8,10,9,23,35,45
+durotar_c60,Durotar,9,10,4,24,40,45
+durotar_c60,Durotar,11,10,6,24,50,45
+durotar_c60,Durotar,12,10,6,24,55,45
+durotar_c60,Durotar,13,10,6,24,60,45
+durotar_c60,Durotar,8,11,10,18,35,50
+durotar_c60,Durotar,9,11,4,24,40,50
+durotar_c60,Durotar,10,11,4,19,45,50
+durotar_c60,Durotar,11,11,7,24,50,50
+durotar_c60,Durotar,12,11,6,24,55,50
+durotar_c60,Durotar,13,11,7,22,60,50
+durotar_c60,Durotar,9,12,2,24,40,55
+durotar_c60,Durotar,10,12,4,21,45,55
+durotar_c60,Durotar,11,12,7,24,50,55
+durotar_c60,Durotar,13,12,6,21,60,55
+durotar_c60,Durotar,8,13,10,21,35,60
+durotar_c60,Durotar,10,13,2,19,45,60
+durotar_c60,Durotar,11,13,7,23,50,60
+durotar_c60,Durotar,13,13,7,20,60,60
+durotar_c60,Durotar,14,13,8,23,65,60
+durotar_c60,Durotar,9,14,2,22,40,65
+durotar_c60,Durotar,11,14,6,24,50,65
+durotar_c60,Durotar,12,14,6,19,55,65
+durotar_c60,Durotar,13,14,7,20,60,65
+durotar_c60,Durotar,14,14,8,22,65,65
+durotar_c60,Durotar,15,14,7,19,70,65
+durotar_c60,Durotar,10,15,8,22,45,70
+durotar_c60,Durotar,11,15,7,24,50,70
+durotar_c60,Durotar,12,15,6,24,55,70
+durotar_c60,Durotar,13,15,8,21,60,70
+durotar_c60,Durotar,14,15,8,21,65,70
+durotar_c60,Durotar,10,16,7,18,45,75
+durotar_c60,Durotar,11,16,6,24,50,75
+durotar_c60,Durotar,12,16,7,19,55,75
+durotar_c60,Durotar,13,16,7,20,60,75
+durotar_c60,Durotar,14,16,9,24,65,75
+durotar_c60,Durotar,13,17,8,21,60,80
+durotar_c60,Durotar,14,17,9,23,65,80
+durotar_c60,Durotar,13,18,8,21,60,85
+durotar_c60,Durotar,13,19,8,20,60,90
+durotar_c60,Durotar,9,13,2,18,40,60
+durotar_c60,Durotar,9,15,2,2,40,70
+durotar_c60,Durotar,10,14,2,6,45,65
+durotar_c60,Durotar,11,8,6,2,50,35
+durotar_c60,Durotar,12,12,6,9,55,55
+duskwood_c60,Duskwood,2,6,19,44,5,25
+duskwood_c60,Duskwood,2,7,19,13,5,30
+duskwood_c60,Duskwood,2,9,19,34,5,40
+duskwood_c60,Duskwood,2,10,19,38,5,45
+duskwood_c60,Duskwood,2,11,19,46,5,50
+duskwood_c60,Duskwood,2,12,19,50,5,55
+duskwood_c60,Duskwood,2,13,19,40,5,60
+duskwood_c60,Duskwood,2,14,19,46,5,65
+duskwood_c60,Duskwood,2,15,19,28,5,70
+duskwood_c60,Duskwood,3,5,20,21,10,20
+duskwood_c60,Duskwood,3,6,20,45,10,25
+duskwood_c60,Duskwood,3,7,20,31,10,30
+duskwood_c60,Duskwood,3,8,20,28,10,35
+duskwood_c60,Duskwood,3,9,22,26,10,40
+duskwood_c60,Duskwood,3,10,20,26,10,45
+duskwood_c60,Duskwood,3,11,22,43,10,50
+duskwood_c60,Duskwood,3,12,18,46,10,55
+duskwood_c60,Duskwood,3,13,19,25,10,60
+duskwood_c60,Duskwood,3,14,20,36,10,65
+duskwood_c60,Duskwood,3,15,19,29,10,70
+duskwood_c60,Duskwood,4,5,20,50,15,20
+duskwood_c60,Duskwood,4,6,29,48,15,25
+duskwood_c60,Duskwood,4,7,29,50,15,30
+duskwood_c60,Duskwood,4,8,29,48,15,35
+duskwood_c60,Duskwood,4,9,26,32,15,40
+duskwood_c60,Duskwood,4,10,25,38,15,45
+duskwood_c60,Duskwood,4,13,24,16,15,60
+duskwood_c60,Duskwood,4,14,22,24,15,65
+duskwood_c60,Duskwood,4,15,20,26,15,70
+duskwood_c60,Duskwood,4,16,24,23,15,75
+duskwood_c60,Duskwood,5,5,20,50,20,20
+duskwood_c60,Duskwood,5,6,20,46,20,25
+duskwood_c60,Duskwood,5,7,27,34,20,30
+duskwood_c60,Duskwood,5,8,26,26,20,35
+duskwood_c60,Duskwood,5,9,24,31,20,40
+duskwood_c60,Duskwood,5,10,25,36,20,45
+duskwood_c60,Duskwood,5,13,25,39,20,60
+duskwood_c60,Duskwood,5,14,25,31,20,65
+duskwood_c60,Duskwood,5,15,27,50,20,70
+duskwood_c60,Duskwood,5,16,24,50,20,75
+duskwood_c60,Duskwood,6,5,20,50,25,20
+duskwood_c60,Duskwood,6,6,20,39,25,25
+duskwood_c60,Duskwood,6,7,25,27,25,30
+duskwood_c60,Duskwood,6,8,25,36,25,35
+duskwood_c60,Duskwood,6,9,25,26,25,40
+duskwood_c60,Duskwood,6,10,25,50,25,45
+duskwood_c60,Duskwood,6,11,25,50,25,50
+duskwood_c60,Duskwood,6,13,24,50,25,60
+duskwood_c60,Duskwood,6,14,24,49,25,65
+duskwood_c60,Duskwood,6,15,24,48,25,70
+duskwood_c60,Duskwood,6,16,24,23,25,75
+duskwood_c60,Duskwood,7,4,19,20,30,15
+duskwood_c60,Duskwood,7,5,20,50,30,20
+duskwood_c60,Duskwood,7,6,25,35,30,25
+duskwood_c60,Duskwood,7,7,25,50,30,30
+duskwood_c60,Duskwood,7,8,25,50,30,35
+duskwood_c60,Duskwood,7,9,25,50,30,40
+duskwood_c60,Duskwood,7,10,25,50,30,45
+duskwood_c60,Duskwood,7,11,25,50,30,50
+duskwood_c60,Duskwood,7,12,25,47,30,55
+duskwood_c60,Duskwood,7,13,24,45,30,60
+duskwood_c60,Duskwood,7,14,30,26,30,65
+duskwood_c60,Duskwood,7,15,30,50,30,70
+duskwood_c60,Duskwood,7,16,30,48,30,75
+duskwood_c60,Duskwood,7,17,29,12,30,80
+duskwood_c60,Duskwood,8,4,20,48,35,15
+duskwood_c60,Duskwood,8,5,20,50,35,20
+duskwood_c60,Duskwood,8,6,20,48,35,25
+duskwood_c60,Duskwood,8,8,25,10,35,35
+duskwood_c60,Duskwood,8,10,25,18,35,45
+duskwood_c60,Duskwood,8,11,25,34,35,50
+duskwood_c60,Duskwood,8,12,25,50,35,55
+duskwood_c60,Duskwood,8,13,24,38,35,60
+duskwood_c60,Duskwood,8,14,28,23,35,65
+duskwood_c60,Duskwood,8,15,27,40,35,70
+duskwood_c60,Duskwood,8,16,30,28,35,75
+duskwood_c60,Duskwood,8,17,31,46,35,80
+duskwood_c60,Duskwood,9,3,20,21,40,10
+duskwood_c60,Duskwood,9,4,20,50,40,15
+duskwood_c60,Duskwood,9,5,20,18,40,20
+duskwood_c60,Duskwood,9,13,24,46,40,60
+duskwood_c60,Duskwood,9,14,24,39,40,65
+duskwood_c60,Duskwood,9,15,27,23,40,70
+duskwood_c60,Duskwood,9,16,24,27,40,75
+duskwood_c60,Duskwood,10,3,20,33,45,10
+duskwood_c60,Duskwood,10,4,20,48,45,15
+duskwood_c60,Duskwood,10,5,22,15,45,20
+duskwood_c60,Duskwood,10,13,25,50,45,60
+duskwood_c60,Duskwood,10,14,24,44,45,65
+duskwood_c60,Duskwood,10,15,25,38,45,70
+duskwood_c60,Duskwood,10,16,26,48,45,75
+duskwood_c60,Duskwood,11,3,20,35,50,10
+duskwood_c60,Duskwood,11,4,22,26,50,15
+duskwood_c60,Duskwood,11,5,22,49,50,20
+duskwood_c60,Duskwood,11,13,25,49,50,60
+duskwood_c60,Duskwood,11,14,24,46,50,65
+duskwood_c60,Duskwood,11,15,25,49,50,70
+duskwood_c60,Duskwood,11,16,26,14,50,75
+duskwood_c60,Duskwood,12,3,20,29,55,10
+duskwood_c60,Duskwood,12,4,22,38,55,15
+duskwood_c60,Duskwood,12,5,22,50,55,20
+duskwood_c60,Duskwood,12,6,28,28,55,25
+duskwood_c60,Duskwood,12,7,27,42,55,30
+duskwood_c60,Duskwood,12,9,29,11,55,40
+duskwood_c60,Duskwood,12,10,27,40,55,45
+duskwood_c60,Duskwood,12,11,27,43,55,50
+duskwood_c60,Duskwood,12,12,25,42,55,55
+duskwood_c60,Duskwood,12,13,24,49,55,60
+duskwood_c60,Duskwood,12,14,24,28,55,65
+duskwood_c60,Duskwood,12,15,25,20,55,70
+duskwood_c60,Duskwood,12,17,31,23,55,80
+duskwood_c60,Duskwood,13,3,20,12,60,10
+duskwood_c60,Duskwood,13,4,22,41,60,15
+duskwood_c60,Duskwood,13,5,22,34,60,20
+duskwood_c60,Duskwood,13,6,27,25,60,25
+duskwood_c60,Duskwood,13,7,27,34,60,30
+duskwood_c60,Duskwood,13,8,29,30,60,35
+duskwood_c60,Duskwood,13,9,29,50,60,40
+duskwood_c60,Duskwood,13,10,28,26,60,45
+duskwood_c60,Duskwood,13,11,29,45,60,50
+duskwood_c60,Duskwood,13,12,27,11,60,55
+duskwood_c60,Duskwood,13,13,24,22,60,60
+duskwood_c60,Duskwood,13,14,28,40,60,65
+duskwood_c60,Duskwood,13,15,29,50,60,70
+duskwood_c60,Duskwood,13,16,31,33,60,75
+duskwood_c60,Duskwood,13,17,31,50,60,80
+duskwood_c60,Duskwood,14,4,22,36,65,15
+duskwood_c60,Duskwood,14,5,24,30,65,20
+duskwood_c60,Duskwood,14,6,25,22,65,25
+duskwood_c60,Duskwood,14,7,26,41,65,30
+duskwood_c60,Duskwood,14,8,27,39,65,35
+duskwood_c60,Duskwood,14,9,27,24,65,40
+duskwood_c60,Duskwood,14,10,29,50,65,45
+duskwood_c60,Duskwood,14,14,29,42,65,65
+duskwood_c60,Duskwood,14,15,29,31,65,70
+duskwood_c60,Duskwood,14,16,28,29,65,75
+duskwood_c60,Duskwood,15,4,20,30,70,15
+duskwood_c60,Duskwood,15,5,22,45,70,20
+duskwood_c60,Duskwood,15,7,30,17,70,30
+duskwood_c60,Duskwood,15,13,30,6,70,60
+duskwood_c60,Duskwood,15,14,30,50,70,65
+duskwood_c60,Duskwood,15,15,31,43,70,70
+duskwood_c60,Duskwood,15,16,31,50,70,75
+duskwood_c60,Duskwood,15,17,31,10,70,80
+duskwood_c60,Duskwood,16,4,20,50,75,15
+duskwood_c60,Duskwood,16,5,20,47,75,20
+duskwood_c60,Duskwood,16,6,30,30,75,25
+duskwood_c60,Duskwood,16,7,30,50,75,30
+duskwood_c60,Duskwood,16,8,30,50,75,35
+duskwood_c60,Duskwood,16,11,25,35,75,50
+duskwood_c60,Duskwood,16,12,24,37,75,55
+duskwood_c60,Duskwood,16,13,22,24,75,60
+duskwood_c60,Duskwood,16,14,23,50,75,65
+duskwood_c60,Duskwood,16,15,23,49,75,70
+duskwood_c60,Duskwood,16,16,22,38,75,75
+duskwood_c60,Duskwood,17,4,20,28,80,15
+duskwood_c60,Duskwood,17,5,20,13,80,20
+duskwood_c60,Duskwood,17,7,30,17,80,30
+duskwood_c60,Duskwood,17,11,25,50,80,50
+duskwood_c60,Duskwood,17,12,24,44,80,55
+duskwood_c60,Duskwood,17,13,25,23,80,60
+duskwood_c60,Duskwood,17,14,23,33,80,65
+duskwood_c60,Duskwood,17,15,22,32,80,70
+duskwood_c60,Duskwood,17,16,22,30,80,75
+duskwood_c60,Duskwood,18,3,20,50,85,10
+duskwood_c60,Duskwood,18,4,20,21,85,15
+duskwood_c60,Duskwood,18,10,25,40,85,45
+duskwood_c60,Duskwood,18,11,25,50,85,50
+duskwood_c60,Duskwood,18,12,25,22,85,55
+duskwood_c60,Duskwood,19,3,20,43,90,10
+duskwood_c60,Duskwood,19,4,20,6,90,15
+dustwallowmarsh_c60,Dustwallow Marsh,6,4,39,20,25,15
+dustwallowmarsh_c60,Dustwallow Marsh,6,5,39,35,25,20
+dustwallowmarsh_c60,Dustwallow Marsh,6,10,39,28,25,45
+dustwallowmarsh_c60,Dustwallow Marsh,6,11,39,50,25,50
+dustwallowmarsh_c60,Dustwallow Marsh,6,12,39,49,25,55
+dustwallowmarsh_c60,Dustwallow Marsh,7,3,38,12,30,10
+dustwallowmarsh_c60,Dustwallow Marsh,7,4,39,42,30,15
+dustwallowmarsh_c60,Dustwallow Marsh,7,5,39,50,30,20
+dustwallowmarsh_c60,Dustwallow Marsh,7,6,36,6,30,25
+dustwallowmarsh_c60,Dustwallow Marsh,7,7,38,10,30,30
+dustwallowmarsh_c60,Dustwallow Marsh,7,8,38,21,30,35
+dustwallowmarsh_c60,Dustwallow Marsh,7,9,38,23,30,40
+dustwallowmarsh_c60,Dustwallow Marsh,7,10,39,50,30,45
+dustwallowmarsh_c60,Dustwallow Marsh,7,11,39,50,30,50
+dustwallowmarsh_c60,Dustwallow Marsh,7,12,39,50,30,55
+dustwallowmarsh_c60,Dustwallow Marsh,7,13,39,40,30,60
+dustwallowmarsh_c60,Dustwallow Marsh,7,14,40,50,30,65
+dustwallowmarsh_c60,Dustwallow Marsh,7,15,40,41,30,70
+dustwallowmarsh_c60,Dustwallow Marsh,8,2,38,13,35,5
+dustwallowmarsh_c60,Dustwallow Marsh,8,3,38,36,35,10
+dustwallowmarsh_c60,Dustwallow Marsh,8,4,39,45,35,15
+dustwallowmarsh_c60,Dustwallow Marsh,8,5,36,50,35,20
+dustwallowmarsh_c60,Dustwallow Marsh,8,6,36,50,35,25
+dustwallowmarsh_c60,Dustwallow Marsh,8,7,38,25,35,30
+dustwallowmarsh_c60,Dustwallow Marsh,8,8,38,50,35,35
+dustwallowmarsh_c60,Dustwallow Marsh,8,9,38,35,35,40
+dustwallowmarsh_c60,Dustwallow Marsh,8,10,39,50,35,45
+dustwallowmarsh_c60,Dustwallow Marsh,8,11,39,50,35,50
+dustwallowmarsh_c60,Dustwallow Marsh,8,12,39,50,35,55
+dustwallowmarsh_c60,Dustwallow Marsh,8,13,39,45,35,60
+dustwallowmarsh_c60,Dustwallow Marsh,8,14,43,30,35,65
+dustwallowmarsh_c60,Dustwallow Marsh,8,15,41,22,35,70
+dustwallowmarsh_c60,Dustwallow Marsh,8,16,42,10,35,75
+dustwallowmarsh_c60,Dustwallow Marsh,9,3,38,7,40,10
+dustwallowmarsh_c60,Dustwallow Marsh,9,4,36,31,40,15
+dustwallowmarsh_c60,Dustwallow Marsh,9,5,38,45,40,20
+dustwallowmarsh_c60,Dustwallow Marsh,9,6,38,48,40,25
+dustwallowmarsh_c60,Dustwallow Marsh,9,7,39,26,40,30
+dustwallowmarsh_c60,Dustwallow Marsh,9,8,38,48,40,35
+dustwallowmarsh_c60,Dustwallow Marsh,9,9,38,48,40,40
+dustwallowmarsh_c60,Dustwallow Marsh,9,10,39,50,40,45
+dustwallowmarsh_c60,Dustwallow Marsh,9,11,39,50,40,50
+dustwallowmarsh_c60,Dustwallow Marsh,9,12,39,41,40,55
+dustwallowmarsh_c60,Dustwallow Marsh,9,13,43,14,40,60
+dustwallowmarsh_c60,Dustwallow Marsh,9,14,43,38,40,65
+dustwallowmarsh_c60,Dustwallow Marsh,9,15,41,50,40,70
+dustwallowmarsh_c60,Dustwallow Marsh,9,16,43,26,40,75
+dustwallowmarsh_c60,Dustwallow Marsh,9,17,43,24,40,80
+dustwallowmarsh_c60,Dustwallow Marsh,10,4,37,50,45,15
+dustwallowmarsh_c60,Dustwallow Marsh,10,5,38,25,45,20
+dustwallowmarsh_c60,Dustwallow Marsh,10,6,38,29,45,25
+dustwallowmarsh_c60,Dustwallow Marsh,10,7,42,43,45,30
+dustwallowmarsh_c60,Dustwallow Marsh,10,8,42,50,45,35
+dustwallowmarsh_c60,Dustwallow Marsh,10,9,39,34,45,40
+dustwallowmarsh_c60,Dustwallow Marsh,10,10,41,49,45,45
+dustwallowmarsh_c60,Dustwallow Marsh,10,11,39,25,45,50
+dustwallowmarsh_c60,Dustwallow Marsh,10,12,39,34,45,55
+dustwallowmarsh_c60,Dustwallow Marsh,10,13,42,34,45,60
+dustwallowmarsh_c60,Dustwallow Marsh,10,14,43,39,45,65
+dustwallowmarsh_c60,Dustwallow Marsh,10,15,41,50,45,70
+dustwallowmarsh_c60,Dustwallow Marsh,10,16,43,19,45,75
+dustwallowmarsh_c60,Dustwallow Marsh,10,17,43,17,45,80
+dustwallowmarsh_c60,Dustwallow Marsh,11,2,38,22,50,5
+dustwallowmarsh_c60,Dustwallow Marsh,11,3,36,27,50,10
+dustwallowmarsh_c60,Dustwallow Marsh,11,4,37,30,50,15
+dustwallowmarsh_c60,Dustwallow Marsh,11,5,36,13,50,20
+dustwallowmarsh_c60,Dustwallow Marsh,11,6,38,16,50,25
+dustwallowmarsh_c60,Dustwallow Marsh,11,7,38,50,50,30
+dustwallowmarsh_c60,Dustwallow Marsh,11,8,40,21,50,35
+dustwallowmarsh_c60,Dustwallow Marsh,11,9,43,29,50,40
+dustwallowmarsh_c60,Dustwallow Marsh,11,10,41,43,50,45
+dustwallowmarsh_c60,Dustwallow Marsh,11,11,41,27,50,50
+dustwallowmarsh_c60,Dustwallow Marsh,11,12,40,50,50,55
+dustwallowmarsh_c60,Dustwallow Marsh,11,13,43,35,50,60
+dustwallowmarsh_c60,Dustwallow Marsh,11,14,41,43,50,65
+dustwallowmarsh_c60,Dustwallow Marsh,11,15,44,44,50,70
+dustwallowmarsh_c60,Dustwallow Marsh,11,16,44,50,50,75
+dustwallowmarsh_c60,Dustwallow Marsh,11,17,44,50,50,80
+dustwallowmarsh_c60,Dustwallow Marsh,11,18,44,49,50,85
+dustwallowmarsh_c60,Dustwallow Marsh,12,2,37,31,55,5
+dustwallowmarsh_c60,Dustwallow Marsh,12,3,38,18,55,10
+dustwallowmarsh_c60,Dustwallow Marsh,12,4,38,27,55,15
+dustwallowmarsh_c60,Dustwallow Marsh,12,5,38,10,55,20
+dustwallowmarsh_c60,Dustwallow Marsh,12,7,36,50,55,30
+dustwallowmarsh_c60,Dustwallow Marsh,12,8,36,46,55,35
+dustwallowmarsh_c60,Dustwallow Marsh,12,9,40,24,55,40
+dustwallowmarsh_c60,Dustwallow Marsh,12,10,40,47,55,45
+dustwallowmarsh_c60,Dustwallow Marsh,12,11,41,27,55,50
+dustwallowmarsh_c60,Dustwallow Marsh,12,12,41,29,55,55
+dustwallowmarsh_c60,Dustwallow Marsh,12,13,43,27,55,60
+dustwallowmarsh_c60,Dustwallow Marsh,12,14,41,29,55,65
+dustwallowmarsh_c60,Dustwallow Marsh,12,15,44,43,55,70
+dustwallowmarsh_c60,Dustwallow Marsh,12,16,44,50,55,75
+dustwallowmarsh_c60,Dustwallow Marsh,12,17,44,50,55,80
+dustwallowmarsh_c60,Dustwallow Marsh,12,18,44,48,55,85
+dustwallowmarsh_c60,Dustwallow Marsh,13,2,38,49,60,5
+dustwallowmarsh_c60,Dustwallow Marsh,13,3,38,33,60,10
+dustwallowmarsh_c60,Dustwallow Marsh,13,4,38,50,60,15
+dustwallowmarsh_c60,Dustwallow Marsh,13,5,38,41,60,20
+dustwallowmarsh_c60,Dustwallow Marsh,13,6,38,42,60,25
+dustwallowmarsh_c60,Dustwallow Marsh,13,7,38,22,60,30
+dustwallowmarsh_c60,Dustwallow Marsh,13,8,38,50,60,35
+dustwallowmarsh_c60,Dustwallow Marsh,13,9,38,31,60,40
+dustwallowmarsh_c60,Dustwallow Marsh,13,10,40,9,60,45
+dustwallowmarsh_c60,Dustwallow Marsh,13,11,43,11,60,50
+dustwallowmarsh_c60,Dustwallow Marsh,13,12,43,29,60,55
+dustwallowmarsh_c60,Dustwallow Marsh,13,13,40,13,60,60
+dustwallowmarsh_c60,Dustwallow Marsh,13,14,43,50,60,65
+dustwallowmarsh_c60,Dustwallow Marsh,13,15,43,49,60,70
+dustwallowmarsh_c60,Dustwallow Marsh,13,16,44,11,60,75
+dustwallowmarsh_c60,Dustwallow Marsh,13,17,44,13,60,80
+dustwallowmarsh_c60,Dustwallow Marsh,14,3,62,14,65,10
+dustwallowmarsh_c60,Dustwallow Marsh,14,4,62,26,65,15
+dustwallowmarsh_c60,Dustwallow Marsh,14,5,62,13,65,20
+dustwallowmarsh_c60,Dustwallow Marsh,14,6,38,21,65,25
+dustwallowmarsh_c60,Dustwallow Marsh,14,8,38,21,65,35
+dustwallowmarsh_c60,Dustwallow Marsh,14,11,41,12,65,50
+dustwallowmarsh_c60,Dustwallow Marsh,14,12,41,50,65,55
+dustwallowmarsh_c60,Dustwallow Marsh,14,13,41,10,65,60
+dustwallowmarsh_c60,Dustwallow Marsh,14,14,43,48,65,65
+dustwallowmarsh_c60,Dustwallow Marsh,14,15,43,46,65,70
+dustwallowmarsh_c60,Dustwallow Marsh,15,2,62,44,70,5
+dustwallowmarsh_c60,Dustwallow Marsh,15,3,62,50,70,10
+dustwallowmarsh_c60,Dustwallow Marsh,15,4,62,50,70,15
+dustwallowmarsh_c60,Dustwallow Marsh,15,5,62,50,70,20
+dustwallowmarsh_c60,Dustwallow Marsh,15,6,62,42,70,25
+dustwallowmarsh_c60,Dustwallow Marsh,15,9,41,26,70,40
+dustwallowmarsh_c60,Dustwallow Marsh,15,10,41,50,70,45
+dustwallowmarsh_c60,Dustwallow Marsh,15,11,41,50,70,50
+dustwallowmarsh_c60,Dustwallow Marsh,15,12,41,50,70,55
+dustwallowmarsh_c60,Dustwallow Marsh,16,2,62,50,75,5
+dustwallowmarsh_c60,Dustwallow Marsh,16,3,62,50,75,10
+dustwallowmarsh_c60,Dustwallow Marsh,16,4,62,50,75,15
+dustwallowmarsh_c60,Dustwallow Marsh,16,5,62,50,75,20
+dustwallowmarsh_c60,Dustwallow Marsh,16,6,62,50,75,25
+dustwallowmarsh_c60,Dustwallow Marsh,16,10,41,9,75,45
+dustwallowmarsh_c60,Dustwallow Marsh,17,2,62,24,80,5
+dustwallowmarsh_c60,Dustwallow Marsh,17,3,62,50,80,10
+dustwallowmarsh_c60,Dustwallow Marsh,17,4,62,50,80,15
+dustwallowmarsh_c60,Dustwallow Marsh,17,5,62,50,80,20
+dustwallowmarsh_c60,Dustwallow Marsh,17,6,62,22,80,25
+easternplaguelands_c60,Eastern Plaguelands,2,8,54,19,5,35
+easternplaguelands_c60,Eastern Plaguelands,2,9,55,38,5,40
+easternplaguelands_c60,Eastern Plaguelands,2,10,55,49,5,45
+easternplaguelands_c60,Eastern Plaguelands,2,11,54,37,5,50
+easternplaguelands_c60,Eastern Plaguelands,2,12,54,37,5,55
+easternplaguelands_c60,Eastern Plaguelands,3,7,59,40,10,30
+easternplaguelands_c60,Eastern Plaguelands,3,8,59,32,10,35
+easternplaguelands_c60,Eastern Plaguelands,3,11,54,23,10,50
+easternplaguelands_c60,Eastern Plaguelands,3,12,54,23,10,55
+easternplaguelands_c60,Eastern Plaguelands,3,14,54,7,10,65
+easternplaguelands_c60,Eastern Plaguelands,3,15,54,16,10,70
+easternplaguelands_c60,Eastern Plaguelands,3,16,55,50,10,75
+easternplaguelands_c60,Eastern Plaguelands,3,17,55,10,10,80
+easternplaguelands_c60,Eastern Plaguelands,4,5,57,20,15,20
+easternplaguelands_c60,Eastern Plaguelands,4,6,57,40,15,25
+easternplaguelands_c60,Eastern Plaguelands,4,7,54,25,15,30
+easternplaguelands_c60,Eastern Plaguelands,4,8,55,24,15,35
+easternplaguelands_c60,Eastern Plaguelands,4,13,54,37,15,60
+easternplaguelands_c60,Eastern Plaguelands,4,14,55,45,15,65
+easternplaguelands_c60,Eastern Plaguelands,4,15,54,37,15,70
+easternplaguelands_c60,Eastern Plaguelands,4,16,55,46,15,75
+easternplaguelands_c60,Eastern Plaguelands,4,17,54,44,15,80
+easternplaguelands_c60,Eastern Plaguelands,5,4,58,33,20,15
+easternplaguelands_c60,Eastern Plaguelands,5,5,58,50,20,20
+easternplaguelands_c60,Eastern Plaguelands,5,6,58,45,20,25
+easternplaguelands_c60,Eastern Plaguelands,5,7,58,50,20,30
+easternplaguelands_c60,Eastern Plaguelands,5,8,57,28,20,35
+easternplaguelands_c60,Eastern Plaguelands,5,9,57,44,20,40
+easternplaguelands_c60,Eastern Plaguelands,5,13,54,25,20,60
+easternplaguelands_c60,Eastern Plaguelands,5,14,55,50,20,65
+easternplaguelands_c60,Eastern Plaguelands,5,15,54,28,20,70
+easternplaguelands_c60,Eastern Plaguelands,5,16,54,38,20,75
+easternplaguelands_c60,Eastern Plaguelands,5,17,55,50,20,80
+easternplaguelands_c60,Eastern Plaguelands,5,18,55,43,20,85
+easternplaguelands_c60,Eastern Plaguelands,5,19,54,42,20,90
+easternplaguelands_c60,Eastern Plaguelands,6,4,55,14,25,15
+easternplaguelands_c60,Eastern Plaguelands,6,5,54,28,25,20
+easternplaguelands_c60,Eastern Plaguelands,6,6,56,39,25,25
+easternplaguelands_c60,Eastern Plaguelands,6,7,55,29,25,30
+easternplaguelands_c60,Eastern Plaguelands,6,8,58,50,25,35
+easternplaguelands_c60,Eastern Plaguelands,6,9,57,15,25,40
+easternplaguelands_c60,Eastern Plaguelands,6,13,54,50,25,60
+easternplaguelands_c60,Eastern Plaguelands,6,14,54,50,25,65
+easternplaguelands_c60,Eastern Plaguelands,6,15,59,50,25,70
+easternplaguelands_c60,Eastern Plaguelands,6,16,59,50,25,75
+easternplaguelands_c60,Eastern Plaguelands,6,17,55,50,25,80
+easternplaguelands_c60,Eastern Plaguelands,6,18,55,49,25,85
+easternplaguelands_c60,Eastern Plaguelands,6,19,55,12,25,90
+easternplaguelands_c60,Eastern Plaguelands,7,3,55,49,30,10
+easternplaguelands_c60,Eastern Plaguelands,7,4,55,50,30,15
+easternplaguelands_c60,Eastern Plaguelands,7,5,58,48,30,20
+easternplaguelands_c60,Eastern Plaguelands,7,6,58,50,30,25
+easternplaguelands_c60,Eastern Plaguelands,7,7,58,50,30,30
+easternplaguelands_c60,Eastern Plaguelands,7,8,57,34,30,35
+easternplaguelands_c60,Eastern Plaguelands,7,9,57,50,30,40
+easternplaguelands_c60,Eastern Plaguelands,7,10,57,26,30,45
+easternplaguelands_c60,Eastern Plaguelands,7,11,58,24,30,50
+easternplaguelands_c60,Eastern Plaguelands,7,12,58,30,30,55
+easternplaguelands_c60,Eastern Plaguelands,7,13,54,26,30,60
+easternplaguelands_c60,Eastern Plaguelands,7,14,55,35,30,65
+easternplaguelands_c60,Eastern Plaguelands,7,15,55,33,30,70
+easternplaguelands_c60,Eastern Plaguelands,7,16,55,50,30,75
+easternplaguelands_c60,Eastern Plaguelands,7,17,54,27,30,80
+easternplaguelands_c60,Eastern Plaguelands,7,18,54,42,30,85
+easternplaguelands_c60,Eastern Plaguelands,8,4,58,50,35,15
+easternplaguelands_c60,Eastern Plaguelands,8,5,58,36,35,20
+easternplaguelands_c60,Eastern Plaguelands,8,6,58,44,35,25
+easternplaguelands_c60,Eastern Plaguelands,8,7,58,44,35,30
+easternplaguelands_c60,Eastern Plaguelands,8,8,55,32,35,35
+easternplaguelands_c60,Eastern Plaguelands,8,9,57,50,35,40
+easternplaguelands_c60,Eastern Plaguelands,8,10,57,24,35,45
+easternplaguelands_c60,Eastern Plaguelands,8,11,60,38,35,50
+easternplaguelands_c60,Eastern Plaguelands,8,12,60,50,35,55
+easternplaguelands_c60,Eastern Plaguelands,8,13,60,45,35,60
+easternplaguelands_c60,Eastern Plaguelands,8,14,55,50,35,65
+easternplaguelands_c60,Eastern Plaguelands,8,15,55,50,35,70
+easternplaguelands_c60,Eastern Plaguelands,8,16,55,50,35,75
+easternplaguelands_c60,Eastern Plaguelands,8,17,55,50,35,80
+easternplaguelands_c60,Eastern Plaguelands,8,18,54,19,35,85
+easternplaguelands_c60,Eastern Plaguelands,9,5,55,45,40,20
+easternplaguelands_c60,Eastern Plaguelands,9,6,54,18,40,25
+easternplaguelands_c60,Eastern Plaguelands,9,7,58,31,40,30
+easternplaguelands_c60,Eastern Plaguelands,9,8,58,49,40,35
+easternplaguelands_c60,Eastern Plaguelands,9,9,57,21,40,40
+easternplaguelands_c60,Eastern Plaguelands,9,10,59,41,40,45
+easternplaguelands_c60,Eastern Plaguelands,9,11,60,34,40,50
+easternplaguelands_c60,Eastern Plaguelands,9,12,58,25,40,55
+easternplaguelands_c60,Eastern Plaguelands,9,13,54,8,40,60
+easternplaguelands_c60,Eastern Plaguelands,9,14,55,41,40,65
+easternplaguelands_c60,Eastern Plaguelands,9,15,55,44,40,70
+easternplaguelands_c60,Eastern Plaguelands,9,16,55,50,40,75
+easternplaguelands_c60,Eastern Plaguelands,9,17,55,50,40,80
+easternplaguelands_c60,Eastern Plaguelands,9,18,54,34,40,85
+easternplaguelands_c60,Eastern Plaguelands,9,19,55,49,40,90
+easternplaguelands_c60,Eastern Plaguelands,10,3,59,20,45,10
+easternplaguelands_c60,Eastern Plaguelands,10,4,59,33,45,15
+easternplaguelands_c60,Eastern Plaguelands,10,5,57,25,45,20
+easternplaguelands_c60,Eastern Plaguelands,10,6,57,30,45,25
+easternplaguelands_c60,Eastern Plaguelands,10,7,58,46,45,30
+easternplaguelands_c60,Eastern Plaguelands,10,8,58,50,45,35
+easternplaguelands_c60,Eastern Plaguelands,10,9,58,49,45,40
+easternplaguelands_c60,Eastern Plaguelands,10,10,57,50,45,45
+easternplaguelands_c60,Eastern Plaguelands,10,11,57,39,45,50
+easternplaguelands_c60,Eastern Plaguelands,10,12,55,30,45,55
+easternplaguelands_c60,Eastern Plaguelands,10,13,56,50,45,60
+easternplaguelands_c60,Eastern Plaguelands,10,14,55,50,45,65
+easternplaguelands_c60,Eastern Plaguelands,10,15,55,41,45,70
+easternplaguelands_c60,Eastern Plaguelands,10,16,55,50,45,75
+easternplaguelands_c60,Eastern Plaguelands,10,17,54,40,45,80
+easternplaguelands_c60,Eastern Plaguelands,10,18,54,34,45,85
+easternplaguelands_c60,Eastern Plaguelands,10,19,55,50,45,90
+easternplaguelands_c60,Eastern Plaguelands,11,3,60,50,50,10
+easternplaguelands_c60,Eastern Plaguelands,11,4,60,50,50,15
+easternplaguelands_c60,Eastern Plaguelands,11,5,59,40,50,20
+easternplaguelands_c60,Eastern Plaguelands,11,6,57,35,50,25
+easternplaguelands_c60,Eastern Plaguelands,11,7,58,50,50,30
+easternplaguelands_c60,Eastern Plaguelands,11,8,58,45,50,35
+easternplaguelands_c60,Eastern Plaguelands,11,9,58,50,50,40
+easternplaguelands_c60,Eastern Plaguelands,11,10,57,50,50,45
+easternplaguelands_c60,Eastern Plaguelands,11,11,56,28,50,50
+easternplaguelands_c60,Eastern Plaguelands,11,12,56,50,50,55
+easternplaguelands_c60,Eastern Plaguelands,11,13,56,36,50,60
+easternplaguelands_c60,Eastern Plaguelands,11,14,56,44,50,65
+easternplaguelands_c60,Eastern Plaguelands,11,15,56,33,50,70
+easternplaguelands_c60,Eastern Plaguelands,11,16,55,50,50,75
+easternplaguelands_c60,Eastern Plaguelands,12,3,58,40,55,10
+easternplaguelands_c60,Eastern Plaguelands,12,4,58,42,55,15
+easternplaguelands_c60,Eastern Plaguelands,12,5,57,40,55,20
+easternplaguelands_c60,Eastern Plaguelands,12,6,58,39,55,25
+easternplaguelands_c60,Eastern Plaguelands,12,7,58,50,55,30
+easternplaguelands_c60,Eastern Plaguelands,12,8,58,47,55,35
+easternplaguelands_c60,Eastern Plaguelands,12,9,57,50,55,40
+easternplaguelands_c60,Eastern Plaguelands,12,10,57,40,55,45
+easternplaguelands_c60,Eastern Plaguelands,12,11,55,39,55,50
+easternplaguelands_c60,Eastern Plaguelands,12,12,56,33,55,55
+easternplaguelands_c60,Eastern Plaguelands,12,13,55,35,55,60
+easternplaguelands_c60,Eastern Plaguelands,12,14,57,50,55,65
+easternplaguelands_c60,Eastern Plaguelands,12,15,56,23,55,70
+easternplaguelands_c60,Eastern Plaguelands,12,16,55,33,55,75
+easternplaguelands_c60,Eastern Plaguelands,12,17,55,41,55,80
+easternplaguelands_c60,Eastern Plaguelands,12,18,54,23,55,85
+easternplaguelands_c60,Eastern Plaguelands,13,5,58,16,60,20
+easternplaguelands_c60,Eastern Plaguelands,13,6,58,37,60,25
+easternplaguelands_c60,Eastern Plaguelands,13,7,58,47,60,30
+easternplaguelands_c60,Eastern Plaguelands,13,8,58,36,60,35
+easternplaguelands_c60,Eastern Plaguelands,13,9,57,46,60,40
+easternplaguelands_c60,Eastern Plaguelands,13,10,57,50,60,45
+easternplaguelands_c60,Eastern Plaguelands,13,11,57,28,60,50
+easternplaguelands_c60,Eastern Plaguelands,13,12,55,49,60,55
+easternplaguelands_c60,Eastern Plaguelands,13,13,55,41,60,60
+easternplaguelands_c60,Eastern Plaguelands,13,14,57,32,60,65
+easternplaguelands_c60,Eastern Plaguelands,13,15,57,27,60,70
+easternplaguelands_c60,Eastern Plaguelands,13,16,55,30,60,75
+easternplaguelands_c60,Eastern Plaguelands,13,17,55,50,60,80
+easternplaguelands_c60,Eastern Plaguelands,13,18,55,29,60,85
+easternplaguelands_c60,Eastern Plaguelands,14,3,59,25,65,10
+easternplaguelands_c60,Eastern Plaguelands,14,4,59,41,65,15
+easternplaguelands_c60,Eastern Plaguelands,14,5,59,44,65,20
+easternplaguelands_c60,Eastern Plaguelands,14,6,57,37,65,25
+easternplaguelands_c60,Eastern Plaguelands,14,7,57,38,65,30
+easternplaguelands_c60,Eastern Plaguelands,14,8,58,50,65,35
+easternplaguelands_c60,Eastern Plaguelands,14,9,58,47,65,40
+easternplaguelands_c60,Eastern Plaguelands,14,10,57,50,65,45
+easternplaguelands_c60,Eastern Plaguelands,14,11,57,36,65,50
+easternplaguelands_c60,Eastern Plaguelands,14,12,56,50,65,55
+easternplaguelands_c60,Eastern Plaguelands,14,13,56,50,65,60
+easternplaguelands_c60,Eastern Plaguelands,14,14,56,50,65,65
+easternplaguelands_c60,Eastern Plaguelands,14,15,56,30,65,70
+easternplaguelands_c60,Eastern Plaguelands,14,16,54,41,65,75
+easternplaguelands_c60,Eastern Plaguelands,14,17,55,28,65,80
+easternplaguelands_c60,Eastern Plaguelands,14,18,54,14,65,85
+easternplaguelands_c60,Eastern Plaguelands,15,2,58,8,70,5
+easternplaguelands_c60,Eastern Plaguelands,15,3,59,43,70,10
+easternplaguelands_c60,Eastern Plaguelands,15,4,59,50,70,15
+easternplaguelands_c60,Eastern Plaguelands,15,5,57,23,70,20
+easternplaguelands_c60,Eastern Plaguelands,15,6,58,41,70,25
+easternplaguelands_c60,Eastern Plaguelands,15,7,58,50,70,30
+easternplaguelands_c60,Eastern Plaguelands,15,8,57,50,70,35
+easternplaguelands_c60,Eastern Plaguelands,15,9,57,50,70,40
+easternplaguelands_c60,Eastern Plaguelands,15,10,57,31,70,45
+easternplaguelands_c60,Eastern Plaguelands,15,11,55,19,70,50
+easternplaguelands_c60,Eastern Plaguelands,15,12,56,42,70,55
+easternplaguelands_c60,Eastern Plaguelands,15,13,56,50,70,60
+easternplaguelands_c60,Eastern Plaguelands,15,14,56,50,70,65
+easternplaguelands_c60,Eastern Plaguelands,15,15,56,50,70,70
+easternplaguelands_c60,Eastern Plaguelands,15,16,55,41,70,75
+easternplaguelands_c60,Eastern Plaguelands,15,17,55,26,70,80
+easternplaguelands_c60,Eastern Plaguelands,15,18,54,30,70,85
+easternplaguelands_c60,Eastern Plaguelands,16,6,57,16,75,25
+easternplaguelands_c60,Eastern Plaguelands,16,7,57,36,75,30
+easternplaguelands_c60,Eastern Plaguelands,16,8,59,30,75,35
+easternplaguelands_c60,Eastern Plaguelands,16,9,60,37,75,40
+easternplaguelands_c60,Eastern Plaguelands,16,10,60,50,75,45
+easternplaguelands_c60,Eastern Plaguelands,16,11,60,30,75,50
+easternplaguelands_c60,Eastern Plaguelands,16,12,56,29,75,55
+easternplaguelands_c60,Eastern Plaguelands,16,13,56,46,75,60
+easternplaguelands_c60,Eastern Plaguelands,16,14,56,49,75,65
+easternplaguelands_c60,Eastern Plaguelands,16,15,56,50,75,70
+easternplaguelands_c60,Eastern Plaguelands,16,16,55,48,75,75
+easternplaguelands_c60,Eastern Plaguelands,16,17,55,38,75,80
+easternplaguelands_c60,Eastern Plaguelands,16,18,54,26,75,85
+easternplaguelands_c60,Eastern Plaguelands,17,8,60,42,80,35
+easternplaguelands_c60,Eastern Plaguelands,17,9,60,23,80,40
+easternplaguelands_c60,Eastern Plaguelands,17,10,59,50,80,45
+easternplaguelands_c60,Eastern Plaguelands,17,11,59,9,80,50
+easternplaguelands_c60,Eastern Plaguelands,17,12,55,9,80,55
+easternplaguelands_c60,Eastern Plaguelands,17,13,55,36,80,60
+easternplaguelands_c60,Eastern Plaguelands,17,14,55,38,80,65
+easternplaguelands_c60,Eastern Plaguelands,17,15,56,16,80,70
+easternplaguelands_c60,Eastern Plaguelands,17,16,54,37,80,75
+easternplaguelands_c60,Eastern Plaguelands,17,17,55,30,80,80
+easternplaguelands_c60,Eastern Plaguelands,17,18,55,20,80,85
+easternplaguelands_c60,Eastern Plaguelands,18,8,59,50,85,35
+easternplaguelands_c60,Eastern Plaguelands,18,9,60,43,85,40
+easternplaguelands_c60,Eastern Plaguelands,18,10,60,39,85,45
+easternplaguelands_c60,Eastern Plaguelands,18,17,56,27,85,80
+easternplaguelands_c60,Eastern Plaguelands,18,18,56,27,85,85
+elwynn_c60,Elwynn Forest,8,11,5,1,35,50
+elwynn_c60,Elwynn Forest,9,7,2,1,40,30
+elwynn_c60,Elwynn Forest,9,8,2,2,40,35
+elwynn_c60,Elwynn Forest,9,10,1,1,40,45
+elwynn_c60,Elwynn Forest,9,11,5,9,40,50
+elwynn_c60,Elwynn Forest,9,12,4,11,40,55
+elwynn_c60,Elwynn Forest,9,13,4,3,40,60
+elwynn_c60,Elwynn Forest,10,6,4,6,45,25
+elwynn_c60,Elwynn Forest,10,7,2,16,45,30
+elwynn_c60,Elwynn Forest,10,8,2,26,45,35
+elwynn_c60,Elwynn Forest,10,9,1,12,45,40
+elwynn_c60,Elwynn Forest,10,10,2,6,45,45
+elwynn_c60,Elwynn Forest,10,11,5,1,45,50
+elwynn_c60,Elwynn Forest,10,12,4,4,45,55
+elwynn_c60,Elwynn Forest,10,13,6,2,45,60
+elwynn_c60,Elwynn Forest,10,14,6,3,45,65
+elwynn_c60,Elwynn Forest,11,6,4,2,50,25
+elwynn_c60,Elwynn Forest,11,8,2,20,50,35
+elwynn_c60,Elwynn Forest,11,9,2,12,50,40
+elwynn_c60,Elwynn Forest,11,10,3,15,50,45
+elwynn_c60,Elwynn Forest,11,11,4,6,50,50
+elwynn_c60,Elwynn Forest,11,12,8,6,50,55
+elwynn_c60,Elwynn Forest,11,13,6,13,50,60
+elwynn_c60,Elwynn Forest,11,14,6,10,50,65
+elwynn_c60,Elwynn Forest,11,15,7,2,50,70
+elwynn_c60,Elwynn Forest,12,9,4,5,55,40
+elwynn_c60,Elwynn Forest,12,10,4,6,55,45
+elwynn_c60,Elwynn Forest,12,11,4,2,55,50
+elwynn_c60,Elwynn Forest,12,12,6,5,55,55
+elwynn_c60,Elwynn Forest,12,13,6,8,55,60
+elwynn_c60,Elwynn Forest,12,14,7,18,55,65
+elwynn_c60,Elwynn Forest,12,15,5,2,55,70
+elwynn_c60,Elwynn Forest,13,10,8,9,60,45
+elwynn_c60,Elwynn Forest,13,11,7,6,60,50
+elwynn_c60,Elwynn Forest,13,12,7,14,60,55
+elwynn_c60,Elwynn Forest,13,13,7,11,60,60
+elwynn_c60,Elwynn Forest,13,14,8,4,60,65
+elwynn_c60,Elwynn Forest,13,15,7,1,60,70
+elwynn_c60,Elwynn Forest,14,8,10,7,65,35
+elwynn_c60,Elwynn Forest,14,9,9,11,65,40
+elwynn_c60,Elwynn Forest,14,10,9,9,65,45
+elwynn_c60,Elwynn Forest,14,11,9,3,65,50
+elwynn_c60,Elwynn Forest,14,12,8,7,65,55
+elwynn_c60,Elwynn Forest,14,13,8,10,65,60
+elwynn_c60,Elwynn Forest,14,14,8,5,65,65
+elwynn_c60,Elwynn Forest,15,8,9,9,70,35
+elwynn_c60,Elwynn Forest,15,9,10,7,70,40
+elwynn_c60,Elwynn Forest,15,10,10,3,70,45
+elwynn_c60,Elwynn Forest,15,11,10,10,70,50
+elwynn_c60,Elwynn Forest,15,12,9,3,70,55
+elwynn_c60,Elwynn Forest,15,13,8,14,70,60
+elwynn_c60,Elwynn Forest,15,14,9,8,70,65
+elwynn_c60,Elwynn Forest,16,8,10,2,75,35
+elwynn_c60,Elwynn Forest,16,9,10,12,75,40
+elwynn_c60,Elwynn Forest,16,10,9,12,75,45
+elwynn_c60,Elwynn Forest,16,11,9,5,75,50
+elwynn_c60,Elwynn Forest,16,12,9,9,75,55
+elwynn_c60,Elwynn Forest,16,13,9,6,75,60
+elwynn_c60,Elwynn Forest,16,14,8,3,75,65
+elwynn_c60,Elwynn Forest,17,11,10,1,80,50
+elwynn_c60,Elwynn Forest,17,12,9,2,80,55
+elwynn_c60,Elwynn Forest,17,13,10,3,80,60
+elwynn_c60,Elwynn Forest,17,15,9,1,80,70
+elwynn_c60,Elwynn Forest,7,12,6,20,30,55
+elwynn_c60,Elwynn Forest,8,12,6,20,35,55
+elwynn_c60,Elwynn Forest,8,13,6,20,35,60
+elwynn_c60,Elwynn Forest,6,14,6,20,25,65
+elwynn_c60,Elwynn Forest,7,14,6,20,30,65
+elwynn_c60,Elwynn Forest,8,14,6,20,35,65
+elwynn_c60,Elwynn Forest,6,15,6,20,25,70
+elwynn_c60,Elwynn Forest,7,15,6,20,30,70
+elwynn_c60,Elwynn Forest,8,15,6,20,35,70
+elwynn_c60,Elwynn Forest,9,15,6,20,40,70
+elwynn_c60,Elwynn Forest,5,16,6,20,20,75
+elwynn_c60,Elwynn Forest,6,16,6,20,25,75
+elwynn_c60,Elwynn Forest,7,16,6,20,30,75
+elwynn_c60,Elwynn Forest,8,16,6,20,35,75
+elwynn_c60,Elwynn Forest,9,16,6,20,40,75
+elwynn_c60,Elwynn Forest,7,17,6,20,30,80
+elwynn_c60,Elwynn Forest,8,17,6,20,35,80
+elwynn_c60,Elwynn Forest,7,18,6,20,30,85
+elwynn_c60,Elwynn Forest,8,18,6,20,35,85
+elwynn_c60,Elwynn Forest,9,18,6,20,40,85
+elwynn_c60,Elwynn Forest,8,19,6,20,35,90
+elwynn_c60,Elwynn Forest,9,19,6,20,40,90
+elwynn_c60,Elwynn Forest,4,20,6,20,15,95
+elwynn_c60,Elwynn Forest,10,15,9,20,45,70
+elwynn_c60,Elwynn Forest,10,16,8,20,45,75
+elwynn_c60,Elwynn Forest,11,16,8,20,50,75
+elwynn_c60,Elwynn Forest,12,16,8,20,55,75
+elwynn_c60,Elwynn Forest,13,16,8,20,60,75
+elwynn_c60,Elwynn Forest,14,16,8,20,65,75
+elwynn_c60,Elwynn Forest,15,16,8,20,70,75
+elwynn_c60,Elwynn Forest,9,17,6,20,40,80
+elwynn_c60,Elwynn Forest,10,17,9,20,45,80
+elwynn_c60,Elwynn Forest,11,17,8,20,50,80
+elwynn_c60,Elwynn Forest,12,17,8,20,55,80
+elwynn_c60,Elwynn Forest,14,17,8,20,65,80
+elwynn_c60,Elwynn Forest,15,17,8,20,70,80
+elwynn_c60,Elwynn Forest,10,18,9,20,45,85
+elwynn_c60,Elwynn Forest,16,16,10,18,75,75
+elwynn_c60,Elwynn Forest,17,16,10,18,80,75
+elwynn_c60,Elwynn Forest,18,16,10,18,85,75
+elwynn_c60,Elwynn Forest,19,16,10,18,90,75
+elwynn_c60,Elwynn Forest,13,17,10,18,60,80
+elwynn_c60,Elwynn Forest,16,17,10,18,75,80
+elwynn_c60,Elwynn Forest,17,17,10,18,80,80
+elwynn_c60,Elwynn Forest,18,17,10,18,85,80
+elwynn_c60,Elwynn Forest,19,17,10,18,90,80
+elwynn_c60,Elwynn Forest,11,18,10,18,50,85
+elwynn_c60,Elwynn Forest,16,18,10,18,75,85
+elwynn_c60,Elwynn Forest,17,18,10,18,80,85
+elwynn_c60,Elwynn Forest,5,17,7,20,20,80
+elwynn_c60,Elwynn Forest,6,17,10,18,25,80
+elwynn_c60,Elwynn Forest,6,18,10,18,25,85
+elwynn_c60,Elwynn Forest,5,19,7,20,20,90
+elwynn_c60,Elwynn Forest,6,19,10,18,25,90
+elwynn_c60,Elwynn Forest,5,20,7,20,20,95
+elwynn_c60,Elwynn Forest,6,20,10,18,25,95
+elwynn_c60,Elwynn Forest,14,7,10,16,65,30
+elwynn_c60,Elwynn Forest,15,7,10,18,70,30
+elwynn_c60,Elwynn Forest,16,7,10,16,75,30
+elwynn_c60,Elwynn Forest,17,9,10,16,80,40
+elwynn_c60,Elwynn Forest,17,10,10,18,80,45
+elwynn_c60,Elwynn Forest,18,12,10,18,85,55
+elwynn_c60,Elwynn Forest,18,13,10,24,85,60
+elwynn_c60,Elwynn Forest,18,14,10,22,85,65
+elwynn_c60,Elwynn Forest,18,15,10,22,85,70
+elwynn_c60,Elwynn Forest,16,15,10,3,75,70
+felwood_c60,Felwood,7,10,52,13,30,45
+felwood_c60,Felwood,7,13,52,9,30,60
+felwood_c60,Felwood,7,14,51,26,30,65
+felwood_c60,Felwood,7,15,51,28,30,70
+felwood_c60,Felwood,8,4,53,43,35,15
+felwood_c60,Felwood,8,5,53,41,35,20
+felwood_c60,Felwood,8,7,50,17,35,30
+felwood_c60,Felwood,8,8,50,17,35,35
+felwood_c60,Felwood,8,9,50,49,35,40
+felwood_c60,Felwood,8,10,53,34,35,45
+felwood_c60,Felwood,8,11,54,50,35,50
+felwood_c60,Felwood,8,12,53,26,35,55
+felwood_c60,Felwood,8,13,52,34,35,60
+felwood_c60,Felwood,8,14,51,45,35,65
+felwood_c60,Felwood,8,15,51,20,35,70
+felwood_c60,Felwood,8,16,50,13,35,75
+felwood_c60,Felwood,8,17,50,33,35,80
+felwood_c60,Felwood,9,3,53,45,40,10
+felwood_c60,Felwood,9,4,53,50,40,15
+felwood_c60,Felwood,9,5,50,47,40,20
+felwood_c60,Felwood,9,6,50,19,40,25
+felwood_c60,Felwood,9,7,50,35,40,30
+felwood_c60,Felwood,9,8,52,34,40,35
+felwood_c60,Felwood,9,9,52,50,40,40
+felwood_c60,Felwood,9,10,52,36,40,45
+felwood_c60,Felwood,9,11,51,25,40,50
+felwood_c60,Felwood,9,12,51,32,40,55
+felwood_c60,Felwood,9,13,50,35,40,60
+felwood_c60,Felwood,9,14,50,44,40,65
+felwood_c60,Felwood,9,15,50,24,40,70
+felwood_c60,Felwood,9,16,48,32,40,75
+felwood_c60,Felwood,9,17,50,50,40,80
+felwood_c60,Felwood,9,18,50,50,40,85
+felwood_c60,Felwood,10,3,53,29,45,10
+felwood_c60,Felwood,10,4,50,44,45,15
+felwood_c60,Felwood,10,5,55,34,45,20
+felwood_c60,Felwood,10,6,53,30,45,25
+felwood_c60,Felwood,10,7,50,19,45,30
+felwood_c60,Felwood,10,8,50,40,45,35
+felwood_c60,Felwood,10,9,52,8,45,40
+felwood_c60,Felwood,10,14,50,14,45,65
+felwood_c60,Felwood,10,15,48,33,45,70
+felwood_c60,Felwood,10,16,48,50,45,75
+felwood_c60,Felwood,10,17,48,47,45,80
+felwood_c60,Felwood,10,18,49,30,45,85
+felwood_c60,Felwood,10,19,49,50,45,90
+felwood_c60,Felwood,11,3,52,50,50,10
+felwood_c60,Felwood,11,4,52,26,50,15
+felwood_c60,Felwood,11,5,53,35,50,20
+felwood_c60,Felwood,11,6,54,15,50,25
+felwood_c60,Felwood,11,7,50,33,50,30
+felwood_c60,Felwood,11,16,49,8,50,75
+felwood_c60,Felwood,11,17,48,27,50,80
+felwood_c60,Felwood,11,18,48,50,50,85
+felwood_c60,Felwood,11,19,48,22,50,90
+felwood_c60,Felwood,12,2,55,29,55,5
+felwood_c60,Felwood,12,3,52,38,55,10
+felwood_c60,Felwood,12,4,54,32,55,15
+felwood_c60,Felwood,12,5,54,36,55,20
+felwood_c60,Felwood,12,6,52,29,55,25
+felwood_c60,Felwood,12,17,49,41,55,80
+felwood_c60,Felwood,12,18,48,50,55,85
+felwood_c60,Felwood,12,19,48,11,55,90
+felwood_c60,Felwood,13,1,54,33,60,0
+felwood_c60,Felwood,13,2,55,50,60,5
+felwood_c60,Felwood,13,3,54,27,60,10
+felwood_c60,Felwood,13,4,52,48,60,15
+felwood_c60,Felwood,13,5,52,33,60,20
+felwood_c60,Felwood,14,2,54,19,65,5
+feralas_c60,Feralas,5,9,44,31,20,40
+feralas_c60,Feralas,5,10,44,42,20,45
+feralas_c60,Feralas,5,11,44,12,20,50
+feralas_c60,Feralas,5,12,42,9,20,55
+feralas_c60,Feralas,5,13,44,48,20,60
+feralas_c60,Feralas,5,14,44,32,20,65
+feralas_c60,Feralas,6,9,41,24,25,40
+feralas_c60,Feralas,6,10,41,29,25,45
+feralas_c60,Feralas,6,11,43,30,25,50
+feralas_c60,Feralas,6,12,42,31,25,55
+feralas_c60,Feralas,6,13,44,50,25,60
+feralas_c60,Feralas,6,14,45,45,25,65
+feralas_c60,Feralas,6,15,62,32,25,70
+feralas_c60,Feralas,6,16,62,45,25,75
+feralas_c60,Feralas,6,17,62,47,25,80
+feralas_c60,Feralas,6,18,62,38,25,85
+feralas_c60,Feralas,6,19,62,11,25,90
+feralas_c60,Feralas,7,7,45,14,30,30
+feralas_c60,Feralas,7,8,48,7,30,35
+feralas_c60,Feralas,7,10,43,12,30,45
+feralas_c60,Feralas,7,11,42,29,30,50
+feralas_c60,Feralas,7,12,42,35,30,55
+feralas_c60,Feralas,7,13,44,50,30,60
+feralas_c60,Feralas,7,14,44,45,30,65
+feralas_c60,Feralas,7,15,62,39,30,70
+feralas_c60,Feralas,7,16,62,50,30,75
+feralas_c60,Feralas,7,17,62,50,30,80
+feralas_c60,Feralas,7,18,62,45,30,85
+feralas_c60,Feralas,7,19,62,17,30,90
+feralas_c60,Feralas,8,3,49,20,35,10
+feralas_c60,Feralas,8,4,49,36,35,15
+feralas_c60,Feralas,8,5,49,21,35,20
+feralas_c60,Feralas,8,6,49,6,35,25
+feralas_c60,Feralas,8,7,49,26,35,30
+feralas_c60,Feralas,8,8,49,30,35,35
+feralas_c60,Feralas,8,9,45,46,35,40
+feralas_c60,Feralas,8,10,45,33,35,45
+feralas_c60,Feralas,8,11,45,37,35,50
+feralas_c60,Feralas,8,13,44,25,35,60
+feralas_c60,Feralas,8,14,44,10,35,65
+feralas_c60,Feralas,9,2,50,18,40,5
+feralas_c60,Feralas,9,3,50,44,40,10
+feralas_c60,Feralas,9,4,50,32,40,15
+feralas_c60,Feralas,9,5,50,50,40,20
+feralas_c60,Feralas,9,6,50,36,40,25
+feralas_c60,Feralas,9,8,49,27,40,35
+feralas_c60,Feralas,9,9,44,8,40,40
+feralas_c60,Feralas,9,10,49,27,40,45
+feralas_c60,Feralas,9,11,44,11,40,50
+feralas_c60,Feralas,9,13,49,14,40,60
+feralas_c60,Feralas,9,14,48,21,40,65
+feralas_c60,Feralas,10,2,62,13,45,5
+feralas_c60,Feralas,10,3,62,35,45,10
+feralas_c60,Feralas,10,4,62,30,45,15
+feralas_c60,Feralas,10,5,49,32,45,20
+feralas_c60,Feralas,10,6,50,31,45,25
+feralas_c60,Feralas,10,7,50,50,45,30
+feralas_c60,Feralas,10,8,45,29,45,35
+feralas_c60,Feralas,10,10,48,44,45,45
+feralas_c60,Feralas,10,11,49,35,45,50
+feralas_c60,Feralas,10,12,48,22,45,55
+feralas_c60,Feralas,10,13,49,17,45,60
+feralas_c60,Feralas,10,14,49,7,45,65
+feralas_c60,Feralas,11,1,62,7,50,0
+feralas_c60,Feralas,11,2,62,50,50,5
+feralas_c60,Feralas,11,3,62,50,50,10
+feralas_c60,Feralas,11,4,62,50,50,15
+feralas_c60,Feralas,11,5,62,50,50,20
+feralas_c60,Feralas,11,6,50,16,50,25
+feralas_c60,Feralas,11,7,48,33,50,30
+feralas_c60,Feralas,11,10,45,27,50,45
+feralas_c60,Feralas,11,11,44,31,50,50
+feralas_c60,Feralas,11,12,46,31,50,55
+feralas_c60,Feralas,11,13,46,17,50,60
+feralas_c60,Feralas,11,14,46,26,50,65
+feralas_c60,Feralas,11,15,46,41,50,70
+feralas_c60,Feralas,11,16,46,6,50,75
+feralas_c60,Feralas,12,2,62,45,55,5
+feralas_c60,Feralas,12,3,62,50,55,10
+feralas_c60,Feralas,12,4,62,50,55,15
+feralas_c60,Feralas,12,5,62,24,55,20
+feralas_c60,Feralas,12,6,54,19,55,25
+feralas_c60,Feralas,12,7,48,25,55,30
+feralas_c60,Feralas,12,8,54,20,55,35
+feralas_c60,Feralas,12,9,54,50,55,40
+feralas_c60,Feralas,12,10,45,25,55,45
+feralas_c60,Feralas,12,11,44,40,55,50
+feralas_c60,Feralas,12,12,42,31,55,55
+feralas_c60,Feralas,12,13,44,42,55,60
+feralas_c60,Feralas,12,14,46,33,55,65
+feralas_c60,Feralas,12,15,46,50,55,70
+feralas_c60,Feralas,13,5,54,46,60,20
+feralas_c60,Feralas,13,6,54,50,60,25
+feralas_c60,Feralas,13,7,54,50,60,30
+feralas_c60,Feralas,13,8,54,50,60,35
+feralas_c60,Feralas,13,9,54,50,60,40
+feralas_c60,Feralas,13,10,44,31,60,45
+feralas_c60,Feralas,13,11,44,26,60,50
+feralas_c60,Feralas,13,12,44,23,60,55
+feralas_c60,Feralas,13,13,42,27,60,60
+feralas_c60,Feralas,13,14,46,50,60,65
+feralas_c60,Feralas,13,15,45,15,60,70
+feralas_c60,Feralas,14,6,54,11,65,25
+feralas_c60,Feralas,14,7,41,18,65,30
+feralas_c60,Feralas,14,8,42,38,65,35
+feralas_c60,Feralas,14,9,43,22,65,40
+feralas_c60,Feralas,14,10,42,26,65,45
+feralas_c60,Feralas,14,11,44,41,65,50
+feralas_c60,Feralas,14,12,42,32,65,55
+feralas_c60,Feralas,14,13,44,20,65,60
+feralas_c60,Feralas,15,5,42,9,70,20
+feralas_c60,Feralas,15,6,42,31,70,25
+feralas_c60,Feralas,15,7,41,50,70,30
+feralas_c60,Feralas,15,8,43,48,70,35
+feralas_c60,Feralas,15,9,43,50,70,40
+feralas_c60,Feralas,15,10,43,8,70,45
+feralas_c60,Feralas,15,11,42,30,70,50
+feralas_c60,Feralas,15,12,44,41,70,55
+feralas_c60,Feralas,15,13,46,46,70,60
+feralas_c60,Feralas,15,14,46,30,70,65
+feralas_c60,Feralas,16,5,42,8,75,20
+feralas_c60,Feralas,16,6,42,28,75,25
+feralas_c60,Feralas,16,7,42,36,75,30
+feralas_c60,Feralas,16,8,43,41,75,35
+feralas_c60,Feralas,16,9,41,33,75,40
+feralas_c60,Feralas,16,10,43,27,75,45
+feralas_c60,Feralas,16,11,42,46,75,50
+feralas_c60,Feralas,16,12,44,24,75,55
+feralas_c60,Feralas,16,13,46,46,75,60
+feralas_c60,Feralas,16,14,46,50,75,65
+feralas_c60,Feralas,17,8,43,50,80,35
+feralas_c60,Feralas,17,9,43,33,80,40
+feralas_c60,Feralas,17,10,43,50,80,45
+feralas_c60,Feralas,18,8,43,50,85,35
+feralas_c60,Feralas,18,9,41,46,85,40
+feralas_c60,Feralas,18,10,43,25,85,45
+hillsbrad_c60,Hillsbrad Foothills,4,3,34,27,15,10
+hillsbrad_c60,Hillsbrad Foothills,4,4,34,23,15,15
+hillsbrad_c60,Hillsbrad Foothills,4,8,22,41,15,35
+hillsbrad_c60,Hillsbrad Foothills,4,9,22,50,15,40
+hillsbrad_c60,Hillsbrad Foothills,4,10,22,45,15,45
+hillsbrad_c60,Hillsbrad Foothills,4,11,21,29,15,50
+hillsbrad_c60,Hillsbrad Foothills,5,3,35,30,20,10
+hillsbrad_c60,Hillsbrad Foothills,5,4,35,27,20,15
+hillsbrad_c60,Hillsbrad Foothills,5,5,26,27,20,20
+hillsbrad_c60,Hillsbrad Foothills,5,6,25,23,20,25
+hillsbrad_c60,Hillsbrad Foothills,5,8,21,42,20,35
+hillsbrad_c60,Hillsbrad Foothills,5,9,21,28,20,40
+hillsbrad_c60,Hillsbrad Foothills,5,10,22,48,20,45
+hillsbrad_c60,Hillsbrad Foothills,5,11,25,28,20,50
+hillsbrad_c60,Hillsbrad Foothills,5,12,25,22,20,55
+hillsbrad_c60,Hillsbrad Foothills,5,13,29,17,20,60
+hillsbrad_c60,Hillsbrad Foothills,5,14,29,25,20,65
+hillsbrad_c60,Hillsbrad Foothills,5,15,30,30,20,70
+hillsbrad_c60,Hillsbrad Foothills,6,3,25,16,25,10
+hillsbrad_c60,Hillsbrad Foothills,6,4,26,21,25,15
+hillsbrad_c60,Hillsbrad Foothills,6,5,33,27,25,20
+hillsbrad_c60,Hillsbrad Foothills,6,6,26,28,25,25
+hillsbrad_c60,Hillsbrad Foothills,6,7,26,46,25,30
+hillsbrad_c60,Hillsbrad Foothills,6,8,26,33,25,35
+hillsbrad_c60,Hillsbrad Foothills,6,9,26,31,25,40
+hillsbrad_c60,Hillsbrad Foothills,6,11,27,41,25,50
+hillsbrad_c60,Hillsbrad Foothills,6,12,28,29,25,55
+hillsbrad_c60,Hillsbrad Foothills,6,13,28,31,25,60
+hillsbrad_c60,Hillsbrad Foothills,6,14,25,24,25,65
+hillsbrad_c60,Hillsbrad Foothills,6,15,30,24,25,70
+hillsbrad_c60,Hillsbrad Foothills,6,16,29,7,25,75
+hillsbrad_c60,Hillsbrad Foothills,7,3,25,33,30,10
+hillsbrad_c60,Hillsbrad Foothills,7,4,26,42,30,15
+hillsbrad_c60,Hillsbrad Foothills,7,5,26,25,30,20
+hillsbrad_c60,Hillsbrad Foothills,7,6,25,10,30,25
+hillsbrad_c60,Hillsbrad Foothills,7,7,24,12,30,30
+hillsbrad_c60,Hillsbrad Foothills,7,8,26,34,30,35
+hillsbrad_c60,Hillsbrad Foothills,7,9,26,36,30,40
+hillsbrad_c60,Hillsbrad Foothills,7,10,26,28,30,45
+hillsbrad_c60,Hillsbrad Foothills,7,11,27,32,30,50
+hillsbrad_c60,Hillsbrad Foothills,7,12,27,38,30,55
+hillsbrad_c60,Hillsbrad Foothills,7,13,26,25,30,60
+hillsbrad_c60,Hillsbrad Foothills,7,14,25,23,30,65
+hillsbrad_c60,Hillsbrad Foothills,7,15,30,25,30,70
+hillsbrad_c60,Hillsbrad Foothills,7,16,30,17,30,75
+hillsbrad_c60,Hillsbrad Foothills,8,1,33,9,35,0
+hillsbrad_c60,Hillsbrad Foothills,8,2,33,50,35,5
+hillsbrad_c60,Hillsbrad Foothills,8,3,33,50,35,10
+hillsbrad_c60,Hillsbrad Foothills,8,4,33,41,35,15
+hillsbrad_c60,Hillsbrad Foothills,8,5,33,47,35,20
+hillsbrad_c60,Hillsbrad Foothills,8,6,25,25,35,25
+hillsbrad_c60,Hillsbrad Foothills,8,7,26,50,35,30
+hillsbrad_c60,Hillsbrad Foothills,8,8,24,50,35,35
+hillsbrad_c60,Hillsbrad Foothills,8,9,25,15,35,40
+hillsbrad_c60,Hillsbrad Foothills,8,10,25,42,35,45
+hillsbrad_c60,Hillsbrad Foothills,8,11,25,50,35,50
+hillsbrad_c60,Hillsbrad Foothills,8,12,26,49,35,55
+hillsbrad_c60,Hillsbrad Foothills,8,13,26,42,35,60
+hillsbrad_c60,Hillsbrad Foothills,8,14,32,25,35,65
+hillsbrad_c60,Hillsbrad Foothills,8,15,31,34,35,70
+hillsbrad_c60,Hillsbrad Foothills,9,1,34,22,40,0
+hillsbrad_c60,Hillsbrad Foothills,9,2,34,29,40,5
+hillsbrad_c60,Hillsbrad Foothills,9,3,33,50,40,10
+hillsbrad_c60,Hillsbrad Foothills,9,5,34,50,40,20
+hillsbrad_c60,Hillsbrad Foothills,9,6,33,42,40,25
+hillsbrad_c60,Hillsbrad Foothills,9,7,32,35,40,30
+hillsbrad_c60,Hillsbrad Foothills,9,8,24,49,40,35
+hillsbrad_c60,Hillsbrad Foothills,9,9,23,24,40,40
+hillsbrad_c60,Hillsbrad Foothills,9,10,26,34,40,45
+hillsbrad_c60,Hillsbrad Foothills,9,11,26,24,40,50
+hillsbrad_c60,Hillsbrad Foothills,9,12,26,25,40,55
+hillsbrad_c60,Hillsbrad Foothills,9,13,26,40,40,60
+hillsbrad_c60,Hillsbrad Foothills,9,14,32,50,40,65
+hillsbrad_c60,Hillsbrad Foothills,9,15,31,44,40,70
+hillsbrad_c60,Hillsbrad Foothills,10,1,35,38,45,0
+hillsbrad_c60,Hillsbrad Foothills,10,2,34,41,45,5
+hillsbrad_c60,Hillsbrad Foothills,10,3,34,7,45,10
+hillsbrad_c60,Hillsbrad Foothills,10,4,34,45,45,15
+hillsbrad_c60,Hillsbrad Foothills,10,5,34,16,45,20
+hillsbrad_c60,Hillsbrad Foothills,10,6,24,28,45,25
+hillsbrad_c60,Hillsbrad Foothills,10,7,31,42,45,30
+hillsbrad_c60,Hillsbrad Foothills,10,8,23,37,45,35
+hillsbrad_c60,Hillsbrad Foothills,10,9,23,48,45,40
+hillsbrad_c60,Hillsbrad Foothills,10,10,23,25,45,45
+hillsbrad_c60,Hillsbrad Foothills,10,12,26,33,45,55
+hillsbrad_c60,Hillsbrad Foothills,10,13,31,36,45,60
+hillsbrad_c60,Hillsbrad Foothills,10,14,32,45,45,65
+hillsbrad_c60,Hillsbrad Foothills,10,15,31,17,45,70
+hillsbrad_c60,Hillsbrad Foothills,11,1,35,49,50,0
+hillsbrad_c60,Hillsbrad Foothills,11,2,35,15,50,5
+hillsbrad_c60,Hillsbrad Foothills,11,3,33,16,50,10
+hillsbrad_c60,Hillsbrad Foothills,11,4,34,29,50,15
+hillsbrad_c60,Hillsbrad Foothills,11,6,24,23,50,25
+hillsbrad_c60,Hillsbrad Foothills,11,7,24,50,50,30
+hillsbrad_c60,Hillsbrad Foothills,11,8,24,49,50,35
+hillsbrad_c60,Hillsbrad Foothills,11,9,24,35,50,40
+hillsbrad_c60,Hillsbrad Foothills,11,10,24,38,50,45
+hillsbrad_c60,Hillsbrad Foothills,11,13,31,27,50,60
+hillsbrad_c60,Hillsbrad Foothills,11,14,31,50,50,65
+hillsbrad_c60,Hillsbrad Foothills,11,15,31,32,50,70
+hillsbrad_c60,Hillsbrad Foothills,12,2,22,28,55,5
+hillsbrad_c60,Hillsbrad Foothills,12,3,22,50,55,10
+hillsbrad_c60,Hillsbrad Foothills,12,4,22,13,55,15
+hillsbrad_c60,Hillsbrad Foothills,12,5,21,37,55,20
+hillsbrad_c60,Hillsbrad Foothills,12,6,22,20,55,25
+hillsbrad_c60,Hillsbrad Foothills,12,7,22,25,55,30
+hillsbrad_c60,Hillsbrad Foothills,12,8,24,28,55,35
+hillsbrad_c60,Hillsbrad Foothills,12,9,24,28,55,40
+hillsbrad_c60,Hillsbrad Foothills,12,10,31,50,55,45
+hillsbrad_c60,Hillsbrad Foothills,12,11,31,21,55,50
+hillsbrad_c60,Hillsbrad Foothills,12,12,28,28,55,55
+hillsbrad_c60,Hillsbrad Foothills,12,13,31,27,55,60
+hillsbrad_c60,Hillsbrad Foothills,12,14,32,26,55,65
+hillsbrad_c60,Hillsbrad Foothills,12,15,31,41,55,70
+hillsbrad_c60,Hillsbrad Foothills,12,16,32,50,55,75
+hillsbrad_c60,Hillsbrad Foothills,13,1,33,13,60,0
+hillsbrad_c60,Hillsbrad Foothills,13,2,35,20,60,5
+hillsbrad_c60,Hillsbrad Foothills,13,3,22,34,60,10
+hillsbrad_c60,Hillsbrad Foothills,13,4,22,11,60,15
+hillsbrad_c60,Hillsbrad Foothills,13,6,22,31,60,25
+hillsbrad_c60,Hillsbrad Foothills,13,7,22,50,60,30
+hillsbrad_c60,Hillsbrad Foothills,13,8,21,32,60,35
+hillsbrad_c60,Hillsbrad Foothills,13,9,31,15,60,40
+hillsbrad_c60,Hillsbrad Foothills,13,10,26,23,60,45
+hillsbrad_c60,Hillsbrad Foothills,13,11,27,22,60,50
+hillsbrad_c60,Hillsbrad Foothills,13,12,28,50,60,55
+hillsbrad_c60,Hillsbrad Foothills,13,13,28,44,60,60
+hillsbrad_c60,Hillsbrad Foothills,13,14,28,31,60,65
+hillsbrad_c60,Hillsbrad Foothills,13,15,28,31,60,70
+hillsbrad_c60,Hillsbrad Foothills,13,16,29,37,60,75
+hillsbrad_c60,Hillsbrad Foothills,13,17,30,39,60,80
+hillsbrad_c60,Hillsbrad Foothills,14,2,22,8,65,5
+hillsbrad_c60,Hillsbrad Foothills,14,3,22,44,65,10
+hillsbrad_c60,Hillsbrad Foothills,14,4,22,25,65,15
+hillsbrad_c60,Hillsbrad Foothills,14,5,31,28,65,20
+hillsbrad_c60,Hillsbrad Foothills,14,6,31,30,65,25
+hillsbrad_c60,Hillsbrad Foothills,14,7,31,34,65,30
+hillsbrad_c60,Hillsbrad Foothills,14,8,31,37,65,35
+hillsbrad_c60,Hillsbrad Foothills,14,10,22,40,65,45
+hillsbrad_c60,Hillsbrad Foothills,14,11,25,50,65,50
+hillsbrad_c60,Hillsbrad Foothills,14,12,26,29,65,55
+hillsbrad_c60,Hillsbrad Foothills,14,13,27,29,65,60
+hillsbrad_c60,Hillsbrad Foothills,14,14,28,25,65,65
+hillsbrad_c60,Hillsbrad Foothills,14,15,29,28,65,70
+hillsbrad_c60,Hillsbrad Foothills,14,16,29,26,65,75
+hillsbrad_c60,Hillsbrad Foothills,14,17,30,22,65,80
+hillsbrad_c60,Hillsbrad Foothills,15,2,31,46,70,5
+hillsbrad_c60,Hillsbrad Foothills,15,5,26,50,70,20
+hillsbrad_c60,Hillsbrad Foothills,15,6,26,31,70,25
+hillsbrad_c60,Hillsbrad Foothills,15,7,26,35,70,30
+hillsbrad_c60,Hillsbrad Foothills,15,8,21,45,70,35
+hillsbrad_c60,Hillsbrad Foothills,15,9,21,50,70,40
+hillsbrad_c60,Hillsbrad Foothills,15,10,26,21,70,45
+hillsbrad_c60,Hillsbrad Foothills,15,11,26,42,70,50
+hillsbrad_c60,Hillsbrad Foothills,15,12,26,50,70,55
+hillsbrad_c60,Hillsbrad Foothills,15,13,25,32,70,60
+hillsbrad_c60,Hillsbrad Foothills,15,14,27,29,70,65
+hillsbrad_c60,Hillsbrad Foothills,15,15,29,22,70,70
+hillsbrad_c60,Hillsbrad Foothills,15,16,30,31,70,75
+hillsbrad_c60,Hillsbrad Foothills,15,17,30,13,70,80
+hillsbrad_c60,Hillsbrad Foothills,16,1,31,44,75,0
+hillsbrad_c60,Hillsbrad Foothills,16,6,26,46,75,25
+hillsbrad_c60,Hillsbrad Foothills,16,7,26,50,75,30
+hillsbrad_c60,Hillsbrad Foothills,16,8,22,42,75,35
+hillsbrad_c60,Hillsbrad Foothills,16,9,21,38,75,40
+hillsbrad_c60,Hillsbrad Foothills,16,10,21,15,75,45
+hillsbrad_c60,Hillsbrad Foothills,16,11,26,30,75,50
+hillsbrad_c60,Hillsbrad Foothills,16,12,26,50,75,55
+hillsbrad_c60,Hillsbrad Foothills,16,13,25,41,75,60
+hillsbrad_c60,Hillsbrad Foothills,16,14,26,18,75,65
+hillsbrad_c60,Hillsbrad Foothills,17,7,26,25,80,30
+hillsbrad_c60,Hillsbrad Foothills,17,8,26,28,80,35
+hillsbrad_c60,Hillsbrad Foothills,17,9,21,40,80,40
+hillsbrad_c60,Hillsbrad Foothills,17,10,26,28,80,45
+hillsbrad_c60,Hillsbrad Foothills,17,11,26,41,80,50
+hillsbrad_c60,Hillsbrad Foothills,18,7,26,21,85,30
+hillsbrad_c60,Hillsbrad Foothills,18,8,26,36,85,35
+hillsbrad_c60,Hillsbrad Foothills,18,9,26,39,85,40
+hillsbrad_c60,Hillsbrad Foothills,18,10,25,25,85,45
+hillsbrad_c60,Hillsbrad Foothills,6,10,23,2,25,45
+hillsbrad_c60,Hillsbrad Foothills,11,11,31,3,50,50
+hinterlands_c60,The Hinterlands,3,11,42,15,10,50
+hinterlands_c60,The Hinterlands,4,10,42,50,15,45
+hinterlands_c60,The Hinterlands,4,11,42,50,15,50
+hinterlands_c60,The Hinterlands,4,12,42,50,15,55
+hinterlands_c60,The Hinterlands,5,10,42,48,20,45
+hinterlands_c60,The Hinterlands,5,11,42,44,20,50
+hinterlands_c60,The Hinterlands,5,12,41,50,20,55
+hinterlands_c60,The Hinterlands,5,13,41,25,20,60
+hinterlands_c60,The Hinterlands,6,8,47,41,25,35
+hinterlands_c60,The Hinterlands,6,9,47,50,25,40
+hinterlands_c60,The Hinterlands,6,10,47,23,25,45
+hinterlands_c60,The Hinterlands,6,11,43,32,25,50
+hinterlands_c60,The Hinterlands,6,12,44,40,25,55
+hinterlands_c60,The Hinterlands,6,13,43,36,25,60
+hinterlands_c60,The Hinterlands,6,14,43,42,25,65
+hinterlands_c60,The Hinterlands,6,16,46,9,25,75
+hinterlands_c60,The Hinterlands,7,9,46,37,30,40
+hinterlands_c60,The Hinterlands,7,10,46,45,30,45
+hinterlands_c60,The Hinterlands,7,11,44,36,30,50
+hinterlands_c60,The Hinterlands,7,12,43,50,30,55
+hinterlands_c60,The Hinterlands,7,13,44,33,30,60
+hinterlands_c60,The Hinterlands,7,14,45,50,30,65
+hinterlands_c60,The Hinterlands,7,15,45,30,30,70
+hinterlands_c60,The Hinterlands,7,16,46,40,30,75
+hinterlands_c60,The Hinterlands,8,9,43,28,35,40
+hinterlands_c60,The Hinterlands,8,10,43,29,35,45
+hinterlands_c60,The Hinterlands,8,11,44,50,35,50
+hinterlands_c60,The Hinterlands,8,12,45,49,35,55
+hinterlands_c60,The Hinterlands,8,13,45,49,35,60
+hinterlands_c60,The Hinterlands,8,14,45,40,35,65
+hinterlands_c60,The Hinterlands,8,15,46,50,35,70
+hinterlands_c60,The Hinterlands,8,16,46,15,35,75
+hinterlands_c60,The Hinterlands,9,8,48,14,40,35
+hinterlands_c60,The Hinterlands,9,9,47,40,40,40
+hinterlands_c60,The Hinterlands,9,10,46,50,40,45
+hinterlands_c60,The Hinterlands,9,11,46,32,40,50
+hinterlands_c60,The Hinterlands,9,12,45,48,40,55
+hinterlands_c60,The Hinterlands,9,13,46,43,40,60
+hinterlands_c60,The Hinterlands,9,14,46,36,40,65
+hinterlands_c60,The Hinterlands,10,8,48,20,45,35
+hinterlands_c60,The Hinterlands,10,9,47,49,45,40
+hinterlands_c60,The Hinterlands,10,10,48,18,45,45
+hinterlands_c60,The Hinterlands,10,11,47,27,45,50
+hinterlands_c60,The Hinterlands,10,12,47,27,45,55
+hinterlands_c60,The Hinterlands,10,13,47,27,45,60
+hinterlands_c60,The Hinterlands,10,14,47,50,45,65
+hinterlands_c60,The Hinterlands,10,15,47,50,45,70
+hinterlands_c60,The Hinterlands,11,4,60,10,50,15
+hinterlands_c60,The Hinterlands,11,5,60,9,50,20
+hinterlands_c60,The Hinterlands,11,8,48,46,50,35
+hinterlands_c60,The Hinterlands,11,9,48,50,50,40
+hinterlands_c60,The Hinterlands,11,10,48,47,50,45
+hinterlands_c60,The Hinterlands,11,11,48,30,50,50
+hinterlands_c60,The Hinterlands,11,12,47,50,50,55
+hinterlands_c60,The Hinterlands,11,14,47,17,50,65
+hinterlands_c60,The Hinterlands,11,15,47,11,50,70
+hinterlands_c60,The Hinterlands,11,17,51,32,50,80
+hinterlands_c60,The Hinterlands,11,18,51,8,50,85
+hinterlands_c60,The Hinterlands,12,2,60,25,55,5
+hinterlands_c60,The Hinterlands,12,3,60,50,55,10
+hinterlands_c60,The Hinterlands,12,4,60,50,55,15
+hinterlands_c60,The Hinterlands,12,5,60,50,55,20
+hinterlands_c60,The Hinterlands,12,6,60,50,55,25
+hinterlands_c60,The Hinterlands,12,7,60,21,55,30
+hinterlands_c60,The Hinterlands,12,8,47,36,55,35
+hinterlands_c60,The Hinterlands,12,9,48,27,55,40
+hinterlands_c60,The Hinterlands,12,10,48,38,55,45
+hinterlands_c60,The Hinterlands,12,11,48,50,55,50
+hinterlands_c60,The Hinterlands,12,13,49,15,55,60
+hinterlands_c60,The Hinterlands,12,14,50,26,55,65
+hinterlands_c60,The Hinterlands,12,15,50,50,55,70
+hinterlands_c60,The Hinterlands,12,16,51,49,55,75
+hinterlands_c60,The Hinterlands,12,17,51,50,55,80
+hinterlands_c60,The Hinterlands,12,18,51,50,55,85
+hinterlands_c60,The Hinterlands,13,2,60,50,60,5
+hinterlands_c60,The Hinterlands,13,3,60,50,60,10
+hinterlands_c60,The Hinterlands,13,4,60,50,60,15
+hinterlands_c60,The Hinterlands,13,5,60,50,60,20
+hinterlands_c60,The Hinterlands,13,6,60,50,60,25
+hinterlands_c60,The Hinterlands,13,7,60,50,60,30
+hinterlands_c60,The Hinterlands,13,8,47,23,60,35
+hinterlands_c60,The Hinterlands,13,9,47,41,60,40
+hinterlands_c60,The Hinterlands,13,10,48,50,60,45
+hinterlands_c60,The Hinterlands,13,11,48,50,60,50
+hinterlands_c60,The Hinterlands,13,12,48,24,60,55
+hinterlands_c60,The Hinterlands,13,13,47,24,60,60
+hinterlands_c60,The Hinterlands,13,14,49,36,60,65
+hinterlands_c60,The Hinterlands,13,15,50,45,60,70
+hinterlands_c60,The Hinterlands,13,16,48,25,60,75
+hinterlands_c60,The Hinterlands,13,17,51,38,60,80
+hinterlands_c60,The Hinterlands,13,18,51,13,60,85
+hinterlands_c60,The Hinterlands,14,2,60,49,65,5
+hinterlands_c60,The Hinterlands,14,3,60,50,65,10
+hinterlands_c60,The Hinterlands,14,4,60,50,65,15
+hinterlands_c60,The Hinterlands,14,5,60,50,65,20
+hinterlands_c60,The Hinterlands,14,6,60,50,65,25
+hinterlands_c60,The Hinterlands,14,7,60,48,65,30
+hinterlands_c60,The Hinterlands,14,9,47,32,65,40
+hinterlands_c60,The Hinterlands,14,10,48,49,65,45
+hinterlands_c60,The Hinterlands,14,11,48,50,65,50
+hinterlands_c60,The Hinterlands,14,12,48,50,65,55
+hinterlands_c60,The Hinterlands,14,13,46,20,65,60
+hinterlands_c60,The Hinterlands,14,14,47,37,65,65
+hinterlands_c60,The Hinterlands,14,15,49,50,65,70
+hinterlands_c60,The Hinterlands,14,16,50,27,65,75
+hinterlands_c60,The Hinterlands,14,17,50,45,65,80
+hinterlands_c60,The Hinterlands,15,3,60,32,70,10
+hinterlands_c60,The Hinterlands,15,4,60,49,70,15
+hinterlands_c60,The Hinterlands,15,5,60,49,70,20
+hinterlands_c60,The Hinterlands,15,6,60,30,70,25
+hinterlands_c60,The Hinterlands,15,10,47,26,70,45
+hinterlands_c60,The Hinterlands,15,11,48,50,70,50
+hinterlands_c60,The Hinterlands,15,12,48,50,70,55
+hinterlands_c60,The Hinterlands,15,13,48,26,70,60
+hinterlands_c60,The Hinterlands,15,15,47,6,70,70
+hinterlands_c60,The Hinterlands,16,10,48,30,75,45
+hinterlands_c60,The Hinterlands,16,11,48,36,75,50
+hinterlands_c60,The Hinterlands,16,12,48,24,75,55
+hinterlands_c60,The Hinterlands,16,13,50,50,75,60
+hinterlands_c60,The Hinterlands,16,14,50,50,75,65
+hinterlands_c60,The Hinterlands,16,15,50,50,75,70
+hinterlands_c60,The Hinterlands,16,16,50,40,75,75
+hinterlands_c60,The Hinterlands,16,17,50,39,75,80
+hinterlands_c60,The Hinterlands,16,18,50,38,75,85
+hinterlands_c60,The Hinterlands,17,9,50,50,80,40
+hinterlands_c60,The Hinterlands,17,10,50,50,80,45
+hinterlands_c60,The Hinterlands,17,11,50,50,80,50
+hinterlands_c60,The Hinterlands,17,12,50,50,80,55
+hinterlands_c60,The Hinterlands,17,13,50,50,80,60
+hinterlands_c60,The Hinterlands,17,14,50,45,80,65
+hinterlands_c60,The Hinterlands,17,15,50,34,80,70
+hinterlands_c60,The Hinterlands,18,9,50,31,85,40
+hinterlands_c60,The Hinterlands,18,10,50,50,85,45
+hinterlands_c60,The Hinterlands,18,11,50,50,85,50
+hinterlands_c60,The Hinterlands,18,12,50,50,85,55
+hinterlands_c60,The Hinterlands,18,13,50,41,85,60
+lochmodan_c60,Loch Modan,4,16,12,14,15,75
+lochmodan_c60,Loch Modan,4,17,11,7,15,80
+lochmodan_c60,Loch Modan,5,3,11,31,20,10
+lochmodan_c60,Loch Modan,5,5,11,47,20,20
+lochmodan_c60,Loch Modan,5,6,11,19,20,25
+lochmodan_c60,Loch Modan,5,7,11,37,20,30
+lochmodan_c60,Loch Modan,5,14,11,19,20,65
+lochmodan_c60,Loch Modan,5,15,11,47,20,70
+lochmodan_c60,Loch Modan,5,16,12,47,20,75
+lochmodan_c60,Loch Modan,5,17,11,43,20,80
+lochmodan_c60,Loch Modan,6,2,12,12,25,5
+lochmodan_c60,Loch Modan,6,3,12,47,25,10
+lochmodan_c60,Loch Modan,6,4,11,41,25,15
+lochmodan_c60,Loch Modan,6,5,11,23,25,20
+lochmodan_c60,Loch Modan,6,6,12,29,25,25
+lochmodan_c60,Loch Modan,6,7,11,50,25,30
+lochmodan_c60,Loch Modan,6,8,11,32,25,35
+lochmodan_c60,Loch Modan,6,9,12,24,25,40
+lochmodan_c60,Loch Modan,6,10,12,48,25,45
+lochmodan_c60,Loch Modan,6,11,12,48,25,50
+lochmodan_c60,Loch Modan,6,12,12,50,25,55
+lochmodan_c60,Loch Modan,6,13,12,15,25,60
+lochmodan_c60,Loch Modan,6,15,12,25,25,70
+lochmodan_c60,Loch Modan,6,16,12,23,25,75
+lochmodan_c60,Loch Modan,6,17,14,32,25,80
+lochmodan_c60,Loch Modan,6,18,14,12,25,85
+lochmodan_c60,Loch Modan,7,3,12,22,30,10
+lochmodan_c60,Loch Modan,7,4,11,50,30,15
+lochmodan_c60,Loch Modan,7,5,11,35,30,20
+lochmodan_c60,Loch Modan,7,6,12,22,30,25
+lochmodan_c60,Loch Modan,7,7,11,43,30,30
+lochmodan_c60,Loch Modan,7,8,11,50,30,35
+lochmodan_c60,Loch Modan,7,9,11,29,30,40
+lochmodan_c60,Loch Modan,7,11,11,15,30,50
+lochmodan_c60,Loch Modan,7,12,11,32,30,55
+lochmodan_c60,Loch Modan,7,14,12,50,30,65
+lochmodan_c60,Loch Modan,7,15,12,50,30,70
+lochmodan_c60,Loch Modan,7,16,12,50,30,75
+lochmodan_c60,Loch Modan,7,17,12,23,30,80
+lochmodan_c60,Loch Modan,7,18,14,26,30,85
+lochmodan_c60,Loch Modan,8,2,11,12,35,5
+lochmodan_c60,Loch Modan,8,3,11,48,35,10
+lochmodan_c60,Loch Modan,8,4,10,38,35,15
+lochmodan_c60,Loch Modan,8,5,13,24,35,20
+lochmodan_c60,Loch Modan,8,6,11,33,35,25
+lochmodan_c60,Loch Modan,8,7,12,50,35,30
+lochmodan_c60,Loch Modan,8,8,11,50,35,35
+lochmodan_c60,Loch Modan,8,11,12,24,35,50
+lochmodan_c60,Loch Modan,8,12,12,8,35,55
+lochmodan_c60,Loch Modan,8,13,17,39,35,60
+lochmodan_c60,Loch Modan,8,15,11,23,35,70
+lochmodan_c60,Loch Modan,8,16,14,31,35,75
+lochmodan_c60,Loch Modan,8,17,14,30,35,80
+lochmodan_c60,Loch Modan,8,18,16,49,35,85
+lochmodan_c60,Loch Modan,8,19,16,20,35,90
+lochmodan_c60,Loch Modan,9,3,11,23,40,10
+lochmodan_c60,Loch Modan,9,4,13,29,40,15
+lochmodan_c60,Loch Modan,9,5,13,32,40,20
+lochmodan_c60,Loch Modan,9,6,13,27,40,25
+lochmodan_c60,Loch Modan,9,11,11,23,40,50
+lochmodan_c60,Loch Modan,9,13,14,45,40,60
+lochmodan_c60,Loch Modan,9,14,12,28,40,65
+lochmodan_c60,Loch Modan,9,15,12,15,40,70
+lochmodan_c60,Loch Modan,9,16,11,6,40,75
+lochmodan_c60,Loch Modan,10,3,13,17,45,10
+lochmodan_c60,Loch Modan,10,4,13,50,45,15
+lochmodan_c60,Loch Modan,10,5,14,50,45,20
+lochmodan_c60,Loch Modan,10,6,14,47,45,25
+lochmodan_c60,Loch Modan,10,7,20,33,45,30
+lochmodan_c60,Loch Modan,10,8,20,46,45,35
+lochmodan_c60,Loch Modan,10,9,20,18,45,40
+lochmodan_c60,Loch Modan,10,10,20,50,45,45
+lochmodan_c60,Loch Modan,10,11,20,7,45,50
+lochmodan_c60,Loch Modan,10,12,20,47,45,55
+lochmodan_c60,Loch Modan,10,13,20,40,45,60
+lochmodan_c60,Loch Modan,11,3,13,17,50,10
+lochmodan_c60,Loch Modan,11,4,13,48,50,15
+lochmodan_c60,Loch Modan,11,5,16,47,50,20
+lochmodan_c60,Loch Modan,11,6,16,38,50,25
+lochmodan_c60,Loch Modan,11,9,20,14,50,40
+lochmodan_c60,Loch Modan,11,10,20,43,50,45
+lochmodan_c60,Loch Modan,11,12,15,48,50,55
+lochmodan_c60,Loch Modan,11,13,20,42,50,60
+lochmodan_c60,Loch Modan,12,3,19,32,55,10
+lochmodan_c60,Loch Modan,12,4,19,39,55,15
+lochmodan_c60,Loch Modan,12,5,18,9,55,20
+lochmodan_c60,Loch Modan,12,6,13,26,55,25
+lochmodan_c60,Loch Modan,12,7,17,12,55,30
+lochmodan_c60,Loch Modan,12,9,20,15,55,40
+lochmodan_c60,Loch Modan,12,10,20,45,55,45
+lochmodan_c60,Loch Modan,12,11,20,39,55,50
+lochmodan_c60,Loch Modan,12,14,14,22,55,65
+lochmodan_c60,Loch Modan,12,15,14,47,55,70
+lochmodan_c60,Loch Modan,12,16,14,22,55,75
+lochmodan_c60,Loch Modan,13,5,19,17,60,20
+lochmodan_c60,Loch Modan,13,6,17,19,60,25
+lochmodan_c60,Loch Modan,13,7,17,45,60,30
+lochmodan_c60,Loch Modan,13,8,17,50,60,35
+lochmodan_c60,Loch Modan,13,9,14,13,60,40
+lochmodan_c60,Loch Modan,13,15,14,18,60,70
+lochmodan_c60,Loch Modan,13,16,14,50,60,75
+lochmodan_c60,Loch Modan,14,4,20,15,65,15
+lochmodan_c60,Loch Modan,14,5,19,41,65,20
+lochmodan_c60,Loch Modan,14,6,19,29,65,25
+lochmodan_c60,Loch Modan,14,7,19,38,65,30
+lochmodan_c60,Loch Modan,14,8,17,50,65,35
+lochmodan_c60,Loch Modan,14,9,17,32,65,40
+lochmodan_c60,Loch Modan,14,10,14,47,65,45
+lochmodan_c60,Loch Modan,14,12,18,14,65,55
+lochmodan_c60,Loch Modan,14,13,20,29,65,60
+lochmodan_c60,Loch Modan,14,14,19,10,65,65
+lochmodan_c60,Loch Modan,14,15,14,31,65,70
+lochmodan_c60,Loch Modan,14,16,14,8,65,75
+lochmodan_c60,Loch Modan,15,4,19,44,70,15
+lochmodan_c60,Loch Modan,15,5,19,47,70,20
+lochmodan_c60,Loch Modan,15,6,19,30,70,25
+lochmodan_c60,Loch Modan,15,7,19,22,70,30
+lochmodan_c60,Loch Modan,15,8,17,35,70,35
+lochmodan_c60,Loch Modan,15,9,17,50,70,40
+lochmodan_c60,Loch Modan,15,10,17,27,70,45
+lochmodan_c60,Loch Modan,15,11,16,30,70,50
+lochmodan_c60,Loch Modan,15,12,20,24,70,55
+lochmodan_c60,Loch Modan,15,13,17,24,70,60
+lochmodan_c60,Loch Modan,15,14,16,13,70,65
+lochmodan_c60,Loch Modan,15,15,16,50,70,70
+lochmodan_c60,Loch Modan,15,16,16,20,70,75
+lochmodan_c60,Loch Modan,16,3,20,29,75,10
+lochmodan_c60,Loch Modan,16,4,19,40,75,15
+lochmodan_c60,Loch Modan,16,6,19,11,75,25
+lochmodan_c60,Loch Modan,16,7,18,13,75,30
+lochmodan_c60,Loch Modan,16,8,18,50,75,35
+lochmodan_c60,Loch Modan,16,9,17,44,75,40
+lochmodan_c60,Loch Modan,16,10,17,36,75,45
+lochmodan_c60,Loch Modan,16,11,14,13,75,50
+lochmodan_c60,Loch Modan,16,12,16,50,75,55
+lochmodan_c60,Loch Modan,16,13,16,48,75,60
+lochmodan_c60,Loch Modan,16,14,16,49,75,65
+lochmodan_c60,Loch Modan,16,15,16,40,75,70
+lochmodan_c60,Loch Modan,16,16,16,31,75,75
+lochmodan_c60,Loch Modan,7,19,16,8,30,90
+lochmodan_c60,Loch Modan,11,11,14,4,50,50
+lochmodan_c60,Loch Modan,12,8,15,9,55,35
+lochmodan_c60,Loch Modan,13,10,15,9,60,45
+lochmodan_c60,Loch Modan,13,11,14,2,60,50
+lochmodan_c60,Loch Modan,13,12,14,6,60,55
+lochmodan_c60,Loch Modan,14,11,13,3,65,50
+searinggorge_c60,Searing Gorge,3,6,49,13,10,25
+searinggorge_c60,Searing Gorge,3,7,49,49,10,30
+searinggorge_c60,Searing Gorge,3,8,50,37,10,35
+searinggorge_c60,Searing Gorge,3,9,50,50,10,40
+searinggorge_c60,Searing Gorge,3,10,50,44,10,45
+searinggorge_c60,Searing Gorge,4,5,49,13,15,20
+searinggorge_c60,Searing Gorge,4,6,49,35,15,25
+searinggorge_c60,Searing Gorge,4,7,49,41,15,30
+searinggorge_c60,Searing Gorge,4,8,48,34,15,35
+searinggorge_c60,Searing Gorge,4,9,50,49,15,40
+searinggorge_c60,Searing Gorge,4,10,49,28,15,45
+searinggorge_c60,Searing Gorge,4,15,48,10,15,70
+searinggorge_c60,Searing Gorge,5,5,49,24,20,20
+searinggorge_c60,Searing Gorge,5,6,49,27,20,25
+searinggorge_c60,Searing Gorge,5,7,48,33,20,30
+searinggorge_c60,Searing Gorge,5,8,48,50,20,35
+searinggorge_c60,Searing Gorge,5,9,48,48,20,40
+searinggorge_c60,Searing Gorge,5,11,47,26,20,50
+searinggorge_c60,Searing Gorge,5,12,47,7,20,55
+searinggorge_c60,Searing Gorge,5,13,48,21,20,60
+searinggorge_c60,Searing Gorge,5,14,48,50,20,65
+searinggorge_c60,Searing Gorge,5,15,48,50,20,70
+searinggorge_c60,Searing Gorge,5,16,48,50,20,75
+searinggorge_c60,Searing Gorge,6,4,50,35,25,15
+searinggorge_c60,Searing Gorge,6,5,50,50,25,20
+searinggorge_c60,Searing Gorge,6,6,50,50,25,25
+searinggorge_c60,Searing Gorge,6,7,50,36,25,30
+searinggorge_c60,Searing Gorge,6,8,48,50,25,35
+searinggorge_c60,Searing Gorge,6,9,48,50,25,40
+searinggorge_c60,Searing Gorge,6,10,48,50,25,45
+searinggorge_c60,Searing Gorge,6,11,48,50,25,50
+searinggorge_c60,Searing Gorge,6,12,48,50,25,55
+searinggorge_c60,Searing Gorge,6,13,48,42,25,60
+searinggorge_c60,Searing Gorge,6,14,48,50,25,65
+searinggorge_c60,Searing Gorge,6,15,48,50,25,70
+searinggorge_c60,Searing Gorge,6,16,48,50,25,75
+searinggorge_c60,Searing Gorge,7,5,49,38,30,20
+searinggorge_c60,Searing Gorge,7,6,49,48,30,25
+searinggorge_c60,Searing Gorge,7,7,49,14,30,30
+searinggorge_c60,Searing Gorge,7,8,48,17,30,35
+searinggorge_c60,Searing Gorge,7,9,48,48,30,40
+searinggorge_c60,Searing Gorge,7,10,48,50,30,45
+searinggorge_c60,Searing Gorge,7,11,48,50,30,50
+searinggorge_c60,Searing Gorge,7,12,48,50,30,55
+searinggorge_c60,Searing Gorge,7,13,48,40,30,60
+searinggorge_c60,Searing Gorge,7,14,48,22,30,65
+searinggorge_c60,Searing Gorge,7,15,47,39,30,70
+searinggorge_c60,Searing Gorge,7,16,47,50,30,75
+searinggorge_c60,Searing Gorge,8,6,46,27,35,25
+searinggorge_c60,Searing Gorge,8,7,46,50,35,30
+searinggorge_c60,Searing Gorge,8,8,47,32,35,35
+searinggorge_c60,Searing Gorge,8,9,47,25,35,40
+searinggorge_c60,Searing Gorge,8,10,47,34,35,45
+searinggorge_c60,Searing Gorge,8,11,46,33,35,50
+searinggorge_c60,Searing Gorge,8,12,48,50,35,55
+searinggorge_c60,Searing Gorge,8,13,48,50,35,60
+searinggorge_c60,Searing Gorge,8,14,48,50,35,65
+searinggorge_c60,Searing Gorge,8,15,48,40,35,70
+searinggorge_c60,Searing Gorge,8,16,47,41,35,75
+searinggorge_c60,Searing Gorge,9,4,46,7,40,15
+searinggorge_c60,Searing Gorge,9,5,46,50,40,20
+searinggorge_c60,Searing Gorge,9,6,46,50,40,25
+searinggorge_c60,Searing Gorge,9,7,48,41,40,30
+searinggorge_c60,Searing Gorge,9,8,48,50,40,35
+searinggorge_c60,Searing Gorge,9,9,48,48,40,40
+searinggorge_c60,Searing Gorge,9,10,46,13,40,45
+searinggorge_c60,Searing Gorge,9,11,47,40,40,50
+searinggorge_c60,Searing Gorge,9,12,48,50,40,55
+searinggorge_c60,Searing Gorge,9,13,48,50,40,60
+searinggorge_c60,Searing Gorge,9,14,48,50,40,65
+searinggorge_c60,Searing Gorge,9,15,48,35,40,70
+searinggorge_c60,Searing Gorge,10,4,48,26,45,15
+searinggorge_c60,Searing Gorge,10,5,48,50,45,20
+searinggorge_c60,Searing Gorge,10,6,48,50,45,25
+searinggorge_c60,Searing Gorge,10,7,48,49,45,30
+searinggorge_c60,Searing Gorge,10,8,48,50,45,35
+searinggorge_c60,Searing Gorge,10,9,48,50,45,40
+searinggorge_c60,Searing Gorge,10,10,46,37,45,45
+searinggorge_c60,Searing Gorge,10,11,46,36,45,50
+searinggorge_c60,Searing Gorge,10,12,46,50,45,55
+searinggorge_c60,Searing Gorge,10,13,46,34,45,60
+searinggorge_c60,Searing Gorge,10,14,46,39,45,65
+searinggorge_c60,Searing Gorge,10,15,46,50,45,70
+searinggorge_c60,Searing Gorge,11,5,48,21,50,20
+searinggorge_c60,Searing Gorge,11,6,48,14,50,25
+searinggorge_c60,Searing Gorge,11,7,47,34,50,30
+searinggorge_c60,Searing Gorge,11,8,47,35,50,35
+searinggorge_c60,Searing Gorge,11,9,47,38,50,40
+searinggorge_c60,Searing Gorge,11,10,47,50,50,45
+searinggorge_c60,Searing Gorge,11,11,47,50,50,50
+searinggorge_c60,Searing Gorge,11,12,48,50,50,55
+searinggorge_c60,Searing Gorge,11,13,46,35,50,60
+searinggorge_c60,Searing Gorge,11,14,46,50,50,65
+searinggorge_c60,Searing Gorge,11,15,46,50,50,70
+searinggorge_c60,Searing Gorge,11,16,46,35,50,75
+searinggorge_c60,Searing Gorge,12,5,46,48,55,20
+searinggorge_c60,Searing Gorge,12,6,46,31,55,25
+searinggorge_c60,Searing Gorge,12,7,46,6,55,30
+searinggorge_c60,Searing Gorge,12,8,48,34,55,35
+searinggorge_c60,Searing Gorge,12,9,48,50,55,40
+searinggorge_c60,Searing Gorge,12,10,47,38,55,45
+searinggorge_c60,Searing Gorge,12,11,47,37,55,50
+searinggorge_c60,Searing Gorge,12,12,48,15,55,55
+searinggorge_c60,Searing Gorge,12,13,46,34,55,60
+searinggorge_c60,Searing Gorge,12,14,46,50,55,65
+searinggorge_c60,Searing Gorge,12,15,46,36,55,70
+searinggorge_c60,Searing Gorge,12,16,47,41,55,75
+searinggorge_c60,Searing Gorge,13,10,46,24,60,45
+searinggorge_c60,Searing Gorge,13,11,44,50,60,50
+searinggorge_c60,Searing Gorge,13,12,44,38,60,55
+searinggorge_c60,Searing Gorge,13,13,46,50,60,60
+searinggorge_c60,Searing Gorge,13,14,44,49,60,65
+searinggorge_c60,Searing Gorge,13,15,44,50,60,70
+searinggorge_c60,Searing Gorge,13,16,44,18,60,75
+searinggorge_c60,Searing Gorge,14,7,44,50,65,30
+searinggorge_c60,Searing Gorge,14,8,44,50,65,35
+searinggorge_c60,Searing Gorge,14,9,44,50,65,40
+searinggorge_c60,Searing Gorge,14,10,44,41,65,45
+searinggorge_c60,Searing Gorge,14,11,44,50,65,50
+searinggorge_c60,Searing Gorge,14,12,44,23,65,55
+searinggorge_c60,Searing Gorge,14,13,46,43,65,60
+searinggorge_c60,Searing Gorge,14,14,44,47,65,65
+searinggorge_c60,Searing Gorge,14,15,44,50,65,70
+searinggorge_c60,Searing Gorge,14,16,44,14,65,75
+searinggorge_c60,Searing Gorge,15,8,44,9,70,35
+searinggorge_c60,Searing Gorge,15,11,44,12,70,50
+silithus_c60,Silithus,3,2,57,6,10,5
+silithus_c60,Silithus,3,3,57,19,10,10
+silithus_c60,Silithus,4,1,57,12,15,0
+silithus_c60,Silithus,4,2,57,50,15,5
+silithus_c60,Silithus,4,3,57,50,15,10
+silithus_c60,Silithus,4,4,57,50,15,15
+silithus_c60,Silithus,4,5,56,50,15,20
+silithus_c60,Silithus,4,6,56,50,15,25
+silithus_c60,Silithus,4,7,56,35,15,30
+silithus_c60,Silithus,4,8,58,35,15,35
+silithus_c60,Silithus,4,9,58,41,15,40
+silithus_c60,Silithus,4,10,58,33,15,45
+silithus_c60,Silithus,4,11,58,6,15,50
+silithus_c60,Silithus,4,12,58,18,15,55
+silithus_c60,Silithus,4,13,58,21,15,60
+silithus_c60,Silithus,4,14,60,43,15,65
+silithus_c60,Silithus,4,15,58,23,15,70
+silithus_c60,Silithus,4,16,58,50,15,75
+silithus_c60,Silithus,4,17,60,35,15,80
+silithus_c60,Silithus,4,18,60,22,15,85
+silithus_c60,Silithus,5,1,57,26,20,0
+silithus_c60,Silithus,5,2,57,50,20,5
+silithus_c60,Silithus,5,3,57,50,20,10
+silithus_c60,Silithus,5,4,57,50,20,15
+silithus_c60,Silithus,5,5,56,44,20,20
+silithus_c60,Silithus,5,6,58,43,20,25
+silithus_c60,Silithus,5,7,58,38,20,30
+silithus_c60,Silithus,5,8,58,34,20,35
+silithus_c60,Silithus,5,9,58,50,20,40
+silithus_c60,Silithus,5,10,60,50,20,45
+silithus_c60,Silithus,5,11,60,50,20,50
+silithus_c60,Silithus,5,12,60,28,20,55
+silithus_c60,Silithus,5,13,59,50,20,60
+silithus_c60,Silithus,5,14,60,50,20,65
+silithus_c60,Silithus,5,15,60,38,20,70
+silithus_c60,Silithus,5,16,58,50,20,75
+silithus_c60,Silithus,5,17,58,29,20,80
+silithus_c60,Silithus,5,18,58,41,20,85
+silithus_c60,Silithus,6,2,57,43,25,5
+silithus_c60,Silithus,6,3,57,50,25,10
+silithus_c60,Silithus,6,4,57,27,25,15
+silithus_c60,Silithus,6,5,56,25,25,20
+silithus_c60,Silithus,6,6,58,50,25,25
+silithus_c60,Silithus,6,7,60,36,25,30
+silithus_c60,Silithus,6,8,59,47,25,35
+silithus_c60,Silithus,6,9,58,50,25,40
+silithus_c60,Silithus,6,10,60,50,25,45
+silithus_c60,Silithus,6,11,60,50,25,50
+silithus_c60,Silithus,6,12,60,41,25,55
+silithus_c60,Silithus,6,13,59,49,25,60
+silithus_c60,Silithus,6,14,60,50,25,65
+silithus_c60,Silithus,6,15,60,31,25,70
+silithus_c60,Silithus,6,16,58,50,25,75
+silithus_c60,Silithus,6,17,58,50,25,80
+silithus_c60,Silithus,6,18,58,50,25,85
+silithus_c60,Silithus,6,19,58,20,25,90
+silithus_c60,Silithus,7,3,56,43,30,10
+silithus_c60,Silithus,7,4,56,50,30,15
+silithus_c60,Silithus,7,5,56,50,30,20
+silithus_c60,Silithus,7,6,58,50,30,25
+silithus_c60,Silithus,7,7,58,50,30,30
+silithus_c60,Silithus,7,8,58,50,30,35
+silithus_c60,Silithus,7,9,58,50,30,40
+silithus_c60,Silithus,7,10,58,35,30,45
+silithus_c60,Silithus,7,11,60,31,30,50
+silithus_c60,Silithus,7,12,59,35,30,55
+silithus_c60,Silithus,7,13,60,50,30,60
+silithus_c60,Silithus,7,14,60,24,30,65
+silithus_c60,Silithus,7,15,58,50,30,70
+silithus_c60,Silithus,7,16,58,50,30,75
+silithus_c60,Silithus,7,17,58,50,30,80
+silithus_c60,Silithus,7,18,58,50,30,85
+silithus_c60,Silithus,7,19,58,10,30,90
+silithus_c60,Silithus,8,3,59,50,35,10
+silithus_c60,Silithus,8,4,56,24,35,15
+silithus_c60,Silithus,8,5,56,25,35,20
+silithus_c60,Silithus,8,6,56,16,35,25
+silithus_c60,Silithus,8,7,58,46,35,30
+silithus_c60,Silithus,8,8,59,32,35,35
+silithus_c60,Silithus,8,9,60,24,35,40
+silithus_c60,Silithus,8,10,58,32,35,45
+silithus_c60,Silithus,8,11,58,50,35,50
+silithus_c60,Silithus,8,12,58,50,35,55
+silithus_c60,Silithus,8,13,58,29,35,60
+silithus_c60,Silithus,8,14,58,49,35,65
+silithus_c60,Silithus,8,15,58,50,35,70
+silithus_c60,Silithus,8,16,58,50,35,75
+silithus_c60,Silithus,8,17,58,50,35,80
+silithus_c60,Silithus,8,18,58,50,35,85
+silithus_c60,Silithus,8,19,58,17,35,90
+silithus_c60,Silithus,9,2,59,13,40,5
+silithus_c60,Silithus,9,3,59,50,40,10
+silithus_c60,Silithus,9,4,59,50,40,15
+silithus_c60,Silithus,9,5,59,50,40,20
+silithus_c60,Silithus,9,6,59,50,40,25
+silithus_c60,Silithus,9,7,58,34,40,30
+silithus_c60,Silithus,9,8,59,47,40,35
+silithus_c60,Silithus,9,9,59,41,40,40
+silithus_c60,Silithus,9,10,59,34,40,45
+silithus_c60,Silithus,9,11,58,50,40,50
+silithus_c60,Silithus,9,12,58,50,40,55
+silithus_c60,Silithus,9,13,58,50,40,60
+silithus_c60,Silithus,9,14,58,50,40,65
+silithus_c60,Silithus,9,15,58,50,40,70
+silithus_c60,Silithus,9,16,58,50,40,75
+silithus_c60,Silithus,9,17,58,41,40,80
+silithus_c60,Silithus,9,18,58,41,40,85
+silithus_c60,Silithus,9,19,58,50,40,90
+silithus_c60,Silithus,10,3,58,36,45,10
+silithus_c60,Silithus,10,4,59,47,45,15
+silithus_c60,Silithus,10,5,59,50,45,20
+silithus_c60,Silithus,10,6,59,50,45,25
+silithus_c60,Silithus,10,7,59,26,45,30
+silithus_c60,Silithus,10,9,58,34,45,40
+silithus_c60,Silithus,10,10,58,49,45,45
+silithus_c60,Silithus,10,11,58,50,45,50
+silithus_c60,Silithus,10,12,58,50,45,55
+silithus_c60,Silithus,10,13,58,50,45,60
+silithus_c60,Silithus,10,14,58,50,45,65
+silithus_c60,Silithus,10,15,58,45,45,70
+silithus_c60,Silithus,10,16,60,50,45,75
+silithus_c60,Silithus,10,17,60,50,45,80
+silithus_c60,Silithus,10,18,60,50,45,85
+silithus_c60,Silithus,10,19,60,50,45,90
+silithus_c60,Silithus,11,2,56,15,50,5
+silithus_c60,Silithus,11,3,56,50,50,10
+silithus_c60,Silithus,11,4,56,50,50,15
+silithus_c60,Silithus,11,5,56,32,50,20
+silithus_c60,Silithus,11,6,58,36,50,25
+silithus_c60,Silithus,11,7,58,43,50,30
+silithus_c60,Silithus,11,9,58,50,50,40
+silithus_c60,Silithus,11,10,58,50,50,45
+silithus_c60,Silithus,11,11,58,50,50,50
+silithus_c60,Silithus,11,12,58,50,50,55
+silithus_c60,Silithus,11,13,58,50,50,60
+silithus_c60,Silithus,11,14,58,50,50,65
+silithus_c60,Silithus,11,15,60,48,50,70
+silithus_c60,Silithus,11,16,60,50,50,75
+silithus_c60,Silithus,11,17,60,50,50,80
+silithus_c60,Silithus,11,18,60,50,50,85
+silithus_c60,Silithus,11,19,60,50,50,90
+silithus_c60,Silithus,11,20,60,49,50,95
+silithus_c60,Silithus,12,2,56,10,55,5
+silithus_c60,Silithus,12,3,56,50,55,10
+silithus_c60,Silithus,12,4,56,50,55,15
+silithus_c60,Silithus,12,5,56,27,55,20
+silithus_c60,Silithus,12,6,58,50,55,25
+silithus_c60,Silithus,12,7,58,50,55,30
+silithus_c60,Silithus,12,10,56,26,55,45
+silithus_c60,Silithus,12,11,57,24,55,50
+silithus_c60,Silithus,12,12,58,28,55,55
+silithus_c60,Silithus,12,13,58,50,55,60
+silithus_c60,Silithus,12,14,58,34,55,65
+silithus_c60,Silithus,12,15,60,50,55,70
+silithus_c60,Silithus,12,16,60,50,55,75
+silithus_c60,Silithus,12,17,60,50,55,80
+silithus_c60,Silithus,12,18,60,50,55,85
+silithus_c60,Silithus,12,19,60,50,55,90
+silithus_c60,Silithus,12,20,60,50,55,95
+silithus_c60,Silithus,13,3,55,34,60,10
+silithus_c60,Silithus,13,4,55,50,60,15
+silithus_c60,Silithus,13,5,55,50,60,20
+silithus_c60,Silithus,13,6,55,49,60,25
+silithus_c60,Silithus,13,7,56,33,60,30
+silithus_c60,Silithus,13,8,56,31,60,35
+silithus_c60,Silithus,13,9,55,50,60,40
+silithus_c60,Silithus,13,10,57,50,60,45
+silithus_c60,Silithus,13,11,57,50,60,50
+silithus_c60,Silithus,13,12,57,50,60,55
+silithus_c60,Silithus,13,13,58,38,60,60
+silithus_c60,Silithus,13,14,58,50,60,65
+silithus_c60,Silithus,13,15,60,41,60,70
+silithus_c60,Silithus,13,16,60,50,60,75
+silithus_c60,Silithus,13,17,60,50,60,80
+silithus_c60,Silithus,13,18,60,50,60,85
+silithus_c60,Silithus,13,19,60,50,60,90
+silithus_c60,Silithus,13,20,60,43,60,95
+silithus_c60,Silithus,14,2,60,10,65,5
+silithus_c60,Silithus,14,3,60,50,65,10
+silithus_c60,Silithus,14,4,60,50,65,15
+silithus_c60,Silithus,14,5,60,29,65,20
+silithus_c60,Silithus,14,6,56,18,65,25
+silithus_c60,Silithus,14,7,56,50,65,30
+silithus_c60,Silithus,14,8,56,50,65,35
+silithus_c60,Silithus,14,9,55,34,65,40
+silithus_c60,Silithus,14,10,56,44,65,45
+silithus_c60,Silithus,14,11,56,25,65,50
+silithus_c60,Silithus,14,12,56,25,65,55
+silithus_c60,Silithus,14,14,57,50,65,65
+silithus_c60,Silithus,14,15,57,13,65,70
+silithus_c60,Silithus,14,16,60,41,65,75
+silithus_c60,Silithus,14,17,60,50,65,80
+silithus_c60,Silithus,14,18,60,50,65,85
+silithus_c60,Silithus,14,19,60,43,65,90
+silithus_c60,Silithus,15,3,60,43,70,10
+silithus_c60,Silithus,15,4,60,47,70,15
+silithus_c60,Silithus,15,5,60,9,70,20
+silithus_c60,Silithus,15,7,56,50,70,30
+silithus_c60,Silithus,15,8,56,50,70,35
+silithus_c60,Silithus,15,9,55,15,70,40
+silithus_c60,Silithus,15,14,57,50,70,65
+silithus_c60,Silithus,15,15,57,10,70,70
+silithus_c60,Silithus,16,6,56,29,75,25
+silithus_c60,Silithus,16,7,56,46,75,30
+silithus_c60,Silithus,16,8,55,21,75,35
+silverpine_c60,Silverpine Forest,7,4,13,18,30,15
+silverpine_c60,Silverpine Forest,7,5,15,19,30,20
+silverpine_c60,Silverpine Forest,7,6,15,32,30,25
+silverpine_c60,Silverpine Forest,7,7,15,16,30,30
+silverpine_c60,Silverpine Forest,7,8,15,28,30,35
+silverpine_c60,Silverpine Forest,7,9,15,20,30,40
+silverpine_c60,Silverpine Forest,7,10,15,29,30,45
+silverpine_c60,Silverpine Forest,7,11,15,21,30,50
+silverpine_c60,Silverpine Forest,8,2,14,10,35,5
+silverpine_c60,Silverpine Forest,8,3,13,31,35,10
+silverpine_c60,Silverpine Forest,8,4,13,50,35,15
+silverpine_c60,Silverpine Forest,8,5,14,20,35,20
+silverpine_c60,Silverpine Forest,8,6,14,16,35,25
+silverpine_c60,Silverpine Forest,8,7,15,30,35,30
+silverpine_c60,Silverpine Forest,8,8,15,46,35,35
+silverpine_c60,Silverpine Forest,8,9,15,37,35,40
+silverpine_c60,Silverpine Forest,8,10,15,44,35,45
+silverpine_c60,Silverpine Forest,8,11,15,36,35,50
+silverpine_c60,Silverpine Forest,8,15,15,41,35,70
+silverpine_c60,Silverpine Forest,8,16,15,50,35,75
+silverpine_c60,Silverpine Forest,8,17,15,50,35,80
+silverpine_c60,Silverpine Forest,8,18,15,10,35,85
+silverpine_c60,Silverpine Forest,9,4,13,50,40,15
+silverpine_c60,Silverpine Forest,9,5,13,39,40,20
+silverpine_c60,Silverpine Forest,9,6,13,38,40,25
+silverpine_c60,Silverpine Forest,9,7,14,16,40,30
+silverpine_c60,Silverpine Forest,9,10,11,18,40,45
+silverpine_c60,Silverpine Forest,9,11,11,40,40,50
+silverpine_c60,Silverpine Forest,9,15,15,17,40,70
+silverpine_c60,Silverpine Forest,9,17,20,8,40,80
+silverpine_c60,Silverpine Forest,10,4,13,48,45,15
+silverpine_c60,Silverpine Forest,10,5,13,26,45,20
+silverpine_c60,Silverpine Forest,10,6,13,21,45,25
+silverpine_c60,Silverpine Forest,10,7,12,46,45,30
+silverpine_c60,Silverpine Forest,10,8,11,21,45,35
+silverpine_c60,Silverpine Forest,10,10,12,50,45,45
+silverpine_c60,Silverpine Forest,10,11,13,27,45,50
+silverpine_c60,Silverpine Forest,10,14,14,12,45,65
+silverpine_c60,Silverpine Forest,10,15,15,34,45,70
+silverpine_c60,Silverpine Forest,10,16,17,32,45,75
+silverpine_c60,Silverpine Forest,10,17,16,29,45,80
+silverpine_c60,Silverpine Forest,10,18,19,14,45,85
+silverpine_c60,Silverpine Forest,11,3,12,20,50,10
+silverpine_c60,Silverpine Forest,11,4,13,43,50,15
+silverpine_c60,Silverpine Forest,11,5,12,19,50,20
+silverpine_c60,Silverpine Forest,11,6,11,37,50,25
+silverpine_c60,Silverpine Forest,11,7,14,23,50,30
+silverpine_c60,Silverpine Forest,11,8,12,20,50,35
+silverpine_c60,Silverpine Forest,11,9,11,21,50,40
+silverpine_c60,Silverpine Forest,11,10,13,11,50,45
+silverpine_c60,Silverpine Forest,11,11,13,50,50,50
+silverpine_c60,Silverpine Forest,11,12,14,33,50,55
+silverpine_c60,Silverpine Forest,11,13,14,28,50,60
+silverpine_c60,Silverpine Forest,11,14,14,30,50,65
+silverpine_c60,Silverpine Forest,11,15,16,24,50,70
+silverpine_c60,Silverpine Forest,11,16,17,47,50,75
+silverpine_c60,Silverpine Forest,11,17,16,25,50,80
+silverpine_c60,Silverpine Forest,11,18,16,12,50,85
+silverpine_c60,Silverpine Forest,12,2,12,22,55,5
+silverpine_c60,Silverpine Forest,12,3,12,46,55,10
+silverpine_c60,Silverpine Forest,12,4,14,24,55,15
+silverpine_c60,Silverpine Forest,12,5,13,27,55,20
+silverpine_c60,Silverpine Forest,12,6,14,16,55,25
+silverpine_c60,Silverpine Forest,12,7,16,26,55,30
+silverpine_c60,Silverpine Forest,12,8,16,36,55,35
+silverpine_c60,Silverpine Forest,12,9,16,27,55,40
+silverpine_c60,Silverpine Forest,12,10,14,30,55,45
+silverpine_c60,Silverpine Forest,12,11,15,25,55,50
+silverpine_c60,Silverpine Forest,12,12,15,49,55,55
+silverpine_c60,Silverpine Forest,12,13,15,35,55,60
+silverpine_c60,Silverpine Forest,12,14,16,15,55,65
+silverpine_c60,Silverpine Forest,12,15,21,16,55,70
+silverpine_c60,Silverpine Forest,12,16,19,28,55,75
+silverpine_c60,Silverpine Forest,13,2,12,25,60,5
+silverpine_c60,Silverpine Forest,13,3,14,18,60,10
+silverpine_c60,Silverpine Forest,13,4,16,25,60,15
+silverpine_c60,Silverpine Forest,13,5,16,33,60,20
+silverpine_c60,Silverpine Forest,13,6,16,39,60,25
+silverpine_c60,Silverpine Forest,13,7,16,7,60,30
+silverpine_c60,Silverpine Forest,13,8,16,14,60,35
+silverpine_c60,Silverpine Forest,13,9,16,24,60,40
+silverpine_c60,Silverpine Forest,13,11,20,25,60,50
+silverpine_c60,Silverpine Forest,13,12,20,22,60,55
+silverpine_c60,Silverpine Forest,13,13,17,17,60,60
+silverpine_c60,Silverpine Forest,13,14,16,24,60,65
+silverpine_c60,Silverpine Forest,13,15,20,30,60,70
+silverpine_c60,Silverpine Forest,13,16,19,21,60,75
+silverpine_c60,Silverpine Forest,14,1,11,11,65,0
+silverpine_c60,Silverpine Forest,14,2,11,50,65,5
+silverpine_c60,Silverpine Forest,14,3,14,16,65,10
+silverpine_c60,Silverpine Forest,14,4,19,20,65,15
+silverpine_c60,Silverpine Forest,14,5,19,17,65,20
+silverpine_c60,Silverpine Forest,14,6,17,8,65,25
+silverpine_c60,Silverpine Forest,14,7,18,26,65,30
+silverpine_c60,Silverpine Forest,14,8,16,22,65,35
+silverpine_c60,Silverpine Forest,14,9,20,21,65,40
+silverpine_c60,Silverpine Forest,14,10,20,37,65,45
+silverpine_c60,Silverpine Forest,14,12,19,8,65,55
+silverpine_c60,Silverpine Forest,14,16,20,19,65,75
+silverpine_c60,Silverpine Forest,15,3,16,50,70,10
+silverpine_c60,Silverpine Forest,15,4,20,42,70,15
+silverpine_c60,Silverpine Forest,15,5,19,29,70,20
+silverpine_c60,Silverpine Forest,15,7,16,8,70,30
+silverpine_c60,Silverpine Forest,15,8,16,48,70,35
+silverpine_c60,Silverpine Forest,15,9,16,19,70,40
+silverpine_c60,Silverpine Forest,16,3,16,15,75,10
+silverpine_c60,Silverpine Forest,16,4,19,29,75,15
+silverpine_c60,Silverpine Forest,16,5,19,50,75,20
+silverpine_c60,Silverpine Forest,16,6,18,49,75,25
+silverpine_c60,Silverpine Forest,16,7,18,27,75,30
+silverpine_c60,Silverpine Forest,16,8,16,38,75,35
+silverpine_c60,Silverpine Forest,17,6,18,24,80,25
+silverpine_c60,Silverpine Forest,17,7,18,46,80,30
+stonetalonmountain_c60,Stonetalon Mountains,5,2,27,14,20,5
+stonetalonmountain_c60,Stonetalon Mountains,5,3,27,47,20,10
+stonetalonmountain_c60,Stonetalon Mountains,5,4,27,33,20,15
+stonetalonmountain_c60,Stonetalon Mountains,6,2,26,9,25,5
+stonetalonmountain_c60,Stonetalon Mountains,6,3,26,35,25,10
+stonetalonmountain_c60,Stonetalon Mountains,6,4,26,29,25,15
+stonetalonmountain_c60,Stonetalon Mountains,6,12,24,12,25,55
+stonetalonmountain_c60,Stonetalon Mountains,6,13,24,45,25,60
+stonetalonmountain_c60,Stonetalon Mountains,6,14,27,35,25,65
+stonetalonmountain_c60,Stonetalon Mountains,6,15,27,25,25,70
+stonetalonmountain_c60,Stonetalon Mountains,7,2,24,50,30,5
+stonetalonmountain_c60,Stonetalon Mountains,7,3,24,28,30,10
+stonetalonmountain_c60,Stonetalon Mountains,7,4,25,27,30,15
+stonetalonmountain_c60,Stonetalon Mountains,7,5,23,23,30,20
+stonetalonmountain_c60,Stonetalon Mountains,7,12,24,34,30,55
+stonetalonmountain_c60,Stonetalon Mountains,7,13,24,28,30,60
+stonetalonmountain_c60,Stonetalon Mountains,7,14,28,35,30,65
+stonetalonmountain_c60,Stonetalon Mountains,7,15,28,50,30,70
+stonetalonmountain_c60,Stonetalon Mountains,7,16,28,14,30,75
+stonetalonmountain_c60,Stonetalon Mountains,8,1,23,37,35,0
+stonetalonmountain_c60,Stonetalon Mountains,8,2,25,34,35,5
+stonetalonmountain_c60,Stonetalon Mountains,8,3,25,50,35,10
+stonetalonmountain_c60,Stonetalon Mountains,8,4,25,50,35,15
+stonetalonmountain_c60,Stonetalon Mountains,8,5,23,31,35,20
+stonetalonmountain_c60,Stonetalon Mountains,8,9,24,35,35,40
+stonetalonmountain_c60,Stonetalon Mountains,8,10,24,50,35,45
+stonetalonmountain_c60,Stonetalon Mountains,8,11,24,45,35,50
+stonetalonmountain_c60,Stonetalon Mountains,8,12,24,9,35,55
+stonetalonmountain_c60,Stonetalon Mountains,8,13,24,40,35,60
+stonetalonmountain_c60,Stonetalon Mountains,8,14,28,38,35,65
+stonetalonmountain_c60,Stonetalon Mountains,8,15,28,50,35,70
+stonetalonmountain_c60,Stonetalon Mountains,8,16,28,17,35,75
+stonetalonmountain_c60,Stonetalon Mountains,9,1,23,17,40,0
+stonetalonmountain_c60,Stonetalon Mountains,9,2,23,42,40,5
+stonetalonmountain_c60,Stonetalon Mountains,9,3,23,9,40,10
+stonetalonmountain_c60,Stonetalon Mountains,9,4,23,16,40,15
+stonetalonmountain_c60,Stonetalon Mountains,9,5,23,18,40,20
+stonetalonmountain_c60,Stonetalon Mountains,9,6,23,11,40,25
+stonetalonmountain_c60,Stonetalon Mountains,9,8,23,45,40,35
+stonetalonmountain_c60,Stonetalon Mountains,9,9,24,28,40,40
+stonetalonmountain_c60,Stonetalon Mountains,9,10,23,33,40,45
+stonetalonmountain_c60,Stonetalon Mountains,10,5,23,33,45,20
+stonetalonmountain_c60,Stonetalon Mountains,10,6,23,46,45,25
+stonetalonmountain_c60,Stonetalon Mountains,10,7,23,30,45,30
+stonetalonmountain_c60,Stonetalon Mountains,10,8,19,39,45,35
+stonetalonmountain_c60,Stonetalon Mountains,10,9,24,26,45,40
+stonetalonmountain_c60,Stonetalon Mountains,10,10,18,33,45,45
+stonetalonmountain_c60,Stonetalon Mountains,11,7,19,23,50,30
+stonetalonmountain_c60,Stonetalon Mountains,11,8,24,35,50,35
+stonetalonmountain_c60,Stonetalon Mountains,11,9,24,27,50,40
+stonetalonmountain_c60,Stonetalon Mountains,11,10,18,50,50,45
+stonetalonmountain_c60,Stonetalon Mountains,11,11,18,38,50,50
+stonetalonmountain_c60,Stonetalon Mountains,11,12,18,50,50,55
+stonetalonmountain_c60,Stonetalon Mountains,11,13,18,50,50,60
+stonetalonmountain_c60,Stonetalon Mountains,11,15,18,50,50,70
+stonetalonmountain_c60,Stonetalon Mountains,11,16,18,27,50,75
+stonetalonmountain_c60,Stonetalon Mountains,11,19,18,27,50,90
+stonetalonmountain_c60,Stonetalon Mountains,12,8,24,6,55,35
+stonetalonmountain_c60,Stonetalon Mountains,12,10,19,37,55,45
+stonetalonmountain_c60,Stonetalon Mountains,12,11,19,37,55,50
+stonetalonmountain_c60,Stonetalon Mountains,12,12,18,28,55,55
+stonetalonmountain_c60,Stonetalon Mountains,12,13,18,34,55,60
+stonetalonmountain_c60,Stonetalon Mountains,12,15,17,50,55,70
+stonetalonmountain_c60,Stonetalon Mountains,12,16,17,50,55,75
+stonetalonmountain_c60,Stonetalon Mountains,12,17,17,18,55,80
+stonetalonmountain_c60,Stonetalon Mountains,12,18,18,13,55,85
+stonetalonmountain_c60,Stonetalon Mountains,12,19,18,50,55,90
+stonetalonmountain_c60,Stonetalon Mountains,12,20,18,11,55,95
+stonetalonmountain_c60,Stonetalon Mountains,13,8,22,38,60,35
+stonetalonmountain_c60,Stonetalon Mountains,13,9,22,21,60,40
+stonetalonmountain_c60,Stonetalon Mountains,13,10,20,50,60,45
+stonetalonmountain_c60,Stonetalon Mountains,13,11,20,50,60,50
+stonetalonmountain_c60,Stonetalon Mountains,13,12,18,25,60,55
+stonetalonmountain_c60,Stonetalon Mountains,13,13,19,31,60,60
+stonetalonmountain_c60,Stonetalon Mountains,13,14,19,45,60,65
+stonetalonmountain_c60,Stonetalon Mountains,13,15,17,26,60,70
+stonetalonmountain_c60,Stonetalon Mountains,13,16,17,32,60,75
+stonetalonmountain_c60,Stonetalon Mountains,13,17,17,50,60,80
+stonetalonmountain_c60,Stonetalon Mountains,13,18,17,47,60,85
+stonetalonmountain_c60,Stonetalon Mountains,13,19,17,35,60,90
+stonetalonmountain_c60,Stonetalon Mountains,14,9,20,29,65,40
+stonetalonmountain_c60,Stonetalon Mountains,14,10,20,34,65,45
+stonetalonmountain_c60,Stonetalon Mountains,14,11,20,44,65,50
+stonetalonmountain_c60,Stonetalon Mountains,14,12,20,47,65,55
+stonetalonmountain_c60,Stonetalon Mountains,14,13,18,13,65,60
+stonetalonmountain_c60,Stonetalon Mountains,14,17,17,34,65,80
+stonetalonmountain_c60,Stonetalon Mountains,14,18,17,50,65,85
+stonetalonmountain_c60,Stonetalon Mountains,14,19,17,6,65,90
+stonetalonmountain_c60,Stonetalon Mountains,15,8,19,11,70,35
+stonetalonmountain_c60,Stonetalon Mountains,15,9,20,49,70,40
+stonetalonmountain_c60,Stonetalon Mountains,15,10,20,39,70,45
+stonetalonmountain_c60,Stonetalon Mountains,15,11,20,46,70,50
+stonetalonmountain_c60,Stonetalon Mountains,15,12,22,19,70,55
+stonetalonmountain_c60,Stonetalon Mountains,15,13,22,50,70,60
+stonetalonmountain_c60,Stonetalon Mountains,15,17,16,48,70,80
+stonetalonmountain_c60,Stonetalon Mountains,15,18,17,50,70,85
+stonetalonmountain_c60,Stonetalon Mountains,16,9,20,32,75,40
+stonetalonmountain_c60,Stonetalon Mountains,16,10,20,46,75,45
+stonetalonmountain_c60,Stonetalon Mountains,16,11,20,50,75,50
+stonetalonmountain_c60,Stonetalon Mountains,16,12,21,18,75,55
+stonetalonmountain_c60,Stonetalon Mountains,16,13,21,7,75,60
+stonetalonmountain_c60,Stonetalon Mountains,16,17,16,33,75,80
+stonetalonmountain_c60,Stonetalon Mountains,16,18,17,29,75,85
+stonetalonmountain_c60,Stonetalon Mountains,16,19,17,25,75,90
+stonetalonmountain_c60,Stonetalon Mountains,16,20,17,41,75,95
+stonetalonmountain_c60,Stonetalon Mountains,17,17,15,38,80,80
+stonetalonmountain_c60,Stonetalon Mountains,17,18,16,37,80,85
+stonetalonmountain_c60,Stonetalon Mountains,17,19,17,24,80,90
+stonetalonmountain_c60,Stonetalon Mountains,18,18,15,30,85,85
+stranglethorn_c60,Stranglethorn Vale,3,3,36,14,10,10
+stranglethorn_c60,Stranglethorn Vale,4,2,36,12,15,5
+stranglethorn_c60,Stranglethorn Vale,4,3,36,38,15,10
+stranglethorn_c60,Stranglethorn Vale,4,5,37,9,15,20
+stranglethorn_c60,Stranglethorn Vale,5,2,37,36,20,5
+stranglethorn_c60,Stranglethorn Vale,5,3,37,24,20,10
+stranglethorn_c60,Stranglethorn Vale,5,4,36,48,20,15
+stranglethorn_c60,Stranglethorn Vale,5,5,37,36,20,20
+stranglethorn_c60,Stranglethorn Vale,5,10,41,21,20,45
+stranglethorn_c60,Stranglethorn Vale,5,11,44,37,20,50
+stranglethorn_c60,Stranglethorn Vale,5,12,44,49,20,55
+stranglethorn_c60,Stranglethorn Vale,5,13,44,20,20,60
+stranglethorn_c60,Stranglethorn Vale,6,2,35,50,25,5
+stranglethorn_c60,Stranglethorn Vale,6,3,35,32,25,10
+stranglethorn_c60,Stranglethorn Vale,6,4,35,28,25,15
+stranglethorn_c60,Stranglethorn Vale,6,5,36,45,25,20
+stranglethorn_c60,Stranglethorn Vale,6,8,40,22,25,35
+stranglethorn_c60,Stranglethorn Vale,6,9,41,35,25,40
+stranglethorn_c60,Stranglethorn Vale,6,10,41,48,25,45
+stranglethorn_c60,Stranglethorn Vale,6,11,41,10,25,50
+stranglethorn_c60,Stranglethorn Vale,6,12,44,18,25,55
+stranglethorn_c60,Stranglethorn Vale,6,13,44,50,25,60
+stranglethorn_c60,Stranglethorn Vale,6,14,41,44,25,65
+stranglethorn_c60,Stranglethorn Vale,6,15,41,26,25,70
+stranglethorn_c60,Stranglethorn Vale,6,17,42,30,25,80
+stranglethorn_c60,Stranglethorn Vale,6,18,41,47,25,85
+stranglethorn_c60,Stranglethorn Vale,7,1,32,32,30,0
+stranglethorn_c60,Stranglethorn Vale,7,2,32,48,30,5
+stranglethorn_c60,Stranglethorn Vale,7,3,34,47,30,10
+stranglethorn_c60,Stranglethorn Vale,7,4,35,47,30,15
+stranglethorn_c60,Stranglethorn Vale,7,5,36,50,30,20
+stranglethorn_c60,Stranglethorn Vale,7,6,36,50,30,25
+stranglethorn_c60,Stranglethorn Vale,7,7,36,13,30,30
+stranglethorn_c60,Stranglethorn Vale,7,8,41,40,30,35
+stranglethorn_c60,Stranglethorn Vale,7,9,41,35,30,40
+stranglethorn_c60,Stranglethorn Vale,7,11,44,44,30,50
+stranglethorn_c60,Stranglethorn Vale,7,12,41,27,30,55
+stranglethorn_c60,Stranglethorn Vale,7,13,41,38,30,60
+stranglethorn_c60,Stranglethorn Vale,7,14,41,46,30,65
+stranglethorn_c60,Stranglethorn Vale,7,15,41,32,30,70
+stranglethorn_c60,Stranglethorn Vale,7,16,41,20,30,75
+stranglethorn_c60,Stranglethorn Vale,7,17,41,30,30,80
+stranglethorn_c60,Stranglethorn Vale,7,18,44,27,30,85
+stranglethorn_c60,Stranglethorn Vale,7,19,44,33,30,90
+stranglethorn_c60,Stranglethorn Vale,8,1,32,28,35,0
+stranglethorn_c60,Stranglethorn Vale,8,2,32,50,35,5
+stranglethorn_c60,Stranglethorn Vale,8,3,31,26,35,10
+stranglethorn_c60,Stranglethorn Vale,8,4,35,23,35,15
+stranglethorn_c60,Stranglethorn Vale,8,5,36,30,35,20
+stranglethorn_c60,Stranglethorn Vale,8,6,37,44,35,25
+stranglethorn_c60,Stranglethorn Vale,8,7,38,50,35,30
+stranglethorn_c60,Stranglethorn Vale,8,8,38,45,35,35
+stranglethorn_c60,Stranglethorn Vale,8,9,40,31,35,40
+stranglethorn_c60,Stranglethorn Vale,8,10,42,19,35,45
+stranglethorn_c60,Stranglethorn Vale,8,11,42,24,35,50
+stranglethorn_c60,Stranglethorn Vale,8,12,43,28,35,55
+stranglethorn_c60,Stranglethorn Vale,8,13,43,39,35,60
+stranglethorn_c60,Stranglethorn Vale,8,15,50,12,35,70
+stranglethorn_c60,Stranglethorn Vale,8,16,50,50,35,75
+stranglethorn_c60,Stranglethorn Vale,8,17,50,50,35,80
+stranglethorn_c60,Stranglethorn Vale,8,18,50,43,35,85
+stranglethorn_c60,Stranglethorn Vale,9,2,31,34,40,5
+stranglethorn_c60,Stranglethorn Vale,9,3,31,26,40,10
+stranglethorn_c60,Stranglethorn Vale,9,4,36,50,40,15
+stranglethorn_c60,Stranglethorn Vale,9,5,36,41,40,20
+stranglethorn_c60,Stranglethorn Vale,9,6,38,50,40,25
+stranglethorn_c60,Stranglethorn Vale,9,7,40,33,40,30
+stranglethorn_c60,Stranglethorn Vale,9,8,40,33,40,35
+stranglethorn_c60,Stranglethorn Vale,9,9,44,19,40,40
+stranglethorn_c60,Stranglethorn Vale,9,10,44,50,40,45
+stranglethorn_c60,Stranglethorn Vale,9,11,44,11,40,50
+stranglethorn_c60,Stranglethorn Vale,9,12,44,33,40,55
+stranglethorn_c60,Stranglethorn Vale,9,13,44,7,40,60
+stranglethorn_c60,Stranglethorn Vale,9,16,50,42,40,75
+stranglethorn_c60,Stranglethorn Vale,9,17,50,48,40,80
+stranglethorn_c60,Stranglethorn Vale,9,18,50,24,40,85
+stranglethorn_c60,Stranglethorn Vale,10,1,37,16,45,0
+stranglethorn_c60,Stranglethorn Vale,10,2,37,21,45,5
+stranglethorn_c60,Stranglethorn Vale,10,3,33,35,45,10
+stranglethorn_c60,Stranglethorn Vale,10,4,36,36,45,15
+stranglethorn_c60,Stranglethorn Vale,10,5,38,44,45,20
+stranglethorn_c60,Stranglethorn Vale,10,6,42,37,45,25
+stranglethorn_c60,Stranglethorn Vale,10,7,42,29,45,30
+stranglethorn_c60,Stranglethorn Vale,10,8,40,33,45,35
+stranglethorn_c60,Stranglethorn Vale,10,9,44,33,45,40
+stranglethorn_c60,Stranglethorn Vale,11,1,37,8,50,0
+stranglethorn_c60,Stranglethorn Vale,11,2,37,11,50,5
+stranglethorn_c60,Stranglethorn Vale,11,5,38,32,50,20
+stranglethorn_c60,Stranglethorn Vale,11,6,44,50,50,25
+stranglethorn_c60,Stranglethorn Vale,11,7,44,24,50,30
+swampofsorrows_c60,Swamp of Sorrows,2,6,42,31,5,25
+swampofsorrows_c60,Swamp of Sorrows,2,7,42,50,5,30
+swampofsorrows_c60,Swamp of Sorrows,2,8,42,21,5,35
+swampofsorrows_c60,Swamp of Sorrows,2,13,35,18,5,60
+swampofsorrows_c60,Swamp of Sorrows,2,14,35,9,5,65
+swampofsorrows_c60,Swamp of Sorrows,3,6,40,16,10,25
+swampofsorrows_c60,Swamp of Sorrows,3,7,40,33,10,30
+swampofsorrows_c60,Swamp of Sorrows,3,8,40,38,10,35
+swampofsorrows_c60,Swamp of Sorrows,3,9,37,18,10,40
+swampofsorrows_c60,Swamp of Sorrows,3,10,37,42,10,45
+swampofsorrows_c60,Swamp of Sorrows,3,11,37,15,10,50
+swampofsorrows_c60,Swamp of Sorrows,3,12,35,47,10,55
+swampofsorrows_c60,Swamp of Sorrows,3,13,35,50,10,60
+swampofsorrows_c60,Swamp of Sorrows,3,14,35,50,10,65
+swampofsorrows_c60,Swamp of Sorrows,3,15,35,13,10,70
+swampofsorrows_c60,Swamp of Sorrows,4,7,40,27,15,30
+swampofsorrows_c60,Swamp of Sorrows,4,8,39,43,15,35
+swampofsorrows_c60,Swamp of Sorrows,4,9,39,26,15,40
+swampofsorrows_c60,Swamp of Sorrows,4,10,37,50,15,45
+swampofsorrows_c60,Swamp of Sorrows,4,11,37,50,15,50
+swampofsorrows_c60,Swamp of Sorrows,4,12,36,25,15,55
+swampofsorrows_c60,Swamp of Sorrows,4,13,36,27,15,60
+swampofsorrows_c60,Swamp of Sorrows,4,14,35,48,15,65
+swampofsorrows_c60,Swamp of Sorrows,5,8,36,25,20,35
+swampofsorrows_c60,Swamp of Sorrows,5,9,36,28,20,40
+swampofsorrows_c60,Swamp of Sorrows,5,10,37,33,20,45
+swampofsorrows_c60,Swamp of Sorrows,5,11,37,8,20,50
+swampofsorrows_c60,Swamp of Sorrows,5,12,37,44,20,55
+swampofsorrows_c60,Swamp of Sorrows,5,13,37,50,20,60
+swampofsorrows_c60,Swamp of Sorrows,5,14,37,13,20,65
+swampofsorrows_c60,Swamp of Sorrows,6,6,37,7,25,25
+swampofsorrows_c60,Swamp of Sorrows,6,7,36,16,25,30
+swampofsorrows_c60,Swamp of Sorrows,6,8,37,45,25,35
+swampofsorrows_c60,Swamp of Sorrows,6,9,37,50,25,40
+swampofsorrows_c60,Swamp of Sorrows,6,10,37,50,25,45
+swampofsorrows_c60,Swamp of Sorrows,6,11,37,34,25,50
+swampofsorrows_c60,Swamp of Sorrows,6,12,37,50,25,55
+swampofsorrows_c60,Swamp of Sorrows,6,13,37,50,25,60
+swampofsorrows_c60,Swamp of Sorrows,6,14,37,44,25,65
+swampofsorrows_c60,Swamp of Sorrows,7,6,37,50,30,25
+swampofsorrows_c60,Swamp of Sorrows,7,7,37,35,30,30
+swampofsorrows_c60,Swamp of Sorrows,7,8,37,50,30,35
+swampofsorrows_c60,Swamp of Sorrows,7,9,37,50,30,40
+swampofsorrows_c60,Swamp of Sorrows,7,10,37,50,30,45
+swampofsorrows_c60,Swamp of Sorrows,7,11,36,47,30,50
+swampofsorrows_c60,Swamp of Sorrows,7,12,37,16,30,55
+swampofsorrows_c60,Swamp of Sorrows,7,13,37,23,30,60
+swampofsorrows_c60,Swamp of Sorrows,8,6,37,50,35,25
+swampofsorrows_c60,Swamp of Sorrows,8,7,37,37,35,30
+swampofsorrows_c60,Swamp of Sorrows,8,8,37,50,35,35
+swampofsorrows_c60,Swamp of Sorrows,8,9,37,50,35,40
+swampofsorrows_c60,Swamp of Sorrows,8,10,37,50,35,45
+swampofsorrows_c60,Swamp of Sorrows,8,11,36,39,35,50
+swampofsorrows_c60,Swamp of Sorrows,9,6,35,14,40,25
+swampofsorrows_c60,Swamp of Sorrows,9,7,35,40,40,30
+swampofsorrows_c60,Swamp of Sorrows,9,8,37,50,40,35
+swampofsorrows_c60,Swamp of Sorrows,9,9,37,50,40,40
+swampofsorrows_c60,Swamp of Sorrows,9,10,37,50,40,45
+swampofsorrows_c60,Swamp of Sorrows,9,11,36,10,40,50
+swampofsorrows_c60,Swamp of Sorrows,10,6,35,50,45,25
+swampofsorrows_c60,Swamp of Sorrows,10,7,35,40,45,30
+swampofsorrows_c60,Swamp of Sorrows,10,8,39,46,45,35
+swampofsorrows_c60,Swamp of Sorrows,10,9,37,47,45,40
+swampofsorrows_c60,Swamp of Sorrows,10,10,37,26,45,45
+swampofsorrows_c60,Swamp of Sorrows,11,6,38,42,50,25
+swampofsorrows_c60,Swamp of Sorrows,11,7,39,36,50,30
+swampofsorrows_c60,Swamp of Sorrows,11,8,39,50,50,35
+swampofsorrows_c60,Swamp of Sorrows,11,9,37,20,50,40
+swampofsorrows_c60,Swamp of Sorrows,11,10,39,34,50,45
+swampofsorrows_c60,Swamp of Sorrows,11,11,39,35,50,50
+swampofsorrows_c60,Swamp of Sorrows,11,12,39,8,50,55
+swampofsorrows_c60,Swamp of Sorrows,11,13,41,24,50,60
+swampofsorrows_c60,Swamp of Sorrows,11,14,41,34,50,65
+swampofsorrows_c60,Swamp of Sorrows,12,4,37,11,55,15
+swampofsorrows_c60,Swamp of Sorrows,12,5,37,29,55,20
+swampofsorrows_c60,Swamp of Sorrows,12,6,39,49,55,25
+swampofsorrows_c60,Swamp of Sorrows,12,7,39,38,55,30
+swampofsorrows_c60,Swamp of Sorrows,12,8,41,20,55,35
+swampofsorrows_c60,Swamp of Sorrows,12,9,41,21,55,40
+swampofsorrows_c60,Swamp of Sorrows,12,10,41,26,55,45
+swampofsorrows_c60,Swamp of Sorrows,12,11,39,25,55,50
+swampofsorrows_c60,Swamp of Sorrows,12,12,41,20,55,55
+swampofsorrows_c60,Swamp of Sorrows,12,13,41,50,55,60
+swampofsorrows_c60,Swamp of Sorrows,12,14,41,50,55,65
+swampofsorrows_c60,Swamp of Sorrows,12,15,41,47,55,70
+swampofsorrows_c60,Swamp of Sorrows,12,16,36,8,55,75
+swampofsorrows_c60,Swamp of Sorrows,12,17,44,29,55,80
+swampofsorrows_c60,Swamp of Sorrows,12,18,44,9,55,85
+swampofsorrows_c60,Swamp of Sorrows,13,4,37,50,60,15
+swampofsorrows_c60,Swamp of Sorrows,13,5,38,50,60,20
+swampofsorrows_c60,Swamp of Sorrows,13,6,37,26,60,25
+swampofsorrows_c60,Swamp of Sorrows,13,7,41,33,60,30
+swampofsorrows_c60,Swamp of Sorrows,13,8,43,42,60,35
+swampofsorrows_c60,Swamp of Sorrows,13,9,44,30,60,40
+swampofsorrows_c60,Swamp of Sorrows,13,10,43,14,60,45
+swampofsorrows_c60,Swamp of Sorrows,13,11,43,33,60,50
+swampofsorrows_c60,Swamp of Sorrows,13,12,43,21,60,55
+swampofsorrows_c60,Swamp of Sorrows,13,13,41,46,60,60
+swampofsorrows_c60,Swamp of Sorrows,13,14,41,50,60,65
+swampofsorrows_c60,Swamp of Sorrows,13,15,41,15,60,70
+swampofsorrows_c60,Swamp of Sorrows,13,16,36,50,60,75
+swampofsorrows_c60,Swamp of Sorrows,13,17,44,26,60,80
+swampofsorrows_c60,Swamp of Sorrows,13,18,44,48,60,85
+swampofsorrows_c60,Swamp of Sorrows,14,3,40,29,65,10
+swampofsorrows_c60,Swamp of Sorrows,14,4,39,46,65,15
+swampofsorrows_c60,Swamp of Sorrows,14,5,37,21,65,20
+swampofsorrows_c60,Swamp of Sorrows,14,6,41,32,65,25
+swampofsorrows_c60,Swamp of Sorrows,14,7,41,50,65,30
+swampofsorrows_c60,Swamp of Sorrows,14,9,39,8,65,40
+swampofsorrows_c60,Swamp of Sorrows,14,10,39,44,65,45
+swampofsorrows_c60,Swamp of Sorrows,14,11,39,33,65,50
+swampofsorrows_c60,Swamp of Sorrows,14,12,39,28,65,55
+swampofsorrows_c60,Swamp of Sorrows,14,13,39,24,65,60
+swampofsorrows_c60,Swamp of Sorrows,14,14,41,50,65,65
+swampofsorrows_c60,Swamp of Sorrows,14,15,41,22,65,70
+swampofsorrows_c60,Swamp of Sorrows,14,16,44,38,65,75
+swampofsorrows_c60,Swamp of Sorrows,14,17,44,36,65,80
+swampofsorrows_c60,Swamp of Sorrows,14,18,43,50,65,85
+swampofsorrows_c60,Swamp of Sorrows,14,19,43,16,65,90
+swampofsorrows_c60,Swamp of Sorrows,15,1,41,8,70,0
+swampofsorrows_c60,Swamp of Sorrows,15,2,40,7,70,5
+swampofsorrows_c60,Swamp of Sorrows,15,3,40,50,70,10
+swampofsorrows_c60,Swamp of Sorrows,15,4,39,50,70,15
+swampofsorrows_c60,Swamp of Sorrows,15,5,40,42,70,20
+swampofsorrows_c60,Swamp of Sorrows,15,6,41,32,70,25
+swampofsorrows_c60,Swamp of Sorrows,15,7,41,43,70,30
+swampofsorrows_c60,Swamp of Sorrows,15,8,44,28,70,35
+swampofsorrows_c60,Swamp of Sorrows,15,9,39,15,70,40
+swampofsorrows_c60,Swamp of Sorrows,15,10,36,34,70,45
+swampofsorrows_c60,Swamp of Sorrows,15,11,39,15,70,50
+swampofsorrows_c60,Swamp of Sorrows,15,12,39,36,70,55
+swampofsorrows_c60,Swamp of Sorrows,15,13,39,42,70,60
+swampofsorrows_c60,Swamp of Sorrows,15,14,36,33,70,65
+swampofsorrows_c60,Swamp of Sorrows,15,15,36,13,70,70
+swampofsorrows_c60,Swamp of Sorrows,15,16,41,45,70,75
+swampofsorrows_c60,Swamp of Sorrows,15,17,43,37,70,80
+swampofsorrows_c60,Swamp of Sorrows,15,18,43,50,70,85
+swampofsorrows_c60,Swamp of Sorrows,15,19,41,45,70,90
+swampofsorrows_c60,Swamp of Sorrows,16,1,41,33,75,0
+swampofsorrows_c60,Swamp of Sorrows,16,2,41,50,75,5
+swampofsorrows_c60,Swamp of Sorrows,16,3,42,50,75,10
+swampofsorrows_c60,Swamp of Sorrows,16,4,42,50,75,15
+swampofsorrows_c60,Swamp of Sorrows,16,5,42,50,75,20
+swampofsorrows_c60,Swamp of Sorrows,16,6,42,50,75,25
+swampofsorrows_c60,Swamp of Sorrows,16,7,44,29,75,30
+swampofsorrows_c60,Swamp of Sorrows,16,8,44,50,75,35
+swampofsorrows_c60,Swamp of Sorrows,16,9,44,41,75,40
+swampofsorrows_c60,Swamp of Sorrows,16,10,36,50,75,45
+swampofsorrows_c60,Swamp of Sorrows,16,11,39,9,75,50
+swampofsorrows_c60,Swamp of Sorrows,16,12,43,33,75,55
+swampofsorrows_c60,Swamp of Sorrows,16,13,43,50,75,60
+swampofsorrows_c60,Swamp of Sorrows,16,14,43,38,75,65
+swampofsorrows_c60,Swamp of Sorrows,16,15,41,36,75,70
+swampofsorrows_c60,Swamp of Sorrows,16,16,41,50,75,75
+swampofsorrows_c60,Swamp of Sorrows,16,17,41,50,75,80
+swampofsorrows_c60,Swamp of Sorrows,16,18,41,50,75,85
+swampofsorrows_c60,Swamp of Sorrows,16,19,41,50,75,90
+swampofsorrows_c60,Swamp of Sorrows,16,20,41,11,75,95
+swampofsorrows_c60,Swamp of Sorrows,17,2,41,50,80,5
+swampofsorrows_c60,Swamp of Sorrows,17,3,42,30,80,10
+swampofsorrows_c60,Swamp of Sorrows,17,4,42,50,80,15
+swampofsorrows_c60,Swamp of Sorrows,17,5,42,50,80,20
+swampofsorrows_c60,Swamp of Sorrows,17,6,42,50,80,25
+swampofsorrows_c60,Swamp of Sorrows,17,7,42,50,80,30
+swampofsorrows_c60,Swamp of Sorrows,17,8,44,39,80,35
+swampofsorrows_c60,Swamp of Sorrows,17,9,44,50,80,40
+swampofsorrows_c60,Swamp of Sorrows,17,10,44,49,80,45
+swampofsorrows_c60,Swamp of Sorrows,17,11,44,50,80,50
+swampofsorrows_c60,Swamp of Sorrows,17,12,42,36,80,55
+swampofsorrows_c60,Swamp of Sorrows,17,13,42,41,80,60
+swampofsorrows_c60,Swamp of Sorrows,17,14,42,45,80,65
+swampofsorrows_c60,Swamp of Sorrows,17,15,42,35,80,70
+swampofsorrows_c60,Swamp of Sorrows,17,16,41,50,80,75
+swampofsorrows_c60,Swamp of Sorrows,17,17,41,42,80,80
+swampofsorrows_c60,Swamp of Sorrows,17,18,42,47,80,85
+swampofsorrows_c60,Swamp of Sorrows,17,19,42,50,80,90
+swampofsorrows_c60,Swamp of Sorrows,17,20,42,13,80,95
+swampofsorrows_c60,Swamp of Sorrows,18,2,41,6,85,5
+swampofsorrows_c60,Swamp of Sorrows,18,3,41,50,85,10
+swampofsorrows_c60,Swamp of Sorrows,18,4,41,49,85,15
+swampofsorrows_c60,Swamp of Sorrows,18,5,41,26,85,20
+swampofsorrows_c60,Swamp of Sorrows,18,6,42,39,85,25
+swampofsorrows_c60,Swamp of Sorrows,18,7,42,44,85,30
+swampofsorrows_c60,Swamp of Sorrows,18,8,42,24,85,35
+swampofsorrows_c60,Swamp of Sorrows,18,9,44,49,85,40
+swampofsorrows_c60,Swamp of Sorrows,18,10,44,50,85,45
+swampofsorrows_c60,Swamp of Sorrows,18,11,44,43,85,50
+swampofsorrows_c60,Swamp of Sorrows,18,12,42,24,85,55
+swampofsorrows_c60,Swamp of Sorrows,18,13,42,26,85,60
+swampofsorrows_c60,Swamp of Sorrows,18,14,43,40,85,65
+swampofsorrows_c60,Swamp of Sorrows,18,15,43,49,85,70
+swampofsorrows_c60,Swamp of Sorrows,18,16,43,29,85,75
+swampofsorrows_c60,Swamp of Sorrows,18,17,42,36,85,80
+swampofsorrows_c60,Swamp of Sorrows,18,18,42,50,85,85
+swampofsorrows_c60,Swamp of Sorrows,18,19,42,19,85,90
+swampofsorrows_c60,Swamp of Sorrows,19,4,41,47,90,15
+swampofsorrows_c60,Swamp of Sorrows,19,5,41,43,90,20
+swampofsorrows_c60,Swamp of Sorrows,19,6,44,40,90,25
+swampofsorrows_c60,Swamp of Sorrows,19,7,44,43,90,30
+swampofsorrows_c60,Swamp of Sorrows,19,8,44,50,90,35
+swampofsorrows_c60,Swamp of Sorrows,19,9,40,20,90,40
+swampofsorrows_c60,Swamp of Sorrows,19,10,40,34,90,45
+swampofsorrows_c60,Swamp of Sorrows,19,11,43,37,90,50
+swampofsorrows_c60,Swamp of Sorrows,19,12,43,50,90,55
+swampofsorrows_c60,Swamp of Sorrows,19,13,43,27,90,60
+swampofsorrows_c60,Swamp of Sorrows,19,14,44,32,90,65
+swampofsorrows_c60,Swamp of Sorrows,19,15,44,26,90,70
+swampofsorrows_c60,Swamp of Sorrows,19,16,36,30,90,75
+swampofsorrows_c60,Swamp of Sorrows,19,17,36,13,90,80
+swampofsorrows_c60,Swamp of Sorrows,20,6,36,25,95,25
+swampofsorrows_c60,Swamp of Sorrows,20,7,36,20,95,30
+swampofsorrows_c60,Swamp of Sorrows,20,10,36,46,95,45
+swampofsorrows_c60,Swamp of Sorrows,20,11,36,30,95,50
+swampofsorrows_c60,Swamp of Sorrows,20,12,36,22,95,55
+swampofsorrows_c60,Swamp of Sorrows,20,13,36,17,95,60
+tanaris_c60,Tanaris,6,11,49,32,25,50
+tanaris_c60,Tanaris,6,12,49,45,25,55
+tanaris_c60,Tanaris,6,13,49,18,25,60
+tanaris_c60,Tanaris,6,15,48,23,25,70
+tanaris_c60,Tanaris,6,16,48,10,25,75
+tanaris_c60,Tanaris,6,17,48,7,25,80
+tanaris_c60,Tanaris,7,6,42,11,30,25
+tanaris_c60,Tanaris,7,7,46,46,30,30
+tanaris_c60,Tanaris,7,8,46,24,30,35
+tanaris_c60,Tanaris,7,9,49,12,30,40
+tanaris_c60,Tanaris,7,11,44,11,30,50
+tanaris_c60,Tanaris,7,12,44,36,30,55
+tanaris_c60,Tanaris,7,13,48,26,30,60
+tanaris_c60,Tanaris,7,14,49,21,30,65
+tanaris_c60,Tanaris,7,15,49,34,30,70
+tanaris_c60,Tanaris,7,16,48,50,30,75
+tanaris_c60,Tanaris,7,17,48,43,30,80
+tanaris_c60,Tanaris,8,4,43,14,35,15
+tanaris_c60,Tanaris,8,5,43,50,35,20
+tanaris_c60,Tanaris,8,6,43,36,35,25
+tanaris_c60,Tanaris,8,7,43,49,35,30
+tanaris_c60,Tanaris,8,8,45,20,35,35
+tanaris_c60,Tanaris,8,9,48,37,35,40
+tanaris_c60,Tanaris,8,10,48,38,35,45
+tanaris_c60,Tanaris,8,11,44,27,35,50
+tanaris_c60,Tanaris,8,12,44,31,35,55
+tanaris_c60,Tanaris,8,13,46,42,35,60
+tanaris_c60,Tanaris,8,14,48,38,35,65
+tanaris_c60,Tanaris,8,15,48,36,35,70
+tanaris_c60,Tanaris,8,16,48,46,35,75
+tanaris_c60,Tanaris,8,17,49,31,35,80
+tanaris_c60,Tanaris,9,5,43,49,40,20
+tanaris_c60,Tanaris,9,6,42,25,40,25
+tanaris_c60,Tanaris,9,8,45,30,40,35
+tanaris_c60,Tanaris,9,9,43,42,40,40
+tanaris_c60,Tanaris,9,10,44,32,40,45
+tanaris_c60,Tanaris,9,11,44,50,40,50
+tanaris_c60,Tanaris,9,12,44,50,40,55
+tanaris_c60,Tanaris,9,13,46,43,40,60
+tanaris_c60,Tanaris,9,14,44,35,40,65
+tanaris_c60,Tanaris,9,15,44,32,40,70
+tanaris_c60,Tanaris,9,16,48,47,40,75
+tanaris_c60,Tanaris,10,5,41,20,45,20
+tanaris_c60,Tanaris,10,6,42,40,45,25
+tanaris_c60,Tanaris,10,7,42,12,45,30
+tanaris_c60,Tanaris,10,8,43,27,45,35
+tanaris_c60,Tanaris,10,9,45,35,45,40
+tanaris_c60,Tanaris,10,10,44,32,45,45
+tanaris_c60,Tanaris,10,11,46,34,45,50
+tanaris_c60,Tanaris,10,12,46,29,45,55
+tanaris_c60,Tanaris,10,13,44,39,45,60
+tanaris_c60,Tanaris,10,14,48,46,45,65
+tanaris_c60,Tanaris,10,15,48,46,45,70
+tanaris_c60,Tanaris,10,16,48,40,45,75
+tanaris_c60,Tanaris,11,5,41,50,50,20
+tanaris_c60,Tanaris,11,6,41,50,50,25
+tanaris_c60,Tanaris,11,7,41,39,50,30
+tanaris_c60,Tanaris,11,8,41,7,50,35
+tanaris_c60,Tanaris,11,9,43,43,50,40
+tanaris_c60,Tanaris,11,10,45,21,50,45
+tanaris_c60,Tanaris,11,11,45,33,50,50
+tanaris_c60,Tanaris,11,12,46,27,50,55
+tanaris_c60,Tanaris,11,13,44,14,50,60
+tanaris_c60,Tanaris,11,14,48,10,50,65
+tanaris_c60,Tanaris,11,15,49,9,50,70
+tanaris_c60,Tanaris,11,16,48,10,50,75
+tanaris_c60,Tanaris,12,5,41,35,55,20
+tanaris_c60,Tanaris,12,6,41,33,55,25
+tanaris_c60,Tanaris,12,7,41,28,55,30
+tanaris_c60,Tanaris,12,9,43,17,55,40
+tanaris_c60,Tanaris,12,10,46,39,55,45
+tanaris_c60,Tanaris,12,11,43,31,55,50
+tanaris_c60,Tanaris,12,12,46,22,55,55
+tanaris_c60,Tanaris,12,13,44,8,55,60
+tanaris_c60,Tanaris,12,15,49,32,55,70
+tanaris_c60,Tanaris,13,4,41,24,60,15
+tanaris_c60,Tanaris,13,5,41,50,60,20
+tanaris_c60,Tanaris,13,6,42,30,60,25
+tanaris_c60,Tanaris,13,7,42,17,60,30
+tanaris_c60,Tanaris,13,8,43,7,60,35
+tanaris_c60,Tanaris,13,9,45,47,60,40
+tanaris_c60,Tanaris,13,10,43,49,60,45
+tanaris_c60,Tanaris,13,11,46,40,60,50
+tanaris_c60,Tanaris,13,12,46,50,60,55
+tanaris_c60,Tanaris,13,13,49,24,60,60
+tanaris_c60,Tanaris,14,9,43,13,65,40
+tanaris_c60,Tanaris,14,12,49,49,65,55
+tanaris_c60,Tanaris,14,13,49,49,65,60
+tanaris_c60,Tanaris,15,9,45,35,70,40
+tanaris_c60,Tanaris,15,10,45,50,70,45
+tanaris_c60,Tanaris,15,11,49,10,70,50
+tanaris_c60,Tanaris,15,12,49,27,70,55
+tanaris_c60,Tanaris,16,9,45,30,75,40
+tanaris_c60,Tanaris,16,10,45,50,75,45
+thousandneedles_c60,Thousand Needles,2,2,29,15,5,5
+thousandneedles_c60,Thousand Needles,2,3,29,29,5,10
+thousandneedles_c60,Thousand Needles,2,7,29,27,5,30
+thousandneedles_c60,Thousand Needles,2,8,29,31,5,35
+thousandneedles_c60,Thousand Needles,2,9,29,6,5,40
+thousandneedles_c60,Thousand Needles,3,2,28,44,10,5
+thousandneedles_c60,Thousand Needles,3,3,30,26,10,10
+thousandneedles_c60,Thousand Needles,3,4,29,42,10,15
+thousandneedles_c60,Thousand Needles,3,5,30,31,10,20
+thousandneedles_c60,Thousand Needles,3,6,29,19,10,25
+thousandneedles_c60,Thousand Needles,3,7,29,33,10,30
+thousandneedles_c60,Thousand Needles,3,8,29,50,10,35
+thousandneedles_c60,Thousand Needles,3,9,29,33,10,40
+thousandneedles_c60,Thousand Needles,4,3,28,30,15,10
+thousandneedles_c60,Thousand Needles,4,4,28,23,15,15
+thousandneedles_c60,Thousand Needles,4,5,28,34,15,20
+thousandneedles_c60,Thousand Needles,4,7,29,29,15,30
+thousandneedles_c60,Thousand Needles,4,8,29,50,15,35
+thousandneedles_c60,Thousand Needles,4,9,29,49,15,40
+thousandneedles_c60,Thousand Needles,5,5,27,36,20,20
+thousandneedles_c60,Thousand Needles,5,6,27,17,20,25
+thousandneedles_c60,Thousand Needles,5,7,29,20,20,30
+thousandneedles_c60,Thousand Needles,5,8,28,31,20,35
+thousandneedles_c60,Thousand Needles,5,9,28,50,20,40
+thousandneedles_c60,Thousand Needles,5,10,28,38,20,45
+thousandneedles_c60,Thousand Needles,5,11,30,10,20,50
+thousandneedles_c60,Thousand Needles,6,6,27,28,25,25
+thousandneedles_c60,Thousand Needles,6,7,27,11,25,30
+thousandneedles_c60,Thousand Needles,6,8,27,14,25,35
+thousandneedles_c60,Thousand Needles,6,9,28,30,25,40
+thousandneedles_c60,Thousand Needles,6,10,30,44,25,45
+thousandneedles_c60,Thousand Needles,6,11,30,50,25,50
+thousandneedles_c60,Thousand Needles,6,12,29,12,25,55
+thousandneedles_c60,Thousand Needles,7,6,27,32,30,25
+thousandneedles_c60,Thousand Needles,7,7,28,21,30,30
+thousandneedles_c60,Thousand Needles,7,8,26,31,30,35
+thousandneedles_c60,Thousand Needles,7,10,27,29,30,45
+thousandneedles_c60,Thousand Needles,7,11,27,30,30,50
+thousandneedles_c60,Thousand Needles,8,6,26,32,35,25
+thousandneedles_c60,Thousand Needles,8,7,27,25,35,30
+thousandneedles_c60,Thousand Needles,8,8,29,46,35,35
+thousandneedles_c60,Thousand Needles,8,9,26,21,35,40
+thousandneedles_c60,Thousand Needles,8,10,27,26,35,45
+thousandneedles_c60,Thousand Needles,8,11,27,37,35,50
+thousandneedles_c60,Thousand Needles,8,12,26,12,35,55
+thousandneedles_c60,Thousand Needles,9,7,28,50,40,30
+thousandneedles_c60,Thousand Needles,9,8,26,21,40,35
+thousandneedles_c60,Thousand Needles,9,9,25,32,40,40
+thousandneedles_c60,Thousand Needles,9,11,26,22,40,50
+thousandneedles_c60,Thousand Needles,9,12,26,32,40,55
+thousandneedles_c60,Thousand Needles,9,13,26,10,40,60
+thousandneedles_c60,Thousand Needles,10,8,25,45,45,35
+thousandneedles_c60,Thousand Needles,10,9,25,27,45,40
+thousandneedles_c60,Thousand Needles,10,10,25,22,45,45
+thousandneedles_c60,Thousand Needles,10,11,27,7,45,50
+thousandneedles_c60,Thousand Needles,10,12,26,21,45,55
+thousandneedles_c60,Thousand Needles,10,13,26,6,45,60
+thousandneedles_c60,Thousand Needles,11,9,28,15,50,40
+thousandneedles_c60,Thousand Needles,11,10,29,28,50,45
+thousandneedles_c60,Thousand Needles,11,11,29,29,50,50
+thousandneedles_c60,Thousand Needles,11,12,27,26,50,55
+thousandneedles_c60,Thousand Needles,12,10,28,46,55,45
+thousandneedles_c60,Thousand Needles,12,11,29,24,55,50
+thousandneedles_c60,Thousand Needles,12,12,29,21,55,55
+thousandneedles_c60,Thousand Needles,13,9,29,9,60,40
+thousandneedles_c60,Thousand Needles,13,10,29,23,60,45
+thousandneedles_c60,Thousand Needles,13,11,29,35,60,50
+thousandneedles_c60,Thousand Needles,13,12,29,47,60,55
+thousandneedles_c60,Thousand Needles,13,13,29,22,60,60
+thousandneedles_c60,Thousand Needles,13,18,34,17,60,85
+thousandneedles_c60,Thousand Needles,14,10,30,33,65,45
+thousandneedles_c60,Thousand Needles,14,11,29,20,65,50
+thousandneedles_c60,Thousand Needles,14,12,29,17,65,55
+thousandneedles_c60,Thousand Needles,14,13,31,18,65,60
+thousandneedles_c60,Thousand Needles,14,14,31,22,65,65
+thousandneedles_c60,Thousand Needles,14,15,32,6,65,70
+thousandneedles_c60,Thousand Needles,14,16,33,25,65,75
+thousandneedles_c60,Thousand Needles,14,17,34,28,65,80
+thousandneedles_c60,Thousand Needles,14,18,34,28,65,85
+thousandneedles_c60,Thousand Needles,14,19,34,50,65,90
+thousandneedles_c60,Thousand Needles,15,11,31,34,70,50
+thousandneedles_c60,Thousand Needles,15,12,32,50,70,55
+thousandneedles_c60,Thousand Needles,15,13,31,46,70,60
+thousandneedles_c60,Thousand Needles,15,14,34,16,70,65
+thousandneedles_c60,Thousand Needles,15,15,32,21,70,70
+thousandneedles_c60,Thousand Needles,15,16,35,47,70,75
+thousandneedles_c60,Thousand Needles,15,17,33,27,70,80
+thousandneedles_c60,Thousand Needles,15,18,35,33,70,85
+thousandneedles_c60,Thousand Needles,15,19,34,41,70,90
+thousandneedles_c60,Thousand Needles,16,11,35,28,75,50
+thousandneedles_c60,Thousand Needles,16,12,31,23,75,55
+thousandneedles_c60,Thousand Needles,16,13,31,46,75,60
+thousandneedles_c60,Thousand Needles,16,14,33,31,75,65
+thousandneedles_c60,Thousand Needles,16,15,35,30,75,70
+thousandneedles_c60,Thousand Needles,16,17,35,46,75,80
+thousandneedles_c60,Thousand Needles,16,18,35,33,75,85
+thousandneedles_c60,Thousand Needles,16,19,33,10,75,90
+thousandneedles_c60,Thousand Needles,17,11,31,43,80,50
+thousandneedles_c60,Thousand Needles,17,12,35,26,80,55
+thousandneedles_c60,Thousand Needles,17,13,35,41,80,60
+thousandneedles_c60,Thousand Needles,17,14,35,39,80,65
+thousandneedles_c60,Thousand Needles,17,15,34,33,80,70
+thousandneedles_c60,Thousand Needles,17,16,35,28,80,75
+thousandneedles_c60,Thousand Needles,17,17,33,49,80,80
+thousandneedles_c60,Thousand Needles,17,18,33,36,80,85
+thousandneedles_c60,Thousand Needles,18,12,31,20,85,55
+thousandneedles_c60,Thousand Needles,18,13,33,24,85,60
+thousandneedles_c60,Thousand Needles,18,14,34,28,85,65
+thousandneedles_c60,Thousand Needles,18,15,35,48,85,70
+thousandneedles_c60,Thousand Needles,18,16,35,48,85,75
+thousandneedles_c60,Thousand Needles,18,17,33,50,85,80
+tirisfal_c60,Tirisfal Glades,10,6,9,16,45,25
+tirisfal_c60,Tirisfal Glades,11,6,11,20,50,25
+tirisfal_c60,Tirisfal Glades,12,6,8,16,55,25
+tirisfal_c60,Tirisfal Glades,13,6,9,20,60,25
+tirisfal_c60,Tirisfal Glades,14,6,10,20,65,25
+tirisfal_c60,Tirisfal Glades,15,6,10,20,70,25
+tirisfal_c60,Tirisfal Glades,16,6,11,16,75,25
+tirisfal_c60,Tirisfal Glades,17,6,31,20,80,25
+tirisfal_c60,Tirisfal Glades,9,7,8,16,40,30
+tirisfal_c60,Tirisfal Glades,10,7,9,20,45,30
+tirisfal_c60,Tirisfal Glades,11,7,9,16,50,30
+tirisfal_c60,Tirisfal Glades,12,7,8,20,55,30
+tirisfal_c60,Tirisfal Glades,13,7,8,16,60,30
+tirisfal_c60,Tirisfal Glades,14,7,9,20,65,30
+tirisfal_c60,Tirisfal Glades,15,7,9,20,70,30
+tirisfal_c60,Tirisfal Glades,16,7,11,16,75,30
+tirisfal_c60,Tirisfal Glades,17,7,31,20,80,30
+tirisfal_c60,Tirisfal Glades,18,7,31,16,85,30
+tirisfal_c60,Tirisfal Glades,8,8,7,12,35,35
+tirisfal_c60,Tirisfal Glades,9,8,7,12,40,35
+tirisfal_c60,Tirisfal Glades,10,8,8,20,45,35
+tirisfal_c60,Tirisfal Glades,12,8,7,20,55,35
+tirisfal_c60,Tirisfal Glades,13,8,7,20,60,35
+tirisfal_c60,Tirisfal Glades,14,8,8,12,65,35
+tirisfal_c60,Tirisfal Glades,15,8,8,16,70,35
+tirisfal_c60,Tirisfal Glades,16,8,10,12,75,35
+tirisfal_c60,Tirisfal Glades,17,8,31,20,80,35
+tirisfal_c60,Tirisfal Glades,18,8,10,12,85,35
+tirisfal_c60,Tirisfal Glades,7,9,9,16,30,40
+tirisfal_c60,Tirisfal Glades,8,9,9,16,35,40
+tirisfal_c60,Tirisfal Glades,9,9,8,16,40,40
+tirisfal_c60,Tirisfal Glades,10,9,8,20,45,40
+tirisfal_c60,Tirisfal Glades,11,9,7,20,50,40
+tirisfal_c60,Tirisfal Glades,12,9,7,20,55,40
+tirisfal_c60,Tirisfal Glades,13,9,7,20,60,40
+tirisfal_c60,Tirisfal Glades,14,9,8,16,65,40
+tirisfal_c60,Tirisfal Glades,15,9,8,12,70,40
+tirisfal_c60,Tirisfal Glades,16,9,9,12,75,40
+tirisfal_c60,Tirisfal Glades,17,9,10,20,80,40
+tirisfal_c60,Tirisfal Glades,18,9,10,20,85,40
+tirisfal_c60,Tirisfal Glades,6,10,10,16,25,45
+tirisfal_c60,Tirisfal Glades,7,10,7,20,30,45
+tirisfal_c60,Tirisfal Glades,8,10,7,20,35,45
+tirisfal_c60,Tirisfal Glades,9,10,7,16,40,45
+tirisfal_c60,Tirisfal Glades,10,10,8,20,45,45
+tirisfal_c60,Tirisfal Glades,11,10,7,20,50,45
+tirisfal_c60,Tirisfal Glades,12,10,7,12,55,45
+tirisfal_c60,Tirisfal Glades,13,10,7,16,60,45
+tirisfal_c60,Tirisfal Glades,14,10,6,12,65,45
+tirisfal_c60,Tirisfal Glades,15,10,9,16,70,45
+tirisfal_c60,Tirisfal Glades,16,10,9,20,75,45
+tirisfal_c60,Tirisfal Glades,17,10,10,20,80,45
+tirisfal_c60,Tirisfal Glades,18,10,10,20,85,45
+tirisfal_c60,Tirisfal Glades,7,11,7,16,30,50
+tirisfal_c60,Tirisfal Glades,8,11,7,16,35,50
+tirisfal_c60,Tirisfal Glades,9,11,7,16,40,50
+tirisfal_c60,Tirisfal Glades,10,11,7,16,45,50
+tirisfal_c60,Tirisfal Glades,11,11,7,20,50,50
+tirisfal_c60,Tirisfal Glades,12,11,6,16,55,50
+tirisfal_c60,Tirisfal Glades,13,11,6,16,60,50
+tirisfal_c60,Tirisfal Glades,14,11,7,20,65,50
+tirisfal_c60,Tirisfal Glades,15,11,8,12,70,50
+tirisfal_c60,Tirisfal Glades,16,11,9,12,75,50
+tirisfal_c60,Tirisfal Glades,17,11,10,20,80,50
+tirisfal_c60,Tirisfal Glades,18,11,10,20,85,50
+tirisfal_c60,Tirisfal Glades,5,12,4,16,20,55
+tirisfal_c60,Tirisfal Glades,6,12,3,20,25,55
+tirisfal_c60,Tirisfal Glades,7,12,3,20,30,55
+tirisfal_c60,Tirisfal Glades,8,12,4,20,35,55
+tirisfal_c60,Tirisfal Glades,9,12,7,16,40,55
+tirisfal_c60,Tirisfal Glades,10,12,7,20,45,55
+tirisfal_c60,Tirisfal Glades,11,12,7,20,50,55
+tirisfal_c60,Tirisfal Glades,12,12,7,20,55,55
+tirisfal_c60,Tirisfal Glades,13,12,7,16,60,55
+tirisfal_c60,Tirisfal Glades,14,12,6,16,65,55
+tirisfal_c60,Tirisfal Glades,15,12,9,20,70,55
+tirisfal_c60,Tirisfal Glades,16,12,9,16,75,55
+tirisfal_c60,Tirisfal Glades,18,12,10,12,85,55
+tirisfal_c60,Tirisfal Glades,6,13,2,16,25,60
+tirisfal_c60,Tirisfal Glades,7,13,1,20,30,60
+tirisfal_c60,Tirisfal Glades,8,13,4,20,35,60
+tirisfal_c60,Tirisfal Glades,9,13,8,20,40,60
+tirisfal_c60,Tirisfal Glades,10,13,9,20,45,60
+tirisfal_c60,Tirisfal Glades,11,13,9,16,50,60
+tirisfal_c60,Tirisfal Glades,12,13,8,16,55,60
+tirisfal_c60,Tirisfal Glades,14,13,7,16,65,60
+tirisfal_c60,Tirisfal Glades,15,13,9,16,70,60
+tirisfal_c60,Tirisfal Glades,16,13,9,16,75,60
+tirisfal_c60,Tirisfal Glades,17,13,9,12,80,60
+tirisfal_c60,Tirisfal Glades,6,14,2,16,25,65
+tirisfal_c60,Tirisfal Glades,7,14,2,20,30,65
+tirisfal_c60,Tirisfal Glades,8,14,4,20,35,65
+tirisfal_c60,Tirisfal Glades,9,14,8,12,40,65
+tirisfal_c60,Tirisfal Glades,10,14,9,16,45,65
+tirisfal_c60,Tirisfal Glades,11,14,9,20,50,65
+tirisfal_c60,Tirisfal Glades,12,14,8,12,55,65
+tirisfal_c60,Tirisfal Glades,15,14,9,12,70,65
+tirisfal_c60,Tirisfal Glades,16,14,8,16,75,65
+tirisfal_c60,Tirisfal Glades,17,14,9,12,80,65
+tirisfal_c60,Tirisfal Glades,7,15,2,16,30,70
+tirisfal_c60,Tirisfal Glades,11,15,8,16,50,70
+tirisfal_c60,Tirisfal Glades,16,15,8,16,75,70
+tirisfal_c60,Tirisfal Glades,17,12,8,3,80,55
+tirisfal_c60,Tirisfal Glades,19,10,10,2,90,45
+ungorocrater_c60,Un'Goro Crater,4,8,53,11,15,35
+ungorocrater_c60,Un'Goro Crater,4,9,53,32,15,40
+ungorocrater_c60,Un'Goro Crater,4,11,53,39,15,50
+ungorocrater_c60,Un'Goro Crater,4,12,53,47,15,55
+ungorocrater_c60,Un'Goro Crater,4,13,53,8,15,60
+ungorocrater_c60,Un'Goro Crater,5,8,53,50,20,35
+ungorocrater_c60,Un'Goro Crater,5,9,53,50,20,40
+ungorocrater_c60,Un'Goro Crater,5,10,53,32,20,45
+ungorocrater_c60,Un'Goro Crater,5,11,53,50,20,50
+ungorocrater_c60,Un'Goro Crater,5,12,53,50,20,55
+ungorocrater_c60,Un'Goro Crater,5,13,53,46,20,60
+ungorocrater_c60,Un'Goro Crater,5,14,53,11,20,65
+ungorocrater_c60,Un'Goro Crater,6,6,53,8,25,25
+ungorocrater_c60,Un'Goro Crater,6,7,53,50,25,30
+ungorocrater_c60,Un'Goro Crater,6,8,53,50,25,35
+ungorocrater_c60,Un'Goro Crater,6,9,53,50,25,40
+ungorocrater_c60,Un'Goro Crater,6,10,53,15,25,45
+ungorocrater_c60,Un'Goro Crater,6,11,53,39,25,50
+ungorocrater_c60,Un'Goro Crater,6,12,53,47,25,55
+ungorocrater_c60,Un'Goro Crater,6,13,53,50,25,60
+ungorocrater_c60,Un'Goro Crater,6,14,53,50,25,65
+ungorocrater_c60,Un'Goro Crater,6,15,53,50,25,70
+ungorocrater_c60,Un'Goro Crater,6,16,53,36,25,75
+ungorocrater_c60,Un'Goro Crater,7,5,53,50,30,20
+ungorocrater_c60,Un'Goro Crater,7,6,53,50,30,25
+ungorocrater_c60,Un'Goro Crater,7,7,53,50,30,30
+ungorocrater_c60,Un'Goro Crater,7,8,53,50,30,35
+ungorocrater_c60,Un'Goro Crater,7,9,53,50,30,40
+ungorocrater_c60,Un'Goro Crater,7,10,53,31,30,45
+ungorocrater_c60,Un'Goro Crater,7,12,53,20,30,55
+ungorocrater_c60,Un'Goro Crater,7,13,53,50,30,60
+ungorocrater_c60,Un'Goro Crater,7,14,53,50,30,65
+ungorocrater_c60,Un'Goro Crater,7,15,53,50,30,70
+ungorocrater_c60,Un'Goro Crater,7,16,53,50,30,75
+ungorocrater_c60,Un'Goro Crater,8,3,53,10,35,10
+ungorocrater_c60,Un'Goro Crater,8,4,53,50,35,15
+ungorocrater_c60,Un'Goro Crater,8,5,53,50,35,20
+ungorocrater_c60,Un'Goro Crater,8,6,53,50,35,25
+ungorocrater_c60,Un'Goro Crater,8,7,53,50,35,30
+ungorocrater_c60,Un'Goro Crater,8,8,53,50,35,35
+ungorocrater_c60,Un'Goro Crater,8,9,53,50,35,40
+ungorocrater_c60,Un'Goro Crater,8,10,53,50,35,45
+ungorocrater_c60,Un'Goro Crater,8,11,53,50,35,50
+ungorocrater_c60,Un'Goro Crater,8,12,53,46,35,55
+ungorocrater_c60,Un'Goro Crater,8,13,53,50,35,60
+ungorocrater_c60,Un'Goro Crater,8,14,53,50,35,65
+ungorocrater_c60,Un'Goro Crater,8,15,53,50,35,70
+ungorocrater_c60,Un'Goro Crater,8,16,53,50,35,75
+ungorocrater_c60,Un'Goro Crater,8,17,53,47,35,80
+ungorocrater_c60,Un'Goro Crater,8,18,51,32,35,85
+ungorocrater_c60,Un'Goro Crater,8,19,51,35,35,90
+ungorocrater_c60,Un'Goro Crater,8,20,51,9,35,95
+ungorocrater_c60,Un'Goro Crater,9,3,53,22,40,10
+ungorocrater_c60,Un'Goro Crater,9,4,53,34,40,15
+ungorocrater_c60,Un'Goro Crater,9,5,52,50,40,20
+ungorocrater_c60,Un'Goro Crater,9,6,52,50,40,25
+ungorocrater_c60,Un'Goro Crater,9,7,52,50,40,30
+ungorocrater_c60,Un'Goro Crater,9,8,52,31,40,35
+ungorocrater_c60,Un'Goro Crater,9,10,55,49,40,45
+ungorocrater_c60,Un'Goro Crater,9,11,55,23,40,50
+ungorocrater_c60,Un'Goro Crater,9,12,52,9,40,55
+ungorocrater_c60,Un'Goro Crater,9,13,52,36,40,60
+ungorocrater_c60,Un'Goro Crater,9,14,51,48,40,65
+ungorocrater_c60,Un'Goro Crater,9,15,52,41,40,70
+ungorocrater_c60,Un'Goro Crater,9,16,52,46,40,75
+ungorocrater_c60,Un'Goro Crater,9,17,51,23,40,80
+ungorocrater_c60,Un'Goro Crater,9,18,51,50,40,85
+ungorocrater_c60,Un'Goro Crater,9,19,51,50,40,90
+ungorocrater_c60,Un'Goro Crater,9,20,51,43,40,95
+ungorocrater_c60,Un'Goro Crater,10,2,51,28,45,5
+ungorocrater_c60,Un'Goro Crater,10,3,51,18,45,10
+ungorocrater_c60,Un'Goro Crater,10,4,53,27,45,15
+ungorocrater_c60,Un'Goro Crater,10,5,54,36,45,20
+ungorocrater_c60,Un'Goro Crater,10,6,51,41,45,25
+ungorocrater_c60,Un'Goro Crater,10,7,52,45,45,30
+ungorocrater_c60,Un'Goro Crater,10,8,51,28,45,35
+ungorocrater_c60,Un'Goro Crater,10,9,54,39,45,40
+ungorocrater_c60,Un'Goro Crater,10,10,55,50,45,45
+ungorocrater_c60,Un'Goro Crater,10,11,55,39,45,50
+ungorocrater_c60,Un'Goro Crater,10,12,55,20,45,55
+ungorocrater_c60,Un'Goro Crater,10,13,52,42,45,60
+ungorocrater_c60,Un'Goro Crater,10,14,52,37,45,65
+ungorocrater_c60,Un'Goro Crater,10,15,52,50,45,70
+ungorocrater_c60,Un'Goro Crater,10,16,52,50,45,75
+ungorocrater_c60,Un'Goro Crater,10,17,52,50,45,80
+ungorocrater_c60,Un'Goro Crater,10,18,52,14,45,85
+ungorocrater_c60,Un'Goro Crater,11,2,52,7,50,5
+ungorocrater_c60,Un'Goro Crater,11,3,52,50,50,10
+ungorocrater_c60,Un'Goro Crater,11,4,53,26,50,15
+ungorocrater_c60,Un'Goro Crater,11,5,54,22,50,20
+ungorocrater_c60,Un'Goro Crater,11,6,54,26,50,25
+ungorocrater_c60,Un'Goro Crater,11,7,52,24,50,30
+ungorocrater_c60,Un'Goro Crater,11,9,54,44,50,40
+ungorocrater_c60,Un'Goro Crater,11,10,55,50,50,45
+ungorocrater_c60,Un'Goro Crater,11,11,55,46,50,50
+ungorocrater_c60,Un'Goro Crater,11,12,55,18,50,55
+ungorocrater_c60,Un'Goro Crater,11,13,52,25,50,60
+ungorocrater_c60,Un'Goro Crater,11,14,52,38,50,65
+ungorocrater_c60,Un'Goro Crater,11,15,52,50,50,70
+ungorocrater_c60,Un'Goro Crater,11,16,52,50,50,75
+ungorocrater_c60,Un'Goro Crater,11,17,52,50,50,80
+ungorocrater_c60,Un'Goro Crater,11,18,51,24,50,85
+ungorocrater_c60,Un'Goro Crater,11,19,51,40,50,90
+ungorocrater_c60,Un'Goro Crater,11,20,51,11,50,95
+ungorocrater_c60,Un'Goro Crater,12,2,51,40,55,5
+ungorocrater_c60,Un'Goro Crater,12,3,52,21,55,10
+ungorocrater_c60,Un'Goro Crater,12,4,52,50,55,15
+ungorocrater_c60,Un'Goro Crater,12,5,52,28,55,20
+ungorocrater_c60,Un'Goro Crater,12,6,52,32,55,25
+ungorocrater_c60,Un'Goro Crater,12,7,49,27,55,30
+ungorocrater_c60,Un'Goro Crater,12,8,50,48,55,35
+ungorocrater_c60,Un'Goro Crater,12,9,52,45,55,40
+ungorocrater_c60,Un'Goro Crater,12,10,52,19,55,45
+ungorocrater_c60,Un'Goro Crater,12,11,52,39,55,50
+ungorocrater_c60,Un'Goro Crater,12,12,52,49,55,55
+ungorocrater_c60,Un'Goro Crater,12,13,52,49,55,60
+ungorocrater_c60,Un'Goro Crater,12,14,51,24,55,65
+ungorocrater_c60,Un'Goro Crater,12,15,52,29,55,70
+ungorocrater_c60,Un'Goro Crater,12,16,49,39,55,75
+ungorocrater_c60,Un'Goro Crater,12,17,49,27,55,80
+ungorocrater_c60,Un'Goro Crater,12,18,51,50,55,85
+ungorocrater_c60,Un'Goro Crater,12,19,51,50,55,90
+ungorocrater_c60,Un'Goro Crater,12,20,51,41,55,95
+ungorocrater_c60,Un'Goro Crater,13,3,51,42,60,10
+ungorocrater_c60,Un'Goro Crater,13,4,51,28,60,15
+ungorocrater_c60,Un'Goro Crater,13,5,51,50,60,20
+ungorocrater_c60,Un'Goro Crater,13,6,50,47,60,25
+ungorocrater_c60,Un'Goro Crater,13,7,49,43,60,30
+ungorocrater_c60,Un'Goro Crater,13,8,49,41,60,35
+ungorocrater_c60,Un'Goro Crater,13,9,52,50,60,40
+ungorocrater_c60,Un'Goro Crater,13,10,51,49,60,45
+ungorocrater_c60,Un'Goro Crater,13,11,50,38,60,50
+ungorocrater_c60,Un'Goro Crater,13,12,50,40,60,55
+ungorocrater_c60,Un'Goro Crater,13,13,49,28,60,60
+ungorocrater_c60,Un'Goro Crater,13,14,49,44,60,65
+ungorocrater_c60,Un'Goro Crater,13,15,49,41,60,70
+ungorocrater_c60,Un'Goro Crater,13,16,50,45,60,75
+ungorocrater_c60,Un'Goro Crater,13,17,49,37,60,80
+ungorocrater_c60,Un'Goro Crater,14,3,51,46,65,10
+ungorocrater_c60,Un'Goro Crater,14,4,51,49,65,15
+ungorocrater_c60,Un'Goro Crater,14,5,50,29,65,20
+ungorocrater_c60,Un'Goro Crater,14,6,49,42,65,25
+ungorocrater_c60,Un'Goro Crater,14,7,49,28,65,30
+ungorocrater_c60,Un'Goro Crater,14,8,49,41,65,35
+ungorocrater_c60,Un'Goro Crater,14,9,49,50,65,40
+ungorocrater_c60,Un'Goro Crater,14,10,49,50,65,45
+ungorocrater_c60,Un'Goro Crater,14,11,51,35,65,50
+ungorocrater_c60,Un'Goro Crater,14,12,49,44,65,55
+ungorocrater_c60,Un'Goro Crater,14,13,49,50,65,60
+ungorocrater_c60,Un'Goro Crater,14,14,49,29,65,65
+ungorocrater_c60,Un'Goro Crater,14,15,50,24,65,70
+ungorocrater_c60,Un'Goro Crater,14,16,50,16,65,75
+ungorocrater_c60,Un'Goro Crater,15,6,49,19,70,25
+ungorocrater_c60,Un'Goro Crater,15,7,49,38,70,30
+ungorocrater_c60,Un'Goro Crater,15,8,49,48,70,35
+ungorocrater_c60,Un'Goro Crater,15,9,49,41,70,40
+ungorocrater_c60,Un'Goro Crater,15,10,49,35,70,45
+ungorocrater_c60,Un'Goro Crater,15,11,51,26,70,50
+ungorocrater_c60,Un'Goro Crater,15,12,51,22,70,55
+ungorocrater_c60,Un'Goro Crater,15,13,50,12,70,60
+ungorocrater_c60,Un'Goro Crater,15,14,49,50,70,65
+ungorocrater_c60,Un'Goro Crater,15,15,49,21,70,70
+ungorocrater_c60,Un'Goro Crater,16,8,49,47,75,35
+ungorocrater_c60,Un'Goro Crater,16,9,49,24,75,40
+ungorocrater_c60,Un'Goro Crater,16,12,49,45,75,55
+ungorocrater_c60,Un'Goro Crater,16,13,49,35,75,60
+ungorocrater_c60,Un'Goro Crater,17,8,49,8,80,35
+ungorocrater_c60,Un'Goro Crater,17,12,49,12,80,55
+ungorocrater_c60,Un'Goro Crater,17,13,49,7,80,60
+westernplaguelands_c60,Western Plaguelands,6,12,51,21,25,55
+westernplaguelands_c60,Western Plaguelands,6,13,52,22,25,60
+westernplaguelands_c60,Western Plaguelands,7,11,52,21,30,50
+westernplaguelands_c60,Western Plaguelands,7,12,52,48,30,55
+westernplaguelands_c60,Western Plaguelands,7,13,51,42,30,60
+westernplaguelands_c60,Western Plaguelands,7,14,51,32,30,65
+westernplaguelands_c60,Western Plaguelands,8,3,55,24,35,10
+westernplaguelands_c60,Western Plaguelands,8,10,54,23,35,45
+westernplaguelands_c60,Western Plaguelands,8,11,54,26,35,50
+westernplaguelands_c60,Western Plaguelands,8,12,51,40,35,55
+westernplaguelands_c60,Western Plaguelands,8,13,52,49,35,60
+westernplaguelands_c60,Western Plaguelands,8,14,52,24,35,65
+westernplaguelands_c60,Western Plaguelands,8,15,54,19,35,70
+westernplaguelands_c60,Western Plaguelands,9,2,56,30,40,5
+westernplaguelands_c60,Western Plaguelands,9,3,55,34,40,10
+westernplaguelands_c60,Western Plaguelands,9,4,56,40,40,15
+westernplaguelands_c60,Western Plaguelands,9,5,56,50,40,20
+westernplaguelands_c60,Western Plaguelands,9,6,55,10,40,25
+westernplaguelands_c60,Western Plaguelands,9,7,55,50,40,30
+westernplaguelands_c60,Western Plaguelands,9,8,53,20,40,35
+westernplaguelands_c60,Western Plaguelands,9,9,53,45,40,40
+westernplaguelands_c60,Western Plaguelands,9,10,53,44,40,45
+westernplaguelands_c60,Western Plaguelands,9,11,53,31,40,50
+westernplaguelands_c60,Western Plaguelands,9,12,53,10,40,55
+westernplaguelands_c60,Western Plaguelands,9,13,55,50,40,60
+westernplaguelands_c60,Western Plaguelands,9,14,56,25,40,65
+westernplaguelands_c60,Western Plaguelands,9,15,56,50,40,70
+westernplaguelands_c60,Western Plaguelands,9,16,56,21,40,75
+westernplaguelands_c60,Western Plaguelands,10,2,56,44,45,5
+westernplaguelands_c60,Western Plaguelands,10,3,55,15,45,10
+westernplaguelands_c60,Western Plaguelands,10,4,55,25,45,15
+westernplaguelands_c60,Western Plaguelands,10,5,55,31,45,20
+westernplaguelands_c60,Western Plaguelands,10,6,54,31,45,25
+westernplaguelands_c60,Western Plaguelands,10,7,55,50,45,30
+westernplaguelands_c60,Western Plaguelands,10,8,54,29,45,35
+westernplaguelands_c60,Western Plaguelands,10,9,53,39,45,40
+westernplaguelands_c60,Western Plaguelands,10,10,53,30,45,45
+westernplaguelands_c60,Western Plaguelands,10,11,54,46,45,50
+westernplaguelands_c60,Western Plaguelands,10,12,53,25,45,55
+westernplaguelands_c60,Western Plaguelands,10,13,56,33,45,60
+westernplaguelands_c60,Western Plaguelands,10,14,56,30,45,65
+westernplaguelands_c60,Western Plaguelands,10,15,54,24,45,70
+westernplaguelands_c60,Western Plaguelands,10,16,51,46,45,75
+westernplaguelands_c60,Western Plaguelands,10,17,51,48,45,80
+westernplaguelands_c60,Western Plaguelands,10,18,51,7,45,85
+westernplaguelands_c60,Western Plaguelands,11,5,58,23,50,20
+westernplaguelands_c60,Western Plaguelands,11,6,53,10,50,25
+westernplaguelands_c60,Western Plaguelands,11,7,55,23,50,30
+westernplaguelands_c60,Western Plaguelands,11,8,57,25,50,35
+westernplaguelands_c60,Western Plaguelands,11,9,54,31,50,40
+westernplaguelands_c60,Western Plaguelands,11,10,55,48,50,45
+westernplaguelands_c60,Western Plaguelands,11,11,55,50,50,50
+westernplaguelands_c60,Western Plaguelands,11,12,55,21,50,55
+westernplaguelands_c60,Western Plaguelands,11,13,55,27,50,60
+westernplaguelands_c60,Western Plaguelands,11,14,55,36,50,65
+westernplaguelands_c60,Western Plaguelands,11,15,54,9,50,70
+westernplaguelands_c60,Western Plaguelands,11,16,51,19,50,75
+westernplaguelands_c60,Western Plaguelands,11,17,51,31,50,80
+westernplaguelands_c60,Western Plaguelands,12,4,58,6,55,15
+westernplaguelands_c60,Western Plaguelands,12,5,58,50,55,20
+westernplaguelands_c60,Western Plaguelands,12,7,58,24,55,30
+westernplaguelands_c60,Western Plaguelands,12,8,58,29,55,35
+westernplaguelands_c60,Western Plaguelands,12,10,55,49,55,45
+westernplaguelands_c60,Western Plaguelands,12,11,55,50,55,50
+westernplaguelands_c60,Western Plaguelands,12,12,55,44,55,55
+westernplaguelands_c60,Western Plaguelands,12,13,56,50,55,60
+westernplaguelands_c60,Western Plaguelands,12,14,55,25,55,65
+westernplaguelands_c60,Western Plaguelands,12,17,51,12,55,80
+westernplaguelands_c60,Western Plaguelands,13,7,56,50,60,30
+westernplaguelands_c60,Western Plaguelands,13,8,56,50,60,35
+westernplaguelands_c60,Western Plaguelands,13,9,55,17,60,40
+westernplaguelands_c60,Western Plaguelands,13,10,55,50,60,45
+westernplaguelands_c60,Western Plaguelands,13,11,55,50,60,50
+westernplaguelands_c60,Western Plaguelands,13,12,58,50,60,55
+westernplaguelands_c60,Western Plaguelands,13,13,58,11,60,60
+westernplaguelands_c60,Western Plaguelands,14,8,55,22,65,35
+westernplaguelands_c60,Western Plaguelands,14,9,56,50,65,40
+westernplaguelands_c60,Western Plaguelands,14,10,55,37,65,45
+westernplaguelands_c60,Western Plaguelands,14,11,56,39,65,50
+westernplaguelands_c60,Western Plaguelands,14,12,56,50,65,55
+westernplaguelands_c60,Western Plaguelands,14,13,57,16,65,60
+westfall_c60,Westfall,5,10,16,33,20,45
+westfall_c60,Westfall,5,12,18,23,20,55
+westfall_c60,Westfall,6,6,16,35,25,25
+westfall_c60,Westfall,6,7,16,48,25,30
+westfall_c60,Westfall,6,8,17,46,25,35
+westfall_c60,Westfall,6,9,17,46,25,40
+westfall_c60,Westfall,6,10,15,30,25,45
+westfall_c60,Westfall,6,11,18,22,25,50
+westfall_c60,Westfall,6,12,18,21,25,55
+westfall_c60,Westfall,6,14,18,32,25,65
+westfall_c60,Westfall,6,15,19,27,25,70
+westfall_c60,Westfall,6,16,19,19,25,75
+westfall_c60,Westfall,7,4,15,30,30,15
+westfall_c60,Westfall,7,5,16,34,30,20
+westfall_c60,Westfall,7,6,16,15,30,25
+westfall_c60,Westfall,7,7,13,30,30,30
+westfall_c60,Westfall,7,8,12,22,30,35
+westfall_c60,Westfall,7,9,15,12,30,40
+westfall_c60,Westfall,7,10,14,21,30,45
+westfall_c60,Westfall,7,11,15,28,30,50
+westfall_c60,Westfall,7,12,15,48,30,55
+westfall_c60,Westfall,7,14,19,22,30,65
+westfall_c60,Westfall,7,15,15,25,30,70
+westfall_c60,Westfall,7,16,15,39,30,75
+westfall_c60,Westfall,7,17,18,49,30,80
+westfall_c60,Westfall,7,18,19,33,30,85
+westfall_c60,Westfall,8,3,13,34,35,10
+westfall_c60,Westfall,8,4,15,30,35,15
+westfall_c60,Westfall,8,5,11,8,35,20
+westfall_c60,Westfall,8,6,13,21,35,25
+westfall_c60,Westfall,8,7,14,21,35,30
+westfall_c60,Westfall,8,8,14,13,35,35
+westfall_c60,Westfall,8,9,15,23,35,40
+westfall_c60,Westfall,8,10,15,27,35,45
+westfall_c60,Westfall,8,11,15,50,35,50
+westfall_c60,Westfall,8,12,14,27,35,55
+westfall_c60,Westfall,8,13,15,21,35,60
+westfall_c60,Westfall,8,14,14,14,35,65
+westfall_c60,Westfall,8,15,16,21,35,70
+westfall_c60,Westfall,8,16,16,33,35,75
+westfall_c60,Westfall,8,17,17,19,35,80
+westfall_c60,Westfall,8,18,18,19,35,85
+westfall_c60,Westfall,9,2,13,49,40,5
+westfall_c60,Westfall,9,3,13,20,40,10
+westfall_c60,Westfall,9,4,11,35,40,15
+westfall_c60,Westfall,9,5,13,30,40,20
+westfall_c60,Westfall,9,6,13,15,40,25
+westfall_c60,Westfall,9,7,11,20,40,30
+westfall_c60,Westfall,9,8,15,35,40,35
+westfall_c60,Westfall,9,9,15,23,40,40
+westfall_c60,Westfall,9,10,15,18,40,45
+westfall_c60,Westfall,9,11,15,21,40,50
+westfall_c60,Westfall,9,12,15,16,40,55
+westfall_c60,Westfall,9,13,15,39,40,60
+westfall_c60,Westfall,9,14,15,27,40,65
+westfall_c60,Westfall,9,15,15,16,40,70
+westfall_c60,Westfall,9,16,17,49,40,75
+westfall_c60,Westfall,10,2,12,34,45,5
+westfall_c60,Westfall,10,3,12,38,45,10
+westfall_c60,Westfall,10,4,11,23,45,15
+westfall_c60,Westfall,10,5,12,12,45,20
+westfall_c60,Westfall,10,6,11,32,45,25
+westfall_c60,Westfall,10,7,12,15,45,30
+westfall_c60,Westfall,10,8,13,27,45,35
+westfall_c60,Westfall,10,9,13,32,45,40
+westfall_c60,Westfall,10,10,14,33,45,45
+westfall_c60,Westfall,10,11,15,27,45,50
+westfall_c60,Westfall,10,12,15,22,45,55
+westfall_c60,Westfall,10,13,15,14,45,60
+westfall_c60,Westfall,10,14,15,21,45,65
+westfall_c60,Westfall,10,16,17,27,45,75
+westfall_c60,Westfall,10,17,16,8,45,80
+westfall_c60,Westfall,11,2,12,49,50,5
+westfall_c60,Westfall,11,3,12,47,50,10
+westfall_c60,Westfall,11,4,13,27,50,15
+westfall_c60,Westfall,11,5,15,29,50,20
+westfall_c60,Westfall,11,6,11,29,50,25
+westfall_c60,Westfall,11,7,15,40,50,30
+westfall_c60,Westfall,11,8,11,17,50,35
+westfall_c60,Westfall,11,9,13,27,50,40
+westfall_c60,Westfall,11,10,13,30,50,45
+westfall_c60,Westfall,11,12,15,17,50,55
+westfall_c60,Westfall,11,13,16,29,50,60
+westfall_c60,Westfall,11,14,17,34,50,65
+westfall_c60,Westfall,11,15,16,25,50,70
+westfall_c60,Westfall,11,16,17,37,50,75
+westfall_c60,Westfall,12,2,12,43,55,5
+westfall_c60,Westfall,12,3,13,29,55,10
+westfall_c60,Westfall,12,4,10,22,55,15
+westfall_c60,Westfall,12,5,11,27,55,20
+westfall_c60,Westfall,12,6,11,20,55,25
+westfall_c60,Westfall,12,7,12,12,55,30
+westfall_c60,Westfall,12,8,12,24,55,35
+westfall_c60,Westfall,12,9,15,16,55,40
+westfall_c60,Westfall,12,11,17,12,55,50
+westfall_c60,Westfall,12,12,17,16,55,55
+westfall_c60,Westfall,12,13,17,20,55,60
+westfall_c60,Westfall,12,14,17,43,55,65
+westfall_c60,Westfall,12,15,17,24,55,70
+westfall_c60,Westfall,12,16,17,7,55,75
+westfall_c60,Westfall,13,5,13,23,60,20
+westfall_c60,Westfall,13,6,11,16,60,25
+westfall_c60,Westfall,13,7,12,22,60,30
+westfall_c60,Westfall,13,8,13,22,60,35
+westfall_c60,Westfall,13,9,12,21,60,40
+westfall_c60,Westfall,13,10,15,10,60,45
+westfall_c60,Westfall,13,11,17,27,60,50
+westfall_c60,Westfall,13,12,17,23,60,55
+westfall_c60,Westfall,13,13,18,24,60,60
+westfall_c60,Westfall,13,14,17,22,60,65
+westfall_c60,Westfall,13,15,18,24,60,70
+westfall_c60,Westfall,13,16,18,34,60,75
+westfall_c60,Westfall,14,14,17,21,65,65
+westfall_c60,Westfall,14,15,17,28,65,70
+westfall_c60,Westfall,14,16,19,7,65,75
+westfall_c60,Westfall,6,17,18,2,25,80
+wetlands_c60,Wetlands,2,8,22,9,5,35
+wetlands_c60,Wetlands,2,13,29,29,5,60
+wetlands_c60,Wetlands,2,14,29,50,5,65
+wetlands_c60,Wetlands,2,15,29,39,5,70
+wetlands_c60,Wetlands,3,5,25,39,10,20
+wetlands_c60,Wetlands,3,6,25,50,10,25
+wetlands_c60,Wetlands,3,7,24,35,10,30
+wetlands_c60,Wetlands,3,8,22,50,10,35
+wetlands_c60,Wetlands,3,9,21,45,10,40
+wetlands_c60,Wetlands,3,11,22,32,10,50
+wetlands_c60,Wetlands,3,13,29,49,10,60
+wetlands_c60,Wetlands,3,14,29,50,10,65
+wetlands_c60,Wetlands,3,15,29,50,10,70
+wetlands_c60,Wetlands,4,2,29,12,15,5
+wetlands_c60,Wetlands,4,3,29,41,15,10
+wetlands_c60,Wetlands,4,4,29,22,15,15
+wetlands_c60,Wetlands,4,5,26,32,15,20
+wetlands_c60,Wetlands,4,6,26,43,15,25
+wetlands_c60,Wetlands,4,7,25,40,15,30
+wetlands_c60,Wetlands,4,8,22,31,15,35
+wetlands_c60,Wetlands,4,9,21,48,15,40
+wetlands_c60,Wetlands,4,10,22,50,15,45
+wetlands_c60,Wetlands,4,11,22,39,15,50
+wetlands_c60,Wetlands,4,12,24,48,15,55
+wetlands_c60,Wetlands,4,13,24,30,15,60
+wetlands_c60,Wetlands,5,2,29,50,20,5
+wetlands_c60,Wetlands,5,3,29,50,20,10
+wetlands_c60,Wetlands,5,4,29,50,20,15
+wetlands_c60,Wetlands,5,5,26,50,20,20
+wetlands_c60,Wetlands,5,6,26,50,20,25
+wetlands_c60,Wetlands,5,7,25,46,20,30
+wetlands_c60,Wetlands,5,8,24,50,20,35
+wetlands_c60,Wetlands,5,9,21,20,20,40
+wetlands_c60,Wetlands,5,10,22,18,20,45
+wetlands_c60,Wetlands,5,11,25,30,20,50
+wetlands_c60,Wetlands,5,12,25,28,20,55
+wetlands_c60,Wetlands,5,13,24,45,20,60
+wetlands_c60,Wetlands,6,1,29,11,25,0
+wetlands_c60,Wetlands,6,2,29,50,25,5
+wetlands_c60,Wetlands,6,3,29,50,25,10
+wetlands_c60,Wetlands,6,4,29,36,25,15
+wetlands_c60,Wetlands,6,5,25,29,25,20
+wetlands_c60,Wetlands,6,6,24,28,25,25
+wetlands_c60,Wetlands,6,7,22,47,25,30
+wetlands_c60,Wetlands,6,8,25,42,25,35
+wetlands_c60,Wetlands,6,9,23,22,25,40
+wetlands_c60,Wetlands,6,10,25,50,25,45
+wetlands_c60,Wetlands,6,11,25,39,25,50
+wetlands_c60,Wetlands,7,2,29,50,30,5
+wetlands_c60,Wetlands,7,3,29,19,30,10
+wetlands_c60,Wetlands,7,4,28,25,30,15
+wetlands_c60,Wetlands,7,5,25,50,30,20
+wetlands_c60,Wetlands,7,6,24,25,30,25
+wetlands_c60,Wetlands,7,7,24,25,30,30
+wetlands_c60,Wetlands,7,8,22,30,30,35
+wetlands_c60,Wetlands,7,9,26,45,30,40
+wetlands_c60,Wetlands,7,10,27,39,30,45
+wetlands_c60,Wetlands,7,11,29,40,30,50
+wetlands_c60,Wetlands,8,4,26,20,35,15
+wetlands_c60,Wetlands,8,5,25,29,35,20
+wetlands_c60,Wetlands,8,6,24,27,35,25
+wetlands_c60,Wetlands,8,7,25,46,35,30
+wetlands_c60,Wetlands,8,8,22,42,35,35
+wetlands_c60,Wetlands,8,9,27,22,35,40
+wetlands_c60,Wetlands,8,10,27,29,35,45
+wetlands_c60,Wetlands,8,11,26,48,35,50
+wetlands_c60,Wetlands,9,3,30,10,40,10
+wetlands_c60,Wetlands,9,4,30,8,40,15
+wetlands_c60,Wetlands,9,5,24,27,40,20
+wetlands_c60,Wetlands,9,6,24,38,40,25
+wetlands_c60,Wetlands,9,7,25,29,40,30
+wetlands_c60,Wetlands,9,8,24,31,40,35
+wetlands_c60,Wetlands,9,9,27,50,40,40
+wetlands_c60,Wetlands,9,10,27,50,40,45
+wetlands_c60,Wetlands,10,3,30,25,45,10
+wetlands_c60,Wetlands,10,4,29,26,45,15
+wetlands_c60,Wetlands,10,5,25,7,45,20
+wetlands_c60,Wetlands,10,6,24,39,45,25
+wetlands_c60,Wetlands,10,7,23,39,45,30
+wetlands_c60,Wetlands,10,8,24,27,45,35
+wetlands_c60,Wetlands,10,9,28,34,45,40
+wetlands_c60,Wetlands,10,10,26,33,45,45
+wetlands_c60,Wetlands,10,12,22,25,45,55
+wetlands_c60,Wetlands,10,13,22,50,45,60
+wetlands_c60,Wetlands,10,14,22,22,45,65
+wetlands_c60,Wetlands,10,15,21,31,45,70
+wetlands_c60,Wetlands,10,16,21,50,45,75
+wetlands_c60,Wetlands,10,17,21,27,45,80
+wetlands_c60,Wetlands,11,5,25,28,50,20
+wetlands_c60,Wetlands,11,6,24,33,50,25
+wetlands_c60,Wetlands,11,7,22,33,50,30
+wetlands_c60,Wetlands,11,8,22,50,50,35
+wetlands_c60,Wetlands,11,9,22,21,50,40
+wetlands_c60,Wetlands,11,10,28,17,50,45
+wetlands_c60,Wetlands,11,11,29,50,50,50
+wetlands_c60,Wetlands,11,12,29,26,50,55
+wetlands_c60,Wetlands,11,13,22,50,50,60
+wetlands_c60,Wetlands,11,14,22,41,50,65
+wetlands_c60,Wetlands,11,15,21,50,50,70
+wetlands_c60,Wetlands,11,16,21,50,50,75
+wetlands_c60,Wetlands,11,17,21,50,50,80
+wetlands_c60,Wetlands,12,5,25,31,55,20
+wetlands_c60,Wetlands,12,6,24,41,55,25
+wetlands_c60,Wetlands,12,7,24,50,55,30
+wetlands_c60,Wetlands,12,8,24,33,55,35
+wetlands_c60,Wetlands,12,9,25,36,55,40
+wetlands_c60,Wetlands,12,10,22,50,55,45
+wetlands_c60,Wetlands,12,12,22,21,55,55
+wetlands_c60,Wetlands,12,13,22,50,55,60
+wetlands_c60,Wetlands,12,14,21,31,55,65
+wetlands_c60,Wetlands,12,15,21,48,55,70
+wetlands_c60,Wetlands,12,16,21,50,55,75
+wetlands_c60,Wetlands,12,17,21,42,55,80
+wetlands_c60,Wetlands,13,4,30,10,60,15
+wetlands_c60,Wetlands,13,5,28,28,60,20
+wetlands_c60,Wetlands,13,6,29,40,60,25
+wetlands_c60,Wetlands,13,7,26,24,60,30
+wetlands_c60,Wetlands,13,8,26,32,60,35
+wetlands_c60,Wetlands,13,9,25,29,60,40
+wetlands_c60,Wetlands,13,10,25,33,60,45
+wetlands_c60,Wetlands,13,11,22,20,60,50
+wetlands_c60,Wetlands,13,12,23,50,60,55
+wetlands_c60,Wetlands,13,13,22,50,60,60
+wetlands_c60,Wetlands,13,14,22,50,60,65
+wetlands_c60,Wetlands,13,15,22,50,60,70
+wetlands_c60,Wetlands,13,16,21,20,60,75
+wetlands_c60,Wetlands,13,17,21,28,60,80
+wetlands_c60,Wetlands,14,4,30,27,65,15
+wetlands_c60,Wetlands,14,5,30,48,65,20
+wetlands_c60,Wetlands,14,6,28,46,65,25
+wetlands_c60,Wetlands,14,7,28,50,65,30
+wetlands_c60,Wetlands,14,8,28,50,65,35
+wetlands_c60,Wetlands,14,9,27,35,65,40
+wetlands_c60,Wetlands,14,10,26,50,65,45
+wetlands_c60,Wetlands,14,11,25,30,65,50
+wetlands_c60,Wetlands,14,12,23,18,65,55
+wetlands_c60,Wetlands,14,13,21,44,65,60
+wetlands_c60,Wetlands,14,14,22,28,65,65
+wetlands_c60,Wetlands,14,15,22,29,65,70
+wetlands_c60,Wetlands,15,6,28,50,70,25
+wetlands_c60,Wetlands,15,7,28,50,70,30
+wetlands_c60,Wetlands,15,8,28,50,70,35
+wetlands_c60,Wetlands,15,9,27,25,70,40
+wetlands_c60,Wetlands,15,10,27,50,70,45
+wetlands_c60,Wetlands,16,7,28,10,75,30
+wetlands_c60,Wetlands,16,9,59,28,75,40
+wetlands_c60,Wetlands,16,10,59,38,75,45
+wetlands_c60,Wetlands,16,11,59,12,75,50
+wetlands_c60,Wetlands,17,8,59,15,80,35
+wetlands_c60,Wetlands,17,9,59,50,80,40
+wetlands_c60,Wetlands,17,10,59,50,80,45
+wetlands_c60,Wetlands,17,11,59,50,80,50
+wetlands_c60,Wetlands,17,14,62,49,80,65
+wetlands_c60,Wetlands,17,15,62,50,80,70
+wetlands_c60,Wetlands,18,9,59,21,85,40
+wetlands_c60,Wetlands,18,10,59,32,85,45
+wetlands_c60,Wetlands,18,11,62,49,85,50
+wetlands_c60,Wetlands,18,12,62,50,85,55
+wetlands_c60,Wetlands,18,13,62,50,85,60
+wetlands_c60,Wetlands,18,14,62,50,85,65
+wetlands_c60,Wetlands,18,15,62,50,85,70
+wetlands_c60,Wetlands,19,11,62,40,90,50
+wetlands_c60,Wetlands,19,12,62,50,90,55
+wetlands_c60,Wetlands,19,13,62,50,90,60
+wetlands_c60,Wetlands,19,14,62,22,90,65
+wetlands_c60,Wetlands,2,10,22,4,5,45
+wetlands_c60,Wetlands,2,11,22,3,5,50
+wetlands_c60,Wetlands,10,11,26,2,45,50
+wetlands_c60,Wetlands,11,4,28,3,50,15
+winterspring_c60,Winterspring,6,8,55,18,25,35
+winterspring_c60,Winterspring,6,10,54,25,25,45
+winterspring_c60,Winterspring,7,8,55,50,30,35
+winterspring_c60,Winterspring,7,9,54,29,30,40
+winterspring_c60,Winterspring,8,8,54,49,35,35
+winterspring_c60,Winterspring,8,9,54,32,35,40
+winterspring_c60,Winterspring,8,10,54,30,35,45
+winterspring_c60,Winterspring,9,4,60,35,40,15
+winterspring_c60,Winterspring,9,5,60,32,40,20
+winterspring_c60,Winterspring,9,7,54,31,40,30
+winterspring_c60,Winterspring,9,8,54,50,40,35
+winterspring_c60,Winterspring,9,9,55,39,40,40
+winterspring_c60,Winterspring,9,10,55,35,40,45
+winterspring_c60,Winterspring,10,2,59,11,45,5
+winterspring_c60,Winterspring,10,3,60,21,45,10
+winterspring_c60,Winterspring,10,4,60,50,45,15
+winterspring_c60,Winterspring,10,5,60,50,45,20
+winterspring_c60,Winterspring,10,6,60,9,45,25
+winterspring_c60,Winterspring,10,7,54,25,45,30
+winterspring_c60,Winterspring,10,8,54,50,45,35
+winterspring_c60,Winterspring,10,9,54,39,45,40
+winterspring_c60,Winterspring,10,10,54,29,45,45
+winterspring_c60,Winterspring,10,18,60,9,45,85
+winterspring_c60,Winterspring,11,2,59,46,50,5
+winterspring_c60,Winterspring,11,3,59,38,50,10
+winterspring_c60,Winterspring,11,4,60,28,50,15
+winterspring_c60,Winterspring,11,5,57,18,50,20
+winterspring_c60,Winterspring,11,7,56,50,50,30
+winterspring_c60,Winterspring,11,8,54,21,50,35
+winterspring_c60,Winterspring,11,9,57,50,50,40
+winterspring_c60,Winterspring,11,10,55,50,50,45
+winterspring_c60,Winterspring,11,11,57,41,50,50
+winterspring_c60,Winterspring,11,12,57,8,50,55
+winterspring_c60,Winterspring,11,15,60,16,50,70
+winterspring_c60,Winterspring,11,17,60,50,50,80
+winterspring_c60,Winterspring,11,18,60,39,50,85
+winterspring_c60,Winterspring,11,19,59,44,50,90
+winterspring_c60,Winterspring,12,3,57,21,55,10
+winterspring_c60,Winterspring,12,4,58,36,55,15
+winterspring_c60,Winterspring,12,5,58,50,55,20
+winterspring_c60,Winterspring,12,6,58,20,55,25
+winterspring_c60,Winterspring,12,7,56,50,55,30
+winterspring_c60,Winterspring,12,8,56,35,55,35
+winterspring_c60,Winterspring,12,9,56,49,55,40
+winterspring_c60,Winterspring,12,10,56,31,55,45
+winterspring_c60,Winterspring,12,11,57,50,55,50
+winterspring_c60,Winterspring,12,12,57,25,55,55
+winterspring_c60,Winterspring,12,13,58,28,55,60
+winterspring_c60,Winterspring,12,14,59,18,55,65
+winterspring_c60,Winterspring,12,15,60,50,55,70
+winterspring_c60,Winterspring,12,16,60,36,55,75
+winterspring_c60,Winterspring,12,17,60,25,55,80
+winterspring_c60,Winterspring,12,18,59,31,55,85
+winterspring_c60,Winterspring,12,19,60,40,55,90
+winterspring_c60,Winterspring,13,3,58,25,60,10
+winterspring_c60,Winterspring,13,4,58,47,60,15
+winterspring_c60,Winterspring,13,5,59,42,60,20
+winterspring_c60,Winterspring,13,6,58,44,60,25
+winterspring_c60,Winterspring,13,7,56,44,60,30
+winterspring_c60,Winterspring,13,8,58,10,60,35
+winterspring_c60,Winterspring,13,9,55,26,60,40
+winterspring_c60,Winterspring,13,10,55,43,60,45
+winterspring_c60,Winterspring,13,11,58,45,60,50
+winterspring_c60,Winterspring,13,12,58,27,60,55
+winterspring_c60,Winterspring,13,13,58,32,60,60
+winterspring_c60,Winterspring,13,14,59,45,60,65
+winterspring_c60,Winterspring,13,15,60,50,60,70
+winterspring_c60,Winterspring,13,16,60,50,60,75
+winterspring_c60,Winterspring,13,17,60,38,60,80
+winterspring_c60,Winterspring,13,18,59,39,60,85
+winterspring_c60,Winterspring,14,4,59,17,65,15
+winterspring_c60,Winterspring,14,5,59,40,65,20
+winterspring_c60,Winterspring,14,6,56,32,65,25
+winterspring_c60,Winterspring,14,7,56,46,65,30
+winterspring_c60,Winterspring,14,8,57,25,65,35
+winterspring_c60,Winterspring,14,9,58,40,65,40
+winterspring_c60,Winterspring,14,10,56,27,65,45
+winterspring_c60,Winterspring,14,11,56,50,65,50
+winterspring_c60,Winterspring,14,12,59,19,65,55
+winterspring_c60,Winterspring,14,13,58,24,65,60
+winterspring_c60,Winterspring,14,14,60,24,65,65
+winterspring_c60,Winterspring,14,15,60,50,65,70
+winterspring_c60,Winterspring,14,16,60,50,65,75
+winterspring_c60,Winterspring,14,17,60,32,65,80
+winterspring_c60,Winterspring,15,8,57,31,70,35
+winterspring_c60,Winterspring,15,9,57,33,70,40
+winterspring_c60,Winterspring,15,11,55,9,70,50

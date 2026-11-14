@@ -1,0 +1,150 @@
+[
+  {
+    "id": "ashenvale_c60",
+    "name": "Ясеневый лес"
+  },
+  {
+    "id": "azshara_c60",
+    "name": "Азшара"
+  },
+  {
+    "id": "barrens_c60",
+    "name": "Степи"
+  },
+  {
+    "id": "blastedlands_c60",
+    "name": "Выжженные земли"
+  },
+  {
+    "id": "burningsteppes_c60",
+    "name": "Пылающие степи"
+  },
+  {
+    "id": "darkshore_c60",
+    "name": "Темные берега"
+  },
+  {
+    "id": "darkspearisland",
+    "name": "Darkspearisland"
+  },
+  {
+    "id": "deadwindpass_c60",
+    "name": "Deadwindpass"
+  },
+  {
+    "id": "desolace_c60",
+    "name": "Пустоши"
+  },
+  {
+    "id": "dunmorogh_c60",
+    "name": "Дун Морог"
+  },
+  {
+    "id": "durotar_c60",
+    "name": "Дуротар"
+  },
+  {
+    "id": "duskwood_c60",
+    "name": "Сумеречный лес"
+  },
+  {
+    "id": "dustwallowmarsh_c60",
+    "name": "Пылевые топи"
+  },
+  {
+    "id": "easternplaguelands_c60",
+    "name": "Восточные Чумные земли"
+  },
+  {
+    "id": "elwynn_c60",
+    "name": "Элвиннский лес"
+  },
+  {
+    "id": "felwood_c60",
+    "name": "Осквернённый лес"
+  },
+  {
+    "id": "feralas_c60",
+    "name": "Фералас"
+  },
+  {
+    "id": "hillsbrad_c60",
+    "name": "Предгорья Хилсбрада"
+  },
+  {
+    "id": "hinterlands_c60",
+    "name": "Внутренние земли"
+  },
+  {
+    "id": "lochmodan_c60",
+    "name": "Лок Модан"
+  },
+  {
+    "id": "moonglade_c60",
+    "name": "Moonglade"
+  },
+  {
+    "id": "searinggorge_c60",
+    "name": "Тлеющее ущелье"
+  },
+  {
+    "id": "silithus_c60",
+    "name": "Силитус"
+  },
+  {
+    "id": "silverpine_c60",
+    "name": "Серебряный бор"
+  },
+  {
+    "id": "stonetalonmountain_c60",
+    "name": "Когтистые горы"
+  },
+  {
+    "id": "stranglethorn_c60",
+    "name": "Тернистая долина"
+  },
+  {
+    "id": "swampofsorrows_c60",
+    "name": "Болото Печали"
+  },
+  {
+    "id": "tanaris_c60",
+    "name": "Танарис"
+  },
+  {
+    "id": "teldrassil_c60",
+    "name": "Teldrassil"
+  },
+  {
+    "id": "thousandneedles_c60",
+    "name": "Тысяча Игл"
+  },
+  {
+    "id": "tirisfal_c60",
+    "name": "Тирисфальские леса"
+  },
+  {
+    "id": "ungorocrater_c60",
+    "name": "Кратер Ун’Горо"
+  },
+  {
+    "id": "westernplaguelands_c60",
+    "name": "Западные Чумные земли"
+  },
+  {
+    "id": "westfall_c60",
+    "name": "Западный Край"
+  },
+  {
+    "id": "wetlands_c60",
+    "name": "Болотина"
+  },
+  {
+    "id": "winterspring_c60",
+    "name": "Зимние Ключи"
+  },
+  {
+    "id": "zephrasisle",
+    "name": "Zephrasisle"
+  }
+]

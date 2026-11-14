@@ -73,3 +73,15 @@ body:has(.mapwrap) .muted{line-height:1.65!important}
 #data-error{margin:16px 0;padding:14px!important}
 #data-error[hidden]{display:none!important}
 button:disabled,input:disabled,select:disabled{opacity:.6;cursor:wait}
+
+/* Stage 3: reading density and preferences. */
+.legend-panel{margin:16px 0;padding:16px;border:1px solid #70532b;background:#0e1d22;border-radius:4px}
+.legend-panel h2{margin:0 0 8px;font-size:18px}
+.legend-panel .legend{border:0;padding:6px 0;margin:6px 0}
+.cell-info{padding:12px 14px;border-left:3px solid #e5bf72;background:#13252b;line-height:1.65}
+.settings-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.settings-actions button{font:inherit;padding:10px 14px;background:#173039;color:#fff0ce;border:1px solid #987443;border-radius:4px;cursor:pointer}
+#share-link{width:100%;max-width:100%;padding:10px;box-sizing:border-box}
+#share-link[hidden]{display:none!important}
+#map-area:focus-visible{outline:2px solid #76d5ce;outline-offset:3px}
+body.home .heading-bottom{text-shadow:none!important}

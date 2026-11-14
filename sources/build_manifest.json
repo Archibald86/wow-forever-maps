@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "inputs": {
+    "gathermate/MiningData.lua": "4db82d6bf397cdc03d213f7f1315b4e4c1b39aa31b8697cf0cf630cb685f9377",
+    "gathermate/HerbalismData.lua": "e3f70e82b76ff9f31fd04400d726a9568b8ea41a33af9c3ba4e2d61e3e680b02",
+    "gathermate/README.md": "74e706c07d05f669d8a95c390e55e92ef02bad9ed0841c77a2c4d2a891823bda",
+    "mob_cells.csv": "2fef712d30a928cb5a8f8dceca51d4130a4de5a600fe41b85e4f8ca3d0351193",
+    "zones.json": "619bd63c716414d268913fcdc6f94f53c8fc78361e44acce3b2c75762038145d",
+    "zone_mapping.json": "481aa4f75b0a53d8875ca295c28d61f340dbc3fcdc592f94d3a34cfb039bcaa5"
+  },
+  "exports": {
+    "data.json": "92f5555d636a428fd8f9e7dc39f8a342dfa15c6b71d81f07536217a62c26959e",
+    "data.js": "e3863b51a0709607f1e97cc2128669d884feeb971cd8bea2868f16f746516d95",
+    "coverage.json": "274fe1c5f0d6a8c374c78abd5a4b75dff9e858aa026f3a5019a088ca4499c7ec",
+    "sources/resource_import_manifest.json": "2d1c8e4c4e4e01b2ee710bf44eb4ddb9e5e4b658c9c81c1a982e141b9e1cf9da"
+  }
+}
