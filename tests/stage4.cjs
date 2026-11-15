@@ -16,7 +16,7 @@ const {chromium}=require('playwright');
   },{layer,kind});
  }
  try{
-  await page.goto(base+'atlas.html?zone=elwynn_c60&level=17&mobs=0&density=0&ores=1&herbs=1&only=0');await ready();
+  await page.goto(base+'atlas.html?zone=elwynn_c60&level=17&npcs=0&mobs=0&density=0&ores=1&herbs=1&only=0');await ready();
   assert.equal(await page.locator('#resource option').count(),45);scenarios++;
   await page.locator('.resource-filters summary').click();
   await change('miningSkill',1);await change('herbalismSkill',1);await page.check('#skillFilter');await page.uncheck('#unknownSkill');await page.uncheck('#herbs');

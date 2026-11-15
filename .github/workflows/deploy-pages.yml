@@ -111,6 +111,7 @@ jobs:
           node tests/caves-browser.cjs http://127.0.0.1:8765/
           node tests/density-browser.cjs http://127.0.0.1:8765/
           node tests/heatmap-browser.cjs http://127.0.0.1:8765/
+          node tests/all-mobs-browser.cjs http://127.0.0.1:8765/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Stage site

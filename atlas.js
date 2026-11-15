@@ -23,6 +23,12 @@
     }catch(_){npcFailed=true;}
     finally{npcLoading=false;draw();}
   }
+  $('show-all-mobs').addEventListener('click',()=>{
+    if(!data)return;
+    $('mobs').checked=true;$('npcs').checked=true;$('only').checked=false;$('hideServices').checked=false;
+    $('npcType').value='all';$('npcRole').value='all';$('npcQuery').value='';
+    persist();draw();
+  });
   $('npc-retry').addEventListener('click',()=>{npcFailed=false;loadNpcs();});
   const color=d=>WowSettings.color(d);
   const area=$('map-area');
@@ -42,6 +48,7 @@
   function draw() {
     if (!data || !mapReady) return;
     const id=zone.value,L=WowApp.normalizeLevel(lv.value),rows=data.mobs[id],options=currentState();
+    $('mob-level-scope').textContent=options.only?'Включён фильтр уровней −2…0.':'Показаны все уровни: уровень персонажа меняет цвет, а не видимость.';
     const ores=WowResources.filterPoints(data,'ore',id,options),herbs=WowResources.filterPoints(data,'herbs',id,options);
     visiblePoints=[];visibleClusters=[];
     const W=img.naturalWidth,H=img.naturalHeight;
@@ -359,7 +366,7 @@
   });
   new ResizeObserver(()=>{if(mapReady)draw();}).observe(area);
   async function start() {
-    controls.forEach(control=>control.disabled=true);$('share').disabled=true;$('reset-settings').disabled=true;$('retry').disabled=true;
+    $('show-all-mobs').disabled=true;    controls.forEach(control=>control.disabled=true);$('share').disabled=true;$('reset-settings').disabled=true;$('retry').disabled=true;
     $('point-options').disabled=true;$('map-tooltip').hidden=true;
     error.hidden=true;stats.textContent='Загрузка данных…';
     try {
@@ -376,7 +383,7 @@
       if($('skillFilter').checked||$('resource').value!=='all')document.querySelector('.resource-filters').open=true;
       maxDensity=Math.max(1,...Object.values(data.mobs).flat().map(cell=>cell[3]));
       $('density-scale').textContent=`Цвет показывает разницу уровней: зелёный — ниже, жёлтый — на уровне персонажа, красный — выше. Числа — оценочный индекс плотности (1–${maxDensity}), не число живых мобов.`;
-      controls.forEach(control=>control.disabled=false);$('share').disabled=false;$('reset-settings').disabled=false;persist();setZone(selectedArea);
+      $('show-all-mobs').disabled=false;      controls.forEach(control=>control.disabled=false);$('share').disabled=false;$('reset-settings').disabled=false;persist();setZone(selectedArea);
     } catch (_) {
       data=undefined;mapReady=false;caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='';ctx.clearRect(0,0,canvas.width,canvas.height);
       error.hidden=false;stats.textContent='';$('coverage').textContent='';selectedArea=null;renderAreaPanel();

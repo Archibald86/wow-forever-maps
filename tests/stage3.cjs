@@ -41,7 +41,7 @@ const {chromium}=require('playwright');
     const legend=await page.locator('#legend').innerText();assert.ok(legend.includes('≤−5')&&legend.includes('0')&&legend.includes('≥+5'));
     assert.equal(await page.locator('#resource-legend span').count(),5);
     assert.match(await page.locator('#resource-legend').innerText(),/NPC QuestieDB/);scenarios++;
-    await page.uncheck('#density');await page.uncheck('#ores');
+    await page.uncheck('#npcs');await page.uncheck('#density');await page.uncheck('#ores');
     const cells=await page.locator('#overlay').evaluate(c=>c.toDataURL());
     await page.selectOption('#mode','dots');
     const dots=await page.locator('#overlay').evaluate(c=>c.toDataURL());assert.notEqual(cells,dots);scenarios++;

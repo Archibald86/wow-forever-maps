@@ -10,7 +10,7 @@ const { chromium } = require('playwright');
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => { if (response.status() >= 400) failed.push(response.url()); });
   try {
-    await page.goto(base + 'atlas.html?level=42&zone=swampofsorrows_c60&only=1');
+    await page.goto(base + 'atlas.html?level=42&zone=swampofsorrows_c60&only=1&npcs=0');
     await page.waitForFunction(() => terrain.complete && terrain.naturalWidth > 0 && !document.getElementById('zone').disabled);
     assert.equal(await page.locator('#only').isChecked(), true);
     assert.equal(await page.locator('#level').inputValue(), '42');

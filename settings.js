@@ -4,7 +4,7 @@
   const resources=typeof module!=='undefined'&&module.exports?require('./resources.js'):window.WowResources;
   const creatureTypes=typeof module!=='undefined'&&module.exports?require('./creature-types.js'):window.WowCreatureTypes;
   const DEFAULTS={zone:'swampofsorrows_c60',level:42,caves:true,mobs:true,density:true,ores:true,herbs:false,only:false,mode:'cells',
-    npcs:false,npcRole:'all',npcQuery:'',npcType:'all',areaRadius:5,mapZoom:1,npcGrouping:'auto',hideServices:false,trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
+    npcs:true,npcRole:'all',npcQuery:'',npcType:'all',areaRadius:5,mapZoom:1,npcGrouping:'auto',hideServices:false,trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
   const FLAGS=['caves','hideServices','npcs','mobs','density','ores','herbs','only','trainers','skillFilter','unknownSkill'];
   // One continuous scale for both the map and its legend, relative to the player.
   const STOPS=[[-5,[34,197,94]],[-2,[163,230,53]],[0,[250,204,21]],[2,[249,115,22]],[5,[239,68,68]]];
@@ -20,11 +20,13 @@
   function readSaved(storage) {
     try {
       const value=JSON.parse((storage||localStorage).getItem(KEY));
-      return value&&typeof value==='object'&&!Array.isArray(value)?value:{};
+      if(!value||typeof value!=='object'||Array.isArray(value))return {};
+      // One-time migration: old level/type filters must not hide the new all-level view.
+      return value.mobViewVersion===1?value:{...value,mobs:true,npcs:true,only:false,npcType:'all',npcRole:'all',npcQuery:'',hideServices:false};
     } catch (_) { return {}; }
   }
   function writeSaved(value,storage) {
-    try { (storage||localStorage).setItem(KEY,JSON.stringify(value));return true; }
+    try { (storage||localStorage).setItem(KEY,JSON.stringify({...value,mobViewVersion:1}));return true; }
     catch (_) { return false; }
   }
   function resolve(data,query,saved,normalize) {

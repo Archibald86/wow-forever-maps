@@ -34,7 +34,7 @@ const {chromium}=require('playwright');
     await page.fill('#levelnum','42.5');await page.locator('#levelnum').dispatchEvent('change');
     assert.equal(await page.locator('#levelnum').inputValue(),'43');
     assert.equal(await page.locator('#level').inputValue(),'43');scenarios++;
-    for(const id of ['mobs','density','ores'])await page.uncheck('#'+id);
+    for(const id of ['mobs','density','ores','npcs'])await page.uncheck('#'+id);
     await page.check('#herbs');
     const pixels=()=>page.evaluate(()=>{
       const c=document.getElementById('overlay');return c.toDataURL();

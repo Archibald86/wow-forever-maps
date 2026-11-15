@@ -20,7 +20,7 @@
       small.textContent=`${pick.cells} подходящих ячеек · индекс плотности ${pick.density.toLocaleString('ru-RU')} · руда ${pick.oreTotal} (рядом ${pick.nearbyOre}) · травы ${pick.herbTotal} (рядом ${pick.nearbyHerbs})`+
         (pick.missingMobs?' · данные мобов отсутствуют':'')+(pick.unknown&&options.skillFilter&&options.unknownSkill?` · неизвестный навык у ${pick.unknown} записей`:'');
       info.append(strong,small);
-      const state={...WowSettings.resolve(data,new URLSearchParams(),saved,WowApp.normalizeLevel),zone:pick.map.id,level:L,only:!['ore','herbs'].includes(options.focus)};
+      const state={...WowSettings.resolve(data,new URLSearchParams(),saved,WowApp.normalizeLevel),zone:pick.map.id,level:L,only:false};
       if(options.focus==='ore'){state.ores=true;state.herbs=false;}
       if(options.focus==='herbs'){state.herbs=true;state.ores=false;}
       const link=document.createElement('a');link.href=WowSettings.toUrl(new URL('atlas.html',location.href).href,state);link.textContent='Посмотреть карту';

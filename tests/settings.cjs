@@ -24,3 +24,9 @@ assert.equal(settings.LEGEND.length,5);
 assert.notEqual(settings.color(-3.5),settings.color(-5));assert.notEqual(settings.color(-3.5),settings.color(-2));
 assert.match(settings.heatGradient(),/linear-gradient.*#22c55e 0%.*#facc15 50%.*#ef4444 100%/);
 console.log('PASS: preferences, URL precedence, blocked storage, and full level palette');
+
+const legacy={zone:'elwynn_c60',level:17,only:true,npcs:false,npcType:'Undead',npcRole:'vendors',npcQuery:'6',hideServices:true};
+const migrated=settings.readSaved({getItem:()=>JSON.stringify(legacy)});
+assert.equal(migrated.level,17);assert.equal(migrated.zone,'elwynn_c60');assert.equal(migrated.only,false);assert.equal(migrated.npcs,true);assert.equal(migrated.npcType,'all');assert.equal(migrated.npcQuery,'');
+let stored;assert(settings.writeSaved({...migrated,only:true},{setItem:(k,v)=>stored=v}));assert.equal(settings.readSaved({getItem:()=>stored}).only,true); // a newly chosen filter persists
+assert.equal(settings.DEFAULTS.npcs,true);assert.equal(settings.DEFAULTS.only,false);
