@@ -18,11 +18,11 @@
       if(location.protocol==='file:')return new Promise((resolve,reject)=>{
         const s=document.createElement('script'),timer=setTimeout(()=>finish(new Error('Timeout')),20000);
         function finish(error){clearTimeout(timer);s.remove();if(error)reject(error);else try{resolve(validate(window.WOW_NPCS));}catch(e){reject(e);}}
-        s.src='npc-atlas.js?v=types1';s.onload=()=>finish();s.onerror=()=>finish(new Error('Load failed'));document.head.append(s);
+        s.src='npc-atlas.js?v=classic5';s.onload=()=>finish();s.onerror=()=>finish(new Error('Load failed'));document.head.append(s);
       });
       const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),20000);
       try {
-        const response=await fetch('npc-atlas.json?v=types1',{signal:controller.signal});
+        const response=await fetch('npc-atlas.json?v=classic5',{signal:controller.signal});
         if(!response.ok)throw new Error('Load failed');
         window.WOW_NPCS=validate(await response.json());return window.WOW_NPCS;
       }finally{clearTimeout(timer);}

@@ -65,7 +65,7 @@ jobs:
           for page in ['index.html','atlas.html']:
               s=pathlib.Path(page).read_text(encoding='utf-8')
               assert 'forever-theme.css' in s
-              assert 'app-core.js?v=3.5' in s
+              assert 'app-core.js?v=classic5' in s
           print('OK: validated',len(d['maps']),'map zones')
           PY
       - name: Verify reproducible data build

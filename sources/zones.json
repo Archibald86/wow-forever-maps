@@ -146,5 +146,30 @@
   {
     "id": "zephrasisle",
     "name": "Zephrasisle"
+  },
+  {
+    "id": "alteracmountains_c60",
+    "name": "Альтеракские горы",
+    "artwork_kind": "classic_reference"
+  },
+  {
+    "id": "badlands_c60",
+    "name": "Бесплодные земли",
+    "artwork_kind": "classic_reference"
+  },
+  {
+    "id": "redridgemountains_c60",
+    "name": "Красногорье",
+    "artwork_kind": "classic_reference"
+  },
+  {
+    "id": "mulgore_c60",
+    "name": "Мулгор",
+    "artwork_kind": "classic_reference"
+  },
+  {
+    "id": "arathihighlands_c60",
+    "name": "Нагорье Арати",
+    "artwork_kind": "classic_reference"
   }
 ]

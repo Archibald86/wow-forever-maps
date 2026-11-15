@@ -149,6 +149,26 @@
       "zephrasisle": {
         "count": 294,
         "sha256": "6de402fb526382424f312b8d39c67dafbbbad2fb7a86212e37f445c7299f37c6"
+      },
+      "alteracmountains_c60": {
+        "count": 114,
+        "sha256": "2116660cfd7820f9d44a981c9803bc429d13f6839ea05f1dd844c375b4a8775c"
+      },
+      "badlands_c60": {
+        "count": 101,
+        "sha256": "525a60304cc36fa33e4f5a46e86cf9c6673afab9fcd8881c08de563b98fa0f14"
+      },
+      "redridgemountains_c60": {
+        "count": 262,
+        "sha256": "1da90c439b46d301bf2f0762f6704dee0967f10cf76dc942d4e38bc3eb217246"
+      },
+      "mulgore_c60": {
+        "count": 296,
+        "sha256": "1c0ad31ee205cb1640cc8429fab2af755863095428c9a633bde63eab9eeff9c0"
+      },
+      "arathihighlands_c60": {
+        "count": 175,
+        "sha256": "d9ac34458884de1a81d0df2d47d66bc4d4012cc717859c7335b3fd0ea40ecd83"
       }
     },
     "herbs": {
@@ -299,6 +319,26 @@
       "zephrasisle": {
         "count": 628,
         "sha256": "7a65d4267ef4bf119a3d7787fce826974ec073513cf7f0654f57db7e1d2656a6"
+      },
+      "alteracmountains_c60": {
+        "count": 202,
+        "sha256": "79136ced24f405cdbe02a2bd15dc18ad4c3238f556da718b26c3f66c89f354e6"
+      },
+      "badlands_c60": {
+        "count": 109,
+        "sha256": "5cb61213d5195cc4bf2520d96700c98ed2c63eaaa6446f855f8a96f966d3f908"
+      },
+      "redridgemountains_c60": {
+        "count": 242,
+        "sha256": "950aac06dbbd939142ae156fabcc7438479475504af1957af83d2705d4f41f1b"
+      },
+      "mulgore_c60": {
+        "count": 529,
+        "sha256": "9f51dfad87e35c8546351c2334c7c0a14f17d5a22a0330fd43662ec75152a3c1"
+      },
+      "arathihighlands_c60": {
+        "count": 244,
+        "sha256": "9e2bec6735b9e8424af6b31caadc29c9e287b0065d3788649439af98bea4c9fd"
       }
     }
   }

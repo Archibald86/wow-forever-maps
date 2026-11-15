@@ -68,7 +68,7 @@
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 15000);
         try {
-          const response = await fetch('data.json?v=3.4', { signal:controller.signal, cache:'no-cache' });
+          const response = await fetch('data.json?v=classic5', { signal:controller.signal, cache:'no-cache' });
           if (!response.ok) throw new Error('Data request failed');
           const data = validateData(await response.json());
           window.WOW_DATA = data;
@@ -91,7 +91,7 @@
       }
       script.onload = () => finish();
       script.onerror = () => finish(new Error('Data request failed'));
-      script.src = 'data.js?v=3.4';
+      script.src = 'data.js?v=classic5';
       timer = setTimeout(() => finish(new Error('Data request timed out')), 15000);
       document.head.append(script);
     }).finally(() => { pending = undefined; });

@@ -141,7 +141,8 @@
       parts.push(`${label}: ${info.records} ${info.status==='imported'?'исторических записей':'записей в источнике'}`);
     }
     parts.push(`NPC QuestieDB: ${data.coverage[id].npcs.records} записей координат`);
-    $('coverage').textContent=parts.join(' · ')+'. Совмещение координат ресурсов с картой в игре ещё не проверено.';
+    $('coverage').textContent=parts.join(' · ')+'. Совмещение координат ресурсов с картой в игре ещё не проверено.'+
+      (data.maps.find(m=>m.id===id).artwork_kind==='classic_reference'?' Подложка: карта WoW Classic; изменения рельефа Forever на ней могут отсутствовать.':'');
   }
   function setZone(center=null) {
     if(!data)return;

@@ -15,12 +15,12 @@ const assert=require('node:assert/strict'),{chromium}=require('playwright');
    },id);
    assert(state.aligned<1,id);assert(state.pixels.every(Boolean),id+' missing red ring');glyphs+=state.count;
   }
-  assert.equal(glyphs,133);await page.selectOption('#zone','elwynn_c60');await ready('elwynn_c60');
+  assert.equal(glyphs,156);await page.selectOption('#zone','elwynn_c60');await ready('elwynn_c60');
   await page.uncheck('#caves');assert.equal(await page.locator('#cave-overlay').evaluate(c=>{const p=c.getContext('2d').getImageData(0,0,c.width,c.height).data;return p.some((v,i)=>i%4===3&&v>0);}),false);
   await page.reload();await ready('elwynn_c60');assert.equal(await page.locator('#caves').isChecked(),false);await page.check('#caves');
   await page.setViewportSize({width:320,height:900});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.selectOption('#mapZoom','3');await page.waitForFunction(()=>document.getElementById('map-area').getBoundingClientRect().width>document.getElementById('map-viewport').clientWidth*2.9);
   assert(await page.evaluate(()=>{const a=terrain.getBoundingClientRect(),c=document.getElementById('cave-overlay').getBoundingClientRect();return Math.max(Math.abs(a.left-c.left),Math.abs(a.top-c.top),Math.abs(a.width-c.width),Math.abs(a.height-c.height))<1&&document.documentElement.scrollWidth<=innerWidth;}));
-  assert.deepEqual(errors,[]);console.log('PASS cave browser: 133 red rings on 37 maps, independent layer, persisted toggle, mobile and 300% zoom alignment');
+  assert.deepEqual(errors,[]);console.log('PASS cave browser: 156 red rings on 42 maps, independent layer, persisted toggle, mobile and 300% zoom alignment');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});

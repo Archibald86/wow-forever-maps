@@ -45,5 +45,5 @@ class QuestieIntegration(unittest.TestCase):
         self.assertNotIn('1',self.atlas['npcs'])
         self.assertNotIn('2',self.atlas['npcs'])
         self.assertEqual(sum(map(len,self.data['mobs'].values())),4066)
-        self.assertEqual(sum(map(len,self.data['ore'].values())),4511)
-        self.assertEqual(sum(map(len,self.data['herbs'].values())),9319)
+        self.assertEqual(sum(map(len,self.data['ore'].values())),5459)
+        self.assertEqual(sum(map(len,self.data['herbs'].values())),10645)

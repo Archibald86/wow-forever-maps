@@ -22,7 +22,7 @@ class CreatureTypeReference(unittest.TestCase):
         self.assertEqual(len(known),7146)
         self.assertEqual(len(unknown),8418)
         self.assertEqual(sum(r['creature']['source'] is not None for r in self.rows),7431)
-        self.assertEqual(sum(r['creature']['type'] is not None for r in self.atlas['npcs'].values()),4451)
+        self.assertEqual(sum(r['creature']['type'] is not None for r in self.atlas['npcs'].values()),4974)
         self.assertEqual(sum(r['creature']['name_changed'] for r in self.rows),3)
         self.assertFalse(self.atlas['creature_types']['forever_verified'])
         for row in known:self.assertEqual(row['creature']['status'],'classic_reference')
@@ -40,7 +40,7 @@ class CreatureTypeReference(unittest.TestCase):
         self.assertIsNone(records['251451']['creature']['type']) # no unlicensed/manual Zephras import
         self.assertEqual(records['10776']['creature']['source_name'],'Finkle Einhorn')
         self.assertTrue(records['10776']['creature']['name_changed'])
-        self.assertEqual(sum(map(len,self.atlas['maps'].values())),94535)
+        self.assertEqual(sum(map(len,self.atlas['maps'].values())),106303)
         for row in self.rows:self.assertNotIn('creatureType',row['fields']) # separate source, not Questie field
 
     def test_unknown_and_unmapped_values_never_become_guesses(self):

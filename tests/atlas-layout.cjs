@@ -15,7 +15,7 @@ const { chromium } = require('playwright');
     assert.equal(await page.locator('#only').isChecked(), true);
     assert.equal(await page.locator('#level').inputValue(), '42');
     const zones = await page.locator('#zone option').evaluateAll(items => items.map(x => x.value));
-    assert.equal(zones.length, 37);
+    assert.equal(zones.length, 42);
     for (const width of [320, 390, 768, 1440]) {
       await page.setViewportSize({ width, height: 1000 });
       for (const zone of zones) {

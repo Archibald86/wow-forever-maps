@@ -39,6 +39,12 @@
     "wetlands_c60": 1437,
     "winterspring_c60": 1452,
     "darkspearisland": 2524,
-    "zephrasisle": 2521
-  }
+    "zephrasisle": 2521,
+    "alteracmountains_c60": 1416,
+    "badlands_c60": 1418,
+    "redridgemountains_c60": 1433,
+    "mulgore_c60": 1412,
+    "arathihighlands_c60": 1417
+  },
+  "added_classic_zones_source": "QuestieDB Forever uiMapIdToAreaId.lua, commit 4dbb82440a27856f8dccf57094a5d792cdc7cc9b"
 }

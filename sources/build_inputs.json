@@ -39,6 +39,12 @@
       "method": "manual visual review with template-assisted candidate discovery",
       "coordinate_space": "source image pixels",
       "game_alignment": "not asserted"
+    },
+    "classic_map_artwork": {
+      "source": "Wowhead Classic map CDN",
+      "provenance": "classic_map_artwork.json",
+      "game_flavor": "classic-reference",
+      "forever_alignment": "unverified"
     }
   },
   "files": {
@@ -46,11 +52,11 @@
     "gathermate/HerbalismData.lua": "e3f70e82b76ff9f31fd04400d726a9568b8ea41a33af9c3ba4e2d61e3e680b02",
     "gathermate/README.md": "74e706c07d05f669d8a95c390e55e92ef02bad9ed0841c77a2c4d2a891823bda",
     "mob_cells.csv": "2fef712d30a928cb5a8f8dceca51d4130a4de5a600fe41b85e4f8ca3d0351193",
-    "zones.json": "619bd63c716414d268913fcdc6f94f53c8fc78361e44acce3b2c75762038145d",
-    "zone_mapping.json": "481aa4f75b0a53d8875ca295c28d61f340dbc3fcdc592f94d3a34cfb039bcaa5",
+    "zones.json": "3f92d45f3570f0a5eb8b24ca7a1fa1073fde84727eea251fab1d5264aa3a09e7",
+    "zone_mapping.json": "fecabf5b283f1d75f6989bdda2d7a426f862af4da3b64c62e348bdec4702f696",
     "gathermate/Constants.lua": "2c69cd11b1c0a7cdae3b2e00eb57fdbefb7e578d09635c5ebf23457089ee7d3c",
     "gathermate/ruRU.lua": "0a556995326346207af61977b19b2d0302a6c94cd981e81c33d90064648fdb0a",
-    "resource_catalog.json": "090e94c2031d35140ee0348a93d9f44b3042436a7d15e3e7edc022fa2c588a32",
+    "resource_catalog.json": "35ac15502e3890468af8a3597e68ccafba11100ae32b04298f0d24f52224121c",
     "trainers.json": "a496319baefc36a140487d31e043471f7b69c0627d339b28a43f10bc69640eae",
     "gathermate/ADDON_LICENSE.txt": "fe7ceffd7c1b08b31aeff6f44be5f08d392f57f52fe39df9b506cb4f83bc5ebe",
     "gathermate/COPYING_GPL2.txt": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6",
@@ -65,6 +71,7 @@
     "creature_types/upstream_provenance.json": "fc4c069adb2be759e6bd1a733a337e37651d4f7535362250a478a5c61a4fe0bd",
     "creature_types/provenance.json": "df0e97db38cb68ba84a4d5fea4183cd4d16a8cfc9442a1a89ba8ee2a1362b12e",
     "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd",
-    "cave_icons.json": "ec3f4fca85a8f57bd305d8a5ee04a0a25245b388e53187d9ff74cb4eb8d78207"
+    "cave_icons.json": "51ff67ad33f0737117a2482371f8cd45675b5d25c623b3a88d11a32cd056b302",
+    "classic_map_artwork.json": "765eb73b2e74d90ad3e94b2fa62d57f9fc9b98e13e49e5c490090aa9160e2ff6"
   }
 }

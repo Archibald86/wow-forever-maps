@@ -74,7 +74,7 @@ const {chromium}=require('playwright');
       await failing.unroute(pattern);await failing.click('#retry');
       await failing.waitForFunction(()=>document.getElementById('data-error').hidden);
       if(filename==='atlas.html') {
-        await atlasReady(failing);assert.equal(await failing.locator('#zone option').count(),37);
+        await atlasReady(failing);assert.equal(await failing.locator('#zone option').count(),42);
       } else await failing.waitForFunction(()=>!document.getElementById('start').disabled);
       await failing.close();scenarios++;
     }

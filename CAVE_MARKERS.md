@@ -1,7 +1,7 @@
 # Cave glyphs outlined in red
 
-All 37 terrain maps were visually reviewed at full size and with enlarged crops.
-133 visible cave-mouth glyphs were annotated on 35 maps. No matching glyphs were
+All 42 terrain maps were visually reviewed at full size and with enlarged crops.
+156 visible cave-mouth glyphs were annotated on 40 maps. No matching glyphs were
 found on the Darkspear Islands or Moonglade artwork. This records visible map
 symbols, not an exhaustive inventory of real in-game caves or verified entrances.
 
@@ -36,9 +36,9 @@ python tools/build_data.py --check
 node tests/caves.cjs
 node tests/caves-browser.cjs http://127.0.0.1:8765/
 
-The standard-library build validates all 37 map audit records and emits
+The standard-library build validates all 42 map audit records and emits
 cave-icons.json and cave-icons.js from the pinned source. Tests verify exact
-artwork hashes, JS/JSON parity, coordinate bounds, duplicates, the 133-symbol
+artwork hashes, JS/JSON parity, coordinate bounds, duplicates, the 156-symbol
 inventory, actual red pixels at every marker, the saved toggle and alignment
 at mobile width and 300% zoom. Existing atlas/source/spatial regressions remain
 required. Pages staging includes the annotation payloads and renderer.

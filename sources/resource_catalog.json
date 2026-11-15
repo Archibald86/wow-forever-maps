@@ -167,6 +167,18 @@
     "checked_on": "2026-11-14",
     "name_source": "GatherMate2/Constants.lua + Locales/Vanilla/GatherMate2-Vanilla-ruRU.lua"
   },
+  "218": {
+    "id": 218,
+    "kind": "ore",
+    "name_en": "Lesser Bloodstone Deposit",
+    "name": "Малое месторождение кровавого камня",
+    "min_skill": 75,
+    "skill_status": "guide_reference",
+    "source_url": "https://www.wowhead.com/forever/skill=186/mining",
+    "source_updated": "unknown",
+    "checked_on": "2026-11-15",
+    "name_source": "GatherMate2/Constants.lua + Locales/Vanilla/GatherMate2-Vanilla-ruRU.lua"
+  },
   "219": {
     "id": 219,
     "kind": "ore",
@@ -345,6 +357,18 @@
     "source_url": "https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling",
     "source_updated": "2026-11-09",
     "checked_on": "2026-11-14",
+    "name_source": "GatherMate2/Constants.lua + Locales/Vanilla/GatherMate2-Vanilla-ruRU.lua"
+  },
+  "416": {
+    "id": 416,
+    "kind": "herbs",
+    "name_en": "Wintersbite",
+    "name": "Морозник",
+    "min_skill": 195,
+    "skill_status": "guide_reference",
+    "source_url": "https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling",
+    "source_updated": "2026-11-09",
+    "checked_on": "2026-11-15",
     "name_source": "GatherMate2/Constants.lua + Locales/Vanilla/GatherMate2-Vanilla-ruRU.lua"
   },
   "417": {

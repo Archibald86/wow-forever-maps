@@ -17,7 +17,7 @@ const {chromium}=require('playwright');
  }
  try{
   await page.goto(base+'atlas.html?zone=elwynn_c60&level=17&mobs=0&density=0&ores=1&herbs=1&only=0');await ready();
-  assert.equal(await page.locator('#resource option').count(),43);scenarios++;
+  assert.equal(await page.locator('#resource option').count(),45);scenarios++;
   await page.locator('.resource-filters summary').click();
   await change('miningSkill',1);await change('herbalismSkill',1);await page.check('#skillFilter');await page.uncheck('#unknownSkill');await page.uncheck('#herbs');
   let target=await pointTarget('ore',201);await page.mouse.move(target.x,target.y);await page.locator('#map-tooltip').waitFor({state:'visible'});
@@ -54,6 +54,6 @@ const {chromium}=require('playwright');
   await mobile.locator('#overlay').scrollIntoViewIfNeeded();
   const touch=await mobile.evaluate(()=>{const point=WOW_DATA.ore.elwynn_c60[0],r=document.getElementById('overlay').getBoundingClientRect();return{x:r.left+point[0]*r.width/100,y:r.top+point[1]*r.height/100};});
   await mobile.touchscreen.tap(touch.x,touch.y);assert.match(await mobile.locator('#point-info').innerText(),/Медная жила/);assert.equal(await mobile.locator('#map-tooltip').isHidden(),true);await mobile.close();scenarios++;
-  assert.deepEqual(errors,[]);console.log(JSON.stringify({result:'PASS',scenarios,catalogTypes:42,trainers:35,unknownRequirementsExplicit:true,uncaughtErrors:0}));
+  assert.deepEqual(errors,[]);console.log(JSON.stringify({result:'PASS',scenarios,catalogTypes:44,trainers:35,unknownRequirementsExplicit:true,uncaughtErrors:0}));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

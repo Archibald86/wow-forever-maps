@@ -22,7 +22,7 @@ const settings=require('../settings.js'),normalize=require('../app-core.js').nor
 const preferences=settings.resolve(real,new URLSearchParams('resource=403&miningSkill=1&herbalismSkill=15&skillFilter=1&unknownSkill=0&trainers=1&faction=horde&focus=herbs'),{},normalize);
 const link=settings.toUrl('https://example.com/atlas.html',preferences);
 assert.deepEqual(settings.resolve(real,new URL(link).searchParams,{},normalize),preferences);
-assert.equal(Object.keys(real.catalog).length,42);assert.equal(real.catalog[208].min_skill,230);assert.equal(real.catalog[214].min_skill,245);assert.equal(real.catalog[219].min_skill,null);assert.equal(real.catalog[431].min_skill,300);
+assert.equal(Object.keys(real.catalog).length,44);assert.equal(real.catalog[208].min_skill,230);assert.equal(real.catalog[214].min_skill,245);assert.equal(real.catalog[219].min_skill,null);assert.equal(real.catalog[431].min_skill,300);
 assert.equal(Object.values(real.trainers).flat().length,35);
 for(const mutate of [d=>d.catalog[201].min_skill=-1,d=>delete d.catalog[201],d=>delete d.trainers.elwynn_c60,d=>d.trainers.elwynn_c60[0].x=101]){
  const copy=structuredClone(real);mutate(copy);assert.throws(()=>validateData(copy));

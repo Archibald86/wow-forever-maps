@@ -73,7 +73,7 @@
   $('db-type-field').hidden=kind!=='npcs';$('db-type-note').hidden=kind!=='npcs';$('dbCreatureType').disabled=true;
   $('db-error').hidden=true;$('db-results').replaceChildren();$('db-status').textContent='Загрузка раздела…';$('previous').disabled=true;$('next').disabled=true;
   try {
-   const [m,a,section]=await Promise.all([manifest||get('database/manifest.json?v=types1'),atlas||get('data.json?v=types1'),cache.get(kind)||get(`database/${kind}.json?v=types1`)]);
+   const [m,a,section]=await Promise.all([manifest||get('database/manifest.json?v=classic5'),atlas||get('data.json?v=classic5'),cache.get(kind)||get(`database/${kind}.json?v=types1`)]);
    if(token!==request)return;
    if(section.schema_version!==1||section.kind!==kind||!Array.isArray(section.rows)||section.commit!==m.commit||section.rows.length!==m.counts[kind])throw new Error('Invalid database');
    if(kind==='npcs')for(const row of section.rows)WowCreatureTypes.validate(row.creature);

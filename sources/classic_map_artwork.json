@@ -1,0 +1,45 @@
+{
+  "source": "Wowhead Classic map CDN",
+  "maps": {
+    "alteracmountains_c60": {
+      "url": "https://wow.zamimg.com/images/wow/classic/maps/enus/original/36.jpg",
+      "game_flavor": "classic-reference",
+      "forever_alignment": "unverified",
+      "sha256": "000e385e18754c718983a5feae496c28884a07fa194bbaca952f86630cebc208",
+      "width": 1022,
+      "height": 668
+    },
+    "arathihighlands_c60": {
+      "url": "https://wow.zamimg.com/images/wow/classic/maps/enus/original/45.jpg",
+      "game_flavor": "classic-reference",
+      "forever_alignment": "unverified",
+      "sha256": "c3b7a7e59ff678e6524ffb23dc76e429751a987f7ca6ad2fe70b2f00148732c7",
+      "width": 1022,
+      "height": 668
+    },
+    "badlands_c60": {
+      "url": "https://wow.zamimg.com/images/wow/classic/maps/enus/original/3.jpg",
+      "game_flavor": "classic-reference",
+      "forever_alignment": "unverified",
+      "sha256": "de4854c109fc18b88ab8b4be061da0a4166ecf6e400430e579eb448cee97f396",
+      "width": 1022,
+      "height": 668
+    },
+    "redridgemountains_c60": {
+      "url": "https://wow.zamimg.com/images/wow/classic/maps/enus/original/44.jpg",
+      "game_flavor": "classic-reference",
+      "forever_alignment": "unverified",
+      "sha256": "7683061803e457e7a695f8c959348b197d7fb0fd0aa0990686fe640adeb00131",
+      "width": 1022,
+      "height": 668
+    },
+    "mulgore_c60": {
+      "url": "https://wow.zamimg.com/images/wow/classic/maps/enus/original/215.jpg",
+      "game_flavor": "classic-reference",
+      "forever_alignment": "unverified",
+      "sha256": "a0ea740dd00d04e1f35daf7d7453ba31441ae54ecb6ca1a727fcf60374d49510",
+      "width": 1024,
+      "height": 683
+    }
+  }
+}

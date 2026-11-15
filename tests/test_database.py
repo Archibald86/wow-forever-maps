@@ -35,11 +35,11 @@ class Coordinates(unittest.TestCase):
         data = json.loads((ROOT/'data.json').read_text(encoding='utf-8'))
         self.assertEqual(data['ore']['ashenvale_c60'][0], [5.6,14.6,202])
         self.assertIn([35.6,35.5,201], data['ore']['durotar_c60'])
-        self.assertEqual(sum(len(v) for v in data['ore'].values()), 4511)
+        self.assertEqual(sum(len(v) for v in data['ore'].values()), 5459)
         additions = {'hillsbrad_c60':141, 'stonetalonmountain_c60':133, 'zephrasisle':294}
         for key,count in additions.items():
             self.assertEqual(len(data['ore'][key]), count)
-        self.assertEqual(sum(len(v) for k,v in data['ore'].items() if k not in additions), 3943)
+        self.assertEqual(sum(len(v) for k,v in data['ore'].items() if k not in additions), 4891)
 
 
 if __name__ == '__main__':

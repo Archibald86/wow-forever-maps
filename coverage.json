@@ -1330,5 +1330,185 @@
       "complete": false,
       "typed_entities": 0
     }
+  },
+  "alteracmountains_c60": {
+    "name": "Альтеракские горы",
+    "ui_map_id": 1416,
+    "ore": {
+      "status": "imported",
+      "records": 114,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 202,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 3549,
+      "entities": 348,
+      "area_id": 36,
+      "coordinate_alignment": "unverified",
+      "complete": false,
+      "typed_entities": 98
+    }
+  },
+  "badlands_c60": {
+    "name": "Бесплодные земли",
+    "ui_map_id": 1418,
+    "ore": {
+      "status": "imported",
+      "records": 101,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 109,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1016,
+      "entities": 104,
+      "area_id": 3,
+      "coordinate_alignment": "unverified",
+      "complete": false,
+      "typed_entities": 86
+    }
+  },
+  "redridgemountains_c60": {
+    "name": "Красногорье",
+    "ui_map_id": 1433,
+    "ore": {
+      "status": "imported",
+      "records": 262,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 242,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2658,
+      "entities": 160,
+      "area_id": 44,
+      "coordinate_alignment": "unverified",
+      "complete": false,
+      "typed_entities": 117
+    }
+  },
+  "mulgore_c60": {
+    "name": "Мулгор",
+    "ui_map_id": 1412,
+    "ore": {
+      "status": "imported",
+      "records": 296,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 529,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 2895,
+      "entities": 203,
+      "area_id": 215,
+      "coordinate_alignment": "unverified",
+      "complete": false,
+      "typed_entities": 147
+    }
+  },
+  "arathihighlands_c60": {
+    "name": "Нагорье Арати",
+    "ui_map_id": 1417,
+    "ore": {
+      "status": "imported",
+      "records": 175,
+      "source_path": "GatherMate2_Data/forever/MiningData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "herbs": {
+      "status": "imported",
+      "records": 244,
+      "source_path": "GatherMate2_Data/forever/HerbalismData.lua",
+      "coordinate_alignment": "unverified"
+    },
+    "mobs": {
+      "status": "missing",
+      "cells": 0,
+      "kind": "estimated_cells"
+    },
+    "trainers": {
+      "status": "no_guide_records",
+      "records": 0,
+      "coordinate_alignment": "unverified",
+      "complete": false
+    },
+    "npcs": {
+      "status": "static_source",
+      "records": 1650,
+      "entities": 176,
+      "area_id": 45,
+      "coordinate_alignment": "unverified",
+      "complete": false,
+      "typed_entities": 142
+    }
   }
 }

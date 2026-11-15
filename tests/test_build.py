@@ -19,8 +19,8 @@ class ReproducibleBuild(unittest.TestCase):
             self.assertEqual((ROOT/name).read_bytes(),content,name)
         data = json.loads(first['data.json'])
         self.assertEqual(sum(map(len,data['mobs'].values())),4066)
-        self.assertEqual(sum(map(len,data['ore'].values())),4511)
-        self.assertEqual(sum(map(len,data['herbs'].values())),9319)
+        self.assertEqual(sum(map(len,data['ore'].values())),5459)
+        self.assertEqual(sum(map(len,data['herbs'].values())),10645)
 
     def test_modified_source_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:

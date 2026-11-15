@@ -1,7 +1,7 @@
 WoW Forever Maps — версия 3.4, этап 4.
 Откройте index.html или разместите сайт на статическом хостинге.
-37 карт; 4 066 ячеек мобов; 4 511 записей руды; 9 319 записей трав.
-Справочник 42 ресурсов, фильтры по навыкам и цели, подсказки, 35 записей учителей.
+42 карты; 4 066 ячеек мобов; 5 459 записей руды; 10 645 записей трав.
+Справочник 44 ресурсов, фильтры по навыкам и цели, подсказки, 35 записей учителей.
 Настройки сохраняются в браузере и передаются по ссылке.
 Один порог навыка не подтверждён. Учителя представлены неполной справочной выборкой.
 Игровое совмещение и реальные спавны не проверены.
@@ -17,4 +17,6 @@ Creature type filters: see CREATURE_TYPES.md. Classic reference types are prelim
 
 Selected NPC area counts, grouping, zoom and shared coordinates: see NPC_AREA.md. These are source position records, not live creature counts.
 
-Cave glyphs: 133 red circles on 35 maps; all 37 artworks reviewed. See CAVE_MARKERS.md. Toggle caves=1/0; original images unchanged.
+Cave glyphs: 156 red circles on 40 maps; all 42 artworks reviewed. See CAVE_MARKERS.md. Toggle caves=1/0; original images unchanged.
+
+Five Classic outdoor zones added: see CLASSIC_ZONES.md. New background maps are Classic references; Forever terrain alignment is unverified.
