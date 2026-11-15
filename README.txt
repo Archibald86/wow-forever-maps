@@ -16,3 +16,5 @@ Sources/terms: sources/questie/NOTICE.md. Rebuild: python tools/build_data.py --
 Creature type filters: see CREATURE_TYPES.md. Classic reference types are preliminary; unknowns remain explicit.
 
 Selected NPC area counts, grouping, zoom and shared coordinates: see NPC_AREA.md. These are source position records, not live creature counts.
+
+Cave glyphs: 133 red circles on 35 maps; all 37 artworks reviewed. See CAVE_MARKERS.md. Toggle caves=1/0; original images unchanged.

@@ -2,6 +2,8 @@
 (() => {
   const $ = id => document.getElementById(id);
   const zone=$('zone'), img=$('terrain'), canvas=$('overlay'), ctx=canvas.getContext('2d');
+  const caveCanvas=$('cave-overlay');let caveData=null;
+  try{caveData=window.WowCaves.validate(window.WOW_CAVE_ICONS);}catch(_){}
   const lv=$('level'), lvnum=$('levelnum'), stats=$('stats'), error=$('data-error');
   const controls=[...document.querySelectorAll('.controls input,.controls select,.resource-filters input,.resource-filters select,.npc-filters input,.npc-filters select,.area-controls select,.area-panel select')];
   if(!window.WowSettings||!window.WowResources) {
@@ -45,6 +47,12 @@
     const W=img.naturalWidth,H=img.naturalHeight;
     if(canvas.width!==W||canvas.height!==H){canvas.width=W;canvas.height=H;}
     ctx.clearRect(0,0,W,H);
+    if(caveCanvas.width!==W||caveCanvas.height!==H){caveCanvas.width=W;caveCanvas.height=H;}
+    const caveEntry=caveData?.maps[id];
+    if(caveEntry&&caveEntry.width===W&&caveEntry.height===H){
+      WowCaves.draw(caveCanvas,caveEntry,$('caves').checked);
+      $('cave-status').textContent=$('caves').checked?(caveEntry.icons.length?`Значки пещер: ${caveEntry.icons.length} · обведены красным на рисунке карты.`:'На рисунке этой карты значки пещер не найдены.'):'Красные окружности пещер скрыты.';
+    }else {caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='Разметка значков пещер для этой карты недоступна.';}
     const cells=$('mode').value==='cells';
     const labelsFit=canvas.clientWidth*.05>=24&&canvas.clientHeight*.05>=18;
     $('density-hint').textContent=$('density').checked&&!labelsFit
@@ -137,7 +145,7 @@
   }
   function setZone(center=null) {
     if(!data)return;
-    selectedArea=center;areaPanelKey=null;selectedCell=center?[Math.min(19,Math.floor(center.x/5)),Math.min(19,Math.floor(center.y/5))]:null;selectedPointKey=null;visiblePoints=[];visibleClusters=[];mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);
+    selectedArea=center;areaPanelKey=null;selectedCell=center?[Math.min(19,Math.floor(center.x/5)),Math.min(19,Math.floor(center.y/5))]:null;selectedPointKey=null;visiblePoints=[];visibleClusters=[];mapReady=false;caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='';ctx.clearRect(0,0,canvas.width,canvas.height);
     $('npc-status').textContent='Загрузка карты…';renderAreaPanel();
     stats.textContent='Загрузка карты…';$('coverage').textContent='';$('map-tooltip').hidden=true;$('point-options').disabled=true;$('point-info').textContent='Загрузка карты…';$('point-source').hidden=true;
     img.alt='Карта: '+data.maps.find(map=>map.id===zone.value).name;
@@ -145,7 +153,7 @@
     if(img.complete&&img.naturalWidth){mapReady=true;applyZoom();draw();}
   }
   img.onload=()=>{mapReady=true;applyZoom();draw();};
-  img.onerror=()=>{$('npc-status').textContent='Карта недоступна. Выберите другую локацию или повторите загрузку.';mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);stats.textContent='Не удалось загрузить карту выбранной локации. Выберите другую локацию или повторите загрузку.';};
+  img.onerror=()=>{caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='';$('npc-status').textContent='Карта недоступна. Выберите другую локацию или повторите загрузку.';mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);stats.textContent='Не удалось загрузить карту выбранной локации. Выберите другую локацию или повторите загрузку.';};
   function nearestCluster(clientX,clientY) {
     const rect=canvas.getBoundingClientRect();let best=null,distance=18*18;
     for(const cluster of visibleClusters) {
@@ -300,7 +308,7 @@
   lv.addEventListener('input',()=>{setLevel(lv.value);draw();clearTimeout(levelSave);levelSave=setTimeout(persist,150);});
   lv.addEventListener('change',()=>{clearTimeout(levelSave);persist();});
   lvnum.addEventListener('change',()=>{setLevel(lvnum.value);persist();draw();});
-  for(const id of ['hideServices','areaRadius','npcGrouping','npcs','npcType','npcRole','npcQuery','mobs','density','ores','herbs','only','mode','trainers','focus','resource','miningSkill','herbalismSkill','skillFilter','unknownSkill','faction'])$(id).addEventListener('change',()=>{
+  for(const id of ['caves','hideServices','areaRadius','npcGrouping','npcs','npcType','npcRole','npcQuery','mobs','density','ores','herbs','only','mode','trainers','focus','resource','miningSkill','herbalismSkill','skillFilter','unknownSkill','faction'])$(id).addEventListener('change',()=>{
     $('miningSkill').value=WowResources.normalizeSkill($('miningSkill').value);$('herbalismSkill').value=WowResources.normalizeSkill($('herbalismSkill').value);
     if(id==='resource'&&data.catalog[$('resource').value])$(data.catalog[$('resource').value].kind==='ore'?'ores':'herbs').checked=true;
     if(id==='focus'&&['ore','herbs'].includes($('focus').value))$($('focus').value==='ore'?'ores':'herbs').checked=true;
@@ -367,7 +375,7 @@
       $('density-scale').textContent=`В режиме ячеек насыщенность показывает индекс плотности (от 1 до ${maxDensity}), а не число живых мобов.`;
       controls.forEach(control=>control.disabled=false);$('share').disabled=false;$('reset-settings').disabled=false;persist();setZone(selectedArea);
     } catch (_) {
-      data=undefined;mapReady=false;ctx.clearRect(0,0,canvas.width,canvas.height);
+      data=undefined;mapReady=false;caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='';ctx.clearRect(0,0,canvas.width,canvas.height);
       error.hidden=false;stats.textContent='';$('coverage').textContent='';selectedArea=null;renderAreaPanel();
     } finally { $('retry').disabled=false; }
   }

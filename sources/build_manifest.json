@@ -23,7 +23,8 @@
     "creature_types/NOTICE.md": "97daf38790a2b4853ba258afae3ea8b07a63cc9ad36033acef6af2e8bb307a44",
     "creature_types/upstream_provenance.json": "fc4c069adb2be759e6bd1a733a337e37651d4f7535362250a478a5c61a4fe0bd",
     "creature_types/provenance.json": "df0e97db38cb68ba84a4d5fea4183cd4d16a8cfc9442a1a89ba8ee2a1362b12e",
-    "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd"
+    "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd",
+    "cave_icons.json": "ec3f4fca85a8f57bd305d8a5ee04a0a25245b388e53187d9ff74cb4eb8d78207"
   },
   "exports": {
     "data.json": "c5b65024e8c2bb9d7a0991e0bb3b89a18e0f6c750e6d6795329d3b34f790a3f0",
@@ -36,6 +37,8 @@
     "database/objects.json": "fd8558de4947e47f3abd7f85328e32fe886367c4bffc91657679721dfdaaf0a4",
     "database/manifest.json": "b00cfaa93036243183cf75e5b03093947e3f9b184c70c85ef56c86fed644dd05",
     "npc-atlas.json": "85e5398751e466eab862ae3b755d3fad096570264c509790b9a924a105095dc3",
-    "npc-atlas.js": "e6a7a49b92fe654839fe267b3c10120404c09ae634afe3d26afc3e55a36dfdba"
+    "npc-atlas.js": "e6a7a49b92fe654839fe267b3c10120404c09ae634afe3d26afc3e55a36dfdba",
+    "cave-icons.json": "ddfdc22deba45c2573f8c0534976b068ee8181f99e360cabcd98a54be2fca935",
+    "cave-icons.js": "8ccb230a809b7217ea46e5fdf12cc018e5a2219bc6072148945dcd7fd3d5db28"
   }
 }

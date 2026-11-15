@@ -14,6 +14,7 @@ import shutil
 import tempfile
 
 from import_resources import import_resources
+from build_caves import prepare_caves
 from import_questie import prepare as prepare_questie
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -78,6 +79,7 @@ def build(root=ROOT):
         (target/'data.js').write_text('window.WOW_DATA='+text+';\n',encoding='utf-8')
         result = {name:(target/name).read_bytes() for name in EXPORTS}
         result.update(questie_exports)
+        result.update(prepare_caves(source,zones))
     manifest = {'version':1, 'inputs':lock['files'], 'exports':{
         name:hashlib.sha256(content).hexdigest() for name,content in result.items()}}
     result['sources/build_manifest.json'] = (json.dumps(manifest,indent=2)+'\n').encode()

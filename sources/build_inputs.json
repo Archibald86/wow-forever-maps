@@ -33,6 +33,12 @@
       "game_flavor": "classic-reference",
       "forever_verified": false,
       "provenance": "creature_types/provenance.json"
+    },
+    "cave_icons": {
+      "source": "terrain artwork in maps/*.jpg",
+      "method": "manual visual review with template-assisted candidate discovery",
+      "coordinate_space": "source image pixels",
+      "game_alignment": "not asserted"
     }
   },
   "files": {
@@ -58,6 +64,7 @@
     "creature_types/NOTICE.md": "97daf38790a2b4853ba258afae3ea8b07a63cc9ad36033acef6af2e8bb307a44",
     "creature_types/upstream_provenance.json": "fc4c069adb2be759e6bd1a733a337e37651d4f7535362250a478a5c61a4fe0bd",
     "creature_types/provenance.json": "df0e97db38cb68ba84a4d5fea4183cd4d16a8cfc9442a1a89ba8ee2a1362b12e",
-    "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd"
+    "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd",
+    "cave_icons.json": "ec3f4fca85a8f57bd305d8a5ee04a0a25245b388e53187d9ff74cb4eb8d78207"
   }
 }
