@@ -22,7 +22,7 @@ const assert=require('node:assert/strict'),{chromium}=require('playwright');
   await page.selectOption('#zone','elwynn_c60');await ready();await page.uncheck('#npcs');await page.fill('#levelnum','6');await page.locator('#levelnum').dispatchEvent('change');
   for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:1100});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
   if(process.env.CLASSIC_SCREENSHOT)await page.locator('#map-viewport').screenshot({path:process.env.CLASSIC_SCREENSHOT});
-  const failing=await browser.newPage();await failing.route('**/classic-spawn-data.js*',r=>r.abort());await failing.goto(base+'atlas.html?zone=elwynn_c60');await failing.waitForFunction(()=>document.getElementById('classic-spawn-status').textContent.includes('прежняя оценка'));assert(await failing.locator('#data-error').isHidden());await failing.close();
+  const failing=await browser.newPage({ignoreHTTPSErrors:process.env.ALLOW_TEST_CERT==='1'});await failing.route('**/classic-spawn-data.js*',r=>r.abort());await failing.goto(base+'atlas.html?zone=elwynn_c60');await failing.waitForFunction(()=>document.getElementById('classic-spawn-status').textContent.includes('прежняя оценка'));assert(await failing.locator('#data-error').isHidden());await failing.close();
   assert.deepEqual(errors,[]);console.log('PASS Classic browser: markers, stable absolute level colours, uncovered locations, filtered group caps, alternatives, show-all, zone fallback, 4 viewport widths and optional-source failure');
  } finally {await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});
