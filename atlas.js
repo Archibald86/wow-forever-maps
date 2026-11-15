@@ -58,7 +58,7 @@
     $('mode').options[1].textContent=classicMap()?'Условные точки · прежняя оценка':'Условные точки';
     $('mobs').parentNode.lastChild.textContent=spawnMap?' Места появления мобов':' Уровни мобов · тепловая карта';
     $('density').parentNode.lastChild.textContent=spawnMap?' Уровни на точках':' Числа плотности';
-    $('mob-level-scope').textContent=options.only?'Включён фильтр уровней −2…0.':spawnMap?`Все уровни ${spawnMap.min_level}–${spawnMap.max_level}. Цвет — уровень внутри зоны.`:'Показаны все уровни: уровень персонажа меняет цвет, а не видимость.';
+    $('mob-level-scope').textContent=options.only?'Включён фильтр уровней −2…0.':'Показаны все уровни: уровень персонажа меняет цвет, а не видимость. Ниже более чем на 5 уровней — серый.';
     $('classic-spawn-status').textContent=spawnMap?'Classic: одно место — одна точка. Полые круги — места групп с ограничением числа активных существ. Нажмите точку или область для подробностей.':(!classicData&&zone.value==='elwynn_c60'?'Слой появлений недоступен; показана прежняя оценка. Обновите страницу для повторной загрузки.':'');
     updateLevelLegend(spawnMap);
     const ores=WowResources.filterPoints(data,'ore',id,options),herbs=WowResources.filterPoints(data,'herbs',id,options);
@@ -107,7 +107,7 @@
       const scale=W/canvas.clientWidth,r=2.7*scale;
       for(const p of spawnPoints) {
         const candidates=WowClassicSpawns.candidates(p,classicData,options),range=WowClassicSpawns.range(p,classicData,options);
-        const x=p[1]*W/100,y=p[2]*H/100,fill=WowClassicSpawns.color((range[0]+range[1])/2,spawnMap,color);
+        const x=p[1]*W/100,y=p[2]*H/100,fill=WowClassicSpawns.color((range[0]+range[1])/2,L,color);
         ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);
         if(!p[7].length){ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle='#102019';ctx.lineWidth=.6*scale;ctx.stroke();}
         else {ctx.strokeStyle='#102019';ctx.lineWidth=2.7*scale;ctx.stroke();ctx.strokeStyle=fill;ctx.lineWidth=1.5*scale;ctx.stroke();}
@@ -411,14 +411,14 @@
   function updateLevelLegend(map) {
     const key=map?`${map.min_level}:${map.max_level}`:'relative';if(key===legendKey)return;legendKey=key;
     $('legend').replaceChildren();$('level-heat-bar').style.background=WowSettings.heatGradient();
-    const ticks=map?[0,.25,.5,.75,1].map(f=>{const value=Math.round(map.min_level+(map.max_level-map.min_level)*f);return [-5+10*(value-map.min_level)/(map.max_level-map.min_level),String(value)];}):WowSettings.LEGEND;
+    const ticks=WowSettings.LEGEND;
     for(const [delta,label] of ticks) {
       const item=document.createElement('span'),dot=document.createElement('i');
       item.dataset.delta=String(delta);item.style.left=((delta+5)*10)+'%';dot.className='dot';dot.style.background=color(delta);
       item.append(dot,document.createTextNode(label));$('legend').append(item);
     }
-    $('legend-description').textContent=map?`Цвет точки — уровень моба в пределах зоны: ${map.min_level} — зелёный, ${map.max_level} — красный. Для диапазона используется его середина. Уровень персонажа применяется только при включённом фильтре −2…0.`:'Цвет ячейки или условной точки — разница между уровнем ячейки и персонажа.';
-    $('level-heat-bar').setAttribute('aria-label',map?`Уровни мобов от ${map.min_level} до ${map.max_level}, от зелёного к красному`:'Цветовая шкала: от зелёного для уровней −5 и ниже до красного для +5 и выше; жёлтый — уровень персонажа');
+    $('legend-description').textContent='Цвет — разница между уровнем моба и заданным уровнем персонажа: −5 — зелёный, 0 — жёлтый, +5 и выше — красный. Ниже более чем на 5 уровней — серый.'+(map?' Для диапазона уровней используется его середина.':' Для ячейки используется её представительный уровень.');
+    $('level-heat-bar').setAttribute('aria-label','Разница уровней: −5 — зелёный, 0 — жёлтый, +5 и выше — красный. Ниже более чем на 5 уровней — серый.');
     $('density-scale').textContent=map?'Каждая точка — возможное место появления. Полый круг — место ограниченной группы или пула. Числа уровней появляются при увеличении от 200%. Плотность видна по расположению мест; верхняя граница не является оценкой текущего числа живых мобов.':`Цвет показывает разницу уровней: зелёный — ниже, жёлтый — на уровне персонажа, красный — выше. Числа — оценочный индекс плотности (1–${maxDensity}), не число живых мобов.`;
   }
   for(const [symbol,label,colorValue] of [['▲','NPC QuestieDB','#77dce8'],['●','Медь','#82d9ff'],['●','Другая руда','#ffc06b'],['◆','Травы','#6cdd8e'],['■','Учителя','#d1a6ff']]) {

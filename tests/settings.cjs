@@ -19,7 +19,7 @@ assert.equal(resolve('resource=constructor').resource,'all');
 const broken={getItem(){throw new Error('blocked');},setItem(){throw new Error('blocked');}};
 assert.deepEqual(settings.readSaved(broken),{});assert.equal(settings.writeSaved(saved,broken),false);
 assert.deepEqual(settings.readSaved({getItem:()=>'{broken'}),{});
-for(const [delta,color]of [[-20,'#22c55e'],[-5,'#22c55e'],[-2,'#a3e635'],[0,'#facc15'],[2,'#f97316'],[5,'#ef4444'],[20,'#ef4444']])assert.equal(settings.color(delta),color);
+for(const [delta,color]of [[-20,'#9ca3af'],[-6,'#9ca3af'],[-5.5,'#9ca3af'],[-5,'#22c55e'],[-2,'#a3e635'],[0,'#facc15'],[2,'#f97316'],[5,'#ef4444'],[20,'#ef4444']])assert.equal(settings.color(delta),color);
 assert.equal(settings.LEGEND.length,5);
 assert.notEqual(settings.color(-3.5),settings.color(-5));assert.notEqual(settings.color(-3.5),settings.color(-2));
 assert.match(settings.heatGradient(),/linear-gradient.*#22c55e 0%.*#facc15 50%.*#ef4444 100%/);

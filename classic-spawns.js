@@ -48,7 +48,7 @@
     }
     return {total:within.length,count:points.length,upper:upperBound(points,map),rows:[...byId.values()].sort((a,b)=>b.count-a.count||a.npc.id-b.npc.id)};
   }
-  function color(level,map,palette) {return palette(-5+10*(level-map.min_level)/(map.max_level-map.min_level));}
+  function color(level,characterLevel,palette) {return palette(level-characterLevel);}
   const api={validate,candidates,filter,range,upperBound,summarize,color};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;else window.WowClassicSpawns=api;
 })();

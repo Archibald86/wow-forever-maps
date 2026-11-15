@@ -1,7 +1,7 @@
 # Relative mob-level heat map
 
 The default cells mode now shows a continuous green–yellow–orange–red scale
-relative to the character level. Stops: delta -5 or less (#22c55e), -2 (#a3e635),
+relative to the character level. Stops: delta below -5 is grey (#9ca3af); delta -5 (#22c55e), -2 (#a3e635),
 0 (#facc15), +2 (#f97316), +5 or more (#ef4444), with interpolated RGB colors.
 A gradient legend and labelled stops use the same palette function as rendering.
 

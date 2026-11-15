@@ -10,3 +10,5 @@ assert.equal(api.filter(map,data,{npcRole:'vendors'}).length,0);
 const center={x:26,y:90};const s=api.summarize(map,data,center,20,668/1024,{npcQuery:'448'});assert.equal(s.count,6);assert.equal(s.upper,1);
 const broken=structuredClone(data);broken.maps.elwynn_c60.points.push(broken.maps.elwynn_c60.points[0]);assert.throws(()=>api.validate(broken));
 console.log('PASS Classic spawns: unique GUIDs, Hogger cap, alternative species, uncovered bandits, level filters and area bounds');
+
+const palette=require('../settings.js').color;assert.equal(api.color(1,6,palette),'#22c55e');assert.equal(api.color(1,7,palette),'#9ca3af');assert.equal(api.color(6,6,palette),'#facc15');assert.equal(api.color(11,6,palette),'#ef4444');

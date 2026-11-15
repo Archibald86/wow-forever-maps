@@ -38,7 +38,7 @@ const {chromium}=require('playwright');
     await page.click('#reset-settings');await ready();
     assert.deepEqual(await state(),{zone:'swampofsorrows_c60',level:'42',mode:'cells',mobs:true,density:true,ores:true,herbs:false,only:false});scenarios++;
     assert.equal(await page.locator('#legend [data-delta]').count(),5);
-    const legend=await page.locator('#legend').innerText();assert.ok(legend.includes('≤−5')&&legend.includes('0')&&legend.includes('≥+5'));
+    const legend=await page.locator('#legend').innerText();assert.ok(legend.includes('−5')&&legend.includes('0')&&legend.includes('≥+5'));
     assert.equal(await page.locator('#resource-legend span').count(),5);
     assert.match(await page.locator('#resource-legend').innerText(),/NPC QuestieDB/);scenarios++;
     await page.uncheck('#npcs');await page.uncheck('#density');await page.uncheck('#ores');

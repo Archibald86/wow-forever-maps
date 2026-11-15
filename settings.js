@@ -8,8 +8,9 @@
   const FLAGS=['caves','hideServices','npcs','mobs','density','ores','herbs','only','trainers','skillFilter','unknownSkill'];
   // One continuous scale for both the map and its legend, relative to the player.
   const STOPS=[[-5,[34,197,94]],[-2,[163,230,53]],[0,[250,204,21]],[2,[249,115,22]],[5,[239,68,68]]];
-  const LEGEND=[[-5,'≤−5'],[-2,'−2'],[0,'0'],[2,'+2'],[5,'≥+5']];
+  const LEGEND=[[-5,'−5'],[-2,'−2'],[0,'0'],[2,'+2'],[5,'≥+5']];
   function color(delta) {
+    if(Number.isFinite(delta)&&delta < -5)return '#9ca3af';
     const value=Math.max(-5,Math.min(5,Number.isFinite(delta)?delta:0));
     const upper=STOPS.findIndex(stop=>stop[0]>=value);
     const [lo,a]=STOPS[Math.max(0,upper-1)],[hi,b]=STOPS[upper];
