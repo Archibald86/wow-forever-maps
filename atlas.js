@@ -363,7 +363,7 @@
       if(!window.WowApp||!window.WowSettings||!window.WowResources||!window.WowNpcArea)throw new Error('Application unavailable');
       data=await WowApp.loadData();
       zone.replaceChildren();
-      for(const map of data.maps) {
+      for(const map of [...data.maps].sort((a,b)=>a.name.localeCompare(b.name,'ru')||a.id.localeCompare(b.id))) {
         const option=document.createElement('option');option.value=map.id;
         option.textContent=map.name+(map.has_mobs?'':' · нет оценки плотности');zone.append(option);
       }
