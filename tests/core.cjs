@@ -9,6 +9,7 @@ assert.equal(validateData(data),data);
 const context={window:{}};vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../data.js'),'utf8'),context);
 assert.deepEqual(JSON.parse(JSON.stringify(context.window.WOW_DATA)),data);
 for(const mutate of [
+  d=>d.mob_origins.ashenvale_c60.pop(), d=>d.mob_origins.ashenvale_c60[0]='verified_live',
   d=>delete d.maps, d=>d.maps.push(d.maps[0]),d=>delete d.herbs,
   d=>delete d.mobs.darkspearisland,d=>d.ore.ashenvale_c60[0][1]=101,
   d=>d.herbs.ashenvale_c60[0][0]='10',d=>d.maps[0].herb_count++,

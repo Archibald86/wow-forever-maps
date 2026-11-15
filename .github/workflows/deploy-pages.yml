@@ -65,7 +65,7 @@ jobs:
           for page in ['index.html','atlas.html']:
               s=pathlib.Path(page).read_text(encoding='utf-8')
               assert 'forever-theme.css' in s
-              assert 'app-core.js?v=classic5' in s
+              assert 'app-core.js?v=density2' in s
           print('OK: validated',len(d['maps']),'map zones')
           PY
       - name: Verify reproducible data build
@@ -109,6 +109,7 @@ jobs:
           node tests/creature-types-browser.cjs http://127.0.0.1:8765/
           node tests/npc-area-browser.cjs http://127.0.0.1:8765/
           node tests/caves-browser.cjs http://127.0.0.1:8765/
+          node tests/density-browser.cjs http://127.0.0.1:8765/
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Stage site
@@ -118,7 +119,7 @@ jobs:
           cp database.html database.js database.css creature-types.js npcs.js npc-area.js npc-area.css caves.js cave-icons.js cave-icons.json npc-atlas.json npc-atlas.js _site/
           cp -R maps database _site/
           mkdir -p _site/sources
-          cp -R sources/questie sources/creature_types _site/sources/
+          cp -R sources/questie sources/creature_types sources/moblevels _site/sources/
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

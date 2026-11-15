@@ -18,7 +18,7 @@ class ReproducibleBuild(unittest.TestCase):
         for name,content in first.items():
             self.assertEqual((ROOT/name).read_bytes(),content,name)
         data = json.loads(first['data.json'])
-        self.assertEqual(sum(map(len,data['mobs'].values())),4066)
+        self.assertEqual(sum(map(len,data['mobs'].values())),4953)
         self.assertEqual(sum(map(len,data['ore'].values())),5459)
         self.assertEqual(sum(map(len,data['herbs'].values())),10645)
 

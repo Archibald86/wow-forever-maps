@@ -1,0 +1,171 @@
+{
+  "checked_on": "2026-11-15",
+  "new_files": [
+    {
+      "name": "wow_forever_v2_coordinate_audit.csv",
+      "bytes": 3374,
+      "sha256": "c1eac25bd80dff7d72754e3b87c17d105810ca6084b6eecc319c2c215f6fe36e",
+      "inventory_match": true,
+      "integrity": "size and supplied hash verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    },
+    {
+      "name": "wow_forever_relevant_zone_audit.csv",
+      "bytes": 7102,
+      "sha256": "1a1aa60495638ab65b6e5d63ed8f1586e84e5254ed5eee62f8d923d72d77be15",
+      "inventory_match": true,
+      "integrity": "size and supplied hash verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    },
+    {
+      "name": "wow_forever_relevant_explored_maps.zip",
+      "bytes": 9930602,
+      "sha256": "ef8fcf8d6a66ba62b2793fad787ffe63cd439a16dd565aadebe251ed796aa508",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 38,
+      "current_artwork_identical": 37,
+      "decision": "existing selected artwork; no replacement needed"
+    },
+    {
+      "name": "wow_forever_ore_moblevels_v2.zip",
+      "bytes": 8718387,
+      "sha256": "3bf96f8d60fa92d2addc1d741fa5dc9c0669968b10d4afc13cf02622c1fa8ba9",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 67,
+      "decision": "density CSV duplicates the previous site source; no new density cells"
+    },
+    {
+      "name": "wow_forever_illustrated_ore_maps_v1.zip",
+      "bytes": 42492051,
+      "sha256": "c0d2f349188765900434cc175e597cfe6e34fd35b097ceecb29f27d870b494ea",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 36,
+      "decision": "flattened resource overlays / previews, not clean interactive atlas backgrounds; kept as comparison sources"
+    },
+    {
+      "name": "wow_forever_explored_maps_cleaned_50.zip",
+      "bytes": 12999242,
+      "sha256": "967ce70cca5a11715aa44a16fac67571d6b0ecdce5c85676675cbb6f029316e7",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 51,
+      "decision": "map variants and reconstruction sources; no verified improvement over current clean artwork; retained as source references"
+    },
+    {
+      "name": "wow_forever_explored_batch_01.zip",
+      "bytes": 1238625,
+      "sha256": "354cc305821f5fea20cda9f72cb26914085d8711968f01cd9acee43b18ffaa5a",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 6,
+      "decision": "map variants and reconstruction sources; no verified improvement over current clean artwork; retained as source references"
+    },
+    {
+      "name": "wow_forever_all_explored_maps.zip",
+      "bytes": 12088647,
+      "sha256": "85b998ccf282d1aba778922ef1c3bcda36921551f099c5b5beb4e0fb76ba1f1d",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 52,
+      "decision": "map variants and reconstruction sources; no verified improvement over current clean artwork; retained as source references"
+    },
+    {
+      "name": "wow_forever_51_terrain_ore_maps_FIXED.zip",
+      "bytes": 11285084,
+      "sha256": "ba41c769ce2bd8935de046d83a15bab4eecc77b5278567b3dc2911365e008601",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 52,
+      "decision": "flattened resource overlays / previews, not clean interactive atlas backgrounds; kept as comparison sources"
+    },
+    {
+      "name": "wow_forever_51_terrain_ore_maps.zip",
+      "bytes": 11611259,
+      "sha256": "3df522837c249cbf0e65067f2768f268e237b41174e3c2ce655c7319894f106e",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 52,
+      "decision": "flattened resource overlays / previews, not clean interactive atlas backgrounds; kept as comparison sources"
+    },
+    {
+      "name": "wow_forever_3_fully_explored_maps.zip",
+      "bytes": 3636870,
+      "sha256": "9a99b544390040b67bc1a8ea01eb7f043711992ab4a0548e3c4b67cd1936bdc3",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 4,
+      "decision": "map variants and reconstruction sources; no verified improvement over current clean artwork; retained as source references"
+    },
+    {
+      "name": "mapfix_openmap_reveal_coordinates.csv",
+      "bytes": 70306,
+      "sha256": "8a271a9ff455c970ca353b4fab3a643b6a75e7dd078f6dcc4109ad605f1895bc",
+      "inventory_match": true,
+      "integrity": "size and supplied hash verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    },
+    {
+      "name": "mapfix_explored_quality_audit.csv",
+      "bytes": 3765,
+      "sha256": "4e024aced7b75f7a7eb5640ce7279fb84d0655e2750d797fbf4a53f5d08f1a2b",
+      "inventory_match": true,
+      "integrity": "size and supplied hash verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    },
+    {
+      "name": "mapenh_base_maps_52.zip",
+      "bytes": 52110708,
+      "sha256": "ae0421f6d6c7d5a00c4ed1cc6d6c07d41577fe2401c51ae0f50a11ac19b20609",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 50,
+      "decision": "map variants and reconstruction sources; no verified improvement over current clean artwork; retained as source references"
+    },
+    {
+      "name": "clearmap_all_zones_manifest.csv",
+      "bytes": 3004,
+      "sha256": "0c91730e2390f8cd86a021d262dc9e633b490123844a8577a5bc3824b9a15bc3",
+      "inventory_match": true,
+      "integrity": "size and supplied hash verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    },
+    {
+      "name": "clearmap_all_51_zones_png.zip",
+      "bytes": 102879898,
+      "sha256": "c1ada4c2bd483872ab9f8c8b4e79d5135ed31b7f93f0c0a1492bc1cddad178b6",
+      "inventory_match": true,
+      "integrity": "ZIP CRC passed",
+      "archive_entries": 53,
+      "decision": "map variants and reconstruction sources; no verified improvement over current clean artwork; retained as source references"
+    },
+    {
+      "name": "README.md",
+      "bytes": 1272,
+      "sha256": "da324098d420b9995ac66d1375aee8f6c061c662bff54abd3b3f9c15138f2596",
+      "inventory_match": false,
+      "integrity": "size verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    },
+    {
+      "name": "missing_files.json",
+      "bytes": 126,
+      "sha256": "5ea53e4eda6e9c246c62453c1b9222ed792109496cb5fe665c9d114094891756",
+      "inventory_match": false,
+      "integrity": "size verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    },
+    {
+      "name": "inventory.json",
+      "bytes": 4290,
+      "sha256": "11127c8faf67fac78a140ec40bf428e60e278597dcb12583a01b9f98044be259",
+      "inventory_match": false,
+      "integrity": "size verified",
+      "decision": "inventory, missing-file list, or coordinate/quality audit; provenance reference, not spawn or population measurements"
+    }
+  ],
+  "new_file_count": 19,
+  "density_update_source": "https://www.curseforge.com/wow/addons/mob-levels/files/9605623"
+}

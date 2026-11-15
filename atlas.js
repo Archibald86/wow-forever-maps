@@ -141,6 +141,7 @@
       parts.push(`${label}: ${info.records} ${info.status==='imported'?'исторических записей':'записей в источнике'}`);
     }
     parts.push(`NPC QuestieDB: ${data.coverage[id].npcs.records} записей координат`);
+    parts.push(`Плотность: Mob Level Map ${data.sources.mobs.version}, база Classic Era + поправки Forever`);
     $('coverage').textContent=parts.join(' · ')+'. Совмещение координат ресурсов с картой в игре ещё не проверено.'+
       (data.maps.find(m=>m.id===id).artwork_kind==='classic_reference'?' Подложка: карта WoW Classic; изменения рельефа Forever на ней могут отсутствовать.':'');
   }
@@ -237,7 +238,8 @@
     if(!cell){$('cell-info').textContent='В выбранной ячейке нет оценки плотности мобов.';return;}
     const delta=cell[2]-Number(lv.value);
     $('cell-info').textContent=`Ячейка: уровень ${cell[2]} (${delta>0?'+':''}${delta} к персонажу), индекс плотности ${cell[3]}. Это оценка, не число живых мобов.`+
-      ($('only').checked&&(delta < -2||delta>0)?' Ячейка скрыта фильтром −2…0.':'');
+      ($('only').checked&&(delta < -2||delta>0)?' Ячейка скрыта фильтром −2…0.':'')+
+      (data.mob_origins[zone.value][data.mobs[zone.value].indexOf(cell)]==='forever_override'?' Источник: поправка Forever.':' Источник: базовые данные Classic Era.')+` Версия ${data.sources.mobs.version}; уровень представительный.`;
   }
   const professions={ore:'Горное дело',herbs:'Травничество'};
   const factions={alliance:'Альянс',horde:'Орда',neutral:'Нейтральный'};

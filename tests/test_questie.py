@@ -27,7 +27,7 @@ class QuestieIntegration(unittest.TestCase):
         self.assertEqual(self.atlas['maps']['darkspearisland'],[])
         for zone in ['deadwindpass_c60','moonglade_c60','teldrassil_c60','zephrasisle']:
             self.assertTrue(self.atlas['maps'][zone])
-            self.assertEqual(self.data['mobs'][zone],[]) # coordinates are not density cells
+        self.assertEqual(self.data['mobs']['moonglade_c60'],[]) # source gap remains explicit
 
     def test_catalogs_preserve_ids_fields_and_localized_lookup(self):
         for kind,count in [('npcs',15564),('quests',5914),('items',23862),('objects',7289)]:
@@ -44,6 +44,6 @@ class QuestieIntegration(unittest.TestCase):
     def test_service_entities_never_enter_map_layer(self):
         self.assertNotIn('1',self.atlas['npcs'])
         self.assertNotIn('2',self.atlas['npcs'])
-        self.assertEqual(sum(map(len,self.data['mobs'].values())),4066)
+        self.assertEqual(sum(map(len,self.data['mobs'].values())),4953)
         self.assertEqual(sum(map(len,self.data['ore'].values())),5459)
         self.assertEqual(sum(map(len,self.data['herbs'].values())),10645)

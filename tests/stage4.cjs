@@ -38,7 +38,7 @@ const {chromium}=require('playwright');
   await page.selectOption('#faction','horde');assert.match(await page.locator('#point-info').innerText(),/нет точек/);assert.equal(await page.locator('#point-source').isHidden(),true);scenarios++;
   await page.goto(base+'index.html?focus=herbs&resource=all&skillFilter=0');await page.waitForFunction(()=>!document.getElementById('start').disabled);await page.click('#start');
   assert.match(await page.locator('.result strong').first().innerText(),/Степи/);
-  assert.match(await page.locator('#results').innerText(),/данные мобов отсутствуют/);
+  assert.doesNotMatch(await page.locator('#results').innerText(),/данные мобов отсутствуют/); // populated Zephras/Teldrassil source is no longer missing
   const link=await page.locator('.result a').first().getAttribute('href');assert.ok(link.includes('herbs=1')&&link.includes('ores=0')&&link.includes('only=0'));scenarios++;
   await page.locator('.resource-filters summary').click();await page.selectOption('#focus','ore');await change('miningSkill',0);await page.check('#skillFilter');await page.uncheck('#unknownSkill');
   assert.equal(await page.locator('.result').count(),0);assert.match(await page.locator('#results').innerText(),/Нет локаций/);scenarios++;

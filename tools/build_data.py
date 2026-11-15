@@ -6,7 +6,6 @@ python tools/build_data.py --output /tmp/wow-data
 Uses only the Python standard library. No network or external archives needed.
 """
 import argparse
-import csv
 import hashlib
 import json
 from pathlib import Path
@@ -15,6 +14,7 @@ import tempfile
 
 from import_resources import import_resources
 from build_caves import prepare_caves
+from import_moblevels import prepare as prepare_moblevels
 from import_questie import prepare as prepare_questie
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,20 +31,7 @@ def build(root=ROOT):
     ids = [zone['id'] for zone in zones]
     if len(set(ids)) != len(ids):
         raise ValueError('Duplicate map ID')
-    mobs = {key:[] for key in ids}
-    occupied = set()
-    with (source/'mob_cells.csv').open(encoding='utf-8-sig',newline='') as file:
-        for row in csv.DictReader(file):
-            key = row['map']
-            x,y = float(row['x_from_pct']),float(row['y_from_pct'])
-            level,density = int(row['mob_level']),int(row['density_index'])
-            if key not in mobs or not (0 <= x <= 95 and 0 <= y <= 95) or x%5 or y%5 or not (1 <= level <= 100) or density < 0:
-                raise ValueError('Invalid mob cell')
-            cell = (key,x,y)
-            if cell in occupied:
-                raise ValueError('Duplicate mob cell '+str(cell))
-            occupied.add(cell)
-            mobs[key].append([x,y,level,density])
+    mobs, mob_origins, mob_coverage, mob_source = prepare_moblevels(source,zones)
     with tempfile.TemporaryDirectory() as directory:
         target = Path(directory)
         (target/'sources').mkdir()
@@ -54,6 +41,10 @@ def build(root=ROOT):
         data_path = target/'data.json'
         data = json.loads(data_path.read_text(encoding='utf-8'))
         data['schema_version'] = 3
+        data['mob_origins'] = mob_origins
+        data['sources']['mobs'] = mob_source
+        for key in ids:
+            data['coverage'][key]['mobs'].update(mob_coverage[key])
         data['catalog'] = json.loads((source/'resource_catalog.json').read_text(encoding='utf-8'))
         data['trainers'] = {key:[] for key in ids}
         for trainer in json.loads((source/'trainers.json').read_text(encoding='utf-8')):

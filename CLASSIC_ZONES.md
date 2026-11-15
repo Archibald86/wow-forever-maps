@@ -38,3 +38,5 @@ are unchanged; the total is 156 on 40 of the 42 maps.
 The standard-library build regenerates the pinned exports. Existing source
 coordinate, classification, layout, cave ring and browser regressions cover
 the expanded map set, including the differing image dimensions.
+
+Subsequent density update: all five added zones now have sourced estimated density cells. See DENSITY_UPDATE.md for current coverage and provenance.

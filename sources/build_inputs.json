@@ -3,8 +3,12 @@
   "resource_archive_sha256": "997fbc101c6c1bb43fd42c38562f4625f1f7e713385a955161c07f75350abe51",
   "origins": {
     "resources": "GatherMate2_Data(1).zip / forever/MiningData.lua and HerbalismData.lua",
-    "mobs": "WoW_Forever_Master_Database_v3.zip / data/moblevels_cells.csv",
-    "mobs_confidence": "estimated_cells; original collection method unverified",
+    "mobs": {
+      "source": "Mob Level Map 1.0.7",
+      "provenance": "moblevels/provenance.json",
+      "source_url": "https://www.curseforge.com/wow/addons/mob-levels/files/9605623"
+    },
+    "mobs_confidence": "estimated_index; Classic Era reference with separately identified author-described Forever overrides; live population and game alignment unverified",
     "skills_and_trainers": {
       "mining": "https://www.wowhead.com/forever/guide/professions/mining/overview-leveling",
       "herbalism": "https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling",
@@ -51,7 +55,7 @@
     "gathermate/MiningData.lua": "4db82d6bf397cdc03d213f7f1315b4e4c1b39aa31b8697cf0cf630cb685f9377",
     "gathermate/HerbalismData.lua": "e3f70e82b76ff9f31fd04400d726a9568b8ea41a33af9c3ba4e2d61e3e680b02",
     "gathermate/README.md": "74e706c07d05f669d8a95c390e55e92ef02bad9ed0841c77a2c4d2a891823bda",
-    "mob_cells.csv": "2fef712d30a928cb5a8f8dceca51d4130a4de5a600fe41b85e4f8ca3d0351193",
+    "mob_cells.csv": "2c34632a34eaba2adf21eb8c52f09911a25b27fea28a3f023b913f10be1a6fe3",
     "zones.json": "3f92d45f3570f0a5eb8b24ca7a1fa1073fde84727eea251fab1d5264aa3a09e7",
     "zone_mapping.json": "fecabf5b283f1d75f6989bdda2d7a426f862af4da3b64c62e348bdec4702f696",
     "gathermate/Constants.lua": "2c69cd11b1c0a7cdae3b2e00eb57fdbefb7e578d09635c5ebf23457089ee7d3c",
@@ -72,6 +76,11 @@
     "creature_types/provenance.json": "df0e97db38cb68ba84a4d5fea4183cd4d16a8cfc9442a1a89ba8ee2a1362b12e",
     "creature_types/classic_npcs.json.gz": "0795c3b9a861c00ecf3c8b2a216135f86d96a4abde9c72d78ed069835e6913fd",
     "cave_icons.json": "51ff67ad33f0737117a2482371f8cd45675b5d25c623b3a88d11a32cd056b302",
-    "classic_map_artwork.json": "765eb73b2e74d90ad3e94b2fa62d57f9fc9b98e13e49e5c490090aa9160e2ff6"
+    "classic_map_artwork.json": "765eb73b2e74d90ad3e94b2fa62d57f9fc9b98e13e49e5c490090aa9160e2ff6",
+    "moblevels/tables.json.gz": "80fe63b9b3314d1022c998c3044dbf9a411fa34e07eb8aeaa22ffabb5513aeb1",
+    "moblevels/zone_names.json": "3ee3d2d8fa55130ac367b67519990ddfd5c81481270a547c378bc592239ae81d",
+    "moblevels/provenance.json": "f91c8f7dea9b47bffb11f4b4b85e2270c6d0b0dbde7ea1c5a84f68ed82f421bc",
+    "moblevels/NOTICE.md": "d18e7bb808ef5e171aaa06410a3930aad60b5247b1d698789c6f0e44a63f9b3e",
+    "drive_import_2026-11-15.json": "cc01a162c033f3a4fb88c01ce7e0798b50e4e590dadd89d324814bd2825d2db2"
   }
 }

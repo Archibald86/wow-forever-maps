@@ -14,6 +14,7 @@
       if (!map || !/^[a-z0-9_]+$/.test(map.id) || ids.has(map.id) ||
           typeof map.name !== 'string' || !map.name.trim()) throw new Error('Invalid map');
       ids.add(map.id);
+      if(!Array.isArray(data.mob_origins?.[map.id])||data.mob_origins[map.id].length!==data.mobs?.[map.id]?.length||data.mob_origins[map.id].some(kind=>!['classic_reference','forever_override'].includes(kind)))throw new Error('Invalid mob origins');
       for (const [layer, size] of [['mobs',4],['ore',3],['herbs',3]]) {
         const rows = data[layer]?.[map.id];
         if (!Array.isArray(rows)) throw new Error('Missing layer '+layer);
@@ -68,7 +69,7 @@
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 15000);
         try {
-          const response = await fetch('data.json?v=classic5', { signal:controller.signal, cache:'no-cache' });
+          const response = await fetch('data.json?v=density2', { signal:controller.signal, cache:'no-cache' });
           if (!response.ok) throw new Error('Data request failed');
           const data = validateData(await response.json());
           window.WOW_DATA = data;
@@ -91,7 +92,7 @@
       }
       script.onload = () => finish();
       script.onerror = () => finish(new Error('Data request failed'));
-      script.src = 'data.js?v=classic5';
+      script.src = 'data.js?v=density2';
       timer = setTimeout(() => finish(new Error('Data request timed out')), 15000);
       document.head.append(script);
     }).finally(() => { pending = undefined; });

@@ -1,0 +1,31 @@
+{
+  "name": "Mob Level Map",
+  "version": "1.0.7",
+  "author": "Noise Code / noisecodes",
+  "source_url": "https://www.curseforge.com/wow/addons/mob-levels/files/9605623",
+  "published_on": "2026-11-14",
+  "checked_on": "2026-11-15",
+  "archive_sha256": "419500508c78485fff527685f5490f0d1a1ea51d1a2d40afd2eefc8948c76119",
+  "input_sha256": {
+    "EasternKingdoms.lua": "2db46ab4703ea868a868b392ad5492d37ddfb3b81cb6105b3f1c32504477b692",
+    "Kalimdor.lua": "9146696ed935d9a6ae206a88d0a62bf6b996116be89c2cedc4260289943524c1",
+    "ForeverOverrides.lua": "7e473837355d287e96da05ee9d56366247ad901ab36a8398662a51da155c362c"
+  },
+  "method": "Static numeric table extraction; continent base tables followed by ordered ForeverOverrides replacements/additions keyed by zone and 1-based grid cell. No addon code executed.",
+  "base_game_flavor": "Classic Era reference",
+  "override_game_flavor": "Forever; author describes scan-derived corrections in 28 zones; primary observations unavailable",
+  "grid_size": 20,
+  "level_kind": "representative_level",
+  "density_kind": "estimated_index",
+  "live_population_verified": false,
+  "game_alignment": "unverified",
+  "license": "Addon page states All Rights Reserved; no blanket license claim is made for this extracted factual dataset",
+  "omitted_unmapped_zones": [
+    "Riverglades",
+    "Gol'Bolar Quarry Mine"
+  ],
+  "counts": {
+    "source_zones": 42,
+    "source_cells": 5055
+  }
+}

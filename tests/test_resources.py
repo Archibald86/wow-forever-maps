@@ -45,7 +45,7 @@ class Resources(unittest.TestCase):
 
     def test_coverage_distinguishes_missing_mobs_and_unobserved_resources(self):
         data = json.loads((ROOT/'data.json').read_text())
-        self.assertEqual(data['coverage']['zephrasisle']['mobs']['status'],'missing')
+        self.assertEqual(data['coverage']['zephrasisle']['mobs']['status'],'available')
         self.assertEqual(data['coverage']['zephrasisle']['ore']['records'],294)
         self.assertEqual(data['coverage']['zephrasisle']['herbs']['records'],628)
         self.assertEqual(data['coverage']['darkspearisland']['ore']['status'],'no_source_records')

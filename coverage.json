@@ -17,7 +17,14 @@
     "mobs": {
       "status": "available",
       "cells": 141,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 139,
+      "forever_override_cells": 2,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -52,8 +59,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 165,
-      "kind": "estimated_cells"
+      "cells": 167,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 165,
+      "forever_override_cells": 2,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -88,8 +102,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 67,
-      "kind": "estimated_cells"
+      "cells": 68,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 56,
+      "forever_override_cells": 12,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -125,7 +146,14 @@
     "mobs": {
       "status": "available",
       "cells": 72,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 71,
+      "forever_override_cells": 1,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -161,7 +189,14 @@
     "mobs": {
       "status": "available",
       "cells": 104,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 104,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -197,7 +232,14 @@
     "mobs": {
       "status": "available",
       "cells": 70,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 54,
+      "forever_override_cells": 16,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -233,7 +275,14 @@
     "mobs": {
       "status": "missing",
       "cells": 0,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 0,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -267,9 +316,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 56,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 56,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -304,8 +360,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 160,
-      "kind": "estimated_cells"
+      "cells": 161,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 151,
+      "forever_override_cells": 10,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -340,8 +403,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 84,
-      "kind": "estimated_cells"
+      "cells": 85,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 80,
+      "forever_override_cells": 5,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -377,7 +447,14 @@
     "mobs": {
       "status": "available",
       "cells": 88,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 81,
+      "forever_override_cells": 7,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -412,8 +489,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 171,
-      "kind": "estimated_cells"
+      "cells": 175,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 160,
+      "forever_override_cells": 15,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -449,7 +533,14 @@
     "mobs": {
       "status": "available",
       "cells": 141,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 139,
+      "forever_override_cells": 2,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -485,7 +576,14 @@
     "mobs": {
       "status": "available",
       "cells": 217,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 217,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -521,7 +619,14 @@
     "mobs": {
       "status": "available",
       "cells": 129,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 127,
+      "forever_override_cells": 2,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -557,7 +662,14 @@
     "mobs": {
       "status": "available",
       "cells": 69,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 69,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -593,7 +705,14 @@
     "mobs": {
       "status": "available",
       "cells": 136,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 136,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -628,8 +747,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 181,
-      "kind": "estimated_cells"
+      "cells": 182,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 178,
+      "forever_override_cells": 4,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -665,7 +791,14 @@
     "mobs": {
       "status": "available",
       "cells": 136,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 136,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -701,7 +834,14 @@
     "mobs": {
       "status": "available",
       "cells": 146,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 136,
+      "forever_override_cells": 10,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -737,7 +877,14 @@
     "mobs": {
       "status": "missing",
       "cells": 0,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 0,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -773,7 +920,14 @@
     "mobs": {
       "status": "available",
       "cells": 126,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 126,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -809,7 +963,14 @@
     "mobs": {
       "status": "available",
       "cells": 205,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 205,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -844,8 +1005,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 113,
-      "kind": "estimated_cells"
+      "cells": 115,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 113,
+      "forever_override_cells": 2,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -881,7 +1049,14 @@
     "mobs": {
       "status": "available",
       "cells": 109,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 105,
+      "forever_override_cells": 4,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -916,8 +1091,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 90,
-      "kind": "estimated_cells"
+      "cells": 91,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 86,
+      "forever_override_cells": 5,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -953,7 +1135,14 @@
     "mobs": {
       "status": "available",
       "cells": 215,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 215,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -988,8 +1177,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 94,
-      "kind": "estimated_cells"
+      "cells": 99,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 92,
+      "forever_override_cells": 7,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -1023,9 +1219,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 76,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 70,
+      "forever_override_cells": 6,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -1060,8 +1263,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 111,
-      "kind": "estimated_cells"
+      "cells": 112,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 105,
+      "forever_override_cells": 7,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1096,8 +1306,15 @@
     },
     "mobs": {
       "status": "available",
-      "cells": 104,
-      "kind": "estimated_cells"
+      "cells": 111,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 101,
+      "forever_override_cells": 10,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -1133,7 +1350,14 @@
     "mobs": {
       "status": "available",
       "cells": 169,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 169,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1169,7 +1393,14 @@
     "mobs": {
       "status": "available",
       "cells": 81,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 81,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1205,7 +1436,14 @@
     "mobs": {
       "status": "available",
       "cells": 116,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 112,
+      "forever_override_cells": 4,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1241,7 +1479,14 @@
     "mobs": {
       "status": "available",
       "cells": 169,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 152,
+      "forever_override_cells": 17,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -1277,7 +1522,14 @@
     "mobs": {
       "status": "available",
       "cells": 87,
-      "kind": "estimated_cells"
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 87,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1311,9 +1563,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 61,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 0,
+      "forever_override_cells": 61,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "guide_list",
@@ -1347,9 +1606,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 130,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 129,
+      "forever_override_cells": 1,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1383,9 +1649,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 160,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 160,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1419,9 +1692,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 169,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 167,
+      "forever_override_cells": 2,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1455,9 +1735,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 99,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 99,
+      "forever_override_cells": 0,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
@@ -1491,9 +1778,16 @@
       "coordinate_alignment": "unverified"
     },
     "mobs": {
-      "status": "missing",
-      "cells": 0,
-      "kind": "estimated_cells"
+      "status": "available",
+      "cells": 110,
+      "kind": "estimated_cells",
+      "source": "Mob Level Map",
+      "source_version": "1.0.7",
+      "classic_reference_cells": 109,
+      "forever_override_cells": 1,
+      "level_kind": "representative_level",
+      "live_population_verified": false,
+      "coordinate_alignment": "unverified"
     },
     "trainers": {
       "status": "no_guide_records",
