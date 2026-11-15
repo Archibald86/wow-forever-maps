@@ -104,3 +104,11 @@ body.home .heading-bottom{text-shadow:none!important}
 
 .controls label[hidden]{display:none!important}
 .filter-grid select,.filter-grid input[type=number]{padding:9px;font:inherit;min-height:40px}
+
+/* Relative mob-level heat map; density remains a separate numeric index. */
+.level-heat-bar{height:18px;width:100%;border:1px solid #e8dfb080;border-radius:5px;box-sizing:border-box;margin-top:12px}
+.legend-panel .level-heat-ticks{position:relative;display:block;height:24px}
+.level-heat-ticks span{position:absolute;top:6px;transform:translateX(-50%);font-size:12px;white-space:nowrap}
+.level-heat-ticks span:first-child{transform:none}
+.level-heat-ticks span:last-child{transform:translateX(-100%)}
+.level-heat-ticks .dot{display:none}

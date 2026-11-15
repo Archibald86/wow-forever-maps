@@ -37,8 +37,8 @@ const {chromium}=require('playwright');
     await page.check('#herbs');assert.equal(await page.locator('#share-link').inputValue(),page.url());scenarios++;
     await page.click('#reset-settings');await ready();
     assert.deepEqual(await state(),{zone:'swampofsorrows_c60',level:'42',mode:'cells',mobs:true,density:true,ores:true,herbs:false,only:false});scenarios++;
-    assert.equal(await page.locator('#legend [data-delta]').count(),12);
-    const legend=await page.locator('#legend').innerText();assert.ok(legend.includes('≤−8')&&legend.includes('−7…−5')&&legend.includes('≥+5'));
+    assert.equal(await page.locator('#legend [data-delta]').count(),5);
+    const legend=await page.locator('#legend').innerText();assert.ok(legend.includes('≤−5')&&legend.includes('0')&&legend.includes('≥+5'));
     assert.equal(await page.locator('#resource-legend span').count(),5);
     assert.match(await page.locator('#resource-legend').innerText(),/NPC QuestieDB/);scenarios++;
     await page.uncheck('#density');await page.uncheck('#ores');
@@ -75,6 +75,6 @@ const {chromium}=require('playwright');
     assert.match(await p.locator('#preference-status').innerText(),/недоступно/);
     const before=await state(p);await p.reload();await ready(p);assert.deepEqual(await state(p),before);await blocked.close();scenarios++;
     assert.deepEqual(errors,[]);
-    console.log(JSON.stringify({result:'PASS',scenarios,persistence:true,urlSharing:true,legendRanges:12,mobileSelection:true,blockedStorage:true,uncaughtErrors:0}));
+    console.log(JSON.stringify({result:'PASS',scenarios,persistence:true,urlSharing:true,legendRanges:5,mobileSelection:true,blockedStorage:true,uncaughtErrors:0}));
   }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

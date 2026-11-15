@@ -6,9 +6,17 @@
   const DEFAULTS={zone:'swampofsorrows_c60',level:42,caves:true,mobs:true,density:true,ores:true,herbs:false,only:false,mode:'cells',
     npcs:false,npcRole:'all',npcQuery:'',npcType:'all',areaRadius:5,mapZoom:1,npcGrouping:'auto',hideServices:false,trainers:false,focus:'balanced',resource:'all',miningSkill:300,herbalismSkill:300,skillFilter:false,unknownSkill:true,faction:'all'};
   const FLAGS=['caves','hideServices','npcs','mobs','density','ores','herbs','only','trainers','skillFilter','unknownSkill'];
-  const PALETTE={'-4':'#00c853','-3':'#58d96d','-2':'#a5e88d','-1':'#d9ef9a','0':'#fff5a5','1':'#ffeb00','2':'#ffbc00','3':'#ff8900','4':'#ff5600'};
-  const LEGEND=[[-8,'≤−8'],[-6,'−7…−5'],[-4,'−4'],[-3,'−3'],[-2,'−2'],[-1,'−1'],[0,'0'],[1,'+1'],[2,'+2'],[3,'+3'],[4,'+4'],[5,'≥+5']];
-  const color=delta=>delta<=-8?'#9ca3af':delta<=-5?'#28975b':delta>=5?'#e82127':PALETTE[delta];
+  // One continuous scale for both the map and its legend, relative to the player.
+  const STOPS=[[-5,[34,197,94]],[-2,[163,230,53]],[0,[250,204,21]],[2,[249,115,22]],[5,[239,68,68]]];
+  const LEGEND=[[-5,'≤−5'],[-2,'−2'],[0,'0'],[2,'+2'],[5,'≥+5']];
+  function color(delta) {
+    const value=Math.max(-5,Math.min(5,Number.isFinite(delta)?delta:0));
+    const upper=STOPS.findIndex(stop=>stop[0]>=value);
+    const [lo,a]=STOPS[Math.max(0,upper-1)],[hi,b]=STOPS[upper];
+    const fraction=hi===lo?0:(value-lo)/(hi-lo);
+    return '#'+a.map((channel,i)=>Math.round(channel+(b[i]-channel)*fraction).toString(16).padStart(2,'0')).join('');
+  }
+  const heatGradient=()=>`linear-gradient(to right, ${STOPS.map(([delta])=>`${color(delta)} ${(delta+5)*10}%`).join(', ')})`;
   function readSaved(storage) {
     try {
       const value=JSON.parse((storage||localStorage).getItem(KEY));
@@ -69,7 +77,7 @@
     }
     return url.href;
   }
-  const api={KEY,DEFAULTS,FLAGS,LEGEND,color,readSaved,writeSaved,resolve,toUrl};
+  const api={KEY,DEFAULTS,FLAGS,LEGEND,color,heatGradient,readSaved,writeSaved,resolve,toUrl};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;
   else window.WowSettings=api;
 })();

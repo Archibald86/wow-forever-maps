@@ -65,9 +65,8 @@
       if($('only').checked&&(delta < -2||delta>0))continue;
       const x=xp*W/100,y=yp*H/100;
       if($('mobs').checked&&cells) {
-        ctx.save();ctx.globalAlpha=.12+.48*Math.min(n/maxDensity,1);ctx.fillStyle=color(delta);
-        ctx.fillRect(x+1,y+1,W*.05-2,H*.05-2);ctx.restore();
-        ctx.strokeStyle='#10191b88';ctx.lineWidth=.7;ctx.strokeRect(x+1,y+1,W*.05-2,H*.05-2);
+        ctx.save();ctx.globalAlpha=.58;ctx.fillStyle=color(delta);
+        ctx.fillRect(x,y,W*.05,H*.05);ctx.restore();
       }
       if($('mobs').checked&&!cells) {
         const rnd=random(i+12345);
@@ -342,9 +341,10 @@
     if(selectedArea&&Number($('mapZoom').value)>1)applyZoom();
     persist();draw();
   });
+  $('level-heat-bar').style.background=WowSettings.heatGradient();
   for(const [delta,label] of WowSettings.LEGEND) {
     const item=document.createElement('span'),dot=document.createElement('i');
-    item.dataset.delta=String(delta);dot.className='dot';dot.style.background=color(delta);
+    item.dataset.delta=String(delta);item.style.left=((delta+5)*10)+'%';dot.className='dot';dot.style.background=color(delta);
     item.append(dot,document.createTextNode(label));$('legend').append(item);
   }
   for(const [symbol,label,colorValue] of [['▲','NPC QuestieDB','#77dce8'],['●','Медь','#82d9ff'],['●','Другая руда','#ffc06b'],['◆','Травы','#6cdd8e'],['■','Учителя','#d1a6ff']]) {
@@ -375,7 +375,7 @@
       applyState(WowSettings.resolve(data,new URLSearchParams(location.search),WowSettings.readSaved(),WowApp.normalizeLevel));
       if($('skillFilter').checked||$('resource').value!=='all')document.querySelector('.resource-filters').open=true;
       maxDensity=Math.max(1,...Object.values(data.mobs).flat().map(cell=>cell[3]));
-      $('density-scale').textContent=`В режиме ячеек насыщенность показывает индекс плотности (от 1 до ${maxDensity}), а не число живых мобов.`;
+      $('density-scale').textContent=`Цвет показывает разницу уровней: зелёный — ниже, жёлтый — на уровне персонажа, красный — выше. Числа — оценочный индекс плотности (1–${maxDensity}), не число живых мобов.`;
       controls.forEach(control=>control.disabled=false);$('share').disabled=false;$('reset-settings').disabled=false;persist();setZone(selectedArea);
     } catch (_) {
       data=undefined;mapReady=false;caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='';ctx.clearRect(0,0,canvas.width,canvas.height);
