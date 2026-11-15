@@ -45,7 +45,7 @@ const {chromium}=require('playwright');
     const cells=await page.locator('#overlay').evaluate(c=>c.toDataURL());
     await page.selectOption('#mode','dots');
     const dots=await page.locator('#overlay').evaluate(c=>c.toDataURL());assert.notEqual(cells,dots);scenarios++;
-    await page.selectOption('#mode','cells');await page.check('#density');
+    await page.selectOption('#mode','legacy');await page.check('#density');
     await page.setViewportSize({width:390,height:844});
     await page.waitForFunction(()=>document.getElementById('density-hint').textContent.includes('На узкой карте'));
     await page.locator('#overlay').scrollIntoViewIfNeeded();

@@ -41,7 +41,7 @@ const { chromium } = require('playwright');
     }
     await page.selectOption('#zone', 'stranglethorn_c60');
     await page.waitForFunction(() => terrain.complete && terrain.src.endsWith('/stranglethorn_c60.jpg'));
-    for (const mode of ['cells','dots']) {
+    for (const mode of ['legacy','dots']) {
       await page.selectOption('#mode',mode);
       for (let mask = 0; mask < 64; mask++) {
       for (const [i,id] of ['mobs','density','ores','herbs','only','trainers'].entries()) {

@@ -98,6 +98,7 @@ jobs:
           PYREADY
           node tests/classic-spawns.cjs
           node tests/classic-spawns-browser.cjs http://127.0.0.1:8765/
+          node tests/classic-world-browser.cjs http://127.0.0.1:8765/
           node tests/core.cjs
           node tests/settings.cjs
           node tests/resources.cjs

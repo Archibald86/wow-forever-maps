@@ -42,8 +42,8 @@
       if(['1','true'].includes(query.get(key)))state[key]=true;
       if(['0','false'].includes(query.get(key)))state[key]=false;
     }
-    if(['cells','dots'].includes(saved.mode))state.mode=saved.mode;
-    if(['cells','dots'].includes(query.get('mode')))state.mode=query.get('mode');
+    if(['cells','dots','legacy'].includes(saved.mode))state.mode=saved.mode;
+    if(['cells','dots','legacy'].includes(query.get('mode')))state.mode=query.get('mode');
     for(const key of ['focus','faction']) {
       const allowed=key==='focus'?resources.FOCUSES:['all','alliance','horde'];
       if(allowed.includes(saved[key]))state[key]=saved[key];

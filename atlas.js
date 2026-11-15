@@ -59,7 +59,7 @@
     $('mobs').parentNode.lastChild.textContent=spawnMap?' Места появления мобов':' Уровни мобов · тепловая карта';
     $('density').parentNode.lastChild.textContent=spawnMap?' Уровни на точках':' Числа плотности';
     $('mob-level-scope').textContent=options.only?'Включён фильтр уровней −2…0.':'Показаны все уровни: уровень персонажа меняет цвет, а не видимость. Ниже более чем на 5 уровней — серый.';
-    $('classic-spawn-status').textContent=spawnMap?'Classic: одно место — одна точка. Полые круги — места групп с ограничением числа активных существ. Нажмите точку или область для подробностей.':(!classicData&&zone.value==='elwynn_c60'?'Слой появлений недоступен; показана прежняя оценка. Обновите страницу для повторной загрузки.':'');
+    $('classic-spawn-status').textContent=spawnMap?`Classic: ${spawnMap.species} видов, ${spawnMap.points.length} возможных мест в пределах карты. Полые круги — ограниченные группы и пулы. Выборка неполная; нажмите точку или область для подробностей.`:(!classicData&&zone.value.endsWith('_c60')?'Слой появлений недоступен; показана прежняя оценка. Обновите страницу для повторной загрузки.':'');
     updateLevelLegend(spawnMap);
     const ores=WowResources.filterPoints(data,'ore',id,options),herbs=WowResources.filterPoints(data,'herbs',id,options);
     visiblePoints=[];visibleClusters=[];
@@ -72,7 +72,7 @@
       WowCaves.draw(caveCanvas,caveEntry,$('caves').checked);
       $('cave-status').textContent=$('caves').checked?(caveEntry.icons.length?`Значки пещер: ${caveEntry.icons.length} · обведены красным на рисунке карты.`:'На рисунке этой карты значки пещер не найдены.'):'Красные окружности пещер скрыты.';
     }else {caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='Разметка значков пещер для этой карты недоступна.';}
-    const cells=$('mode').value==='cells';
+    const cells=$('mode').value!=='dots';
     const labelsFit=canvas.clientWidth*.05>=24&&canvas.clientHeight*.05>=18;
     $('density-hint').textContent=spawnMap?($('density').checked?'Уровни на точках видны при масштабе от 200%. Наведите курсор или нажмите точку для диапазона уровней.':'Нажмите место появления для уровней, альтернативных видов и ограничений группы.'):$('density').checked&&!labelsFit
       ?'На узкой карте числа скрыты, чтобы не перекрывать местность. Нажмите ячейку для подробностей.'
@@ -331,9 +331,9 @@
       const p=point.spawn,map=classicMap(),limits=p[7].map(k=>map.constraints[k]);
       $('point-info').textContent=`${pointLabel(point)}\nУровни Classic: ${point.range[0]}–${point.range[1]} · координаты ${point.x.toFixed(2)}, ${point.y.toFixed(2)}\nМесто появления: GUID ${p[0]}.`+
         (p[3].length>1?'\nВозможные виды: '+p[3].map(id=>`${classicData.npcs[id].name} (ID ${id})`).join(' / ')+'. Это альтернативы на одном месте, не дополнительные мобы.':'')+
-        (limits.length?'\n'+limits.map(c=>`Группа: ${c.members.length} возможных мест, не более ${c.limit} активных существ во всей группе.`).join('\n'):'')+
+        (limits.length?'\n'+limits.map(c=>`Группа: ${c.total_members??c.members.length} возможных мест в источнике, не более ${c.limit} активных существ во всей группе.`+(c.kind==='nested_pool'?' Учтена вместимость дочерних пулов.':'')).join('\n'):'')+
         `\nВозрождение по базе: ${p[4]}–${p[5]} сек.`+(p[6]?' Существо перемещается; точка не описывает весь маршрут.':'')+'\nИсточник: CMaNGOS Classic-DB, 15.11.2026. Текущая доступность в Forever не проверена.';
-      $('point-source').href='sources/classic_spawns/NOTICE.md';$('point-source').hidden=false;
+      $('point-source').href='sources/classic_spawns/WORLD_NOTICE.md';$('point-source').hidden=false;
       ctx.beginPath();ctx.arc(point.x*canvas.width/100,point.y*canvas.height/100,8*canvas.width/canvas.clientWidth,0,Math.PI*2);ctx.strokeStyle='#fff6cc';ctx.lineWidth=2;ctx.stroke();return;
     }
     if(point.kind==='npc') {
@@ -442,7 +442,7 @@
       zone.replaceChildren();
       for(const map of [...data.maps].sort((a,b)=>a.name.localeCompare(b.name,'ru')||a.id.localeCompare(b.id))) {
         const option=document.createElement('option');option.value=map.id;
-        option.textContent=map.name+(map.has_mobs?'':' · нет оценки плотности');zone.append(option);
+        option.textContent=map.name+(map.has_mobs||classicData?.maps[map.id]?.points.length?'':' · нет оценки плотности');zone.append(option);
       }
       WowResources.populateOptions(data,$('resource'));
       WowCreatureTypes.populate($('npcType'));

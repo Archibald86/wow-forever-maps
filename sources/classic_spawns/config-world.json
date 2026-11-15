@@ -1,0 +1,457 @@
+{
+  "schema_version": 1,
+  "source_sha256": "50128d08b4d654997bdf9df1b76c47f260472ee0f80226bdbba015913adb0895",
+  "maps": {
+    "ashenvale_c60": {
+      "ui_map_id": 1440,
+      "area_id": 331,
+      "world_map_id": 1,
+      "bounds": [
+        829.167,
+        -4066.667,
+        4672.917,
+        1700.0
+      ]
+    },
+    "azshara_c60": {
+      "ui_map_id": 1447,
+      "area_id": 16,
+      "world_map_id": 1,
+      "bounds": [
+        1960.417,
+        -8347.916,
+        5341.667,
+        -3277.083
+      ]
+    },
+    "barrens_c60": {
+      "ui_map_id": 1413,
+      "area_id": 17,
+      "world_map_id": 1,
+      "bounds": [
+        -5143.75,
+        -7510.417,
+        1612.5,
+        2622.917
+      ]
+    },
+    "blastedlands_c60": {
+      "ui_map_id": 1419,
+      "area_id": 4,
+      "world_map_id": 0,
+      "bounds": [
+        -12800.0,
+        -4591.667,
+        -10566.666,
+        -1241.667
+      ]
+    },
+    "burningsteppes_c60": {
+      "ui_map_id": 1428,
+      "area_id": 46,
+      "world_map_id": 0,
+      "bounds": [
+        -8983.333,
+        -3195.833,
+        -7031.25,
+        -266.667
+      ]
+    },
+    "darkshore_c60": {
+      "ui_map_id": 1439,
+      "area_id": 148,
+      "world_map_id": 1,
+      "bounds": [
+        3966.667,
+        -3608.333,
+        8333.333,
+        2941.667
+      ]
+    },
+    "deadwindpass_c60": {
+      "ui_map_id": 1430,
+      "area_id": 41,
+      "world_map_id": 0,
+      "bounds": [
+        -11533.333,
+        -3333.333,
+        -9866.666,
+        -833.333
+      ]
+    },
+    "desolace_c60": {
+      "ui_map_id": 1443,
+      "area_id": 405,
+      "world_map_id": 1,
+      "bounds": [
+        -2545.833,
+        -262.5,
+        452.083,
+        4233.333
+      ]
+    },
+    "dunmorogh_c60": {
+      "ui_map_id": 1426,
+      "area_id": 1,
+      "world_map_id": 0,
+      "bounds": [
+        -7160.417,
+        -3122.917,
+        -3877.083,
+        1802.083
+      ]
+    },
+    "durotar_c60": {
+      "ui_map_id": 1411,
+      "area_id": 14,
+      "world_map_id": 1,
+      "bounds": [
+        -1716.667,
+        -7250.0,
+        1808.333,
+        -1962.5
+      ]
+    },
+    "duskwood_c60": {
+      "ui_map_id": 1431,
+      "area_id": 10,
+      "world_map_id": 0,
+      "bounds": [
+        -11516.666,
+        -1866.667,
+        -9716.666,
+        833.333
+      ]
+    },
+    "dustwallowmarsh_c60": {
+      "ui_map_id": 1445,
+      "area_id": 15,
+      "world_map_id": 1,
+      "bounds": [
+        -5533.333,
+        -6225.0,
+        -2033.333,
+        -975.0
+      ]
+    },
+    "easternplaguelands_c60": {
+      "ui_map_id": 1423,
+      "area_id": 139,
+      "world_map_id": 0,
+      "bounds": [
+        825.0,
+        -6558.334,
+        3691.667,
+        -2256.25
+      ]
+    },
+    "elwynn_c60": {
+      "ui_map_id": 1429,
+      "area_id": 12,
+      "world_map_id": 0,
+      "bounds": [
+        -10254.166,
+        -1935.417,
+        -7939.583,
+        1535.417
+      ]
+    },
+    "felwood_c60": {
+      "ui_map_id": 1448,
+      "area_id": 361,
+      "world_map_id": 1,
+      "bounds": [
+        3300.0,
+        -4108.333,
+        7133.333,
+        1641.667
+      ]
+    },
+    "feralas_c60": {
+      "ui_map_id": 1444,
+      "area_id": 357,
+      "world_map_id": 1,
+      "bounds": [
+        -7000.0,
+        -1508.333,
+        -2366.667,
+        5441.667
+      ]
+    },
+    "hillsbrad_c60": {
+      "ui_map_id": 1424,
+      "area_id": 267,
+      "world_map_id": 0,
+      "bounds": [
+        -1733.333,
+        -2133.333,
+        400.0,
+        1066.667
+      ]
+    },
+    "hinterlands_c60": {
+      "ui_map_id": 1425,
+      "area_id": 47,
+      "world_map_id": 0,
+      "bounds": [
+        -1100.0,
+        -5425.0,
+        1466.667,
+        -1575.0
+      ]
+    },
+    "lochmodan_c60": {
+      "ui_map_id": 1432,
+      "area_id": 38,
+      "world_map_id": 0,
+      "bounds": [
+        -6327.083,
+        -4752.083,
+        -4487.5,
+        -1993.75
+      ]
+    },
+    "moonglade_c60": {
+      "ui_map_id": 1450,
+      "area_id": 493,
+      "world_map_id": 1,
+      "bounds": [
+        6952.083,
+        -3689.583,
+        8491.666,
+        -1381.25
+      ]
+    },
+    "searinggorge_c60": {
+      "ui_map_id": 1427,
+      "area_id": 51,
+      "world_map_id": 0,
+      "bounds": [
+        -7587.5,
+        -2554.167,
+        -6100.0,
+        -322.917
+      ]
+    },
+    "silithus_c60": {
+      "ui_map_id": 1451,
+      "area_id": 1377,
+      "world_map_id": 1,
+      "bounds": [
+        -8281.25,
+        -945.834,
+        -5958.334,
+        2537.5
+      ]
+    },
+    "silverpine_c60": {
+      "ui_map_id": 1421,
+      "area_id": 130,
+      "world_map_id": 0,
+      "bounds": [
+        -1133.333,
+        -750.0,
+        1666.667,
+        3450.0
+      ]
+    },
+    "stonetalonmountain_c60": {
+      "ui_map_id": 1442,
+      "area_id": 406,
+      "world_map_id": 1,
+      "bounds": [
+        -339.583,
+        -1637.5,
+        2916.667,
+        3245.833
+      ]
+    },
+    "stranglethorn_c60": {
+      "ui_map_id": 1434,
+      "area_id": 33,
+      "world_map_id": 0,
+      "bounds": [
+        -15422.916,
+        -4160.417,
+        -11168.75,
+        2220.833
+      ]
+    },
+    "swampofsorrows_c60": {
+      "ui_map_id": 1435,
+      "area_id": 8,
+      "world_map_id": 0,
+      "bounds": [
+        -11150.0,
+        -4516.667,
+        -9620.833,
+        -2222.917
+      ]
+    },
+    "tanaris_c60": {
+      "ui_map_id": 1446,
+      "area_id": 440,
+      "world_map_id": 1,
+      "bounds": [
+        -10475.0,
+        -7118.75,
+        -5875.0,
+        -218.75
+      ]
+    },
+    "teldrassil_c60": {
+      "ui_map_id": 1438,
+      "area_id": 141,
+      "world_map_id": 1,
+      "bounds": [
+        8437.5,
+        -1277.083,
+        11831.25,
+        3814.583
+      ]
+    },
+    "thousandneedles_c60": {
+      "ui_map_id": 1441,
+      "area_id": 400,
+      "world_map_id": 1,
+      "bounds": [
+        -6900.0,
+        -4833.333,
+        -3966.667,
+        -433.333
+      ]
+    },
+    "tirisfal_c60": {
+      "ui_map_id": 1420,
+      "area_id": 85,
+      "world_map_id": 0,
+      "bounds": [
+        825.0,
+        -1485.417,
+        3837.5,
+        3033.333
+      ]
+    },
+    "ungorocrater_c60": {
+      "ui_map_id": 1449,
+      "area_id": 490,
+      "world_map_id": 1,
+      "bounds": [
+        -8433.333,
+        -3166.667,
+        -5966.667,
+        533.333
+      ]
+    },
+    "westernplaguelands_c60": {
+      "ui_map_id": 1422,
+      "area_id": 28,
+      "world_map_id": 0,
+      "bounds": [
+        500.0,
+        -3883.333,
+        3366.667,
+        416.667
+      ]
+    },
+    "westfall_c60": {
+      "ui_map_id": 1436,
+      "area_id": 40,
+      "world_map_id": 0,
+      "bounds": [
+        -11733.333,
+        -483.333,
+        -9400.0,
+        3016.667
+      ]
+    },
+    "wetlands_c60": {
+      "ui_map_id": 1437,
+      "area_id": 11,
+      "world_map_id": 0,
+      "bounds": [
+        -4904.167,
+        -4525.0,
+        -2147.917,
+        -389.583
+      ]
+    },
+    "winterspring_c60": {
+      "ui_map_id": 1452,
+      "area_id": 618,
+      "world_map_id": 1,
+      "bounds": [
+        3800.0,
+        -7416.667,
+        8533.333,
+        -316.667
+      ]
+    },
+    "alteracmountains_c60": {
+      "ui_map_id": 1416,
+      "area_id": 36,
+      "world_map_id": 0,
+      "bounds": [
+        -366.667,
+        -2016.667,
+        1500.0,
+        783.333
+      ]
+    },
+    "badlands_c60": {
+      "ui_map_id": 1418,
+      "area_id": 3,
+      "world_map_id": 0,
+      "bounds": [
+        -7547.917,
+        -4566.667,
+        -5889.583,
+        -2079.167
+      ]
+    },
+    "redridgemountains_c60": {
+      "ui_map_id": 1433,
+      "area_id": 44,
+      "world_map_id": 0,
+      "bounds": [
+        -10022.916,
+        -3852.084,
+        -8575.0,
+        -1681.25
+      ]
+    },
+    "mulgore_c60": {
+      "ui_map_id": 1412,
+      "area_id": 215,
+      "world_map_id": 1,
+      "bounds": [
+        -3835.416,
+        -3675.0,
+        266.666,
+        2479.167
+      ]
+    },
+    "arathihighlands_c60": {
+      "ui_map_id": 1417,
+      "area_id": 45,
+      "world_map_id": 0,
+      "bounds": [
+        -2533.333,
+        -4466.667,
+        -133.333,
+        -866.667
+      ]
+    }
+  },
+  "selection": "Classic creature types 1-7 and 9, no non-attackable flags; enemy-of-player faction mask, reviewed neutral animal/starter factions, or explicit Classic quest kill objectives without spell-cast requirements. Services/civilians excluded unless explicit kill targets. Species must have Questie AreaID records for this zone; GUIDs must lie in its map frame. Elwynn retains its reviewed 46-species source.",
+  "neutral_beast_factions": [
+    7,
+    15,
+    32,
+    189
+  ],
+  "neutral_humanoid_factions": [
+    25,
+    36
+  ]
+}

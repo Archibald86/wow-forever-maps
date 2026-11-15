@@ -1,4 +1,4 @@
-"""Build the Elwynn possible-spawn layer from a pinned, attributed source slice."""
+"""Build 40 Classic possible-spawn layers from pinned, attributed sources."""
 import argparse
 import gzip
 import hashlib
@@ -58,8 +58,10 @@ def build():
         points.append([guid,x,y,r['entries'],r['spawntimesecsmin'],r['spawntimesecsmax'],r['MovementType'],keys])
     for c in constraints.values():c['members']=sorted(set(c['members']))
     map_data={'points':points,'constraints':constraints,'min_level':min(n['min_level'] for n in npcs.values()),
-              'max_level':max(n['max_level'] for n in npcs.values()), 'species':len(npcs), 'excluded_event_positions':len(event_guids)}
-    return {'schema_version':1,'source':raw['source'],'scope':config['selection'], 'npcs':npcs,'maps':{config['map']:map_data}}
+              'max_level':max(n['max_level'] for n in npcs.values()), 'species':len({i for p in points for i in p[3]}), 'curated_species':len(npcs), 'excluded_event_positions':len(event_guids)}
+    data={'schema_version':1,'source':raw['source'],'scope':config['selection'], 'npcs':npcs,'maps':{config['map']:map_data}}
+    from classic_world import extend_world
+    return extend_world(data,ROOT)
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--check',action='store_true');args=parser.parse_args()
@@ -70,6 +72,6 @@ def main():
         if args.check:
             assert file.read_text()==content, 'Stale generated output: '+name
         else:file.write_text(content)
-    print('Classic spawns:',len(d['maps']['elwynn_c60']['points']),'unique GUIDs;',len(d['npcs']),'species')
+    print('Classic spawns:',len(d['maps']),'maps;',sum(len(m['points']) for m in d['maps'].values()),'map-frame positions;',len(d['npcs']),'species')
 
 if __name__=='__main__':main()

@@ -12,3 +12,12 @@ const broken=structuredClone(data);broken.maps.elwynn_c60.points.push(broken.map
 console.log('PASS Classic spawns: unique GUIDs, Hogger cap, alternative species, uncovered bandits, level filters and area bounds');
 
 const palette=require('../settings.js').color;assert.equal(api.color(1,6,palette),'#22c55e');assert.equal(api.color(1,7,palette),'#9ca3af');assert.equal(api.color(6,6,palette),'#facc15');assert.equal(api.color(11,6,palette),'#ef4444');
+
+assert.equal(Object.keys(data.maps).length,40);assert(!data.maps.zephrasisle);assert(!data.maps.darkspearisland);
+const point=(id,keys)=>[id,0,0,[6],0,0,0,keys];
+const crossed={constraints:{a:{limit:1},b:{limit:1}}};assert.equal(api.upperBound([point(1,['a']),point(2,['a','b']),point(3,['b'])],crossed),2);
+const nested={constraints:{parent:{limit:2},child:{limit:1}}};assert.equal(api.upperBound([point(1,['parent','child']),point(2,['parent','child']),point(3,['parent']),point(4,['parent'])],nested),2);
+for(const [id,m] of Object.entries(data.maps)){assert(m.points.length>0,id);assert(api.upperBound(m.points,m)<=m.points.length,id)}
+console.log('PASS all 40 Classic maps and conservative nested/crossed group caps');
+
+assert(data.npcs['3129'],'Kul Tiras Marines are Classic kill targets despite one-faction hostility');assert(data.npcs['2266'],'Hillsbrad Farmers are Classic kill targets');assert(!data.npcs['6172'],'Resurrection targets must not become combat mobs');
