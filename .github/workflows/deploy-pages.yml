@@ -70,6 +70,8 @@ jobs:
           PY
       - name: Verify reproducible data build
         run: python3 tools/build_data.py --check
+      - name: Verify Classic spawn build
+        run: python3 tools/import_classic_spawns.py --check
       - name: Test coordinate decoding
         run: python3 -m unittest discover -s tests -v
       - name: Install browser regression runner
@@ -94,6 +96,8 @@ jobs:
           else:
               raise SystemExit('Local site did not start')
           PYREADY
+          node tests/classic-spawns.cjs
+          node tests/classic-spawns-browser.cjs http://127.0.0.1:8765/
           node tests/core.cjs
           node tests/settings.cjs
           node tests/resources.cjs
@@ -119,9 +123,10 @@ jobs:
           mkdir -p _site
           cp index.html atlas.html forever-theme.css hero-v4.css data.js data.json coverage.json app-core.js atlas.js home.js settings.js resources.js login-gates.jpg wow-forever-hero-3344.jpg wow-forever-hero-mobile.webp _site/
           cp database.html database.js database.css creature-types.js npcs.js npc-area.js npc-area.css caves.js cave-icons.js cave-icons.json npc-atlas.json npc-atlas.js _site/
+          cp classic-spawn-data.js classic-spawn-data.json classic-spawns.js _site/
           cp -R maps database _site/
           mkdir -p _site/sources
-          cp -R sources/questie sources/creature_types sources/moblevels _site/sources/
+          cp -R sources/questie sources/creature_types sources/moblevels sources/classic_spawns _site/sources/
           touch _site/.nojekyll
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

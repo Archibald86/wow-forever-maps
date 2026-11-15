@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),api=require('../classic-spawns.js'),data=api.validate(require('../classic-spawn-data.json')),map=data.maps.elwynn_c60;
+assert.equal(map.points.length,1161);assert.equal(new Set(map.points.map(p=>p[0])).size,1161);
+const hogger=api.filter(map,data,{npcQuery:'448'});assert.equal(hogger.length,6);assert.equal(api.upperBound(hogger,map),1);
+const murlocs=api.filter(map,data,{npcQuery:'46'});assert.equal(murlocs.length,103);assert(murlocs.every(p=>p[3].includes(732)));
+assert(api.upperBound(map.points,map)<map.points.length);assert(!data.npcs['271929']);
+const bandits=api.filter(map,data,{npcQuery:'116'});assert.equal(bandits.length,57);assert(bandits.some(p=>p[1]===29.19&&p[2]===58.33));
+assert.equal(api.filter(map,data,{level:60,only:true}).length,0);assert.equal(api.filter(map,data,{level:1,only:false}).length,1161);
+assert.equal(api.filter(map,data,{level:60,only:false}).length,1161);
+assert.equal(api.filter(map,data,{npcRole:'vendors'}).length,0);
+const center={x:26,y:90};const s=api.summarize(map,data,center,20,668/1024,{npcQuery:'448'});assert.equal(s.count,6);assert.equal(s.upper,1);
+const broken=structuredClone(data);broken.maps.elwynn_c60.points.push(broken.maps.elwynn_c60.points[0]);assert.throws(()=>api.validate(broken));
+console.log('PASS Classic spawns: unique GUIDs, Hogger cap, alternative species, uncovered bandits, level filters and area bounds');

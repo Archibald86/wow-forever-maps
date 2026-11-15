@@ -4,6 +4,11 @@
   const zone=$('zone'), img=$('terrain'), canvas=$('overlay'), ctx=canvas.getContext('2d');
   const caveCanvas=$('cave-overlay');let caveData=null;
   try{caveData=window.WowCaves.validate(window.WOW_CAVE_ICONS);}catch(_){}
+  let classicData=null;
+  try{classicData=window.WowClassicSpawns.validate(window.WOW_CLASSIC_SPAWNS);}catch(_){}
+  const classicMap=()=>classicData?.maps[zone.value];
+  const classicView=()=>Boolean(classicMap()&&$('mode').value==='cells');
+  const classicActive=()=>classicView()&&$('mobs').checked;
   const lv=$('level'), lvnum=$('levelnum'), stats=$('stats'), error=$('data-error');
   const controls=[...document.querySelectorAll('.controls input,.controls select,.resource-filters input,.resource-filters select,.npc-filters input,.npc-filters select,.area-controls select,.area-panel select')];
   if(!window.WowSettings||!window.WowResources) {
@@ -48,7 +53,14 @@
   function draw() {
     if (!data || !mapReady) return;
     const id=zone.value,L=WowApp.normalizeLevel(lv.value),rows=data.mobs[id],options=currentState();
-    $('mob-level-scope').textContent=options.only?'Включён фильтр уровней −2…0.':'Показаны все уровни: уровень персонажа меняет цвет, а не видимость.';
+    const spawnMap=classicView()?classicMap():null;
+    $('mode').options[0].textContent=classicMap()?'Места появления · Classic':'Тепловая карта уровней';
+    $('mode').options[1].textContent=classicMap()?'Условные точки · прежняя оценка':'Условные точки';
+    $('mobs').parentNode.lastChild.textContent=spawnMap?' Места появления мобов':' Уровни мобов · тепловая карта';
+    $('density').parentNode.lastChild.textContent=spawnMap?' Уровни на точках':' Числа плотности';
+    $('mob-level-scope').textContent=options.only?'Включён фильтр уровней −2…0.':spawnMap?`Все уровни ${spawnMap.min_level}–${spawnMap.max_level}. Цвет — уровень внутри зоны.`:'Показаны все уровни: уровень персонажа меняет цвет, а не видимость.';
+    $('classic-spawn-status').textContent=spawnMap?'Classic: одно место — одна точка. Полые круги — места групп с ограничением числа активных существ. Нажмите точку или область для подробностей.':(!classicData&&zone.value==='elwynn_c60'?'Слой появлений недоступен; показана прежняя оценка. Обновите страницу для повторной загрузки.':'');
+    updateLevelLegend(spawnMap);
     const ores=WowResources.filterPoints(data,'ore',id,options),herbs=WowResources.filterPoints(data,'herbs',id,options);
     visiblePoints=[];visibleClusters=[];
     const W=img.naturalWidth,H=img.naturalHeight;
@@ -62,11 +74,11 @@
     }else {caveCanvas.getContext('2d').clearRect(0,0,caveCanvas.width,caveCanvas.height);$('cave-status').textContent='Разметка значков пещер для этой карты недоступна.';}
     const cells=$('mode').value==='cells';
     const labelsFit=canvas.clientWidth*.05>=24&&canvas.clientHeight*.05>=18;
-    $('density-hint').textContent=$('density').checked&&!labelsFit
+    $('density-hint').textContent=spawnMap?($('density').checked?'Уровни на точках видны при масштабе от 200%. Наведите курсор или нажмите точку для диапазона уровней.':'Нажмите место появления для уровней, альтернативных видов и ограничений группы.'):$('density').checked&&!labelsFit
       ?'На узкой карте числа скрыты, чтобы не перекрывать местность. Нажмите ячейку для подробностей.'
       :'Нажмите ячейку для её уровня и индекса. С клавиатуры: стрелки — выбрать ячейку, Esc — снять выделение.';
     let matched=0,weight=0;
-    for (const [i,[xp,yp,ml,n]] of rows.entries()) {
+    for (const [i,[xp,yp,ml,n]] of (spawnMap?[]:rows).entries()) {
       const delta=ml-L;
       if(delta>=-2&&delta<=0){matched++;weight+=n;}
       if($('only').checked&&(delta < -2||delta>0))continue;
@@ -89,6 +101,23 @@
         ctx.fillStyle='white';ctx.fillText(String(n),x+W*.025,y+H*.025);
       }
     }
+    let spawnPoints=[];
+    if(spawnMap&&$('mobs').checked) {
+      spawnPoints=WowClassicSpawns.filter(spawnMap,classicData,options);
+      const scale=W/canvas.clientWidth,r=2.7*scale;
+      for(const p of spawnPoints) {
+        const candidates=WowClassicSpawns.candidates(p,classicData,options),range=WowClassicSpawns.range(p,classicData,options);
+        const x=p[1]*W/100,y=p[2]*H/100,fill=WowClassicSpawns.color((range[0]+range[1])/2,spawnMap,color);
+        ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);
+        if(!p[7].length){ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle='#102019';ctx.lineWidth=.6*scale;ctx.stroke();}
+        else {ctx.strokeStyle='#102019';ctx.lineWidth=2.7*scale;ctx.stroke();ctx.strokeStyle=fill;ctx.lineWidth=1.5*scale;ctx.stroke();}
+        if($('density').checked&&Number($('mapZoom').value)>=2) {
+          ctx.textAlign='center';ctx.textBaseline='bottom';ctx.font=`bold ${9*scale}px system-ui`;ctx.strokeStyle='#101a1e';ctx.lineWidth=2.4*scale;
+          const label=range[0]===range[1]?String(range[0]):`${range[0]}–${range[1]}`;ctx.strokeText(label,x,y-r);ctx.fillStyle='#fff9df';ctx.fillText(label,x,y-r);
+        }
+        visiblePoints.push({key:`spawn:${p[0]}`,kind:'spawn',x:p[1],y:p[2],meta:candidates[0],spawn:p,candidates,range});
+      }
+    }
     if($('ores').checked)for(const [xp,yp,type] of ores) {
       visiblePoints.push({key:`ore:${xp}:${yp}:${type}`,kind:'ore',x:xp,y:yp,meta:data.catalog[type]});
       ctx.beginPath();ctx.arc(xp*W/100,yp*H/100,4.5,0,Math.PI*2);
@@ -107,7 +136,11 @@
       ctx.fillRect(x-5,y-5,10,10);ctx.strokeRect(x-5,y-5,10,10);
       visiblePoints.push({key:'trainer:'+trainer.id,kind:'trainer',x:trainer.x,y:trainer.y,meta:trainer});
     }
-    const npcPositions=$('npcs').checked&&npcData?WowNpcArea.unique(npcData.maps[id]||[]).filter(p=>WowNpcs.matches(npcData.npcs[p[2]],options)):[];
+    const npcPositions=$('npcs').checked&&npcData?WowNpcArea.unique(npcData.maps[id]||[]).filter(p=>{
+      const meta=npcData.npcs[p[2]];
+      if(classicActive()&&(classicData.npcs[p[2]]||(!meta.flags&&!meta.quest_starts.length&&!meta.quest_ends.length)))return false;
+      return WowNpcs.matches(meta,options);
+    }):[];
     const npcCount=npcPositions.length;
     for(const [xp,yp,npcId] of npcPositions)visiblePoints.push({key:`npc:${npcId}:${xp}:${yp}`,kind:'npc',x:xp,y:yp,meta:npcData.npcs[npcId]});
     const grouped=$('npcGrouping').value==='auto'&&Number($('mapZoom').value)<2;
@@ -130,7 +163,7 @@
     if($('npcs').checked&&!npcData)loadNpcs();
     $('npc-retry').hidden=!($('npcs').checked&&npcFailed);
     $('npc-status').textContent=!$('npcs').checked?'Слой NPC выключен. Координаты QuestieDB доступны отдельно от оценочной плотности.':
-      npcData?`NPC: ${npcCount} из ${npcData.maps[id].length} записей координат подходят фильтрам. Это справочные позиции, не число живых NPC. Совмещение в игре не проверено.`:
+      npcData?`NPC: ${npcCount} из ${npcData.maps[id].length} записей координат подходят фильтрам. `+(classicActive()?'Поверх мест появлений показаны услуги и квесты; боевые виды и неизвестные служебные сущности не дублируются. ':'')+'Это справочные позиции, не число живых NPC. Совмещение в игре не проверено.':
       npcFailed?'Не удалось загрузить NPC. Остальные слои доступны; повторите загрузку.':'Загрузка координат NPC…';
     drawAreaCircle();renderAreaPanel();
     drawSelection();
@@ -139,15 +172,16 @@
       (options.skillFilter?`Навыки: горное дело ${options.miningSkill}, травничество ${options.herbalismSkill}. `:'Фильтр по навыку выключен. ')+
       (unknown?`Неизвестное требование у ${unknown} записей; ${options.skillFilter&&!options.unknownSkill?'скрыты':'показаны при включённом слое'}. `:'')+
       `Учителя: ${WowResources.trainersForZone(data,id,options).length} подходят фильтрам из ${data.trainers[id].length} в источнике. Справочная выборка неполная.`;
-    const mobLabel=rows.length?`${rows.length} ячеек мобов · ${matched} ячеек уровня ${Math.max(1,L-2)}–${L} (сумма индексов ${weight})`:'оценки плотности мобов нет';
+    const mobLabel=spawnMap?`${spawnPoints.length} из ${spawnMap.points.length} возможных мест · до ${WowClassicSpawns.upperBound(spawnPoints,spawnMap)} по известным ограничениям (не текущая численность)`:
+      rows.length?`${rows.length} ячеек мобов · ${matched} ячеек уровня ${Math.max(1,L-2)}–${L} (сумма индексов ${weight})`:'оценки плотности мобов нет';
     stats.textContent=`${data.maps.find(m=>m.id===id).name} · ${mobLabel} · ${resourceLabel(ores,'руды',data.ore[id].length)} · ${resourceLabel(herbs,'трав',data.herbs[id].length)}`;
-    const parts=[rows.length?'Мобы: оценочные ячейки':'Мобы: оценки плотности нет'];
+    const parts=[spawnMap?`Мобы: ${spawnMap.species} видов Classic; возможные места появления`:rows.length?'Мобы: оценочные ячейки':'Мобы: оценки плотности нет'];
     for(const [key,label] of [['ore','Руда'],['herbs','Травы']]) {
       const info=data.coverage[id][key];
       parts.push(`${label}: ${info.records} ${info.status==='imported'?'исторических записей':'записей в источнике'}`);
     }
     parts.push(`NPC QuestieDB: ${data.coverage[id].npcs.records} записей координат`);
-    parts.push(`Плотность: Mob Level Map ${data.sources.mobs.version}, база Classic Era + поправки Forever`);
+    parts.push(spawnMap?'Источник мест: CMaNGOS Classic-DB, снимок 15.11.2026; актуальность Forever не проверена':`Плотность: Mob Level Map ${data.sources.mobs.version}, база Classic Era + поправки Forever`);
     $('coverage').textContent=parts.join(' · ')+'. Совмещение координат ресурсов с картой в игре ещё не проверено.'+
       (data.maps.find(m=>m.id===id).artwork_kind==='classic_reference'?' Подложка: карта WoW Classic; изменения рельефа Forever на ней могут отсутствовать.':'');
   }
@@ -177,15 +211,29 @@
     ctx.beginPath();ctx.moveTo(x-5,y);ctx.lineTo(x+5,y);ctx.moveTo(x,y-5);ctx.lineTo(x,y+5);ctx.stroke();ctx.restore();
   }
   function renderAreaPanel() {
-    $('area-enable-npcs').hidden=$('npcs').checked;$('area-enable-npcs').disabled=!data;
+    $('area-enable-npcs').hidden=$('npcs').checked||classicActive();$('area-enable-npcs').disabled=!data;
+    $('area-description').textContent=classicActive()?'Оранжевый круг — выбранная область. Одно место может допускать разные виды; строки видов не суммируются. Верхняя граница учитывает известные ограничения групп, но не показывает текущую численность.':'Оранжевый круг — выбранная область. Числа показывают записи координат в источнике. Фактическое число живых существ сейчас неизвестно. Среди NPC могут быть мирные персонажи; флаг обслуживания не определяет враждебность.';
     $('area-clear').disabled=!selectedArea;$('area-zoom').disabled=!selectedArea||!mapReady||Number($('mapZoom').value)>=3;
     if(!data||!mapReady){areaPanelKey=null;$('area-rows').replaceChildren();$('area-table-wrap').hidden=true;$('area-source').textContent='';$('area-status').textContent=data?'Ожидание карты…':'Сначала загрузите данные атласа.';return;}
-    const options=currentState(),key=JSON.stringify([zone.value,selectedArea,options.areaRadius,options.npcs,options.npcType,options.npcRole,options.npcQuery,options.only,options.level,options.hideServices,Boolean(npcData),npcLoading,npcFailed,mapReady]);
+    const options=currentState(),key=JSON.stringify([zone.value,selectedArea,options.mode,options.mobs,options.areaRadius,options.npcs,options.npcType,options.npcRole,options.npcQuery,options.only,options.level,options.hideServices,Boolean(npcData),npcLoading,npcFailed,mapReady]);
     if(key===areaPanelKey)return;areaPanelKey=key;
     const body=$('area-rows');body.replaceChildren();$('area-table-wrap').hidden=true;$('area-source').textContent='';
     if(!data||!mapReady){$('area-status').textContent=data?'Ожидание карты…':'Сначала загрузите данные атласа.';return;}
     if(!selectedArea){$('area-status').textContent='Нажмите на карту, чтобы выбрать область. Стрелки выбирают центр ячейки, Escape снимает выделение.';return;}
     const location=`Центр ${selectedArea.x.toFixed(2)}, ${selectedArea.y.toFixed(2)} · радиус ${options.areaRadius}% ширины карты. `;
+    if(classicActive()) {
+      const summary=WowClassicSpawns.summarize(classicMap(),classicData,selectedArea,options.areaRadius,img.naturalHeight/img.naturalWidth,options);
+      $('area-status').textContent=location+`Возможных мест: ${summary.count} из ${summary.total}. Верхняя граница по известным ограничениям: ${summary.upper}. Это не число живых мобов.`;
+      $('area-source').textContent='CMaNGOS Classic-DB · снимок 15.11.2026. Альтернативы шаблонов не удваивают число мест; ограниченные группы и пулы учитываются один раз. Границы зоны, движение и актуальность Forever требуют проверки.';
+      document.querySelector('#area-table-wrap caption').textContent='Возможные места каждого вида; альтернативные виды делят места, строки не суммировать';
+      for(const row of summary.rows) {
+        const tr=document.createElement('tr');tr.dataset.npcId=String(row.npc.id);tr.dataset.positions=String(row.count);
+        for(const text of [`${row.npc.name} · ID ${row.npc.id}`,`${row.npc.min_level}–${row.npc.max_level}`,WowCreatureTypes.label(row.npc.creature),String(row.count)]) {const td=document.createElement('td');td.textContent=text;tr.append(td);}
+        body.append(tr);
+      }
+      $('area-table-wrap').hidden=!summary.rows.length;return;
+    }
+    document.querySelector('#area-table-wrap caption').textContent='Позиции по NPC ID; типы Classic предварительные';
     if(!options.npcs){$('area-status').textContent=location+'Включите NPC для подсчёта записей.';return;}
     if(!npcData){$('area-status').textContent=location+(npcFailed?'Данные NPC недоступны. Используйте повторную загрузку NPC.':'Загрузка записей NPC…');return;}
     const points=npcData.maps[zone.value]||[];
@@ -236,6 +284,7 @@
   }
   function drawSelection() {
     renderPointPanel();
+    if(classicView()) {$('cell-info').textContent=selectedArea?'Выбрана область мест появления Classic. Число мест и ограничения показаны в таблице выше.':'Выберите место появления или область. Полые круги обозначают ограниченные группы и пулы.';return;}
     if(!selectedCell){$('cell-info').textContent='Выберите ячейку на карте для подробностей.';return;}
     const [column,row]=selectedCell;
     const x=column*canvas.width*.05,y=row*canvas.height*.05;
@@ -250,6 +299,7 @@
   const professions={ore:'Горное дело',herbs:'Травничество'};
   const factions={alliance:'Альянс',horde:'Орда',neutral:'Нейтральный'};
   function pointLabel(point) {
+    if(point.kind==='spawn')return point.candidates.map(n=>`${n.name} · ID ${n.id}`).join(' / ');
     if(point.kind==='npc')return `${point.meta.name} · ID ${point.meta.id}`;
     return point.kind==='trainer'?`${point.meta.name} — учитель ${professions[point.meta.profession].toLowerCase()}`:point.meta.name;
   }
@@ -277,6 +327,15 @@
     if(!point){selectedPointKey=null;$('point-info').textContent=selectedCell?'В этой ячейке нет точек с выбранными фильтрами.':'Нажмите точку NPC, ресурса или учителя для подробностей.';$('point-source').hidden=true;return;}
     select.value=point.key;
     const meta=point.meta;
+    if(point.kind==='spawn') {
+      const p=point.spawn,map=classicMap(),limits=p[7].map(k=>map.constraints[k]);
+      $('point-info').textContent=`${pointLabel(point)}\nУровни Classic: ${point.range[0]}–${point.range[1]} · координаты ${point.x.toFixed(2)}, ${point.y.toFixed(2)}\nМесто появления: GUID ${p[0]}.`+
+        (p[3].length>1?'\nВозможные виды: '+p[3].map(id=>`${classicData.npcs[id].name} (ID ${id})`).join(' / ')+'. Это альтернативы на одном месте, не дополнительные мобы.':'')+
+        (limits.length?'\n'+limits.map(c=>`Группа: ${c.members.length} возможных мест, не более ${c.limit} активных существ во всей группе.`).join('\n'):'')+
+        `\nВозрождение по базе: ${p[4]}–${p[5]} сек.`+(p[6]?' Существо перемещается; точка не описывает весь маршрут.':'')+'\nИсточник: CMaNGOS Classic-DB, 15.11.2026. Текущая доступность в Forever не проверена.';
+      $('point-source').href='sources/classic_spawns/NOTICE.md';$('point-source').hidden=false;
+      ctx.beginPath();ctx.arc(point.x*canvas.width/100,point.y*canvas.height/100,8*canvas.width/canvas.clientWidth,0,Math.PI*2);ctx.strokeStyle='#fff6cc';ctx.lineWidth=2;ctx.stroke();return;
+    }
     if(point.kind==='npc') {
       const roles=[meta.flags&128?'торговец':null,meta.flags&16?'учитель':null,meta.quest_starts.length?'выдаёт квесты':null,meta.quest_ends.length?'принимает квесты':null].filter(Boolean);
       $('point-info').textContent=`${pointLabel(point)}${meta.title?' — '+meta.title:''}\nУровни: ${meta.min_level??'?'}–${meta.max_level??'?'} · ${roles.join(', ')||'NPC'}\n${WowCreatureTypes.description(meta.creature)}\nКоординаты: ${point.x.toFixed(2)}, ${point.y.toFixed(2)}\nКвесты: начало ${meta.quest_starts.join(', ')||'нет записей'}; сдача ${meta.quest_ends.join(', ')||'нет записей'}.\nИсточник: QuestieDB Forever, снимок ${npcData.commit.slice(0,7)}. Статические данные; фазы и доступность для персонажа не проверены.`;
@@ -299,7 +358,7 @@
     hoverFrame=requestAnimationFrame(()=>{
       const point=nearestPoint(event.clientX,event.clientY),cluster=nearestCluster(event.clientX,event.clientY),tooltip=$('map-tooltip');tooltip.hidden=!point&&!cluster;
       if(!point&&!cluster)return;
-      tooltip.textContent=cluster?`Группа: ${cluster.count} записей координат. Нажмите для выбора области.`:pointLabel(point)+(point.kind==='npc'?` · ${WowCreatureTypes.label(point.meta.creature)}${point.meta.creature.type?' (предварительно, Classic)':''}`:'')+(['trainer','npc'].includes(point.kind)?'':point.meta.min_skill===null?' · навык неизвестен':` · навык ${point.meta.min_skill}`);
+      tooltip.textContent=cluster?`Группа: ${cluster.count} записей координат. Нажмите для выбора области.`:pointLabel(point)+(point.kind==='spawn'?` · уровни ${point.range[0]}–${point.range[1]}`+(point.spawn[7].length?' · ограниченная группа':''):'')+(point.kind==='npc'?` · ${WowCreatureTypes.label(point.meta.creature)}${point.meta.creature.type?' (предварительно, Classic)':''}`:'')+(['trainer','npc','spawn'].includes(point.kind)?'':point.meta.min_skill===null?' · навык неизвестен':` · навык ${point.meta.min_skill}`);
       tooltip.style.left=Math.max(8,Math.min(event.clientX+12,innerWidth-290))+'px';
       tooltip.style.top=Math.max(8,Math.min(event.clientY+12,innerHeight-85))+'px';
     });
@@ -348,11 +407,19 @@
     if(selectedArea&&Number($('mapZoom').value)>1)applyZoom();
     persist();draw();
   });
-  $('level-heat-bar').style.background=WowSettings.heatGradient();
-  for(const [delta,label] of WowSettings.LEGEND) {
-    const item=document.createElement('span'),dot=document.createElement('i');
-    item.dataset.delta=String(delta);item.style.left=((delta+5)*10)+'%';dot.className='dot';dot.style.background=color(delta);
-    item.append(dot,document.createTextNode(label));$('legend').append(item);
+  let legendKey=null;
+  function updateLevelLegend(map) {
+    const key=map?`${map.min_level}:${map.max_level}`:'relative';if(key===legendKey)return;legendKey=key;
+    $('legend').replaceChildren();$('level-heat-bar').style.background=WowSettings.heatGradient();
+    const ticks=map?[0,.25,.5,.75,1].map(f=>{const value=Math.round(map.min_level+(map.max_level-map.min_level)*f);return [-5+10*(value-map.min_level)/(map.max_level-map.min_level),String(value)];}):WowSettings.LEGEND;
+    for(const [delta,label] of ticks) {
+      const item=document.createElement('span'),dot=document.createElement('i');
+      item.dataset.delta=String(delta);item.style.left=((delta+5)*10)+'%';dot.className='dot';dot.style.background=color(delta);
+      item.append(dot,document.createTextNode(label));$('legend').append(item);
+    }
+    $('legend-description').textContent=map?`Цвет точки — уровень моба в пределах зоны: ${map.min_level} — зелёный, ${map.max_level} — красный. Для диапазона используется его середина. Уровень персонажа применяется только при включённом фильтре −2…0.`:'Цвет ячейки или условной точки — разница между уровнем ячейки и персонажа.';
+    $('level-heat-bar').setAttribute('aria-label',map?`Уровни мобов от ${map.min_level} до ${map.max_level}, от зелёного к красному`:'Цветовая шкала: от зелёного для уровней −5 и ниже до красного для +5 и выше; жёлтый — уровень персонажа');
+    $('density-scale').textContent=map?'Каждая точка — возможное место появления. Полый круг — место ограниченной группы или пула. Числа уровней появляются при увеличении от 200%. Плотность видна по расположению мест; верхняя граница не является оценкой текущего числа живых мобов.':`Цвет показывает разницу уровней: зелёный — ниже, жёлтый — на уровне персонажа, красный — выше. Числа — оценочный индекс плотности (1–${maxDensity}), не число живых мобов.`;
   }
   for(const [symbol,label,colorValue] of [['▲','NPC QuestieDB','#77dce8'],['●','Медь','#82d9ff'],['●','Другая руда','#ffc06b'],['◆','Травы','#6cdd8e'],['■','Учителя','#d1a6ff']]) {
     const item=document.createElement('span'),symbolElement=document.createElement('b');
