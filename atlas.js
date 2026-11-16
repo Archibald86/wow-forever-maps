@@ -449,7 +449,7 @@
       for(const map of [...data.maps].sort((a,b)=>a.name.localeCompare(b.name,'ru')||a.id.localeCompare(b.id))) {
         const option=document.createElement('option');option.value=map.id;
         option.textContent=WowZoneLevels.label(map)+(map.has_mobs||classicData?.maps[map.id]?.points.length?'':' · нет оценки плотности');
-        option.title='Рекомендуемые уровни по Classic — ориентир, а не ограничение входа. В Forever сложность может отличаться.';zone.append(option);
+        option.title='Уровни по Leatrix Maps 1.60.31 для Forever — ориентир, а не ограничение входа. «Уровни уточняются» означает, что в аддоне диапазон не указан.';zone.append(option);
       }
       WowResources.populateOptions(data,$('resource'));
       WowCreatureTypes.populate($('npcType'));
