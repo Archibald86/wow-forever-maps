@@ -32,6 +32,7 @@ jobs:
           test -s data.json
           test -s app-core.js
           test -s atlas.js
+          test -s zone-levels.js
           test -s mob-quests.js
           test -s mob-quest-data.js
           test -s home.js
@@ -129,6 +130,7 @@ jobs:
           cp database.html database.js database.css creature-types.js npcs.js npc-area.js npc-area.css caves.js cave-icons.js cave-icons.json npc-atlas.json npc-atlas.js _site/
           cp classic-spawn-data.js classic-spawn-data.json classic-spawns.js _site/
           cp mob-quests.js mob-quest-data.js _site/
+          cp zone-levels.js _site/
           cp -R maps database _site/
           mkdir -p _site/sources
           cp -R sources/questie sources/creature_types sources/moblevels sources/classic_spawns _site/sources/

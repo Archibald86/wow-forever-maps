@@ -16,7 +16,7 @@
     for(const [i,pick]of picks.entries()) {
       const item=document.createElement('article');item.className='result';
       const rank=document.createElement('div');rank.className='rank';rank.textContent=i+1;
-      const info=document.createElement('div'),strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=pick.map.name;
+      const info=document.createElement('div'),strong=document.createElement('strong'),small=document.createElement('small');strong.textContent=WowZoneLevels.label(pick.map);
       small.textContent=`${pick.cells} подходящих ячеек · индекс плотности ${pick.density.toLocaleString('ru-RU')} · руда ${pick.oreTotal} (рядом ${pick.nearbyOre}) · травы ${pick.herbTotal} (рядом ${pick.nearbyHerbs})`+
         (pick.missingMobs?' · данные мобов отсутствуют':'')+(pick.unknown&&options.skillFilter&&options.unknownSkill?` · неизвестный навык у ${pick.unknown} записей`:'');
       info.append(strong,small);
