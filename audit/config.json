@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "user_agent": "WoWAtlasAuditor/1.0 (+https://github.com/Archibald86/wow-forever-maps; AI-assisted evidence review)",
+  "request_budget": 56,
+  "request_timeout_seconds": 12,
+  "max_response_bytes": 4000000,
+  "max_download_bytes": 20000000,
+  "per_host_delay_seconds": 1.0,
+  "npc_samples_per_run": 20,
+  "pinned_npc_ids": [6, 30, 448, 3129],
+  "coordinate_tolerance_pct": 1.5,
+  "discovery_budget": 6,
+  "sources": [
+    {"id": "zephras", "host": "zephras.com", "roots": ["https://zephras.com/", "https://zephras.com/latest/", "https://zephras.com/data/"], "npc_template": "https://zephras.com/forever/enUS/npc/{id}/"},
+    {"id": "foreverchanges", "host": "foreverchanges.pro", "roots": ["https://foreverchanges.pro/ru", "https://foreverchanges.pro/ru/changes", "https://foreverchanges.pro/ru/map", "https://foreverchanges.pro/ru/rares"]},
+    {"id": "wowhead", "host": "www.wowhead.com", "roots": ["https://www.wowhead.com/news/rss/all", "https://www.wowhead.com/forever"], "npc_template": "https://www.wowhead.com/forever/npc={id}"}
+  ],
+  "ai": {
+    "model": "gpt-4.1-mini",
+    "max_prompt_utf8_bytes": 20000,
+    "max_output_tokens": 2000,
+    "max_calls_per_run": 1,
+    "timeout_seconds": 60
+  }
+}

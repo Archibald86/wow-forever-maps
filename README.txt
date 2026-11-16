@@ -22,3 +22,5 @@ Cave glyphs: 156 red circles on 40 maps; all 42 artworks reviewed. See CAVE_MARK
 Five Classic outdoor zones added: see CLASSIC_ZONES.md. New background maps are Classic references; Forever terrain alignment is unverified.
 
 Density update 2026-11-15: 4,953 cells on 40/42 maps; Mob Level Map 1.0.7 with per-cell Classic/Forever origin. All 19 new Drive files audited. See DENSITY_UPDATE.md.
+
+Daily source/AI auditor: AUDITOR.md. Actions workflow: site-auditor.yml. Three configured sources, deterministic checks, bounded optional OpenAI review; requires repository secret OPENAI_API_KEY for model calls.

@@ -1,0 +1,105 @@
+name: Atlas AI auditor
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # 06:00 Europe/Moscow; GitHub may queue scheduled runs.
+  workflow_dispatch:
+    inputs:
+      ai:
+        description: Analyse evidence with AI when OPENAI_API_KEY is configured
+        type: boolean
+        default: true
+      force_ai:
+        description: Request one AI review even if the evidence is unchanged
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'audit/**'
+      - 'tools/site_auditor.py'
+      - 'tools/auditor_sources.py'
+      - 'tests/test_site_auditor.py'
+      - '.github/workflows/site-auditor.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: atlas-auditor-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test auditor evidence and budget rules
+        run: python -m unittest discover -s tests -p test_site_auditor.py -v
+      - name: Restore previous source fingerprints
+        uses: actions/cache/restore@v4
+        with:
+          path: audit-state
+          key: atlas-audit-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: atlas-audit-v1-${{ github.ref_name }}-
+      - name: Install existing browser test runner
+        run: |
+          npm install --prefix "$RUNNER_TEMP/audit-browser" playwright@1.62.1 --no-audit --no-fund
+          node "$RUNNER_TEMP/audit-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Collect, compare and review
+        id: auditor
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_AUDITOR_MODEL: ${{ vars.AI_AUDITOR_MODEL }}
+          NODE_PATH: ${{ runner.temp }}/audit-browser/node_modules
+          AUDIT_AI: ${{ github.event_name != 'workflow_dispatch' || inputs.ai }}
+          AUDIT_FORCE_AI: ${{ github.event_name == 'workflow_dispatch' && inputs.force_ai }}
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/audit-http.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          python - <<'PY'
+          import os, subprocess, sys, time, urllib.request
+          for _ in range(30):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8765/atlas.html', timeout=1)
+                  break
+              except OSError:
+                  time.sleep(0.2)
+          else:
+              raise SystemExit('Local atlas server did not start')
+          command=['python','tools/site_auditor.py','--checks','--browser-base','http://127.0.0.1:8765/']
+          if os.environ.get('AUDIT_AI','').lower()!='true': command.append('--no-ai')
+          if os.environ.get('AUDIT_FORCE_AI','').lower()=='true': command.append('--force-ai')
+          sys.exit(subprocess.call(command))
+          PY
+      - name: Save source fingerprints and rotation cursor
+        if: always() && steps.auditor.outcome != 'skipped'
+        uses: actions/cache/save@v4
+        with:
+          path: audit-state
+          key: atlas-audit-v1-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Attach audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: atlas-audit-${{ github.run_number }}
+          path: audit-output
+          retention-days: 30
+          if-no-files-found: warn
+      - name: Show report in run summary
+        if: always()
+        run: |
+          if test -f audit-output/report.md; then
+            cat audit-output/report.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'Auditor did not produce a report; inspect the failed step above.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Signal failed checks or total source outage
+        if: steps.auditor.outcome == 'failure'
+        run: exit 1
