@@ -44,6 +44,7 @@
     "database/manifest.json": "8cbe5f7a2a0b1e9693056033ec644af90d5a97f41c28e0e92ab50dd084c48563",
     "npc-atlas.json": "a5954b012e86a0a20e83c6be169194bf84c8dfa5b8a13c654c36681d181f2997",
     "npc-atlas.js": "9853c10f9e36e7435e99f0107349b47e890d87ccbf426a9445566c45b5117030",
+    "mob-quest-data.js": "1358a528e4222f816daf72f26df3f6502679efa6c55a28346f31a02c639dec32",
     "cave-icons.json": "95ac3bca58a0bc479c1ac95e4ab6ad79e537cb19c74e2cd540c03cdabbe6e017",
     "cave-icons.js": "45f20d71cb5a98db916b3f99331e9cf47d1dbc9f1c2a1054f428618dbb1f43db"
   }

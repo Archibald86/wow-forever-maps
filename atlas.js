@@ -298,6 +298,9 @@
   }
   const professions={ore:'Горное дело',herbs:'Травничество'};
   const factions={alliance:'Альянс',horde:'Орда',neutral:'Нейтральный'};
+  const questIds=point=>point.kind==='spawn'?point.candidates.map(n=>n.id):[point.meta.id];
+  const questSummary=point=>window.WowMobQuests?.summary(questIds(point),window.WOW_MOB_QUESTS)||'Квесты: данные недоступны';
+  const questDetails=point=>window.WowMobQuests?.details(questIds(point),window.WOW_MOB_QUESTS)||'Квесты: данные недоступны';
   function pointLabel(point) {
     if(point.kind==='spawn')return point.candidates.map(n=>`${n.name} · ID ${n.id}`).join(' / ');
     if(point.kind==='npc')return `${point.meta.name} · ID ${point.meta.id}`;
@@ -333,12 +336,14 @@
         (p[3].length>1?'\nВозможные виды: '+p[3].map(id=>`${classicData.npcs[id].name} (ID ${id})`).join(' / ')+'. Это альтернативы на одном месте, не дополнительные мобы.':'')+
         (limits.length?'\n'+limits.map(c=>`Группа: ${c.total_members??c.members.length} возможных мест в источнике, не более ${c.limit} активных существ во всей группе.`+(c.kind==='nested_pool'?' Учтена вместимость дочерних пулов.':'')).join('\n'):'')+
         `\nВозрождение по базе: ${p[4]}–${p[5]} сек.`+(p[6]?' Существо перемещается; точка не описывает весь маршрут.':'')+'\nИсточник: CMaNGOS Classic-DB, 15.11.2026. Текущая доступность в Forever не проверена.';
+      $('point-info').textContent+='\n'+questDetails(point)+(point.candidates.length>1?'\nКвесты посчитаны по объединению возможных видов без повторов.':'');
       $('point-source').href='sources/classic_spawns/WORLD_NOTICE.md';$('point-source').hidden=false;
       ctx.beginPath();ctx.arc(point.x*canvas.width/100,point.y*canvas.height/100,8*canvas.width/canvas.clientWidth,0,Math.PI*2);ctx.strokeStyle='#fff6cc';ctx.lineWidth=2;ctx.stroke();return;
     }
     if(point.kind==='npc') {
       const roles=[meta.flags&128?'торговец':null,meta.flags&16?'учитель':null,meta.quest_starts.length?'выдаёт квесты':null,meta.quest_ends.length?'принимает квесты':null].filter(Boolean);
       $('point-info').textContent=`${pointLabel(point)}${meta.title?' — '+meta.title:''}\nУровни: ${meta.min_level??'?'}–${meta.max_level??'?'} · ${roles.join(', ')||'NPC'}\n${WowCreatureTypes.description(meta.creature)}\nКоординаты: ${point.x.toFixed(2)}, ${point.y.toFixed(2)}\nКвесты: начало ${meta.quest_starts.join(', ')||'нет записей'}; сдача ${meta.quest_ends.join(', ')||'нет записей'}.\nИсточник: QuestieDB Forever, снимок ${npcData.commit.slice(0,7)}. Статические данные; фазы и доступность для персонажа не проверены.`;
+      $('point-info').textContent+='\n'+questDetails(point);
       $('point-source').href=`database.html?kind=npcs&id=${meta.id}`;$('point-source').hidden=false;
       ctx.beginPath();ctx.arc(point.x*canvas.width/100,point.y*canvas.height/100,8,0,Math.PI*2);ctx.strokeStyle='#fff6cc';ctx.lineWidth=2;ctx.stroke();return;
     }
@@ -359,8 +364,9 @@
       const point=nearestPoint(event.clientX,event.clientY),cluster=nearestCluster(event.clientX,event.clientY),tooltip=$('map-tooltip');tooltip.hidden=!point&&!cluster;
       if(!point&&!cluster)return;
       tooltip.textContent=cluster?`Группа: ${cluster.count} записей координат. Нажмите для выбора области.`:pointLabel(point)+(point.kind==='spawn'?` · уровни ${point.range[0]}–${point.range[1]}`+(point.spawn[7].length?' · ограниченная группа':''):'')+(point.kind==='npc'?` · ${WowCreatureTypes.label(point.meta.creature)}${point.meta.creature.type?' (предварительно, Classic)':''}`:'')+(['trainer','npc','spawn'].includes(point.kind)?'':point.meta.min_skill===null?' · навык неизвестен':` · навык ${point.meta.min_skill}`);
-      tooltip.style.left=Math.max(8,Math.min(event.clientX+12,innerWidth-290))+'px';
-      tooltip.style.top=Math.max(8,Math.min(event.clientY+12,innerHeight-85))+'px';
+      if(point&&!cluster&&['npc','spawn'].includes(point.kind))tooltip.textContent+=' · '+questSummary(point)+' (справочно)';
+      tooltip.style.left=Math.max(8,Math.min(event.clientX+12,innerWidth-tooltip.offsetWidth-8))+'px';
+      tooltip.style.top=Math.max(8,Math.min(event.clientY+12,innerHeight-tooltip.offsetHeight-8))+'px';
     });
   });
   area.addEventListener('pointerleave',()=>{cancelAnimationFrame(hoverFrame);$('map-tooltip').hidden=true;});

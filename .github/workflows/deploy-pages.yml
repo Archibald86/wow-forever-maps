@@ -32,6 +32,8 @@ jobs:
           test -s data.json
           test -s app-core.js
           test -s atlas.js
+          test -s mob-quests.js
+          test -s mob-quest-data.js
           test -s home.js
           test -s settings.js
           test -s resources.js
@@ -99,6 +101,7 @@ jobs:
           node tests/classic-spawns.cjs
           node tests/classic-spawns-browser.cjs http://127.0.0.1:8765/
           node tests/classic-world-browser.cjs http://127.0.0.1:8765/
+          node tests/mob-quests-browser.cjs http://127.0.0.1:8765/
           node tests/core.cjs
           node tests/settings.cjs
           node tests/resources.cjs
@@ -125,6 +128,7 @@ jobs:
           cp index.html atlas.html forever-theme.css hero-v4.css data.js data.json coverage.json app-core.js atlas.js home.js settings.js resources.js login-gates.jpg wow-forever-hero-3344.jpg wow-forever-hero-mobile.webp _site/
           cp database.html database.js database.css creature-types.js npcs.js npc-area.js npc-area.css caves.js cave-icons.js cave-icons.json npc-atlas.json npc-atlas.js _site/
           cp classic-spawn-data.js classic-spawn-data.json classic-spawns.js _site/
+          cp mob-quests.js mob-quest-data.js _site/
           cp -R maps database _site/
           mkdir -p _site/sources
           cp -R sources/questie sources/creature_types sources/moblevels sources/classic_spawns _site/sources/

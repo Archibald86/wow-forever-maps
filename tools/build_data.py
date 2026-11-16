@@ -16,6 +16,7 @@ from import_resources import import_resources
 from build_caves import prepare_caves
 from import_moblevels import prepare as prepare_moblevels
 from import_questie import prepare as prepare_questie
+from build_mob_quests import prepare as prepare_mob_quests
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPORTS = ['data.json','data.js','coverage.json','sources/resource_import_manifest.json']
@@ -70,6 +71,7 @@ def build(root=ROOT):
         (target/'data.js').write_text('window.WOW_DATA='+text+';\n',encoding='utf-8')
         result = {name:(target/name).read_bytes() for name in EXPORTS}
         result.update(questie_exports)
+        result.update(prepare_mob_quests(source,questie_exports))
         result.update(prepare_caves(source,zones))
     manifest = {'version':1, 'inputs':lock['files'], 'exports':{
         name:hashlib.sha256(content).hexdigest() for name,content in result.items()}}
