@@ -21,6 +21,27 @@
     const levels=range(map.id);
     return `${map.name} (${levels?levels.join('–'):'уровни уточняются'})`;
   }
-  const api={range,label};
+  // Classic world map IDs: 1 = Kalimdor, 0 = Eastern Kingdoms.
+  // Keep the two separate Forever islands accessible without assigning a continent.
+  const continents={
+    'Калимдор':new Set(['ashenvale','azshara','barrens','darkshore','desolace','durotar','dustwallowmarsh','felwood','feralas','moonglade','silithus','stonetalonmountain','tanaris','teldrassil','thousandneedles','ungorocrater','winterspring','mulgore']),
+    'Восточные королевства':new Set(['blastedlands','burningsteppes','deadwindpass','dunmorogh','duskwood','easternplaguelands','elwynn','hillsbrad','hinterlands','lochmodan','searinggorge','silverpine','stranglethorn','swampofsorrows','tirisfal','westernplaguelands','westfall','wetlands','alteracmountains','badlands','redridgemountains','arathihighlands'])
+  };
+  function compare(a,b) {
+    const left=range(a.id),right=range(b.id);
+    if(!left&&right)return 1;
+    if(left&&!right)return -1;
+    return (left&&right?(left[0]-right[0]||left[1]-right[1]):0)||a.name.localeCompare(b.name,'ru')||a.id.localeCompare(b.id);
+  }
+  function groups(maps) {
+    const result=Object.keys(continents).map(name=>({name,maps:[]})),other={name:'Острова Forever',maps:[]};
+    for(const map of maps) {
+      const key=map.id.endsWith('_c60')?map.id.slice(0,-4):map.id;
+      const group=result.find(group=>continents[group.name].has(key))||other;
+      group.maps.push(map);
+    }
+    return [...result,other].filter(group=>group.maps.length).map(group=>({...group,maps:group.maps.sort(compare)}));
+  }
+  const api={range,label,compare,groups};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;else window.WowZoneLevels=api;
 })();
